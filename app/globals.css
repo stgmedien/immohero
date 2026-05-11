@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  /* Moss palette — taken from prototype tokens.js */
+  --color-bg: #f4f2ec;
+  --color-bg-alt: #ece8dd;
+  --color-surface: #ffffff;
+  --color-ink: #1e2319;
+  --color-ink-soft: #5a5f52;
+  --color-ink-mute: #8a8e80;
+  --color-line: #d9d4c4;
+  --color-primary: #3f5a3a;
+  --color-primary-ink: #f4f2ec;
+  --color-primary-soft: #e4e8de;
+  --color-accent: #c2623e;
+  --color-accent-soft: #f2ded3;
+  --color-success: #3f5a3a;
+  --color-warn: #c2623e;
+  --color-danger: #b3331f;
+
+  /* Spacing & radius */
+  --radius-card: 1.125rem;
+  --radius-pill: 9999px;
+
+  /* Typography */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-instrument-serif), ui-serif, Georgia, serif;
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-[var(--color-bg)] text-[var(--color-ink)] font-sans antialiased;
+    font-feature-settings: "cv11", "ss01";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-normal tracking-tight text-balance;
+  }
+
+  ::selection {
+    @apply bg-[var(--color-primary)] text-[var(--color-primary-ink)];
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-6 lg:px-8;
+  }
+
+  .container-narrow {
+    @apply mx-auto w-full max-w-3xl px-5 sm:px-6;
+  }
+}

@@ -1,0 +1,53 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# build
+.next/
+out/
+dist/
+build/
+
+# env
+.env
+.env*.local
+.env.production
+
+# logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# vercel
+.vercel/
+
+# misc
+*.tsbuildinfo
+next-env.d.ts
+
+# claude
+.claude/
+
+# drizzle
+drizzle/migrations-meta/
+
+# playwright
+test-results/
+playwright-report/
+playwright/.cache/
+
+# serwist
+public/sw.js
+public/sw.js.map
+public/swe-worker-*.js
