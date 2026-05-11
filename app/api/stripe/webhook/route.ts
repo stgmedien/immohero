@@ -116,6 +116,7 @@ async function handleCheckoutCompleted(session: Stripe.Checkout.Session) {
     const portalUrl = `${process.env.NEXT_PUBLIC_SITE_URL ?? "https://immohero.org"}/konto`;
     await sendEmail({
       to: order.customerEmail,
+      from: "bookingConfirmation",
       subject: `ImmoHero — Buchung ${order.shortCode} bestätigt`,
       template: "booking-confirmation",
       orderId: order.id,

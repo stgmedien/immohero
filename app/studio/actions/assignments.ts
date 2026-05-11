@@ -7,6 +7,7 @@ import { canAccessStudio } from "@/lib/access";
 import { db } from "@/lib/db/client";
 import { orderAssignments, orders, users, auditLog } from "@/lib/db/schema";
 import { createNotification } from "./notifications";
+import { sendEmail } from "@/lib/email";
 
 async function requireStudio() {
   const session = await auth();
@@ -36,8 +37,9 @@ export async function assignMember(input: {
     })
     .onConflictDoNothing();
 
-  // Notify assignee
+  // Notify assignee (in-app + email)
   const [order] = await db.select().from(orders).where(eq(orders.id, input.orderId)).limit(1);
+  const [member] = await db.select().from(users).where(eq(users.id, input.userId)).limit(1);
   if (order) {
     await createNotification({
       userId: input.userId,
@@ -46,6 +48,29 @@ export async function assignMember(input: {
       body: `Rolle: ${input.role}`,
       orderId: input.orderId,
     });
+    if (member?.email) {
+      try {
+        const { TeamAssignmentEmail } = await import("@/emails/team-assignment");
+        const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://immohero.org";
+        await sendEmail({
+          to: member.email,
+          from: "studio",
+          subject: `ImmoHero Studio — Auftrag ${order.shortCode} zugewiesen`,
+          template: "team-assignment",
+          orderId: order.id,
+          react: TeamAssignmentEmail({
+            recipientName: member.name ?? member.email,
+            shortCode: order.shortCode,
+            scheduledAt: order.scheduledAt?.toISOString() ?? new Date().toISOString(),
+            propertyAddress: `${order.propertyAddress}, ${order.propertyPlz} ${order.propertyCity}`,
+            role: input.role,
+            studioUrl: `${siteUrl}/studio/projekte/${order.shortCode}`,
+          }),
+        });
+      } catch (err) {
+        console.error("[assignments] could not send team-assignment mail", err);
+      }
+    }
   }
 
   await db.insert(auditLog).values({

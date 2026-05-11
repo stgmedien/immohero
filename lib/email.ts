@@ -3,10 +3,21 @@ import { db } from "@/lib/db/client";
 import { emailLog } from "@/lib/db/schema";
 
 const apiKey = process.env.RESEND_API_KEY;
-const from = process.env.RESEND_FROM ?? "ImmoHero <team@immohero.org>";
-const replyTo = process.env.RESEND_REPLY_TO;
+const defaultFrom = process.env.RESEND_FROM ?? "ImmoHero <hallo@immohero.org>";
+const replyTo = process.env.RESEND_REPLY_TO ?? "hallo@immohero.org";
 
 const client = apiKey ? new Resend(apiKey) : null;
+
+/** Sender per template type — keeps the inbox readable for customers. */
+export const SENDERS = {
+  default: defaultFrom,
+  magicLink: "ImmoHero <login@immohero.org>",
+  bookingConfirmation: "ImmoHero <bestellung@immohero.org>",
+  delivery: "ImmoHero <lieferung@immohero.org>",
+  studio: "ImmoHero Studio <studio@immohero.org>",
+} as const;
+
+export type SenderKey = keyof typeof SENDERS;
 
 interface SendArgs {
   to: string;
@@ -14,17 +25,33 @@ interface SendArgs {
   template: string;
   react: React.ReactElement;
   orderId?: string;
+  from?: string | SenderKey;
 }
 
-export async function sendEmail({ to, subject, template, react, orderId }: SendArgs) {
+function resolveFrom(input?: string | SenderKey): string {
+  if (!input) return SENDERS.default;
+  if (input in SENDERS) return SENDERS[input as SenderKey];
+  return input;
+}
+
+export async function sendEmail({
+  to,
+  subject,
+  template,
+  react,
+  orderId,
+  from,
+}: SendArgs) {
   if (!client) {
     console.warn("[email] RESEND_API_KEY not set — skipping email send:", subject, "→", to);
     return null;
   }
 
+  const senderFrom = resolveFrom(from);
+
   try {
     const result = await client.emails.send({
-      from,
+      from: senderFrom,
       to,
       subject,
       react,
@@ -72,7 +99,7 @@ export async function sendMagicLinkEmail({ to, url }: { to: string; url: string 
   }
   const { MagicLinkEmail } = await import("@/emails/magic-link");
   await client.emails.send({
-    from,
+    from: SENDERS.magicLink,
     to,
     replyTo,
     subject: "Dein Login-Link für ImmoHero",
