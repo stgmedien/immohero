@@ -47,8 +47,7 @@ test-results/
 playwright-report/
 playwright/.cache/
 
-# serwist
-public/sw.js
+# serwist (kept committed as a hand-written self-uninstaller for now)
 public/sw.js.map
 public/swe-worker-*.js
 .vercel
