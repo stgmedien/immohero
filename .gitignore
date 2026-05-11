@@ -39,6 +39,9 @@ next-env.d.ts
 # claude
 .claude/
 
+# raw asset sources (originals — optimized copies live in public/)
+assets/
+
 # drizzle
 drizzle/migrations-meta/
 

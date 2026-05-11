@@ -71,30 +71,24 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Gallery strip: remaining 4 images */}
-        <div className="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
+        {/* Gallery strip: 3 portrait drone shots */}
+        <div className="grid grid-cols-3 gap-3 md:gap-4">
           <GalleryTile
             src="/hero/02.jpg"
-            alt="Dachdetail mit Solaranlage und Balkonen"
+            alt="Drohnenaufnahme Dach mit Solaranlage und Balkonseite"
             label="Detail"
             aspect="aspect-[3/4]"
           />
           <GalleryTile
             src="/hero/03.jpg"
-            alt="Hauseingang und Wegführung – Goldene Stunde"
-            label="Architektur"
+            alt="Drohnenaufnahme Seitenansicht Mehrfamilienhaus"
+            label="Schräg"
             aspect="aspect-[3/4]"
           />
           <GalleryTile
             src="/hero/04.jpg"
-            alt="Drohnenaufnahme Frontansicht Mehrfamilienhaus"
-            label="Hero · Frontal"
-            aspect="aspect-[3/4]"
-          />
-          <GalleryTile
-            src="/hero/05.jpg"
-            alt="Drohnenaufnahme Seitenansicht mit Solaranlage"
-            label="Drohne · Schräg"
+            alt="Drohnenaufnahme Mehrfamilienhaus mit Garten"
+            label="Kontext"
             aspect="aspect-[3/4]"
           />
         </div>
