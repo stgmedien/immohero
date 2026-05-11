@@ -25,6 +25,12 @@ export const userRoleEnum = pgEnum("user_role", [
   "admin",
 ]);
 
+export const userStatusEnum = pgEnum("user_status", [
+  "active",
+  "pending",
+  "suspended",
+]);
+
 export const orderStatusEnum = pgEnum("order_status", [
   "pending",
   "paid",
@@ -33,6 +39,16 @@ export const orderStatusEnum = pgEnum("order_status", [
   "editing",
   "delivered",
   "cancelled",
+]);
+
+export const studioStatusEnum = pgEnum("studio_status", [
+  "draft",
+  "production",
+  "client_approval",
+  "revision",
+  "approved",
+  "completed",
+  "archived",
 ]);
 
 export const orderShotStatusEnum = pgEnum("order_shot_status", [
@@ -44,8 +60,10 @@ export const orderShotStatusEnum = pgEnum("order_shot_status", [
 
 export const shotAssetKindEnum = pgEnum("shot_asset_kind", [
   "reference",
+  "briefing",
   "raw",
   "final",
+  "other",
 ]);
 
 export const deliveryStatusEnum = pgEnum("delivery_status", [
@@ -65,8 +83,37 @@ export const propertyTypeEnum = pgEnum("property_type", [
   "bauprojekt",
 ]);
 
+export const customerKindEnum = pgEnum("customer_kind", ["person", "company"]);
+
+export const dealStageEnum = pgEnum("deal_stage", [
+  "lead",
+  "qualified",
+  "proposal",
+  "won",
+  "lost",
+]);
+
+export const dealNoteKindEnum = pgEnum("deal_note_kind", [
+  "note",
+  "call",
+  "meeting",
+  "email",
+  "task",
+]);
+
+export const commentSourceEnum = pgEnum("comment_source", ["internal", "client"]);
+
+export const notificationTypeEnum = pgEnum("notification_type", [
+  "project_assignment",
+  "client_comment",
+  "share_approval",
+  "weather_warning",
+  "delivery_ready",
+  "status_change",
+  "asset_uploaded",
+]);
+
 /* ------------------------------- Users / Auth ------------------------------- */
-// Auth.js Drizzle adapter expects these tables (users/accounts/sessions/verificationTokens).
 
 export const users = pgTable("user", {
   id: text("id").primaryKey().$defaultFn(() => crypto.randomUUID()),
@@ -75,8 +122,30 @@ export const users = pgTable("user", {
   emailVerified: timestamp("emailVerified", { mode: "date" }),
   image: text("image"),
   role: userRoleEnum("role").notNull().default("customer"),
+  status: userStatusEnum("status").notNull().default("active"),
   phone: text("phone"),
   stripeCustomerId: text("stripe_customer_id"),
+  initials: varchar("initials", { length: 4 }),
+  accentColor: varchar("accent_color", { length: 16 }).default("#3F5A3A"),
+  language: varchar("language", { length: 8 }).notNull().default("de"),
+  timezone: varchar("timezone", { length: 64 }).notNull().default("Europe/Berlin"),
+  notificationPrefs: jsonb("notification_prefs").$type<{
+    projectAssignment: boolean;
+    clientComment: boolean;
+    shareApproval: boolean;
+    weatherWarning: boolean;
+    statusChange: boolean;
+    assetUploaded: boolean;
+    dashboardStartFilter: string;
+  }>().default({
+    projectAssignment: true,
+    clientComment: true,
+    shareApproval: true,
+    weatherWarning: true,
+    statusChange: true,
+    assetUploaded: false,
+    dashboardStartFilter: "all",
+  }),
   createdAt: timestamp("created_at").notNull().defaultNow(),
 });
 
@@ -121,6 +190,124 @@ export const verificationTokens = pgTable(
   },
   (vt) => ({
     compoundKey: primaryKey({ columns: [vt.identifier, vt.token] }),
+  }),
+);
+
+/* ------------------------------- CRM ------------------------------- */
+
+export const companies = pgTable(
+  "company",
+  {
+    id: text("id").primaryKey().$defaultFn(() => crypto.randomUUID()),
+    displayName: text("display_name").notNull(),
+    legalName: text("legal_name"),
+    website: text("website"),
+    primaryEmail: text("primary_email"),
+    primaryPhone: text("primary_phone"),
+    billingAddress: text("billing_address"),
+    notes: text("notes"),
+    archivedAt: timestamp("archived_at"),
+    createdById: text("created_by_id").references(() => users.id, { onDelete: "set null" }),
+    createdAt: timestamp("created_at").notNull().defaultNow(),
+    updatedAt: timestamp("updated_at").notNull().defaultNow().$onUpdate(() => new Date()),
+  },
+  (table) => ({
+    displayNameIdx: index("company_display_name_idx").on(table.displayName),
+  }),
+);
+
+export const customers = pgTable(
+  "customer",
+  {
+    id: text("id").primaryKey().$defaultFn(() => crypto.randomUUID()),
+    companyId: text("company_id").references(() => companies.id, { onDelete: "set null" }),
+    kind: customerKindEnum("kind").notNull().default("person"),
+    displayName: text("display_name").notNull(),
+    companyName: text("company_name"),
+    primaryEmail: text("primary_email"),
+    primaryPhone: text("primary_phone"),
+    address: text("address"),
+    notes: text("notes"),
+    source: text("source"),
+    archivedAt: timestamp("archived_at"),
+    createdById: text("created_by_id").references(() => users.id, { onDelete: "set null" }),
+    createdAt: timestamp("created_at").notNull().defaultNow(),
+    updatedAt: timestamp("updated_at").notNull().defaultNow().$onUpdate(() => new Date()),
+  },
+  (table) => ({
+    emailIdx: index("customer_email_idx").on(table.primaryEmail),
+    displayNameIdx: index("customer_display_name_idx").on(table.displayName),
+    companyIdx: index("customer_company_idx").on(table.companyId),
+  }),
+);
+
+export const customerContacts = pgTable(
+  "customer_contact",
+  {
+    id: text("id").primaryKey().$defaultFn(() => crypto.randomUUID()),
+    customerId: text("customer_id")
+      .notNull()
+      .references(() => customers.id, { onDelete: "cascade" }),
+    fullName: text("full_name").notNull(),
+    email: text("email"),
+    phone: text("phone"),
+    roleAtCustomer: text("role_at_customer"),
+    isPrimary: boolean("is_primary").notNull().default(false),
+    createdAt: timestamp("created_at").notNull().defaultNow(),
+    updatedAt: timestamp("updated_at").notNull().defaultNow().$onUpdate(() => new Date()),
+  },
+  (table) => ({
+    customerIdx: index("customer_contact_customer_idx").on(table.customerId),
+  }),
+);
+
+export const deals = pgTable(
+  "deal",
+  {
+    id: text("id").primaryKey().$defaultFn(() => crypto.randomUUID()),
+    customerId: text("customer_id").references(() => customers.id, { onDelete: "set null" }),
+    primaryContactId: text("primary_contact_id").references(() => customerContacts.id, {
+      onDelete: "set null",
+    }),
+    title: text("title").notNull(),
+    description: text("description"),
+    valueCents: integer("value_cents").notNull().default(0),
+    currency: varchar("currency", { length: 3 }).notNull().default("EUR"),
+    probability: integer("probability").notNull().default(20),
+    stage: dealStageEnum("stage").notNull().default("lead"),
+    source: text("source"),
+    expectedCloseDate: timestamp("expected_close_date"),
+    actualCloseDate: timestamp("actual_close_date"),
+    wonOrderId: text("won_order_id"),
+    lostReason: text("lost_reason"),
+    ownerUserId: text("owner_user_id").references(() => users.id, { onDelete: "set null" }),
+    archivedAt: timestamp("archived_at"),
+    createdById: text("created_by_id").references(() => users.id, { onDelete: "set null" }),
+    createdAt: timestamp("created_at").notNull().defaultNow(),
+    updatedAt: timestamp("updated_at").notNull().defaultNow().$onUpdate(() => new Date()),
+  },
+  (table) => ({
+    stageIdx: index("deal_stage_idx").on(table.stage),
+    customerIdx: index("deal_customer_idx").on(table.customerId),
+  }),
+);
+
+export const dealNotes = pgTable(
+  "deal_note",
+  {
+    id: text("id").primaryKey().$defaultFn(() => crypto.randomUUID()),
+    dealId: text("deal_id")
+      .notNull()
+      .references(() => deals.id, { onDelete: "cascade" }),
+    kind: dealNoteKindEnum("kind").notNull().default("note"),
+    body: text("body").notNull(),
+    happenedAt: timestamp("happened_at").notNull().defaultNow(),
+    authorUserId: text("author_user_id").references(() => users.id, { onDelete: "set null" }),
+    authorName: text("author_name").notNull(),
+    createdAt: timestamp("created_at").notNull().defaultNow(),
+  },
+  (table) => ({
+    dealIdx: index("deal_note_deal_idx").on(table.dealId),
   }),
 );
 
@@ -190,8 +377,8 @@ export const teamAvailability = pgTable("team_availability", {
   userId: text("user_id")
     .notNull()
     .references(() => users.id, { onDelete: "cascade" }),
-  weekday: integer("weekday").notNull(), // 0 = Sunday … 6 = Saturday
-  startMinute: integer("start_minute").notNull(), // minutes since 00:00
+  weekday: integer("weekday").notNull(),
+  startMinute: integer("start_minute").notNull(),
   endMinute: integer("end_minute").notNull(),
   active: boolean("active").notNull().default(true),
 });
@@ -214,10 +401,14 @@ export const orders = pgTable(
     id: text("id").primaryKey().$defaultFn(() => crypto.randomUUID()),
     shortCode: varchar("short_code", { length: 10 }).notNull(),
     customerId: text("customer_id").references(() => users.id, { onDelete: "set null" }),
+    customerRecordId: text("customer_record_id").references(() => customers.id, {
+      onDelete: "set null",
+    }),
     customerEmail: text("customer_email").notNull(),
     customerName: text("customer_name"),
     customerPhone: text("customer_phone"),
     status: orderStatusEnum("status").notNull().default("pending"),
+    studioStatus: studioStatusEnum("studio_status").notNull().default("draft"),
 
     bundleSlug: varchar("bundle_slug", { length: 64 }),
     propertyType: propertyTypeEnum("property_type").notNull(),
@@ -226,6 +417,8 @@ export const orders = pgTable(
     propertyCity: text("property_city").notNull(),
     propertySizeQm: integer("property_size_qm"),
     propertyNotes: text("property_notes"),
+    propertyLat: text("property_lat"),
+    propertyLng: text("property_lng"),
 
     scheduledAt: timestamp("scheduled_at"),
     estimatedDeliveryAt: timestamp("estimated_delivery_at"),
@@ -239,6 +432,28 @@ export const orders = pgTable(
     stripeCustomerId: text("stripe_customer_id"),
     paidAt: timestamp("paid_at"),
 
+    shareToken: varchar("share_token", { length: 32 })
+      .notNull()
+      .$defaultFn(() => crypto.randomUUID().replace(/-/g, ""))
+      .default(sql`replace(gen_random_uuid()::text, '-', '')`),
+    clientApproval: varchar("client_approval", { length: 16 }),
+    archivedAt: timestamp("archived_at"),
+    weatherSnapshot: jsonb("weather_snapshot").$type<{
+      condition: string;
+      temp: number;
+      wind: number;
+      gust?: number;
+      precipitationProbability?: number;
+      flyable: boolean;
+      forecastDate?: string;
+      locationName?: string;
+      updatedAt: string;
+    } | null>(),
+    weatherRefreshedAt: timestamp("weather_refreshed_at"),
+    deliveryNotesInternal: text("delivery_notes_internal"),
+    coverImageUrl: text("cover_image_url"),
+    title: text("title"),
+
     createdAt: timestamp("created_at").notNull().defaultNow(),
     updatedAt: timestamp("updated_at")
       .notNull()
@@ -247,8 +462,11 @@ export const orders = pgTable(
   },
   (table) => ({
     shortCodeIdx: uniqueIndex("orders_short_code_idx").on(table.shortCode),
+    shareTokenIdx: uniqueIndex("orders_share_token_idx").on(table.shareToken),
     customerIdx: index("orders_customer_idx").on(table.customerId),
+    customerRecordIdx: index("orders_customer_record_idx").on(table.customerRecordId),
     statusIdx: index("orders_status_idx").on(table.status),
+    studioStatusIdx: index("orders_studio_status_idx").on(table.studioStatus),
   }),
 );
 
@@ -292,10 +510,19 @@ export const orderShots = pgTable(
     }),
     name: text("name").notNull(),
     description: text("description").notNull(),
+    category: text("category"),
+    perspective: text("perspective"),
+    altitudeMeters: integer("altitude_meters"),
+    movement: text("movement"),
+    durationSec: integer("duration_sec"),
     priority: text("priority").notNull(),
     position: integer("position").notNull(),
     status: orderShotStatusEnum("status").notNull().default("planned"),
     notes: text("notes"),
+    referenceAssetUrl: text("reference_asset_url"),
+    isApproved: boolean("is_approved").notNull().default(false),
+    approvedAt: timestamp("approved_at"),
+    approvedByClient: boolean("approved_by_client").notNull().default(false),
     completedAt: timestamp("completed_at"),
     completedById: text("completed_by_id").references(() => users.id, { onDelete: "set null" }),
   },
@@ -304,16 +531,26 @@ export const orderShots = pgTable(
   }),
 );
 
-export const orderShotComments = pgTable("order_shot_comment", {
-  id: text("id").primaryKey().$defaultFn(() => crypto.randomUUID()),
-  orderShotId: text("order_shot_id")
-    .notNull()
-    .references(() => orderShots.id, { onDelete: "cascade" }),
-  authorId: text("author_id").references(() => users.id, { onDelete: "set null" }),
-  body: text("body").notNull(),
-  createdAt: timestamp("created_at").notNull().defaultNow(),
-  resolvedAt: timestamp("resolved_at"),
-});
+export const orderShotComments = pgTable(
+  "order_shot_comment",
+  {
+    id: text("id").primaryKey().$defaultFn(() => crypto.randomUUID()),
+    orderShotId: text("order_shot_id")
+      .notNull()
+      .references(() => orderShots.id, { onDelete: "cascade" }),
+    source: commentSourceEnum("source").notNull().default("internal"),
+    authorId: text("author_id").references(() => users.id, { onDelete: "set null" }),
+    authorName: text("author_name"),
+    body: text("body").notNull(),
+    createdAt: timestamp("created_at").notNull().defaultNow(),
+    resolvedAt: timestamp("resolved_at"),
+    resolvedById: text("resolved_by_id").references(() => users.id, { onDelete: "set null" }),
+    readByUserIds: text("read_by_user_ids").array().notNull().default(sql`ARRAY[]::text[]`),
+  },
+  (table) => ({
+    shotIdx: index("order_shot_comment_shot_idx").on(table.orderShotId),
+  }),
+);
 
 export const orderShotAssets = pgTable(
   "order_shot_asset",
@@ -328,11 +565,33 @@ export const orderShotAssets = pgTable(
     filename: text("filename").notNull(),
     sizeBytes: bigint("size_bytes", { mode: "number" }).notNull(),
     mimeType: text("mime_type").notNull(),
+    thumbnailUrl: text("thumbnail_url"),
+    visibleToClient: boolean("visible_to_client").notNull().default(false),
     uploadedById: text("uploaded_by_id").references(() => users.id, { onDelete: "set null" }),
     uploadedAt: timestamp("uploaded_at").notNull().defaultNow(),
   },
   (table) => ({
     shotIdx: index("order_shot_assets_shot_idx").on(table.orderShotId),
+  }),
+);
+
+export const orderComments = pgTable(
+  "order_comment",
+  {
+    id: text("id").primaryKey().$defaultFn(() => crypto.randomUUID()),
+    orderId: text("order_id")
+      .notNull()
+      .references(() => orders.id, { onDelete: "cascade" }),
+    source: commentSourceEnum("source").notNull().default("internal"),
+    authorId: text("author_id").references(() => users.id, { onDelete: "set null" }),
+    authorName: text("author_name"),
+    body: text("body").notNull(),
+    createdAt: timestamp("created_at").notNull().defaultNow(),
+    resolvedAt: timestamp("resolved_at"),
+    resolvedById: text("resolved_by_id").references(() => users.id, { onDelete: "set null" }),
+  },
+  (table) => ({
+    orderIdx: index("order_comment_order_idx").on(table.orderId),
   }),
 );
 
@@ -347,7 +606,9 @@ export const deliveries = pgTable("delivery", {
   zipBlobUrl: text("zip_blob_url"),
   zipBlobPathname: text("zip_blob_pathname"),
   zipSizeBytes: bigint("zip_size_bytes", { mode: "number" }),
-  shareToken: varchar("share_token", { length: 32 }).notNull(),
+  shareToken: varchar("share_token", { length: 32 })
+    .notNull()
+    .default(sql`replace(gen_random_uuid()::text, '-', '')`),
   expiresAt: timestamp("expires_at"),
   readyAt: timestamp("ready_at"),
   sentAt: timestamp("sent_at"),
@@ -368,6 +629,45 @@ export const deliveryFiles = pgTable("delivery_file", {
   mimeType: text("mime_type").notNull(),
 });
 
+/* ------------------------------- Notifications ------------------------------- */
+
+export const notifications = pgTable(
+  "notification",
+  {
+    id: text("id").primaryKey().$defaultFn(() => crypto.randomUUID()),
+    userId: text("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    type: notificationTypeEnum("type").notNull(),
+    title: text("title").notNull(),
+    body: text("body"),
+    orderId: text("order_id").references(() => orders.id, { onDelete: "cascade" }),
+    metadata: jsonb("metadata"),
+    readAt: timestamp("read_at"),
+    createdAt: timestamp("created_at").notNull().defaultNow(),
+  },
+  (table) => ({
+    userIdx: index("notification_user_idx").on(table.userId),
+    createdIdx: index("notification_created_idx").on(table.createdAt),
+  }),
+);
+
+/* ------------------------------- Share Views (analytics) ------------------------------- */
+
+export const shareViews = pgTable(
+  "share_view",
+  {
+    id: serial("id").primaryKey(),
+    shareToken: varchar("share_token", { length: 32 }).notNull(),
+    ip: varchar("ip", { length: 45 }),
+    userAgent: text("user_agent"),
+    viewedAt: timestamp("viewed_at").notNull().defaultNow(),
+  },
+  (table) => ({
+    tokenIdx: index("share_view_token_idx").on(table.shareToken),
+  }),
+);
+
 /* ------------------------------- Audit / Logs ------------------------------- */
 
 export const emailLog = pgTable("email_log", {
@@ -384,6 +684,7 @@ export const emailLog = pgTable("email_log", {
 export const auditLog = pgTable("audit_log", {
   id: serial("id").primaryKey(),
   userId: text("user_id").references(() => users.id, { onDelete: "set null" }),
+  userName: text("user_name"),
   action: varchar("action", { length: 64 }).notNull(),
   entityType: varchar("entity_type", { length: 32 }).notNull(),
   entityId: text("entity_id"),
@@ -399,8 +700,20 @@ export type Order = typeof orders.$inferSelect;
 export type NewOrder = typeof orders.$inferInsert;
 export type OrderShot = typeof orderShots.$inferSelect;
 export type NewOrderShot = typeof orderShots.$inferInsert;
+export type OrderShotAsset = typeof orderShotAssets.$inferSelect;
+export type OrderShotComment = typeof orderShotComments.$inferSelect;
+export type OrderComment = typeof orderComments.$inferSelect;
+export type Customer = typeof customers.$inferSelect;
+export type NewCustomer = typeof customers.$inferInsert;
+export type Company = typeof companies.$inferSelect;
+export type CustomerContact = typeof customerContacts.$inferSelect;
+export type Deal = typeof deals.$inferSelect;
+export type NewDeal = typeof deals.$inferInsert;
+export type DealNote = typeof dealNotes.$inferSelect;
+export type Notification = typeof notifications.$inferSelect;
 export type Service = typeof services.$inferSelect;
 export type Bundle = typeof bundles.$inferSelect;
 export type Delivery = typeof deliveries.$inferSelect;
+export type AuditLogRow = typeof auditLog.$inferSelect;
 
-export const _sqlHelper = sql; // keep imported helper available
+export const _sqlHelper = sql;

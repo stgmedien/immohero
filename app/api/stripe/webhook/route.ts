@@ -3,7 +3,7 @@ import type Stripe from "stripe";
 import { eq } from "drizzle-orm";
 import { requireStripe } from "@/lib/stripe";
 import { db } from "@/lib/db/client";
-import { orders, orderItems, users } from "@/lib/db/schema";
+import { orders, orderItems, users, customers } from "@/lib/db/schema";
 import { getOrderById } from "@/lib/db/queries";
 import { sendEmail } from "@/lib/email";
 
@@ -67,13 +67,38 @@ async function handleCheckoutCompleted(session: Stripe.Checkout.Session) {
   const order = await getOrderById(orderId);
   if (!order || order.status !== "pending") return;
 
+  // Get-or-create customer in CRM table
+  const email = order.customerEmail.toLowerCase();
+  let crmCustomer = await db
+    .select()
+    .from(customers)
+    .where(eq(customers.primaryEmail, email))
+    .limit(1)
+    .then((r) => r[0] ?? null);
+
+  if (!crmCustomer) {
+    [crmCustomer] = await db
+      .insert(customers)
+      .values({
+        displayName: order.customerName ?? email,
+        kind: "person",
+        primaryEmail: email,
+        primaryPhone: order.customerPhone ?? null,
+        address: `${order.propertyAddress}, ${order.propertyPlz} ${order.propertyCity}`,
+        source: "stripe-checkout",
+      })
+      .returning();
+  }
+
   await db
     .update(orders)
     .set({
       status: "paid",
+      studioStatus: "production",
       paidAt: new Date(),
       stripePaymentIntentId: typeof session.payment_intent === "string" ? session.payment_intent : null,
       stripeCustomerId: typeof session.customer === "string" ? session.customer : null,
+      customerRecordId: crmCustomer?.id ?? null,
     })
     .where(eq(orders.id, orderId));
 

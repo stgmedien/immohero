@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Instrument_Serif } from "next/font/google";
+import { Inter, Inter_Tight, Instrument_Serif, JetBrains_Mono } from "next/font/google";
+import { Toaster } from "sonner";
 import "./globals.css";
 
 const inter = Inter({
@@ -8,11 +9,23 @@ const inter = Inter({
   display: "swap",
 });
 
+const interTight = Inter_Tight({
+  subsets: ["latin"],
+  variable: "--font-inter-tight",
+  display: "swap",
+});
+
 const instrumentSerif = Instrument_Serif({
   weight: ["400"],
   style: ["normal", "italic"],
   subsets: ["latin"],
   variable: "--font-instrument-serif",
+  display: "swap",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-jetbrains-mono",
   display: "swap",
 });
 
@@ -45,8 +58,27 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="de" className={`${inter.variable} ${instrumentSerif.variable}`}>
-      <body className="min-h-screen flex flex-col">{children}</body>
+    <html
+      lang="de"
+      className={`${inter.variable} ${interTight.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable}`}
+      style={{ fontFamily: "var(--font-inter-tight)" }}
+    >
+      <body className="min-h-screen flex flex-col" style={{ fontFamily: "var(--font-sans)" }}>
+        {children}
+        <Toaster
+          position="bottom-right"
+          richColors
+          theme="light"
+          toastOptions={{
+            style: {
+              background: "var(--color-bg-elev)",
+              border: "1px solid var(--color-hair)",
+              color: "var(--color-ink)",
+              fontFamily: "var(--font-sans)",
+            },
+          }}
+        />
+      </body>
     </html>
   );
 }

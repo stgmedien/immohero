@@ -1,60 +1,39 @@
 import { redirect } from "next/navigation";
-import Link from "next/link";
-import { auth, signOut } from "@/lib/auth";
-import { Logo } from "@/components/site/logo";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import { auth } from "@/lib/auth";
+import { canAccessStudio } from "@/lib/access";
+import { StudioSidebar } from "@/components/studio/sidebar";
+import { StudioMobileNav } from "@/components/studio/mobile-nav";
+import { db } from "@/lib/db/client";
+import { eq, and, isNull, count, desc } from "drizzle-orm";
+import { notifications, orderShots, orders } from "@/lib/db/schema";
 
-const TEAM_ROLES = ["photographer", "drone_pilot", "editor", "admin"] as const;
+export const dynamic = "force-dynamic";
 
-export default async function StudioLayout({ children }: { children: React.ReactNode }) {
+export default async function StudioRootLayout({ children }: { children: React.ReactNode }) {
   const session = await auth();
-  if (!session?.user) redirect("/login?callbackUrl=/studio");
-  if (!TEAM_ROLES.includes(session.user.role as never)) redirect("/konto");
+  if (!session?.user) {
+    redirect("/login?callbackUrl=/studio/dashboard");
+  }
+  const role = session.user.role;
+  if (!canAccessStudio(role)) {
+    redirect("/konto");
+  }
+
+  const [{ unread = 0 } = { unread: 0 }] = await db
+    .select({ unread: count() })
+    .from(notifications)
+    .where(and(eq(notifications.userId, session.user.id), isNull(notifications.readAt)));
 
   return (
-    <>
-      <header className="border-b border-[var(--color-line)] bg-[var(--color-ink)] text-[var(--color-primary-ink)]">
-        <div className="container-page flex h-16 items-center justify-between">
-          <div className="flex items-center gap-3">
-            <Logo className="[&_span]:text-[var(--color-primary-ink)]" />
-            <Badge tone="primary" className="hidden sm:inline-flex">Studio</Badge>
-          </div>
-          <div className="flex items-center gap-3">
-            <span className="hidden text-sm text-[var(--color-primary-soft)]/80 sm:inline">
-              {session.user.name ?? session.user.email} · {session.user.role}
-            </span>
-            <form
-              action={async () => {
-                "use server";
-                await signOut({ redirectTo: "/" });
-              }}
-            >
-              <Button type="submit" variant="ghost" size="sm" className="text-[var(--color-primary-ink)] hover:bg-white/10">
-                Abmelden
-              </Button>
-            </form>
-          </div>
-        </div>
-        <nav className="container-page flex gap-5 pb-3 text-sm">
-          <NavLink href="/studio" label="Heute" />
-          <NavLink href="/studio/projekte" label="Alle Projekte" />
-          <NavLink href="/studio/kalender" label="Kalender" />
-          {session.user.role === "admin" && <NavLink href="/admin" label="Admin" />}
-        </nav>
-      </header>
-      <main className="flex-1 bg-[var(--color-bg)]">{children}</main>
-    </>
-  );
-}
-
-function NavLink({ href, label }: { href: string; label: string }) {
-  return (
-    <Link
-      href={href}
-      className="text-[var(--color-primary-soft)]/80 transition-colors hover:text-[var(--color-primary-ink)]"
+    <div
+      className="flex min-h-screen flex-row bg-[var(--color-bg)]"
+      data-app="studio"
     >
-      {label}
-    </Link>
+      <StudioSidebar role={role} unreadCount={Number(unread)} activeProject={null} />
+      <div className="flex-1 flex flex-col min-w-0">
+        {children}
+      </div>
+      <StudioMobileNav role={role} unreadCount={Number(unread)} />
+    </div>
   );
 }

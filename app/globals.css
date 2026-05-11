@@ -1,29 +1,75 @@
 @import "tailwindcss";
 
 @theme {
-  /* Moss palette — taken from prototype tokens.js */
-  --color-bg: #f4f2ec;
-  --color-bg-alt: #ece8dd;
-  --color-surface: #ffffff;
-  --color-ink: #1e2319;
-  --color-ink-soft: #5a5f52;
-  --color-ink-mute: #8a8e80;
-  --color-line: #d9d4c4;
-  --color-primary: #3f5a3a;
-  --color-primary-ink: #f4f2ec;
-  --color-primary-soft: #e4e8de;
-  --color-accent: #c2623e;
-  --color-accent-soft: #f2ded3;
-  --color-success: #3f5a3a;
-  --color-warn: #c2623e;
-  --color-danger: #b3331f;
+  /* === Neutrals === */
+  --color-bg: #f4f2ec;          /* page background (warm off-white) */
+  --color-bg-elev: #ffffff;     /* cards, inputs, topbar */
+  --color-bg-sunken: #ece8dd;   /* sidebar, depression */
+  --color-bg-subtle: #f8f6ef;   /* disabled, subtle hl */
 
-  /* Spacing & radius */
-  --radius-card: 1.125rem;
+  /* === Ink hierarchy (5 stages) === */
+  --color-ink: #1e2319;
+  --color-ink-2: #3b3d34;
+  --color-ink-3: #5a5f52;
+  --color-ink-4: #8a8e80;
+  --color-ink-5: #c1c4b7;
+
+  /* Aliases used by older code */
+  --color-ink-soft: var(--color-ink-3);
+  --color-ink-mute: var(--color-ink-4);
+
+  /* === Hairlines / borders === */
+  --color-hair: #d9d4c4;
+  --color-hair-2: #e3dfd2;
+  --color-line: var(--color-hair);
+  --color-surface: var(--color-bg-elev);
+  --color-bg-alt: var(--color-bg-sunken);
+
+  /* === Brand: Moss → Terrakotta gradient === */
+  --color-brand-1: #3f5a3a;     /* Moss primary */
+  --color-brand-2: #6e7a3e;     /* bridge */
+  --color-brand-3: #c2623e;     /* Terracotta */
+  --color-brand: var(--color-brand-1);
+  --color-brand-soft: #e4e8de;
+  --color-brand-softer: #f0f3eb;
+  --color-brand-ink: #1f2e1c;
+
+  /* Old aliases */
+  --color-primary: var(--color-brand-1);
+  --color-primary-ink: var(--color-bg);
+  --color-primary-soft: var(--color-brand-soft);
+  --color-accent: var(--color-brand-3);
+  --color-accent-soft: #f2ded3;
+
+  /* === Status semantics === */
+  --color-ok: #3f5a3a;
+  --color-ok-soft: #e4f0e4;
+  --color-warn: #c2623e;
+  --color-warn-soft: #f2ded3;
+  --color-danger: #b3331f;
+  --color-danger-soft: #f5d8d3;
+  --color-info: #4a6c7a;
+  --color-info-soft: #dee6eb;
+  --color-success: var(--color-ok);
+
+  /* === Radius === */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-card: var(--radius-lg);
   --radius-pill: 9999px;
 
-  /* Typography */
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  /* === Shadows === */
+  --shadow-sm: 0 1px 0 rgba(0,0,0,0.02);
+  --shadow-card: 0 1px 2px rgba(31, 46, 28, 0.04), 0 0 0 1px var(--color-hair);
+  --shadow-elev: 0 8px 30px rgba(31, 46, 28, 0.08), 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-modal: 0 24px 60px rgba(0,0,0,0.2);
+  --shadow-brand: 0 1px 2px rgba(63, 90, 58, 0.3), inset 0 1px 0 rgba(255,255,255,0.15);
+
+  /* === Fonts === */
+  --font-sans: var(--font-inter-tight), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, "SF Mono", Menlo, monospace;
   --font-serif: var(--font-instrument-serif), ui-serif, Georgia, serif;
 }
 
@@ -40,14 +86,48 @@
   body {
     @apply bg-[var(--color-bg)] text-[var(--color-ink)] font-sans antialiased;
     font-feature-settings: "cv11", "ss01";
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: -0.005em;
   }
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-serif font-normal tracking-tight text-balance;
   }
 
+  /* Studio uses Inter Tight for headings, not serif */
+  .studio h1, .studio h2, .studio h3, .studio h4, .studio h5, .studio h6,
+  [data-app="studio"] h1, [data-app="studio"] h2, [data-app="studio"] h3,
+  [data-app="studio"] h4, [data-app="studio"] h5, [data-app="studio"] h6 {
+    @apply font-sans tracking-tight;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
   ::selection {
-    @apply bg-[var(--color-primary)] text-[var(--color-primary-ink)];
+    @apply bg-[var(--color-brand-1)] text-white;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-ink-5);
+    border-radius: 999px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-ink-4);
+    background-clip: padding-box;
+    border: 2px solid transparent;
   }
 }
 
@@ -66,5 +146,72 @@
 
   .container-narrow {
     @apply mx-auto w-full max-w-3xl px-5 sm:px-6;
+  }
+
+  .container-wide {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
+  }
+
+  /* Brand gradient utilities */
+  .bg-brand-grad {
+    background: linear-gradient(135deg,
+      var(--color-brand-1) 0%,
+      var(--color-brand-2) 55%,
+      var(--color-brand-3) 100%);
+  }
+
+  .text-brand-grad {
+    background: linear-gradient(135deg,
+      var(--color-brand-1) 0%,
+      var(--color-brand-2) 55%,
+      var(--color-brand-3) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  /* Mono kicker labels (Aero-style) */
+  .label-mono {
+    @apply font-mono uppercase tracking-[0.12em] text-[11px] font-medium;
+  }
+
+  /* Sticky surfaces */
+  .surface {
+    @apply bg-[var(--color-bg-elev)] border border-[var(--color-hair)];
+  }
+
+  /* Animation primitives */
+  .animate-slide-up {
+    animation: slideUp 200ms ease;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 160ms ease;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Sonner toaster customization */
+[data-sonner-toaster] {
+  font-family: var(--font-sans);
+}
+
+/* Inputs across the board: focus ring */
+.input, input[type="text"]:not([class]), input[type="email"]:not([class]),
+input[type="tel"]:not([class]), textarea:not([class]), select:not([class]) {
+  &:focus-visible {
+    outline: none;
+    border-color: var(--color-brand-1);
+    box-shadow: 0 0 0 3px var(--color-brand-softer);
   }
 }
