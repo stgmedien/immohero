@@ -72,7 +72,27 @@ export function LeadForm() {
           15 € Rabatt · einlösbar ab 199 € Bestellwert · gültig bis {result.expiresAt}
         </p>
 
-        <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
+        <div className="mt-7">
+          <a
+            href={`/api/wallet/google/${result.voucherCode}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 rounded-full bg-[#1e2319] px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden>
+              <path
+                d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"
+                stroke="currentColor"
+                strokeWidth="1.6"
+              />
+              <path d="M3 10h18" stroke="currentColor" strokeWidth="1.6" />
+              <circle cx="16.5" cy="14.5" r="1.5" fill="currentColor" />
+            </svg>
+            Zur Google Wallet hinzufügen
+          </a>
+        </div>
+
+        <div className="mt-6 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
           <Button asChild size="lg">
             <Link href="/buchen">Direkt buchen</Link>
           </Button>

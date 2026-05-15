@@ -137,6 +137,7 @@ export async function captureLeadAndIssueVoucher(input: unknown): Promise<Captur
         minOrderEuro: "199 €",
         expiresAt: germanDate(expiresAt),
         bookingUrl: `${process.env.NEXT_PUBLIC_SITE_URL ?? "https://immohero.org"}/buchen`,
+        walletUrl: `${process.env.NEXT_PUBLIC_SITE_URL ?? "https://immohero.org"}/api/wallet/google/${code}`,
       }),
     });
   } catch (err) {

@@ -19,6 +19,7 @@ interface Props {
   minOrderEuro: string;
   expiresAt: string;
   bookingUrl: string;
+  walletUrl?: string;
 }
 
 export function VoucherEmail({
@@ -28,6 +29,7 @@ export function VoucherEmail({
   minOrderEuro,
   expiresAt,
   bookingUrl,
+  walletUrl,
 }: Props) {
   return (
     <Html lang="de">
@@ -64,6 +66,17 @@ export function VoucherEmail({
               >
                 Jetzt einlösen
               </Link>
+
+              {walletUrl ? (
+                <Section className="mt-4">
+                  <Link
+                    href={walletUrl}
+                    className="inline-block rounded-full border border-[#D9D4C4] px-6 py-3 text-sm font-medium text-[#1E2319] no-underline"
+                  >
+                    📲 Zur Google Wallet hinzufügen
+                  </Link>
+                </Section>
+              ) : null}
 
               <Hr className="my-6 border-[#D9D4C4]" />
 
