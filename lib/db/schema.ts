@@ -668,6 +668,37 @@ export const shareViews = pgTable(
   }),
 );
 
+/* ------------------------------- Leads (Messe) ------------------------------- */
+
+export const leads = pgTable(
+  "lead",
+  {
+    id: text("id").primaryKey().$defaultFn(() => crypto.randomUUID()),
+    name: text("name").notNull(),
+    email: text("email").notNull(),
+    phone: text("phone").notNull(),
+    voucherCode: varchar("voucher_code", { length: 16 }).notNull(),
+    voucherAmountCents: integer("voucher_amount_cents").notNull().default(1500),
+    minOrderCents: integer("min_order_cents").notNull().default(19900),
+    stripeCouponId: text("stripe_coupon_id"),
+    stripePromotionCodeId: text("stripe_promotion_code_id"),
+    consentMarketing: boolean("consent_marketing").notNull().default(true),
+    consentAt: timestamp("consent_at").notNull().defaultNow(),
+    source: varchar("source", { length: 32 }).notNull().default("messe-2026"),
+    expiresAt: timestamp("expires_at").notNull(),
+    redeemedAt: timestamp("redeemed_at"),
+    redeemedOrderId: text("redeemed_order_id").references(() => orders.id, {
+      onDelete: "set null",
+    }),
+    createdAt: timestamp("created_at").notNull().defaultNow(),
+  },
+  (table) => ({
+    emailIdx: uniqueIndex("lead_email_idx").on(table.email),
+    voucherCodeIdx: uniqueIndex("lead_voucher_code_idx").on(table.voucherCode),
+    promoCodeIdx: index("lead_promo_code_idx").on(table.stripePromotionCodeId),
+  }),
+);
+
 /* ------------------------------- Audit / Logs ------------------------------- */
 
 export const emailLog = pgTable("email_log", {
@@ -715,5 +746,7 @@ export type Service = typeof services.$inferSelect;
 export type Bundle = typeof bundles.$inferSelect;
 export type Delivery = typeof deliveries.$inferSelect;
 export type AuditLogRow = typeof auditLog.$inferSelect;
+export type Lead = typeof leads.$inferSelect;
+export type NewLead = typeof leads.$inferInsert;
 
 export const _sqlHelper = sql;

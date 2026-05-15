@@ -158,6 +158,7 @@ export async function createCheckoutSession(payload: BookingDraft) {
     },
     locale: "de",
     payment_method_types: ["card", "sepa_debit", "klarna", "paypal"],
+    allow_promotion_codes: true,
     billing_address_collection: "required",
     success_url: `${origin}/buchen/erfolg?order=${order.shortCode}`,
     cancel_url: `${origin}/buchen/kasse?order=${order.shortCode}`,

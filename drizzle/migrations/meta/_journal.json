@@ -15,6 +15,13 @@
       "when": 1778490598999,
       "tag": "0001_tidy_deadpool",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1778858134259,
+      "tag": "0002_good_timeslip",
+      "breakpoints": true
     }
   ]
 }

@@ -3,7 +3,7 @@ import type Stripe from "stripe";
 import { eq } from "drizzle-orm";
 import { requireStripe } from "@/lib/stripe";
 import { db } from "@/lib/db/client";
-import { orders, orderItems, users, customers } from "@/lib/db/schema";
+import { orders, orderItems, users, customers, leads } from "@/lib/db/schema";
 import { getOrderById } from "@/lib/db/queries";
 import { sendEmail } from "@/lib/email";
 
@@ -101,6 +101,25 @@ async function handleCheckoutCompleted(session: Stripe.Checkout.Session) {
       customerRecordId: crmCustomer?.id ?? null,
     })
     .where(eq(orders.id, orderId));
+
+  // Voucher redemption tracking — match promotion code → mark lead redeemed
+  try {
+    const stripe = requireStripe();
+    const full = await stripe.checkout.sessions.retrieve(session.id, {
+      expand: ["discounts.promotion_code"],
+    });
+    const discount = full.discounts?.[0];
+    const promo = discount?.promotion_code;
+    const promoId = typeof promo === "string" ? promo : promo?.id;
+    if (promoId) {
+      await db
+        .update(leads)
+        .set({ redeemedAt: new Date(), redeemedOrderId: orderId })
+        .where(eq(leads.stripePromotionCodeId, promoId));
+    }
+  } catch (err) {
+    console.error("[stripe-webhook] voucher redemption tracking failed", err);
+  }
 
   if (typeof session.customer === "string" && order.customerId) {
     await db

@@ -57,7 +57,18 @@ export default function DatenschutzPage() {
           Wir setzen ausschließlich technisch erforderliche Cookies (Session, CSRF). Es findet kein Tracking statt; keine Drittparty-Skripte zu Werbezwecken.
         </p>
 
-        <h2>8. Kontakt</h2>
+        <h2>8. Messe- und Aktionskontakte</h2>
+        <p>
+          Auf Messen und Veranstaltungen erheben wir mit deiner ausdrücklichen Einwilligung
+          (Art. 6 Abs. 1 lit. a DSGVO) Name, E-Mail-Adresse und Telefonnummer, um dir einen
+          Rabattgutschein zuzusenden und dich zu unserem Leistungsangebot zu kontaktieren.
+          Die Einwilligung wird mit Zeitstempel protokolliert und kann jederzeit formlos per
+          E-Mail an hallo@immohero.org mit Wirkung für die Zukunft widerrufen werden. Die
+          Daten werden gelöscht, sobald sie für diese Zwecke nicht mehr erforderlich sind und
+          keine gesetzlichen Aufbewahrungsfristen entgegenstehen.
+        </p>
+
+        <h2>9. Kontakt</h2>
         <p>
           Datenschutzanfragen an{" "}
           <a href="mailto:jonathan@stg-medien.com" className="underline">jonathan@stg-medien.com</a>.

@@ -15,6 +15,7 @@ export const SENDERS = {
   bookingConfirmation: "ImmoHero <bestellung@immohero.org>",
   delivery: "ImmoHero <lieferung@immohero.org>",
   studio: "ImmoHero Studio <studio@immohero.org>",
+  voucher: "ImmoHero <gutschein@immohero.org>",
 } as const;
 
 export type SenderKey = keyof typeof SENDERS;
