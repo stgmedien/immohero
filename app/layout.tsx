@@ -64,6 +64,19 @@ export default function RootLayout({
       style={{ fontFamily: "var(--font-inter-tight)" }}
     >
       <body className="min-h-screen flex flex-col" style={{ fontFamily: "var(--font-sans)" }}>
+        {/*
+          Kill-switch for the legacy Serwist PWA service worker. Older builds
+          registered an aggressive SW that cached a stale precache manifest and
+          served 404s on newer routes (e.g. /login, /studio/*). This runs on
+          every page load: if any SW is registered it unregisters it, wipes all
+          caches, and does exactly one reload so the next navigation is clean.
+          No-op for visitors who never had the old SW.
+        */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{if('serviceWorker'in navigator){navigator.serviceWorker.getRegistrations().then(function(rs){if(!rs||!rs.length)return;Promise.all(rs.map(function(r){return r.unregister().catch(function(){})})).then(function(){return (window.caches?caches.keys().then(function(ks){return Promise.all(ks.map(function(k){return caches.delete(k)}))}):Promise.resolve())}).then(function(){try{if(!sessionStorage.getItem('ih_sw_purged')){sessionStorage.setItem('ih_sw_purged','1');location.reload()}}catch(e){location.reload()}})})}}catch(e){}})();`,
+          }}
+        />
         {children}
         <Toaster
           position="bottom-right"
