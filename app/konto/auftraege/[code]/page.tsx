@@ -10,7 +10,18 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { db } from "@/lib/db/client";
+import { consultations } from "@/lib/db/schema";
+import { eq } from "drizzle-orm";
 import { eurosPrecise, germanDateTime } from "@/lib/utils";
+
+const CONSULTATION_STATUS_LABEL: Record<string, string> = {
+  requested: "angefragt — wird bestätigt",
+  confirmed: "bestätigt",
+  declined: "abgelehnt — neuer Vorschlag folgt",
+  cancelled: "storniert",
+  completed: "abgeschlossen",
+};
 
 export default async function AuftragDetailPage({
   params,
@@ -29,6 +40,11 @@ export default async function AuftragDetailPage({
 
   const items = await getOrderItems(order.id);
   const shots = await getOrderShots(order.id);
+  const [consultation] = await db
+    .select()
+    .from(consultations)
+    .where(eq(consultations.orderId, order.id))
+    .limit(1);
   const delivery = await getDeliveryForOrder(order.id);
 
   return (
@@ -50,7 +66,19 @@ export default async function AuftragDetailPage({
         <Card className="p-6 lg:col-span-2">
           <h2 className="font-serif text-2xl">Termin & Lieferung</h2>
           <dl className="mt-4 grid gap-4 sm:grid-cols-2">
-            <Field label="Geplanter Termin" value={order.scheduledAt ? germanDateTime(order.scheduledAt) : "—"} />
+            {consultation ? (
+              <Field
+                label="Beratungsgespräch"
+                value={`${germanDateTime(consultation.requestedStart)} Uhr — ${
+                  CONSULTATION_STATUS_LABEL[consultation.status] ?? consultation.status
+                }`}
+                className="sm:col-span-2"
+              />
+            ) : null}
+            <Field
+              label="Drehtermin"
+              value={order.scheduledAt ? germanDateTime(order.scheduledAt) : "wird im Beratungsgespräch festgelegt"}
+            />
             <Field
               label="Voraussichtliche Lieferung"
               value={order.estimatedDeliveryAt ? germanDateTime(order.estimatedDeliveryAt) : "48 Std. nach Shooting"}
@@ -59,6 +87,16 @@ export default async function AuftragDetailPage({
             <Field label="Wohnfläche" value={order.propertySizeQm ? `${order.propertySizeQm} m²` : "—"} />
             {order.propertyNotes && <Field label="Hinweise" value={order.propertyNotes} className="sm:col-span-2" />}
           </dl>
+
+          {consultation?.status === "confirmed" && consultation.meetingUrl ? (
+            <div className="mt-4">
+              <Button asChild size="sm">
+                <a href={consultation.meetingUrl} target="_blank" rel="noopener noreferrer">
+                  Video-Call beitreten
+                </a>
+              </Button>
+            </div>
+          ) : null}
 
           <h2 className="mt-8 font-serif text-2xl">Gebuchte Leistungen</h2>
           <ul className="mt-3 divide-y divide-[var(--color-line)]">
