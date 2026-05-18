@@ -26,6 +26,7 @@ export const bookingDraftSchema = z.object({
   schedule: z.object({
     date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
     timeSlot: z.string().regex(/^\d{2}:\d{2}$/),
+    slotStart: z.string().min(10), // ISO datetime of the consultation slot
   }),
   customer: z.object({
     firstName: z.string().min(1, "Vorname fehlt."),

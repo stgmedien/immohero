@@ -111,6 +111,22 @@ export const notificationTypeEnum = pgEnum("notification_type", [
   "delivery_ready",
   "status_change",
   "asset_uploaded",
+  "consultation_requested",
+]);
+
+export const consultationStatusEnum = pgEnum("consultation_status", [
+  "requested",
+  "confirmed",
+  "declined",
+  "cancelled",
+  "completed",
+]);
+
+export const meetingProviderEnum = pgEnum("meeting_provider", [
+  "google_meet",
+  "teams",
+  "zoom",
+  "custom",
 ]);
 
 /* ------------------------------- Users / Auth ------------------------------- */
@@ -668,6 +684,45 @@ export const shareViews = pgTable(
   }),
 );
 
+/* ------------------------------- Consultations (Beratungstermine) ------------------------------- */
+
+export const consultations = pgTable(
+  "consultation",
+  {
+    id: text("id").primaryKey().$defaultFn(() => crypto.randomUUID()),
+    orderId: text("order_id").references(() => orders.id, { onDelete: "cascade" }),
+    customerEmail: text("customer_email").notNull(),
+    customerName: text("customer_name"),
+    customerPhone: text("customer_phone"),
+    requestedStart: timestamp("requested_start").notNull(),
+    requestedEnd: timestamp("requested_end").notNull(),
+    status: consultationStatusEnum("status").notNull().default("requested"),
+    assignedUserId: text("assigned_user_id").references(() => users.id, {
+      onDelete: "set null",
+    }),
+    googleEventId: text("google_event_id"),
+    googleCalendarId: text("google_calendar_id"),
+    googleHtmlLink: text("google_html_link"),
+    meetingProvider: meetingProviderEnum("meeting_provider"),
+    meetingUrl: text("meeting_url"),
+    customerNote: text("customer_note"),
+    internalNotes: text("internal_notes"),
+    declineReason: text("decline_reason"),
+    confirmedAt: timestamp("confirmed_at"),
+    declinedAt: timestamp("declined_at"),
+    createdAt: timestamp("created_at").notNull().defaultNow(),
+    updatedAt: timestamp("updated_at")
+      .notNull()
+      .defaultNow()
+      .$onUpdate(() => new Date()),
+  },
+  (table) => ({
+    orderIdx: index("consultation_order_idx").on(table.orderId),
+    statusIdx: index("consultation_status_idx").on(table.status),
+    startIdx: index("consultation_start_idx").on(table.requestedStart),
+  }),
+);
+
 /* ------------------------------- Leads (Messe) ------------------------------- */
 
 export const leads = pgTable(
@@ -746,6 +801,8 @@ export type Service = typeof services.$inferSelect;
 export type Bundle = typeof bundles.$inferSelect;
 export type Delivery = typeof deliveries.$inferSelect;
 export type AuditLogRow = typeof auditLog.$inferSelect;
+export type Consultation = typeof consultations.$inferSelect;
+export type NewConsultation = typeof consultations.$inferInsert;
 export type Lead = typeof leads.$inferSelect;
 export type NewLead = typeof leads.$inferInsert;
 

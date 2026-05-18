@@ -58,7 +58,6 @@ export async function createCheckoutSession(payload: BookingDraft) {
   );
 
   const shortCode = generateShortCode();
-  const scheduledAt = new Date(`${draft.schedule.date}T${draft.schedule.timeSlot}:00+02:00`);
 
   const order = await createOrderDraft({
     shortCode,
@@ -74,11 +73,35 @@ export async function createCheckoutSession(payload: BookingDraft) {
     propertyCity: draft.property.city,
     propertySizeQm: draft.property.sizeQm ?? null,
     propertyNotes: draft.property.notes ?? null,
-    scheduledAt,
+    // Shoot date is determined during the consultation call, not at booking.
+    scheduledAt: null,
     subtotalCents: summary.subtotalCents,
     discountCents: summary.discountCents,
     totalCents: summary.totalCents,
   });
+
+  // Consultation request from the chosen slot (status 'requested' — a sales
+  // rep accepts it in the Studio, which then syncs it to Google Calendar).
+  try {
+    const { consultations } = await import("@/lib/db/schema");
+    const { consultationWindow } = await import("@/lib/consultation");
+    const startIso = draft.schedule.slotStart
+      ? new Date(draft.schedule.slotStart).toISOString()
+      : new Date(`${draft.schedule.date}T${draft.schedule.timeSlot}:00+02:00`).toISOString();
+    const { start, end } = consultationWindow(startIso);
+    await db.insert(consultations).values({
+      orderId: order.id,
+      customerEmail: customer.email,
+      customerName: customer.name ?? null,
+      customerPhone: draft.customer.phone,
+      requestedStart: start,
+      requestedEnd: end,
+      status: "requested",
+      customerNote: draft.property.notes ?? null,
+    });
+  } catch (err) {
+    console.error("[booking] consultation insert failed", err);
+  }
 
   await db.insert(orderItems).values(
     summary.items.map((item) => ({

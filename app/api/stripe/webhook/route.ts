@@ -130,6 +130,20 @@ async function handleCheckoutCompleted(session: Stripe.Checkout.Session) {
 
   const items = await db.select().from(orderItems).where(eq(orderItems.orderId, orderId));
 
+  // Consultation slot for this order (if any)
+  let consultationStart: Date | null = null;
+  try {
+    const { consultations } = await import("@/lib/db/schema");
+    const [c] = await db
+      .select({ start: consultations.requestedStart })
+      .from(consultations)
+      .where(eq(consultations.orderId, order.id))
+      .limit(1);
+    consultationStart = c?.start ?? null;
+  } catch (err) {
+    console.error("[stripe-webhook] consultation lookup failed", err);
+  }
+
   try {
     const { BookingConfirmationEmail } = await import("@/emails/booking-confirmation");
     const portalUrl = `${process.env.NEXT_PUBLIC_SITE_URL ?? "https://immohero.org"}/konto`;
@@ -142,7 +156,8 @@ async function handleCheckoutCompleted(session: Stripe.Checkout.Session) {
       react: BookingConfirmationEmail({
         customerName: order.customerName ?? "",
         shortCode: order.shortCode,
-        scheduledAt: order.scheduledAt?.toISOString() ?? new Date().toISOString(),
+        scheduledAt: consultationStart?.toISOString() ?? new Date().toISOString(),
+        isConsultation: true,
         propertyAddress: `${order.propertyAddress}, ${order.propertyPlz} ${order.propertyCity}`,
         items: items.map((i) => ({ name: i.serviceName, priceCents: i.unitPriceCents })),
         totalCents: order.totalCents,

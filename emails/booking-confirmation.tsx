@@ -17,6 +17,7 @@ interface Props {
   customerName: string;
   shortCode: string;
   scheduledAt: string;
+  isConsultation?: boolean;
   propertyAddress: string;
   items: { name: string; priceCents: number }[];
   totalCents: number;
@@ -31,6 +32,7 @@ export function BookingConfirmationEmail({
   customerName,
   shortCode,
   scheduledAt,
+  isConsultation,
   propertyAddress,
   items,
   totalCents,
@@ -54,7 +56,9 @@ export function BookingConfirmationEmail({
 
               <Section className="mt-6 rounded-lg bg-[#F4F2EC] p-5">
                 <Row>
-                  <Text className="m-0 text-xs uppercase tracking-wider text-[#8A8E80]">Termin</Text>
+                  <Text className="m-0 text-xs uppercase tracking-wider text-[#8A8E80]">
+                    {isConsultation ? "Beratungsgespräch (Wunschtermin)" : "Termin"}
+                  </Text>
                   <Text className="m-0 mt-1 font-serif text-xl">
                     {new Date(scheduledAt).toLocaleString("de-DE", {
                       weekday: "long",
@@ -65,6 +69,12 @@ export function BookingConfirmationEmail({
                       minute: "2-digit",
                     })}
                   </Text>
+                  {isConsultation ? (
+                    <Text className="m-0 mt-1 text-xs text-[#8A8E80]">
+                      Wir bestätigen diesen Termin in Kürze per E-Mail mit dem Video-Link.
+                      Den Drehtermin legen wir gemeinsam im Gespräch fest.
+                    </Text>
+                  ) : null}
                 </Row>
                 <Row>
                   <Text className="mt-4 text-xs uppercase tracking-wider text-[#8A8E80]">Objektadresse</Text>
@@ -98,7 +108,9 @@ export function BookingConfirmationEmail({
               </Link>
 
               <Text className="mt-6 text-sm text-[#5A5F52]">
-                Wir melden uns 24 Stunden vor dem Termin nochmal mit einer Erinnerung. Bei Wetterunsicherheit (Drohne) sprechen wir uns vorab telefonisch ab.
+                {isConsultation
+                  ? "Einer unserer Berater bestätigt deinen Wunschtermin zeitnah und schickt dir den Video-Link (Google Meet, Teams oder Zoom). Im Gespräch klären wir alle Details und legen den Drehtermin fest."
+                  : "Wir melden uns 24 Stunden vor dem Termin nochmal mit einer Erinnerung. Bei Wetterunsicherheit (Drohne) sprechen wir uns vorab telefonisch ab."}
               </Text>
             </Section>
 

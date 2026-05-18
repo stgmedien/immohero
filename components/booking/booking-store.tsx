@@ -18,6 +18,7 @@ const empty: BookingDraft = {
   schedule: {
     date: "",
     timeSlot: "",
+    slotStart: "",
   },
   customer: {
     firstName: "",
