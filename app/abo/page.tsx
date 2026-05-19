@@ -4,6 +4,8 @@ import { getAboCustomerByEmail, resolveAboServices, listAboSubmissions } from "@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { AboSubmissionForm } from "@/components/abo/submission-form";
+import { ServicePicker } from "@/components/abo/service-picker";
+import { SERVICES, BUNDLES } from "@/lib/services";
 import { eurosPrecise, germanDate } from "@/lib/utils";
 
 const PROPERTY_TYPE_LABEL: Record<string, string> = {
@@ -137,8 +139,8 @@ export default async function AboPage() {
             </h3>
             {services.length === 0 ? (
               <p className="mt-3 text-sm text-[var(--color-ink-soft)]">
-                Deine Leistungen werden gerade eingerichtet. Du kannst trotzdem schon
-                Objekte einreichen — wir ordnen sie zu.
+                Wähle hier die Leistungen aus, die wir bei jedem deiner Objekte
+                umsetzen sollen.
               </p>
             ) : (
               <ul className="mt-4 space-y-3">
@@ -157,6 +159,23 @@ export default async function AboPage() {
                 ))}
               </ul>
             )}
+            <ServicePicker
+              hasSelection={services.length > 0}
+              initialBundleSlug={abo.aboBundleSlug}
+              initialServiceSlugs={abo.aboServiceSlugs ?? []}
+              bundles={BUNDLES.map((b) => ({
+                slug: b.slug,
+                name: b.name,
+                tagline: b.tagline,
+                serviceSlugs: b.serviceSlugs,
+              }))}
+              services={SERVICES.map((s) => ({
+                slug: s.slug,
+                name: s.name,
+                shortDescription: s.shortDescription,
+                priceCents: s.priceCents,
+              }))}
+            />
             <p className="mt-5 border-t border-[var(--color-hair)] pt-4 text-xs text-[var(--color-ink-mute)]">
               Abrechnung läuft über dein Abo — bei jeder Einreichung fallen keine
               zusätzlichen Schritte für dich an.

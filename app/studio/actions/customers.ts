@@ -6,6 +6,7 @@ import { auth } from "@/lib/auth";
 import { canAccessCustomers } from "@/lib/access";
 import { db } from "@/lib/db/client";
 import { customers, customerContacts, companies, auditLog } from "@/lib/db/schema";
+import { sendEmail } from "@/lib/email";
 
 async function requireCRM() {
   const session = await auth();
@@ -102,6 +103,43 @@ export async function updateAboConfig(input: {
     payload: { abo: input.isAbo },
   });
   revalidatePath("/studio/kunden/[id]", "page");
+}
+
+export async function sendAboInvite(customerId: string) {
+  const session = await requireCRM();
+  const [customer] = await db
+    .select()
+    .from(customers)
+    .where(eq(customers.id, customerId))
+    .limit(1);
+  if (!customer) throw new Error("Kunde nicht gefunden");
+  if (!customer.isAbo) throw new Error("Kunde ist nicht als Abo markiert.");
+  const email = customer.primaryEmail?.trim().toLowerCase();
+  if (!email) throw new Error("Keine E-Mail am Kunden hinterlegt.");
+
+  const portalUrl = `${process.env.NEXT_PUBLIC_SITE_URL ?? "https://immohero.org"}/abo`;
+  const { AboInviteEmail } = await import("@/emails/abo-invite");
+  await sendEmail({
+    to: email,
+    from: "default",
+    subject: "Dein ImmoHero Abo-Zugang — Leistungen auswählen",
+    template: "abo-invite",
+    react: AboInviteEmail({
+      customerName: customer.displayName,
+      portalUrl,
+    }),
+  });
+
+  await db.insert(auditLog).values({
+    userId: session.user.id,
+    userName: session.user.name,
+    action: "invite",
+    entityType: "customer",
+    entityId: customerId,
+    payload: { aboInvite: email },
+  });
+
+  return { ok: true, email };
 }
 
 export async function archiveCustomer(customerId: string) {

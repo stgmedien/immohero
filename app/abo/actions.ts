@@ -9,6 +9,44 @@ import { propertySubmissions, customers, users, notifications } from "@/lib/db/s
 import { getAboCustomerByEmail } from "@/lib/abo";
 import { sendEmail } from "@/lib/email";
 
+export async function saveAboSelection(input: {
+  bundleSlug: string | null;
+  serviceSlugs: string[];
+}): Promise<SubmitResult> {
+  const session = await auth();
+  if (!session?.user?.email) {
+    return { ok: false, error: "Bitte zuerst anmelden." };
+  }
+  const abo = await getAboCustomerByEmail(session.user.email);
+  if (!abo) {
+    return { ok: false, error: "Kein aktives Abo für diese E-Mail gefunden." };
+  }
+
+  const { SERVICES, BUNDLES } = await import("@/lib/services");
+  const validServices = (input.serviceSlugs ?? []).filter((s) =>
+    SERVICES.some((svc) => svc.slug === s),
+  );
+  const validBundle =
+    input.bundleSlug && BUNDLES.some((b) => b.slug === input.bundleSlug)
+      ? input.bundleSlug
+      : null;
+
+  if (!validBundle && validServices.length === 0) {
+    return { ok: false, error: "Bitte mindestens eine Leistung auswählen." };
+  }
+
+  await db
+    .update(customers)
+    .set({
+      aboBundleSlug: validBundle,
+      aboServiceSlugs: validServices.length > 0 ? validServices : null,
+    })
+    .where(eq(customers.id, abo.id));
+
+  revalidatePath("/abo");
+  return { ok: true };
+}
+
 const schema = z.object({
   propertyType: z.enum([
     "wohnung",

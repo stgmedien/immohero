@@ -7,8 +7,9 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { Copy, Check } from "lucide-react";
+import { Mail } from "lucide-react";
 import { SERVICES, BUNDLES } from "@/lib/services";
-import { updateAboConfig } from "@/app/studio/actions/customers";
+import { updateAboConfig, sendAboInvite } from "@/app/studio/actions/customers";
 
 interface Props {
   customerId: string;
@@ -35,6 +36,18 @@ export function AboConfigPanel({
   const [notes, setNotes] = useState(initialNotes ?? "");
   const [copied, setCopied] = useState(false);
   const [pending, startTransition] = useTransition();
+  const [inviting, startInvite] = useTransition();
+
+  function sendInvite() {
+    startInvite(async () => {
+      try {
+        const res = await sendAboInvite(customerId);
+        toast.success(`Einladung an ${res.email} gesendet.`);
+      } catch (e) {
+        toast.error((e as Error).message || "Versand fehlgeschlagen.");
+      }
+    });
+  }
 
   function toggleService(slug: string) {
     setServiceSlugs((prev) =>
@@ -182,6 +195,25 @@ export function AboConfigPanel({
                   <Copy className="h-3.5 w-3.5" />
                 )}
                 {copied ? "Kopiert" : "Kopieren"}
+              </Button>
+            </div>
+            <div className="mt-3 flex items-center justify-between gap-3 border-t border-[var(--color-hair)] pt-3">
+              <p className="text-xs text-[var(--color-ink-3)]">
+                Schickt dem Kunden eine Einladung, damit er seine Leistungen auswählt
+                und Objekte einreicht.
+              </p>
+              <Button
+                type="button"
+                variant="secondary"
+                size="sm"
+                onClick={sendInvite}
+                disabled={inviting || !customerEmail}
+                title={
+                  customerEmail ? undefined : "Keine E-Mail am Kunden hinterlegt"
+                }
+              >
+                <Mail className="h-3.5 w-3.5" />
+                {inviting ? "Sendet…" : "Einladung senden"}
               </Button>
             </div>
           </div>
