@@ -11,6 +11,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CustomerDetailEditor } from "@/components/studio/customer-detail-editor";
+import { AboConfigPanel } from "@/components/studio/abo-config-panel";
 import { eurosPrecise, germanDate } from "@/lib/utils";
 import { StudioStatusBadge, DealStageBadge } from "@/components/ui/status-badge";
 
@@ -62,6 +63,16 @@ export default async function CustomerDetailPage({ params }: { params: Promise<{
         <div className="mt-6 grid gap-6 lg:grid-cols-[1fr_320px]">
           <div className="space-y-6">
             <CustomerDetailEditor customer={customer} />
+
+            <AboConfigPanel
+              customerId={customer.id}
+              customerEmail={customer.primaryEmail}
+              initialIsAbo={customer.isAbo}
+              initialBundleSlug={customer.aboBundleSlug}
+              initialServiceSlugs={customer.aboServiceSlugs ?? []}
+              initialNotes={customer.aboNotes}
+              aboLink={`${process.env.NEXT_PUBLIC_SITE_URL ?? "https://immohero.org"}/abo`}
+            />
 
             <Card className="p-5">
               <h2 className="text-base font-semibold mb-3">Aufträge ({customerOrders.length})</h2>

@@ -245,6 +245,11 @@ export const customers = pgTable(
     address: text("address"),
     notes: text("notes"),
     source: text("source"),
+    isAbo: boolean("is_abo").notNull().default(false),
+    aboServiceSlugs: text("abo_service_slugs").array(),
+    aboBundleSlug: varchar("abo_bundle_slug", { length: 64 }),
+    aboNotes: text("abo_notes"),
+    aboActivatedAt: timestamp("abo_activated_at"),
     archivedAt: timestamp("archived_at"),
     createdById: text("created_by_id").references(() => users.id, { onDelete: "set null" }),
     createdAt: timestamp("created_at").notNull().defaultNow(),
@@ -254,6 +259,52 @@ export const customers = pgTable(
     emailIdx: index("customer_email_idx").on(table.primaryEmail),
     displayNameIdx: index("customer_display_name_idx").on(table.displayName),
     companyIdx: index("customer_company_idx").on(table.companyId),
+  }),
+);
+
+export const propertySubmissionStatusEnum = pgEnum("property_submission_status", [
+  "pending",
+  "approved",
+  "rejected",
+  "converted",
+]);
+
+export const propertySubmissions = pgTable(
+  "property_submission",
+  {
+    id: text("id").primaryKey().$defaultFn(() => crypto.randomUUID()),
+    customerRecordId: text("customer_record_id")
+      .notNull()
+      .references(() => customers.id, { onDelete: "cascade" }),
+    submittedByUserId: text("submitted_by_user_id").references(() => users.id, {
+      onDelete: "set null",
+    }),
+    submittedByEmail: text("submitted_by_email").notNull(),
+    propertyType: propertyTypeEnum("property_type").notNull(),
+    propertyAddress: text("property_address").notNull(),
+    propertyPlz: varchar("property_plz", { length: 5 }).notNull(),
+    propertyCity: text("property_city").notNull(),
+    propertySizeQm: integer("property_size_qm"),
+    propertyNotes: text("property_notes"),
+    desiredTimeframe: text("desired_timeframe"),
+    uploads: jsonb("uploads").$type<
+      { url: string; pathname: string; filename: string; sizeBytes: number; mimeType: string }[]
+    >(),
+    status: propertySubmissionStatusEnum("status").notNull().default("pending"),
+    convertedOrderId: text("converted_order_id").references(() => orders.id, {
+      onDelete: "set null",
+    }),
+    reviewNotes: text("review_notes"),
+    reviewedByUserId: text("reviewed_by_user_id").references(() => users.id, {
+      onDelete: "set null",
+    }),
+    reviewedAt: timestamp("reviewed_at"),
+    createdAt: timestamp("created_at").notNull().defaultNow(),
+    updatedAt: timestamp("updated_at").notNull().defaultNow().$onUpdate(() => new Date()),
+  },
+  (table) => ({
+    customerIdx: index("property_submission_customer_idx").on(table.customerRecordId),
+    statusIdx: index("property_submission_status_idx").on(table.status),
   }),
 );
 
@@ -425,6 +476,7 @@ export const orders = pgTable(
     customerPhone: text("customer_phone"),
     status: orderStatusEnum("status").notNull().default("pending"),
     studioStatus: studioStatusEnum("studio_status").notNull().default("draft"),
+    origin: varchar("origin", { length: 16 }).notNull().default("booking"),
 
     bundleSlug: varchar("bundle_slug", { length: 64 }),
     propertyType: propertyTypeEnum("property_type").notNull(),
@@ -790,6 +842,8 @@ export type OrderShotAsset = typeof orderShotAssets.$inferSelect;
 export type OrderShotComment = typeof orderShotComments.$inferSelect;
 export type OrderComment = typeof orderComments.$inferSelect;
 export type Customer = typeof customers.$inferSelect;
+export type PropertySubmission = typeof propertySubmissions.$inferSelect;
+export type NewPropertySubmission = typeof propertySubmissions.$inferInsert;
 export type NewCustomer = typeof customers.$inferInsert;
 export type Company = typeof companies.$inferSelect;
 export type CustomerContact = typeof customerContacts.$inferSelect;

@@ -5,7 +5,7 @@ import {
   LayoutDashboard, FolderKanban, Users, Building2, Briefcase, Camera, Map,
   Settings, ClipboardList, ShieldCheck, ScrollText, BookOpen, Plus,
   CircleUser, FileCheck, Image as ImageIcon, Send, MessagesSquare, Gift,
-  CalendarClock,
+  CalendarClock, Inbox,
 } from "lucide-react";
 import { Logo } from "@/components/site/logo";
 import { Badge } from "@/components/ui/badge";
@@ -60,6 +60,7 @@ export function StudioSidebar({ role, unreadCount, activeProject }: Props) {
         { href: "/studio/firmen", label: "Firmen", icon: Building2 },
         { href: "/studio/deals", label: "Deals", icon: Briefcase },
         { href: "/studio/beratung", label: "Beratungstermine", icon: CalendarClock },
+        { href: "/studio/einreichungen", label: "Abo-Einreichungen", icon: Inbox },
         { href: "/studio/leads", label: "Messe-Leads", icon: Gift },
       ],
     },

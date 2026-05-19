@@ -69,6 +69,41 @@ export async function updateCustomer(input: {
   revalidatePath("/studio/kunden/[id]", "page");
 }
 
+export async function updateAboConfig(input: {
+  customerId: string;
+  isAbo: boolean;
+  aboBundleSlug: string | null;
+  aboServiceSlugs: string[];
+  aboNotes: string | null;
+}) {
+  const session = await requireCRM();
+  const [existing] = await db
+    .select({ isAbo: customers.isAbo })
+    .from(customers)
+    .where(eq(customers.id, input.customerId))
+    .limit(1);
+  await db
+    .update(customers)
+    .set({
+      isAbo: input.isAbo,
+      aboBundleSlug: input.aboBundleSlug,
+      aboServiceSlugs: input.aboServiceSlugs.length > 0 ? input.aboServiceSlugs : null,
+      aboNotes: input.aboNotes,
+      aboActivatedAt:
+        input.isAbo && !existing?.isAbo ? new Date() : input.isAbo ? undefined : null,
+    })
+    .where(eq(customers.id, input.customerId));
+  await db.insert(auditLog).values({
+    userId: session.user.id,
+    userName: session.user.name,
+    action: "update",
+    entityType: "customer",
+    entityId: input.customerId,
+    payload: { abo: input.isAbo },
+  });
+  revalidatePath("/studio/kunden/[id]", "page");
+}
+
 export async function archiveCustomer(customerId: string) {
   const session = await requireCRM();
   await db.update(customers).set({ archivedAt: new Date() }).where(eq(customers.id, customerId));
