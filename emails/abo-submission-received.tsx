@@ -45,7 +45,7 @@ export function AboSubmissionReceivedEmail({ customerName, address }: Props) {
               </Text>
             </Section>
             <Text className="mt-6 text-xs text-[#8A8E80]">
-              ImmoHero · Jonathan Kreutzheide · Gütersloh · hallo@immohero.org
+              ImmoHero · Jonathan Kreutzheide · Gütersloh · hello@immohero.org
             </Text>
           </Container>
         </Body>

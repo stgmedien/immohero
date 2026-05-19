@@ -97,7 +97,7 @@ export function VoucherEmail({
 
             <Text className="mt-6 text-xs text-[#8A8E80]">
               ImmoHero · Jonathan Kreutzheide · Freiherr-vom-Stein-Straße 7 · 33332 Gütersloh ·
-              hallo@immohero.org
+              hello@immohero.org
             </Text>
           </Container>
         </Body>

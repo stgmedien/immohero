@@ -40,14 +40,14 @@ export function ConsultationDeclinedEmail({ customerName, reason }: Props) {
                 Alternativ kannst du auch direkt antworten und uns deine bevorzugten Zeiten nennen.
               </Text>
               <Link
-                href="mailto:hallo@immohero.org"
+                href="mailto:hello@immohero.org"
                 className="mt-5 inline-block rounded-full bg-[#1E2319] px-6 py-3 text-sm font-medium text-[#F4F2EC] no-underline"
               >
                 Zeiten vorschlagen
               </Link>
             </Section>
             <Text className="mt-6 text-xs text-[#8A8E80]">
-              ImmoHero · Jonathan Kreutzheide · Gütersloh · hallo@immohero.org
+              ImmoHero · Jonathan Kreutzheide · Gütersloh · hello@immohero.org
             </Text>
           </Container>
         </Body>

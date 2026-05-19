@@ -49,7 +49,7 @@ export function AboSubmissionRejectedEmail({ address, reason, portalUrl }: Props
               </Link>
             </Section>
             <Text className="mt-6 text-xs text-[#8A8E80]">
-              ImmoHero · Jonathan Kreutzheide · Gütersloh · hallo@immohero.org
+              ImmoHero · Jonathan Kreutzheide · Gütersloh · hello@immohero.org
             </Text>
           </Container>
         </Body>

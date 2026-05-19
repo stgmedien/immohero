@@ -4,7 +4,12 @@ import { emailLog } from "@/lib/db/schema";
 
 const apiKey = process.env.RESEND_API_KEY;
 const defaultFrom = process.env.RESEND_FROM ?? "ImmoHero <hallo@immohero.org>";
-const replyTo = process.env.RESEND_REPLY_TO ?? "hallo@immohero.org";
+/**
+ * Reply-To für ALLE ausgehenden Mails — bewusst fest verdrahtet (keine ENV-Abweichung),
+ * damit Antworten immer konsistent an einem Postfach landen.
+ */
+export const REPLY_TO = "hello@immohero.org";
+const replyTo = REPLY_TO;
 
 const client = apiKey ? new Resend(apiKey) : null;
 
