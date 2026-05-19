@@ -21,6 +21,12 @@ export default async function EinstellungenTabPage({ params }: { params: Promise
         propertyNotes: project.propertyNotes ?? "",
         deliveryNotesInternal: project.deliveryNotesInternal ?? "",
         isArchived: !!project.archivedAt,
+        status: project.status,
+        totalCents: project.totalCents,
+        refundedCents: project.refundedCents ?? 0,
+        hasPayment: !!project.stripePaymentIntentId,
+        cancelledAt: project.cancelledAt?.toISOString() ?? null,
+        cancelReason: project.cancelReason ?? null,
       }}
     />
   );

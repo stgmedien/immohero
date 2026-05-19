@@ -499,6 +499,10 @@ export const orders = pgTable(
     stripePaymentIntentId: text("stripe_payment_intent_id"),
     stripeCustomerId: text("stripe_customer_id"),
     paidAt: timestamp("paid_at"),
+    cancelledAt: timestamp("cancelled_at"),
+    cancelReason: text("cancel_reason"),
+    refundedCents: integer("refunded_cents").notNull().default(0),
+    refundedAt: timestamp("refunded_at"),
 
     shareToken: varchar("share_token", { length: 32 })
       .notNull()

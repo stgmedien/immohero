@@ -1,6 +1,6 @@
 "use client";
 import { useState, useTransition } from "react";
-import { Archive, ArrowLeft, RefreshCw, Save } from "lucide-react";
+import { Archive, ArrowLeft, RefreshCw, Save, Ban } from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -14,8 +14,10 @@ import {
   archiveOrder,
   unarchiveOrder,
   regenerateShotlist,
+  cancelOrder,
 } from "@/app/studio/actions/projects";
 import { StudioStatusBadge } from "@/components/ui/status-badge";
+import { eurosPrecise } from "@/lib/utils";
 
 interface ProjectData {
   title: string;
@@ -25,6 +27,12 @@ interface ProjectData {
   propertyNotes: string;
   deliveryNotesInternal: string;
   isArchived: boolean;
+  status: string;
+  totalCents: number;
+  refundedCents: number;
+  hasPayment: boolean;
+  cancelledAt: string | null;
+  cancelReason: string | null;
 }
 
 const STATUSES = [
@@ -47,6 +55,57 @@ export function ProjectSettings({
 }) {
   const [form, setForm] = useState(data);
   const [pending, startTransition] = useTransition();
+
+  const [cancelReason, setCancelReason] = useState("");
+  const [refundMode, setRefundMode] = useState<"none" | "full" | "partial">(
+    data.hasPayment ? "full" : "none",
+  );
+  const [partialEuro, setPartialEuro] = useState("");
+  const [notify, setNotify] = useState(true);
+  const isCancelled = form.status === "cancelled" || !!form.cancelledAt;
+  const refundable = Math.max(0, form.totalCents - form.refundedCents);
+
+  const doCancel = () => {
+    if (cancelReason.trim().length < 3) {
+      toast.error("Bitte einen Stornogrund angeben.");
+      return;
+    }
+    const msg =
+      refundMode === "none"
+        ? "Auftrag stornieren (ohne Erstattung)?"
+        : refundMode === "full"
+          ? `Auftrag stornieren und ${eurosPrecise(refundable)} erstatten?`
+          : `Auftrag stornieren und ${partialEuro || "0"} € erstatten?`;
+    if (!confirm(msg)) return;
+    startTransition(async () => {
+      try {
+        const res = await cancelOrder({
+          orderId,
+          reason: cancelReason,
+          refundMode,
+          refundCents:
+            refundMode === "partial"
+              ? Math.round(parseFloat(partialEuro.replace(",", ".")) * 100)
+              : undefined,
+          notifyCustomer: notify,
+        });
+        setForm((f) => ({
+          ...f,
+          status: "cancelled",
+          cancelledAt: new Date().toISOString(),
+          cancelReason,
+          refundedCents: f.refundedCents + (res.refundedCents ?? 0),
+        }));
+        toast.success(
+          res.refundedCents
+            ? `Storniert · ${eurosPrecise(res.refundedCents)} erstattet`
+            : "Auftrag storniert",
+        );
+      } catch (e) {
+        toast.error((e as Error).message || "Stornierung fehlgeschlagen");
+      }
+    });
+  };
 
   const saveMeta = () => {
     startTransition(async () => {
@@ -171,6 +230,88 @@ export function ProjectSettings({
           <RefreshCw className="h-4 w-4" />
           Neu generieren
         </Button>
+      </Card>
+
+      <Card className="p-5 border-[var(--color-danger)]/25">
+        <h2 className="text-base font-semibold">Stornierung &amp; Erstattung</h2>
+        {isCancelled ? (
+          <div className="mt-3 rounded-[var(--radius-md)] bg-[var(--color-danger-soft)] p-3 text-sm">
+            <p className="font-medium text-[var(--color-danger)]">
+              Storniert{form.cancelledAt ? ` am ${new Date(form.cancelledAt).toLocaleDateString("de-DE")}` : ""}
+            </p>
+            {form.cancelReason && (
+              <p className="mt-1 text-[var(--color-ink-3)]">Grund: {form.cancelReason}</p>
+            )}
+            {form.refundedCents > 0 && (
+              <p className="mt-1 text-[var(--color-ink-3)]">
+                Erstattet: {eurosPrecise(form.refundedCents)}
+              </p>
+            )}
+          </div>
+        ) : (
+          <div className="mt-3 space-y-3">
+            <p className="text-sm text-[var(--color-ink-3)]">
+              Auftragssumme {eurosPrecise(form.totalCents)}
+              {form.refundedCents > 0
+                ? ` · bereits erstattet ${eurosPrecise(form.refundedCents)}`
+                : ""}
+              {form.hasPayment
+                ? ` · erstattbar ${eurosPrecise(refundable)}`
+                : " · keine Stripe-Zahlung hinterlegt"}
+            </p>
+            <div className="grid gap-1.5">
+              <Label mono>Stornogrund (geht an den Kunden)</Label>
+              <Textarea
+                value={cancelReason}
+                onChange={(e) => setCancelReason(e.target.value)}
+                rows={2}
+                placeholder="z. B. Kunde hat storniert / Termin nicht zustande gekommen"
+              />
+            </div>
+            <div className="grid gap-1.5">
+              <Label mono>Erstattung</Label>
+              <Select
+                value={refundMode}
+                onValueChange={(v) => setRefundMode(v as "none" | "full" | "partial")}
+              >
+                <SelectTrigger><SelectValue /></SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="none">Keine Erstattung</SelectItem>
+                  <SelectItem value="full" disabled={!form.hasPayment || refundable <= 0}>
+                    Volle Erstattung ({eurosPrecise(refundable)})
+                  </SelectItem>
+                  <SelectItem value="partial" disabled={!form.hasPayment || refundable <= 0}>
+                    Teilerstattung
+                  </SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+            {refundMode === "partial" && (
+              <div className="grid gap-1.5">
+                <Label mono>Betrag in € (max. {(refundable / 100).toFixed(2)})</Label>
+                <Input
+                  inputMode="decimal"
+                  value={partialEuro}
+                  onChange={(e) => setPartialEuro(e.target.value)}
+                  placeholder="z. B. 99,50"
+                />
+              </div>
+            )}
+            <label className="flex items-center gap-2 text-sm">
+              <input
+                type="checkbox"
+                checked={notify}
+                onChange={(e) => setNotify(e.target.checked)}
+                className="h-4 w-4 accent-[var(--color-brand-1)]"
+              />
+              Kunde per E-Mail benachrichtigen
+            </label>
+            <Button variant="danger" onClick={doCancel} disabled={pending}>
+              <Ban className="h-4 w-4" />
+              Auftrag stornieren
+            </Button>
+          </div>
+        )}
       </Card>
 
       <Card className="p-5">

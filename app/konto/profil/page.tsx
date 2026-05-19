@@ -1,29 +1,34 @@
+import { eq } from "drizzle-orm";
 import { auth } from "@/lib/auth";
+import { db } from "@/lib/db/client";
+import { users } from "@/lib/db/schema";
 import { Card } from "@/components/ui/card";
+import { ProfileForm } from "@/components/konto/profile-form";
 
 export default async function ProfilPage() {
   const session = await auth();
+  const userId = session?.user?.id;
+  const [row] = userId
+    ? await db
+        .select({ name: users.name, phone: users.phone, email: users.email })
+        .from(users)
+        .where(eq(users.id, userId))
+        .limit(1)
+    : [];
+
   return (
     <section className="container-page py-10">
       <h1 className="font-serif text-4xl">Profil</h1>
+      <p className="mt-1 text-[var(--color-ink-soft)]">
+        Verwalte deinen Namen und deine Kontaktdaten.
+      </p>
       <Card className="mt-6 p-6">
-        <dl className="grid gap-4 sm:grid-cols-2">
-          <Row label="Name" value={session?.user?.name ?? "—"} />
-          <Row label="E-Mail" value={session?.user?.email ?? "—"} />
-        </dl>
-        <p className="mt-6 text-xs text-[var(--color-ink-mute)]">
-          Profilbearbeitung folgt im nächsten Release. Schreibe uns vorerst direkt an jonathan@stg-medien.com, wenn du Daten ändern möchtest.
-        </p>
+        <ProfileForm
+          initialName={row?.name ?? session?.user?.name ?? ""}
+          initialPhone={row?.phone ?? ""}
+          email={row?.email ?? session?.user?.email ?? ""}
+        />
       </Card>
     </section>
-  );
-}
-
-function Row({ label, value }: { label: string; value: string }) {
-  return (
-    <div>
-      <dt className="text-xs uppercase tracking-wider text-[var(--color-ink-mute)]">{label}</dt>
-      <dd className="mt-0.5">{value}</dd>
-    </div>
   );
 }
