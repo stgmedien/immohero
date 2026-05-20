@@ -14,8 +14,7 @@ export default async function LoginPage({
   const { callbackUrl, error } = await searchParams;
   const session = await auth();
   if (session?.user) {
-    const target = session.user.role === "admin" ? "/admin"
-      : session.user.role === "customer" ? "/konto" : "/studio";
+    const target = session.user.role === "customer" ? "/konto" : "/studio";
     redirect(callbackUrl && callbackUrl.startsWith("/") ? callbackUrl : target);
   }
 

@@ -14,9 +14,13 @@ export async function TopNav() {
   const session = await auth();
   const accountHref =
     !session?.user ? "/login"
-      : session.user.role === "admin" ? "/admin"
       : session.user.role === "customer" ? "/konto"
       : "/studio";
+  const accountLabel = !session?.user
+    ? "Login"
+    : session.user.role === "customer"
+      ? "Konto"
+      : "Studio";
 
   return (
     <header className="sticky top-0 z-40 border-b border-[var(--color-line)] bg-[var(--color-bg)]/85 backdrop-blur">
@@ -36,7 +40,7 @@ export async function TopNav() {
         <div className="flex items-center gap-2">
           <LangSwitcher />
           <Button asChild variant="ghost" size="sm" className="hidden sm:inline-flex">
-            <Link href={accountHref}>{session?.user ? "Konto" : "Login"}</Link>
+            <Link href={accountHref}>{accountLabel}</Link>
           </Button>
           <Button asChild size="sm">
             <Link href="/buchen">Jetzt buchen</Link>
