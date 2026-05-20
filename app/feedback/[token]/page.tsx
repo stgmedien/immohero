@@ -5,6 +5,8 @@ import { feedback, orders } from "@/lib/db/schema";
 import { FeedbackForm } from "@/components/feedback/feedback-form";
 import { Card } from "@/components/ui/card";
 import { Logo } from "@/components/site/logo";
+import { getLocale } from "@/lib/i18n.server";
+import { t } from "@/lib/i18n";
 
 export const dynamic = "force-dynamic";
 
@@ -29,6 +31,7 @@ export default async function FeedbackPage({
     .limit(1);
 
   if (!row) notFound();
+  const locale = await getLocale();
 
   return (
     <main className="min-h-screen bg-[var(--color-bg)] py-12">
@@ -37,22 +40,17 @@ export default async function FeedbackPage({
         <Card className="mt-6 p-7">
           {row.completedAt ? (
             <>
-              <h1 className="font-serif text-3xl">Danke für dein Feedback!</h1>
-              <p className="mt-2 text-[var(--color-ink-soft)]">
-                Wir haben es notiert. Falls du etwas nachreichen willst, melde dich
-                einfach unter hello@immohero.org.
-              </p>
+              <h1 className="font-serif text-3xl">{t(locale, "fb_done_title")}</h1>
+              <p className="mt-2 text-[var(--color-ink-soft)]">{t(locale, "fb_done_sub")}</p>
             </>
           ) : (
             <>
-              <h1 className="font-serif text-3xl">Wie war's mit ImmoHero?</h1>
+              <h1 className="font-serif text-3xl">{t(locale, "fb_question_title")}</h1>
               <p className="mt-2 text-[var(--color-ink-soft)]">
-                Auftrag <strong>{row.shortCode}</strong>
+                {row.shortCode}
                 {row.address ? ` · ${row.address}, ${row.city}` : ""}
               </p>
-              <p className="mt-1 text-sm text-[var(--color-ink-mute)]">
-                Wie wahrscheinlich würdest du uns weiterempfehlen?
-              </p>
+              <p className="mt-1 text-sm text-[var(--color-ink-mute)]">{t(locale, "fb_question_sub")}</p>
               <div className="mt-6">
                 <FeedbackForm token={token} />
               </div>

@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Logo } from "@/components/site/logo";
+import { getLocale } from "@/lib/i18n.server";
+import { t } from "@/lib/i18n";
 
 export default async function LoginPage({
   searchParams,
@@ -17,6 +19,7 @@ export default async function LoginPage({
     const target = session.user.role === "customer" ? "/konto" : "/studio";
     redirect(callbackUrl && callbackUrl.startsWith("/") ? callbackUrl : target);
   }
+  const locale = await getLocale();
 
   return (
     <main className="container-narrow flex min-h-screen flex-col justify-center py-16">
@@ -24,10 +27,8 @@ export default async function LoginPage({
         <Logo />
       </div>
       <div className="mt-10 rounded-[var(--radius-card)] border border-[var(--color-line)] bg-[var(--color-surface)] p-8">
-        <h1 className="font-serif text-3xl leading-tight">Einloggen</h1>
-        <p className="mt-2 text-sm text-[var(--color-ink-soft)]">
-          Wir senden dir einen Magic-Link an deine E-Mail. Kein Passwort nötig.
-        </p>
+        <h1 className="font-serif text-3xl leading-tight">{t(locale, "login_title")}</h1>
+        <p className="mt-2 text-sm text-[var(--color-ink-soft)]">{t(locale, "login_sub")}</p>
         <form
           action={async (formData) => {
             "use server";
@@ -41,24 +42,22 @@ export default async function LoginPage({
           className="mt-6 space-y-4"
         >
           <div className="grid gap-2">
-            <Label htmlFor="email">E-Mail-Adresse</Label>
+            <Label htmlFor="email">{t(locale, "login_email_label")}</Label>
             <Input id="email" name="email" type="email" autoComplete="email" required />
           </div>
           {error && (
-            <p className="text-sm text-[var(--color-danger)]">
-              Login fehlgeschlagen. Bitte versuche es erneut.
-            </p>
+            <p className="text-sm text-[var(--color-danger)]">{t(locale, "login_error")}</p>
           )}
           <Button type="submit" size="lg" className="w-full">
-            Login-Link senden
+            {t(locale, "login_submit")}
           </Button>
         </form>
         <p className="mt-6 text-xs text-[var(--color-ink-mute)]">
-          Noch kein Konto? Es wird automatisch beim ersten Login erstellt. Mit dem Login akzeptierst du unsere{" "}
+          {t(locale, "login_terms_prefix")}{" "}
           <Link href="/datenschutz" className="underline">
-            Datenschutzerklärung
+            {t(locale, "login_terms_link")}
           </Link>
-          .
+          {t(locale, "login_terms_suffix")}
         </p>
       </div>
     </main>

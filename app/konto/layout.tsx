@@ -3,11 +3,14 @@ import Link from "next/link";
 import { auth, signOut } from "@/lib/auth";
 import { Logo } from "@/components/site/logo";
 import { Button } from "@/components/ui/button";
+import { getLocale } from "@/lib/i18n.server";
+import { t } from "@/lib/i18n";
 
 export default async function KontoLayout({ children }: { children: React.ReactNode }) {
   const session = await auth();
   if (!session?.user) redirect("/login?callbackUrl=/konto");
   if (session.user.role !== "customer") redirect("/studio");
+  const locale = await getLocale();
 
   return (
     <>
@@ -24,13 +27,13 @@ export default async function KontoLayout({ children }: { children: React.ReactN
                 await signOut({ redirectTo: "/" });
               }}
             >
-              <Button type="submit" variant="ghost" size="sm">Abmelden</Button>
+              <Button type="submit" variant="ghost" size="sm">{t(locale, "konto_logout")}</Button>
             </form>
           </div>
         </div>
         <div className="container-page flex gap-6 pb-3 text-sm">
-          <KontoLink href="/konto" label="Aufträge" />
-          <KontoLink href="/konto/profil" label="Profil" />
+          <KontoLink href="/konto" label={t(locale, "konto_tab_orders")} />
+          <KontoLink href="/konto/profil" label={t(locale, "konto_tab_profile")} />
         </div>
       </header>
       <main className="flex-1 bg-[var(--color-bg-alt)]/40">{children}</main>

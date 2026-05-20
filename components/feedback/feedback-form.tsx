@@ -7,24 +7,27 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { submitFeedback } from "@/app/feedback/[token]/actions";
+import { useLocale } from "@/components/site/locale-provider";
+import { t } from "@/lib/i18n";
 
 export function FeedbackForm({ token }: { token: string }) {
   const [score, setScore] = useState<number | null>(null);
   const [comment, setComment] = useState("");
   const [done, setDone] = useState(false);
   const [pending, startTransition] = useTransition();
+  const locale = useLocale();
 
   if (done) {
     return (
       <p className="rounded-[var(--radius-md)] bg-[var(--color-ok-soft)] p-4 text-sm">
-        Vielen Dank! Wir freuen uns über jede Rückmeldung.
+        {t(locale, "fb_thanks")}
       </p>
     );
   }
 
   function submit() {
     if (score === null) {
-      toast.error("Bitte einen Wert auswählen.");
+      toast.error(locale === "en" ? "Please select a score." : "Bitte einen Wert auswählen.");
       return;
     }
     startTransition(async () => {
@@ -32,7 +35,7 @@ export function FeedbackForm({ token }: { token: string }) {
       if (res.ok) {
         setDone(true);
       } else {
-        toast.error(res.error ?? "Fehler beim Speichern.");
+        toast.error(res.error ?? (locale === "en" ? "Save failed." : "Fehler beim Speichern."));
       }
     });
   }
@@ -58,12 +61,12 @@ export function FeedbackForm({ token }: { token: string }) {
           ))}
         </div>
         <div className="mt-2 flex justify-between text-xs text-[var(--color-ink-mute)]">
-          <span>Sehr unwahrscheinlich</span>
-          <span>Sehr wahrscheinlich</span>
+          <span>{t(locale, "fb_low")}</span>
+          <span>{t(locale, "fb_high")}</span>
         </div>
       </div>
       <div className="grid gap-1.5">
-        <Label htmlFor="fb-comment">Was war gut, was können wir besser machen? (optional)</Label>
+        <Label htmlFor="fb-comment">{t(locale, "fb_comment_label")}</Label>
         <Textarea
           id="fb-comment"
           value={comment}
@@ -73,7 +76,7 @@ export function FeedbackForm({ token }: { token: string }) {
         />
       </div>
       <Button onClick={submit} disabled={pending || score === null} size="lg">
-        {pending ? "Sende…" : "Feedback abgeben"}
+        {pending ? t(locale, "fb_submitting") : t(locale, "fb_submit")}
       </Button>
     </div>
   );
