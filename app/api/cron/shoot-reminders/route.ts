@@ -14,14 +14,12 @@ export async function GET(request: NextRequest) {
   }
 
   const now = new Date();
-  const in24h = new Date(now.getTime() + 24 * 60 * 60 * 1000);
-  const in26h = new Date(now.getTime() + 26 * 60 * 60 * 1000);
-  const in2h = new Date(now.getTime() + 2 * 60 * 60 * 1000);
-  const in3h = new Date(now.getTime() + 3 * 60 * 60 * 1000);
+  // Hobby-Plan: täglicher Cron um 09:00. Reminder geht raus für alle Shoots
+  // in den nächsten 36 Stunden, die noch keinen bekommen haben.
+  const in36h = new Date(now.getTime() + 36 * 60 * 60 * 1000);
 
   const { ShootReminderEmail } = await import("@/emails/shoot-reminder");
 
-  // 24h-Erinnerungen: scheduledAt zwischen jetzt+24h und jetzt+26h, kein Cancel/Delivered
   const for24h = await db
     .select()
     .from(orders)
@@ -30,26 +28,15 @@ export async function GET(request: NextRequest) {
         ne(orders.status, "cancelled"),
         ne(orders.status, "delivered"),
         isNull(orders.reminder24SentAt),
-        gte(orders.scheduledAt, in24h),
-        lte(orders.scheduledAt, in26h),
+        gte(orders.scheduledAt, now),
+        lte(orders.scheduledAt, in36h),
       ),
     )
     .limit(50);
 
-  // 2h-Erinnerungen
-  const for2h = await db
-    .select()
-    .from(orders)
-    .where(
-      and(
-        ne(orders.status, "cancelled"),
-        ne(orders.status, "delivered"),
-        isNull(orders.reminder2SentAt),
-        gte(orders.scheduledAt, in2h),
-        lte(orders.scheduledAt, in3h),
-      ),
-    )
-    .limit(50);
+  // 2h-Erinnerungen deaktiviert — Hobby-Cron-Limit erlaubt nur tägliche Jobs.
+  // Code für späteren Pro-Plan-Upgrade vorbereitet, läuft aktuell als No-Op.
+  const for2h: typeof for24h = [];
 
   let sent = 0;
   for (const o of for24h) {
