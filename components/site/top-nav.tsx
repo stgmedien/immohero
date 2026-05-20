@@ -3,7 +3,8 @@ import { Logo } from "./logo";
 import { Button } from "@/components/ui/button";
 import { auth } from "@/lib/auth";
 import { LangSwitcher } from "./lang-switcher";
-import { getLocale, t } from "@/lib/i18n";
+import { getLocale } from "@/lib/i18n.server";
+import { t } from "@/lib/i18n";
 
 export async function TopNav() {
   const [session, locale] = await Promise.all([auth(), getLocale()]);

@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import { Inter, Inter_Tight, Instrument_Serif, JetBrains_Mono } from "next/font/google";
 import { Toaster } from "sonner";
 import { MaintenanceBanner } from "@/components/site/maintenance-banner";
+import { LocaleProvider } from "@/components/site/locale-provider";
+import { getLocale } from "@/lib/i18n.server";
 import "./globals.css";
 
 const inter = Inter({
@@ -55,12 +57,13 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
+  const locale = await getLocale();
   return (
     <html
-      lang="de"
+      lang={locale}
       className={`${inter.variable} ${interTight.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable}`}
       style={{ fontFamily: "var(--font-inter-tight)" }}
     >
@@ -91,7 +94,7 @@ export default function RootLayout({
             src="https://plausible.io/js/script.outbound-links.js"
           />
         ) : null}
-        {children}
+        <LocaleProvider locale={locale}>{children}</LocaleProvider>
         <Toaster
           position="bottom-right"
           richColors

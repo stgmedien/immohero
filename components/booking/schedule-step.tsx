@@ -6,10 +6,13 @@ import { useBooking } from "./booking-store";
 import { loadConsultationSlots } from "@/app/buchen/slots-action";
 import type { DaySlots } from "@/lib/consultation";
 import { germanDate, cn } from "@/lib/utils";
+import { useLocale } from "@/components/site/locale-provider";
+import { t } from "@/lib/i18n";
 
 export function ScheduleStep() {
   const router = useRouter();
   const { draft, patchSchedule } = useBooking();
+  const locale = useLocale();
   const [days, setDays] = useState<DaySlots[] | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -33,23 +36,18 @@ export function ScheduleStep() {
   return (
     <div className="space-y-8 rounded-[var(--radius-card)] border border-[var(--color-line)] bg-[var(--color-surface)] p-6">
       <section>
-        <h2 className="font-serif text-2xl">Beratungsgespräch</h2>
-        <p className="text-sm text-[var(--color-ink-soft)]">
-          Vor dem Dreh sprichst du kurz (~30 Min.) mit einem unserer Berater — per Video
-          (Google Meet/Teams/Zoom). Dabei klären wir alle Details und legen gemeinsam den
-          Drehtermin fest. Wähle dein Wunsch-Zeitfenster für das Gespräch.
-        </p>
+        <h2 className="font-serif text-2xl">{t(locale, "sched_title")}</h2>
+        <p className="text-sm text-[var(--color-ink-soft)]">{t(locale, "sched_sub")}</p>
       </section>
 
       {loading ? (
-        <p className="text-sm text-[var(--color-ink-soft)]">Lade verfügbare Zeiten…</p>
+        <p className="text-sm text-[var(--color-ink-soft)]">{t(locale, "sched_loading")}</p>
       ) : !days || days.length === 0 ? (
         <div className="rounded-lg border border-[var(--color-line)] bg-[var(--color-bg-alt)]/40 p-4 text-sm text-[var(--color-ink-soft)]">
-          Aktuell sind online keine freien Termine sichtbar. Buche trotzdem — wir melden uns
-          nach der Bezahlung kurzfristig zur Terminabstimmung.
+          {t(locale, "sched_no_slots")}
           <div className="mt-4 flex items-center justify-between">
             <Button variant="ghost" size="lg" onClick={() => router.push("/buchen/adresse")}>
-              ← Zurück
+              {t(locale, "sched_back")}
             </Button>
             <Button
               size="lg"
@@ -65,14 +63,14 @@ export function ScheduleStep() {
                 router.push("/buchen/kasse");
               }}
             >
-              Ohne festen Termin weiter
+              {t(locale, "sched_continue_no_slot")}
             </Button>
           </div>
         </div>
       ) : (
         <>
           <section>
-            <h3 className="font-serif text-xl">Tag</h3>
+            <h3 className="font-serif text-xl">{t(locale, "sched_day")}</h3>
             <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4">
               {days.map((d) => {
                 const selected = draft.schedule.date === d.date;
@@ -93,7 +91,7 @@ export function ScheduleStep() {
                   >
                     <p className="font-serif text-lg">{germanDate(d.date)}</p>
                     <p className="mt-0.5 text-xs text-[var(--color-ink-soft)]">
-                      {d.weekday} · {d.slots.length} frei
+                      {d.weekday} · {t(locale, "sched_free", { n: d.slots.length })}
                     </p>
                   </button>
                 );
@@ -102,7 +100,7 @@ export function ScheduleStep() {
           </section>
 
           <section>
-            <h3 className="font-serif text-xl">Uhrzeit</h3>
+            <h3 className="font-serif text-xl">{t(locale, "sched_time")}</h3>
             <div className="mt-3 grid grid-cols-3 gap-2 sm:grid-cols-5">
               {(selectedDay?.slots ?? []).map((s) => {
                 const selected = draft.schedule.slotStart === s.start;
@@ -131,7 +129,7 @@ export function ScheduleStep() {
               })}
               {!selectedDay && (
                 <p className="col-span-full text-sm text-[var(--color-ink-soft)]">
-                  Bitte zuerst einen Tag wählen.
+                  {t(locale, "sched_pick_day_first")}
                 </p>
               )}
             </div>
@@ -139,14 +137,14 @@ export function ScheduleStep() {
 
           <div className="flex items-center justify-between pt-4">
             <Button variant="ghost" size="lg" onClick={() => router.push("/buchen/adresse")}>
-              ← Zurück
+              {t(locale, "sched_back")}
             </Button>
             <Button
               size="lg"
               disabled={!draft.schedule.slotStart}
               onClick={() => router.push("/buchen/kasse")}
             >
-              Weiter zum Kontakt
+              {t(locale, "sched_next")}
             </Button>
           </div>
         </>

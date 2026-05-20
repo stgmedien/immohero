@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Logo } from "./logo";
-import { getLocale, t } from "@/lib/i18n";
+import { getLocale } from "@/lib/i18n.server";
+import { t } from "@/lib/i18n";
 
 export async function Footer() {
   const locale = await getLocale();

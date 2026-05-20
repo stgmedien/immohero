@@ -11,8 +11,11 @@ import {
   getService,
   type BundleDefinition,
 } from "@/lib/services";
+import { getLocale } from "@/lib/i18n.server";
+import { t } from "@/lib/i18n";
 
-export function BundleCard({ bundle }: { bundle: BundleDefinition }) {
+export async function BundleCard({ bundle }: { bundle: BundleDefinition }) {
+  const locale = await getLocale();
   const services = bundle.serviceSlugs.map((slug) => getService(slug)!).filter(Boolean);
   const price = bundlePriceCents(bundle);
   const subtotal = bundleSubtotalCents(bundle);
@@ -27,12 +30,12 @@ export function BundleCard({ bundle }: { bundle: BundleDefinition }) {
     >
       {bundle.recommended && (
         <Badge tone="ink" className="absolute -top-3 left-7">
-          Empfohlen
+          {t(locale, "bundle_recommended")}
         </Badge>
       )}
       <div className="flex items-baseline justify-between">
         <h3 className="font-serif text-3xl">{bundle.name}</h3>
-        <Badge tone="accent">{bundle.discountPercent}% sparen</Badge>
+        <Badge tone="accent">{t(locale, "bundle_save_percent", { p: bundle.discountPercent })}</Badge>
       </div>
       <p className="mt-1 text-sm text-[var(--color-ink-soft)]">{bundle.tagline}</p>
 
@@ -40,7 +43,7 @@ export function BundleCard({ bundle }: { bundle: BundleDefinition }) {
         <span className="font-serif text-5xl tracking-tight">{euros(price)}</span>
         <span className="pb-2 text-sm text-[var(--color-ink-mute)] line-through">{euros(subtotal)}</span>
       </div>
-      <p className="text-xs text-[var(--color-ink-soft)]">Du sparst {euros(savings)} gegenüber Einzelbuchung</p>
+      <p className="text-xs text-[var(--color-ink-soft)]">{t(locale, "bundle_savings", { amount: euros(savings) })}</p>
 
       <ul className="mt-7 space-y-3">
         {services.map((service) => (
@@ -56,10 +59,10 @@ export function BundleCard({ bundle }: { bundle: BundleDefinition }) {
 
       <div className="mt-8 grid gap-2 pt-2">
         <Button asChild size="lg">
-          <Link href={`/buchen?paket=${bundle.slug}`}>{bundle.name} buchen</Link>
+          <Link href={`/buchen?paket=${bundle.slug}`}>{t(locale, "bundle_book", { name: bundle.name })}</Link>
         </Button>
         <Button asChild variant="ghost" size="sm">
-          <Link href={`/pakete#${bundle.slug}`}>Details ansehen</Link>
+          <Link href={`/pakete#${bundle.slug}`}>{t(locale, "bundle_details")}</Link>
         </Button>
       </div>
     </Card>

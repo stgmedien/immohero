@@ -6,10 +6,13 @@ import { ServiceIcon, CheckIcon } from "@/components/marketing/icons";
 import { useBooking } from "./booking-store";
 import { BUNDLES, SERVICES, bundlePriceCents, bundleSubtotalCents } from "@/lib/services";
 import { euros, cn } from "@/lib/utils";
+import { useLocale } from "@/components/site/locale-provider";
+import { t } from "@/lib/i18n";
 
 export function ServiceStep() {
   const router = useRouter();
   const { draft, patch } = useBooking();
+  const locale = useLocale();
 
   const hasSelection = Boolean(draft.bundleSlug) || draft.serviceSlugs.length > 0;
 
@@ -35,8 +38,8 @@ export function ServiceStep() {
   return (
     <div className="space-y-10">
       <section>
-        <h2 className="font-serif text-2xl">Paket wählen — empfohlen</h2>
-        <p className="text-sm text-[var(--color-ink-soft)]">Bis zu 20 % Rabatt gegenüber Einzelbuchung.</p>
+        <h2 className="font-serif text-2xl">{t(locale, "svc_pkg_title")}</h2>
+        <p className="text-sm text-[var(--color-ink-soft)]">{t(locale, "svc_pkg_sub")}</p>
         <div className="mt-5 grid gap-4 md:grid-cols-3">
           {BUNDLES.map((bundle) => {
             const selected = draft.bundleSlug === bundle.slug;
@@ -55,7 +58,9 @@ export function ServiceStep() {
               >
                 <div className="flex items-center justify-between">
                   <span className="font-serif text-2xl">{bundle.name}</span>
-                  <Badge tone={bundle.recommended ? "ink" : "neutral"}>{bundle.discountPercent}% sparen</Badge>
+                  <Badge tone={bundle.recommended ? "ink" : "neutral"}>
+                    {t(locale, "bundle_save_percent", { p: bundle.discountPercent })}
+                  </Badge>
                 </div>
                 <p className="mt-1 text-xs text-[var(--color-ink-soft)]">{bundle.tagline}</p>
                 <p className="mt-3 font-serif text-3xl">{euros(bundlePriceCents(bundle))}</p>
@@ -67,11 +72,11 @@ export function ServiceStep() {
       </section>
 
       <section>
-        <h2 className="font-serif text-2xl">… oder Einzelservices</h2>
+        <h2 className="font-serif text-2xl">{t(locale, "svc_single_title")}</h2>
         <p className="text-sm text-[var(--color-ink-soft)]">
           {draft.bundleSlug
-            ? "Eine Auswahl ersetzt das Paket — du kannst trotzdem zusätzlich Services kombinieren."
-            : "Tippe alle Services an, die du buchen möchtest."}
+            ? t(locale, "svc_single_sub_with_pkg")
+            : t(locale, "svc_single_sub_no_pkg")}
         </p>
         <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {SERVICES.map((service) => {
@@ -112,7 +117,7 @@ export function ServiceStep() {
           disabled={!hasSelection}
           onClick={() => router.push("/buchen/adresse")}
         >
-          Weiter zu Objekt & Adresse
+          {t(locale, "svc_next")}
         </Button>
       </div>
     </div>

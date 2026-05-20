@@ -9,19 +9,22 @@ import { useBooking } from "./booking-store";
 import { PROPERTY_TYPES } from "@/lib/services";
 import { checkPlz } from "@/app/buchen/actions";
 import { cn } from "@/lib/utils";
+import { useLocale } from "@/components/site/locale-provider";
+import { t } from "@/lib/i18n";
 
 export function PropertyStep() {
   const router = useRouter();
   const { draft, patchProperty } = useBooking();
+  const locale = useLocale();
   const [pending, startTransition] = useTransition();
   const [plzMessage, setPlzMessage] = useState<{ ok: boolean; text: string } | null>(null);
   const [errors, setErrors] = useState<Partial<Record<string, string>>>({});
 
   const submit = () => {
     const next: Partial<Record<string, string>> = {};
-    if (!draft.property.address) next.address = "Straße und Hausnummer fehlen.";
-    if (!/^\d{5}$/.test(draft.property.plz)) next.plz = "Bitte 5-stellige PLZ.";
-    if (!draft.property.city) next.city = "Stadt fehlt.";
+    if (!draft.property.address) next.address = t(locale, "prop_error_address");
+    if (!/^\d{5}$/.test(draft.property.plz)) next.plz = t(locale, "prop_error_plz");
+    if (!draft.property.city) next.city = t(locale, "prop_error_city");
     setErrors(next);
     if (Object.keys(next).length > 0) return;
     if (plzMessage && !plzMessage.ok) return;
@@ -37,10 +40,13 @@ export function PropertyStep() {
     startTransition(async () => {
       const result = await checkPlz(plz);
       if (result.ok) {
-        setPlzMessage({ ok: true, text: `Wir kommen zu dir — ${result.city}, ${result.region}.` });
+        setPlzMessage({
+          ok: true,
+          text: t(locale, "prop_plz_match", { city: result.city ?? "", region: result.region ?? "" }),
+        });
         if (result.city && !draft.property.city) patchProperty({ city: result.city });
       } else {
-        setPlzMessage({ ok: false, text: result.reason ?? "Außerhalb unseres Servicegebiets." });
+        setPlzMessage({ ok: false, text: result.reason ?? t(locale, "prop_plz_out") });
       }
     });
   };
@@ -48,8 +54,8 @@ export function PropertyStep() {
   return (
     <div className="space-y-8 rounded-[var(--radius-card)] border border-[var(--color-line)] bg-[var(--color-surface)] p-6">
       <section>
-        <h2 className="font-serif text-2xl">Objekttyp</h2>
-        <p className="text-sm text-[var(--color-ink-soft)]">So matchen wir die richtige Shotliste für dein Shooting.</p>
+        <h2 className="font-serif text-2xl">{t(locale, "prop_type_title")}</h2>
+        <p className="text-sm text-[var(--color-ink-soft)]">{t(locale, "prop_type_sub")}</p>
         <div className="mt-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
           {PROPERTY_TYPES.map((pt) => {
             const selected = draft.property.type === pt.value;
@@ -75,12 +81,12 @@ export function PropertyStep() {
       </section>
 
       <section>
-        <h2 className="font-serif text-2xl">Adresse</h2>
-        <p className="text-sm text-[var(--color-ink-soft)]">Wir fahren zu jeder Adresse innerhalb OWL/NRW.</p>
+        <h2 className="font-serif text-2xl">{t(locale, "prop_address_title")}</h2>
+        <p className="text-sm text-[var(--color-ink-soft)]">{t(locale, "prop_address_sub")}</p>
 
         <div className="mt-4 grid gap-4">
           <div className="grid gap-2">
-            <Label htmlFor="address">Straße und Hausnummer</Label>
+            <Label htmlFor="address">{t(locale, "prop_label_address")}</Label>
             <Input
               id="address"
               autoComplete="street-address"
@@ -93,7 +99,7 @@ export function PropertyStep() {
 
           <div className="grid gap-4 sm:grid-cols-[140px_1fr]">
             <div className="grid gap-2">
-              <Label htmlFor="plz">PLZ</Label>
+              <Label htmlFor="plz">{t(locale, "prop_label_plz")}</Label>
               <Input
                 id="plz"
                 inputMode="numeric"
@@ -110,7 +116,7 @@ export function PropertyStep() {
               {errors.plz && <p className="text-xs text-[var(--color-danger)]">{errors.plz}</p>}
             </div>
             <div className="grid gap-2">
-              <Label htmlFor="city">Stadt</Label>
+              <Label htmlFor="city">{t(locale, "prop_label_city")}</Label>
               <Input
                 id="city"
                 autoComplete="address-level2"
@@ -131,26 +137,26 @@ export function PropertyStep() {
                   : "border-[var(--color-accent-soft)] bg-[var(--color-accent-soft)] text-[var(--color-accent)]",
               )}
             >
-              {pending ? "Prüfe Verfügbarkeit…" : plzMessage.text}
+              {pending ? t(locale, "prop_plz_checking") : plzMessage.text}
             </div>
           )}
         </div>
       </section>
 
       <section>
-        <h2 className="font-serif text-2xl">Optional</h2>
+        <h2 className="font-serif text-2xl">{t(locale, "prop_optional_title")}</h2>
         <div className="mt-4 grid gap-4 sm:grid-cols-[1fr_180px]">
           <div className="grid gap-2">
-            <Label htmlFor="notes">Hinweise für unser Team</Label>
+            <Label htmlFor="notes">{t(locale, "prop_label_notes")}</Label>
             <Textarea
               id="notes"
               value={draft.property.notes ?? ""}
               onChange={(e) => patchProperty({ notes: e.target.value })}
-              placeholder="Z. B. Schlüsselübergabe, Parkmöglichkeit, Tierbesitz…"
+              placeholder={t(locale, "prop_placeholder_notes")}
             />
           </div>
           <div className="grid gap-2">
-            <Label htmlFor="qm">Wohnfläche (m²)</Label>
+            <Label htmlFor="qm">{t(locale, "prop_label_qm")}</Label>
             <Input
               id="qm"
               inputMode="numeric"
@@ -159,7 +165,7 @@ export function PropertyStep() {
                 const n = parseInt(e.target.value, 10);
                 patchProperty({ sizeQm: Number.isFinite(n) ? n : undefined });
               }}
-              placeholder="z. B. 142"
+              placeholder={t(locale, "prop_placeholder_qm")}
             />
           </div>
         </div>
@@ -167,10 +173,10 @@ export function PropertyStep() {
 
       <div className="flex items-center justify-between pt-4">
         <Button variant="ghost" size="lg" onClick={() => router.push("/buchen")}>
-          ← Zurück
+          {t(locale, "prop_back")}
         </Button>
         <Button size="lg" onClick={submit} disabled={pending}>
-          Weiter zum Termin
+          {t(locale, "prop_next")}
         </Button>
       </div>
     </div>

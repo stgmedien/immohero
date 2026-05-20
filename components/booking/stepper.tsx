@@ -1,14 +1,16 @@
 "use client";
 import { cn } from "@/lib/utils";
-
-const STEPS = [
-  { id: 1, label: "Service" },
-  { id: 2, label: "Objekt" },
-  { id: 3, label: "Termin" },
-  { id: 4, label: "Kontakt & Kasse" },
-];
+import { useLocale } from "@/components/site/locale-provider";
+import { t } from "@/lib/i18n";
 
 export function Stepper({ current }: { current: number }) {
+  const locale = useLocale();
+  const STEPS = [
+    { id: 1, label: t(locale, "step_service") },
+    { id: 2, label: t(locale, "step_property") },
+    { id: 3, label: t(locale, "step_schedule") },
+    { id: 4, label: t(locale, "step_checkout") },
+  ];
   return (
     <ol className="flex items-center gap-1 text-xs">
       {STEPS.map((step, idx) => {

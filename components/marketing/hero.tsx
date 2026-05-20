@@ -3,7 +3,8 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRightIcon } from "./icons";
-import { getLocale, t } from "@/lib/i18n";
+import { getLocale } from "@/lib/i18n.server";
+import { t } from "@/lib/i18n";
 
 export async function Hero() {
   const locale = await getLocale();

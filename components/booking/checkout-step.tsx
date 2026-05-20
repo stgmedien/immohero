@@ -7,10 +7,13 @@ import { Label } from "@/components/ui/label";
 import { useBooking } from "./booking-store";
 import { createCheckoutSession } from "@/app/buchen/actions";
 import { bookingDraftSchema } from "@/lib/booking";
+import { useLocale } from "@/components/site/locale-provider";
+import { t } from "@/lib/i18n";
 
 export function CheckoutStep() {
   const router = useRouter();
   const { draft, patchCustomer } = useBooking();
+  const locale = useLocale();
   const [pending, startTransition] = useTransition();
   const [error, setError] = useState<string | null>(null);
   const [acceptedAgb, setAcceptedAgb] = useState(false);
@@ -19,19 +22,19 @@ export function CheckoutStep() {
     setError(null);
     const parsed = bookingDraftSchema.safeParse(draft);
     if (!parsed.success) {
-      setError(parsed.error.issues[0]?.message ?? "Bitte alle Pflichtfelder ausfüllen.");
+      setError(parsed.error.issues[0]?.message ?? t(locale, "check_error_required"));
       return;
     }
     if (!acceptedAgb) {
-      setError("Bitte bestätige AGB und Datenschutzerklärung.");
+      setError(t(locale, "check_error_agb"));
       return;
     }
     startTransition(async () => {
       try {
         await createCheckoutSession(parsed.data);
       } catch (err) {
-        const msg = err instanceof Error ? err.message : "Unbekannter Fehler bei der Bezahlung.";
-        if (msg.includes("NEXT_REDIRECT")) return; // expected redirect
+        const msg = err instanceof Error ? err.message : t(locale, "check_error_unknown");
+        if (msg.includes("NEXT_REDIRECT")) return;
         setError(msg);
       }
     });
@@ -40,12 +43,12 @@ export function CheckoutStep() {
   return (
     <div className="space-y-8 rounded-[var(--radius-card)] border border-[var(--color-line)] bg-[var(--color-surface)] p-6">
       <section>
-        <h2 className="font-serif text-2xl">Wer bucht?</h2>
-        <p className="text-sm text-[var(--color-ink-soft)]">Wir senden dir die Rechnung & Termin-Bestätigung an diese Adresse.</p>
+        <h2 className="font-serif text-2xl">{t(locale, "check_who_title")}</h2>
+        <p className="text-sm text-[var(--color-ink-soft)]">{t(locale, "check_who_sub")}</p>
         <div className="mt-4 grid gap-4">
           <div className="grid gap-4 sm:grid-cols-2">
             <div className="grid gap-2">
-              <Label htmlFor="firstName">Vorname</Label>
+              <Label htmlFor="firstName">{t(locale, "check_first_name")}</Label>
               <Input
                 id="firstName"
                 autoComplete="given-name"
@@ -54,7 +57,7 @@ export function CheckoutStep() {
               />
             </div>
             <div className="grid gap-2">
-              <Label htmlFor="lastName">Nachname</Label>
+              <Label htmlFor="lastName">{t(locale, "check_last_name")}</Label>
               <Input
                 id="lastName"
                 autoComplete="family-name"
@@ -65,7 +68,7 @@ export function CheckoutStep() {
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             <div className="grid gap-2">
-              <Label htmlFor="email">E-Mail</Label>
+              <Label htmlFor="email">{t(locale, "check_email")}</Label>
               <Input
                 id="email"
                 type="email"
@@ -75,7 +78,7 @@ export function CheckoutStep() {
               />
             </div>
             <div className="grid gap-2">
-              <Label htmlFor="phone">Telefon</Label>
+              <Label htmlFor="phone">{t(locale, "check_phone")}</Label>
               <Input
                 id="phone"
                 type="tel"
@@ -86,7 +89,7 @@ export function CheckoutStep() {
             </div>
           </div>
           <div className="grid gap-2">
-            <Label htmlFor="company">Firma (optional, z. B. Maklerbüro)</Label>
+            <Label htmlFor="company">{t(locale, "check_company")}</Label>
             <Input
               id="company"
               autoComplete="organization"
@@ -106,8 +109,11 @@ export function CheckoutStep() {
             className="mt-1 h-4 w-4 accent-[var(--color-ink)]"
           />
           <span className="text-sm text-[var(--color-ink-soft)]">
-            Ich akzeptiere die <a href="/agb" className="underline">AGB</a> und habe die{" "}
-            <a href="/datenschutz" className="underline">Datenschutzerklärung</a> gelesen.
+            {t(locale, "check_agb_prefix")}{" "}
+            <a href="/agb" className="underline">{t(locale, "check_agb_terms")}</a>{" "}
+            {t(locale, "check_agb_and")}{" "}
+            <a href="/datenschutz" className="underline">{t(locale, "check_agb_privacy")}</a>
+            {t(locale, "check_agb_suffix")}
           </span>
         </label>
       </section>
@@ -120,16 +126,14 @@ export function CheckoutStep() {
 
       <div className="flex flex-col gap-3 pt-4 sm:flex-row sm:items-center sm:justify-between">
         <Button variant="ghost" size="lg" onClick={() => router.push("/buchen/termin")}>
-          ← Zurück
+          {t(locale, "check_back")}
         </Button>
         <Button size="xl" onClick={onSubmit} disabled={pending}>
-          {pending ? "Weiterleitung…" : "Sicher bezahlen mit Stripe"}
+          {pending ? t(locale, "check_submitting") : t(locale, "check_submit")}
         </Button>
       </div>
 
-      <p className="pt-2 text-xs text-[var(--color-ink-mute)]">
-        Bezahlung über Stripe — Kreditkarte, SEPA, Klarna oder PayPal. Wir speichern keine Zahlungsdaten.
-      </p>
+      <p className="pt-2 text-xs text-[var(--color-ink-mute)]">{t(locale, "check_payment_info")}</p>
     </div>
   );
 }
