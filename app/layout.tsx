@@ -73,9 +73,14 @@ export default function RootLayout({
           caches, and does exactly one reload so the next navigation is clean.
           No-op for visitors who never had the old SW.
         */}
+        {/*
+          Kill-switch + Lock: zerstört vorhandene Service Worker, blockiert
+          jede neue Registrierung, und reloaded einmal pro Session, falls etwas
+          gefunden wurde. Schützt vor 404s aus alten Serwist-Precache-Manifesten.
+        */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{if('serviceWorker'in navigator){navigator.serviceWorker.getRegistrations().then(function(rs){if(!rs||!rs.length)return;Promise.all(rs.map(function(r){return r.unregister().catch(function(){})})).then(function(){return (window.caches?caches.keys().then(function(ks){return Promise.all(ks.map(function(k){return caches.delete(k)}))}):Promise.resolve())}).then(function(){try{if(!sessionStorage.getItem('ih_sw_purged')){sessionStorage.setItem('ih_sw_purged','1');location.reload()}}catch(e){location.reload()}})})}}catch(e){}})();`,
+            __html: `(function(){try{if('serviceWorker'in navigator){var sw=navigator.serviceWorker;var origReg=sw.register&&sw.register.bind(sw);if(origReg){sw.register=function(){return Promise.reject(new Error('SW registration disabled'))}}sw.getRegistrations().then(function(rs){var hadAny=rs&&rs.length>0;var p=Promise.all((rs||[]).map(function(r){return r.unregister().catch(function(){})}));p.then(function(){return (window.caches?caches.keys().then(function(ks){return Promise.all(ks.map(function(k){return caches.delete(k)}))}):Promise.resolve())}).then(function(){if(!hadAny)return;try{if(!sessionStorage.getItem('ih_sw_purged_v2')){sessionStorage.setItem('ih_sw_purged_v2','1');location.reload()}}catch(e){location.reload()}})})}}catch(e){}})();`,
           }}
         />
         <MaintenanceBanner />

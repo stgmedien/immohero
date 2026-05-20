@@ -54,7 +54,7 @@ export function StudioTopbar({ breadcrumbs, user, unreadCount }: Props) {
         <NotificationBell initialUnreadCount={unreadCount} userId={user.id} />
 
         <Link
-          href="/studio/einstellungen/konto"
+          href="/studio/einstellungen"
           className="flex items-center gap-2 rounded-full hover:opacity-80 transition-opacity"
           aria-label="Konto"
         >

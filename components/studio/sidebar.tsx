@@ -187,7 +187,7 @@ export function StudioSidebar({ role, unreadCount, activeProject }: Props) {
 
       <div className="px-2 py-3 border-t border-[var(--color-hair-2)] mt-auto">
         <Link
-          href="/studio/einstellungen/konto"
+          href="/studio/einstellungen"
           className="flex items-center gap-2.5 px-2.5 py-2 rounded-[var(--radius-sm)] hover:bg-black/[0.03] transition-colors"
         >
           <CircleUser className="h-4 w-4 text-[var(--color-ink-3)]" />
