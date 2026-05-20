@@ -2,8 +2,9 @@ import { notFound } from "next/navigation";
 import { headers } from "next/headers";
 import { db } from "@/lib/db/client";
 import { eq, asc, and, inArray } from "drizzle-orm";
-import { orders, orderShots, orderShotAssets, orderShotComments, shareViews } from "@/lib/db/schema";
+import { orders, orderShots, orderShotAssets, orderShotComments, shareViews, assetReactions } from "@/lib/db/schema";
 import { SharePortal } from "@/components/share/share-portal";
+import { AssetReactionsPanel } from "@/components/share/asset-reactions-panel";
 
 export const dynamic = "force-dynamic";
 
@@ -34,6 +35,13 @@ export default async function SharePage({ params }: { params: Promise<{ token: s
           .from(orderShotComments)
           .where(inArray(orderShotComments.orderShotId, shotIds)),
       ]);
+  const assetIds = assets.map((a) => a.id);
+  const reactions = assetIds.length === 0
+    ? []
+    : await db
+        .select()
+        .from(assetReactions)
+        .where(inArray(assetReactions.orderShotAssetId, assetIds));
 
   // Log view
   try {
@@ -56,7 +64,28 @@ export default async function SharePage({ params }: { params: Promise<{ token: s
     commentsByShot.set(c.orderShotId, arr);
   }
 
+  const reactionsByAsset: Record<string, { id: string; kind: "favorite" | "comment"; body: string | null; createdAt: string }[]> = {};
+  for (const r of reactions) {
+    const arr = reactionsByAsset[r.orderShotAssetId] ?? [];
+    arr.push({
+      id: r.id,
+      kind: r.kind,
+      body: r.body,
+      createdAt: r.createdAt.toISOString(),
+    });
+    reactionsByAsset[r.orderShotAssetId] = arr;
+  }
+
+  const reactionAssets = assets.map((a) => ({
+    id: a.id,
+    blobUrl: a.blobUrl,
+    thumbnailUrl: a.thumbnailUrl,
+    filename: a.filename,
+    mimeType: a.mimeType,
+  }));
+
   return (
+    <>
     <SharePortal
       shareToken={token}
       project={{
@@ -100,5 +129,15 @@ export default async function SharePage({ params }: { params: Promise<{ token: s
           })),
       }))}
     />
+    {reactionAssets.length > 0 && (
+      <div className="container-page mt-8 pb-12">
+        <AssetReactionsPanel
+          shareToken={token}
+          assets={reactionAssets}
+          reactionsByAsset={reactionsByAsset}
+        />
+      </div>
+    )}
+    </>
   );
 }

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Logo } from "./logo";
 import { Button } from "@/components/ui/button";
 import { auth } from "@/lib/auth";
+import { LangSwitcher } from "./lang-switcher";
 
 const NAV_LINKS = [
   { href: "/pakete", label: "Pakete" },
@@ -33,6 +34,7 @@ export async function TopNav() {
           ))}
         </nav>
         <div className="flex items-center gap-2">
+          <LangSwitcher />
           <Button asChild variant="ghost" size="sm" className="hidden sm:inline-flex">
             <Link href={accountHref}>{session?.user ? "Konto" : "Login"}</Link>
           </Button>

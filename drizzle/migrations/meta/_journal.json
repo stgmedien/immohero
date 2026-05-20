@@ -43,6 +43,13 @@
       "when": 1779213295273,
       "tag": "0005_public_the_phantom",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1779234165183,
+      "tag": "0006_luxuriant_saracen",
+      "breakpoints": true
     }
   ]
 }

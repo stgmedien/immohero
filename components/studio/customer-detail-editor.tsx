@@ -17,6 +17,8 @@ interface Customer {
   primaryPhone: string | null;
   address: string | null;
   notes: string | null;
+  preferredChannel?: string | null;
+  whatsappPhone?: string | null;
 }
 
 export function CustomerDetailEditor({ customer }: { customer: Customer }) {
@@ -28,6 +30,8 @@ export function CustomerDetailEditor({ customer }: { customer: Customer }) {
     primaryPhone: customer.primaryPhone ?? "",
     address: customer.address ?? "",
     notes: customer.notes ?? "",
+    preferredChannel: customer.preferredChannel ?? "email",
+    whatsappPhone: customer.whatsappPhone ?? "",
   });
 
   const save = () => {
@@ -41,6 +45,8 @@ export function CustomerDetailEditor({ customer }: { customer: Customer }) {
           primaryPhone: form.primaryPhone || null,
           address: form.address || null,
           notes: form.notes || null,
+          preferredChannel: form.preferredChannel,
+          whatsappPhone: form.whatsappPhone || null,
         },
       });
       toast.success("Gespeichert");
@@ -70,6 +76,26 @@ export function CustomerDetailEditor({ customer }: { customer: Customer }) {
         <div className="grid gap-1.5 sm:col-span-2">
           <Label mono>Adresse</Label>
           <Input value={form.address} onChange={(e) => setForm({ ...form, address: e.target.value })} />
+        </div>
+        <div className="grid gap-1.5">
+          <Label mono>Bevorzugter Kanal</Label>
+          <select
+            value={form.preferredChannel}
+            onChange={(e) => setForm({ ...form, preferredChannel: e.target.value })}
+            className="h-10 rounded-[var(--radius-md)] border border-[var(--color-hair)] bg-[var(--color-bg-elev)] px-3 text-sm"
+          >
+            <option value="email">E-Mail</option>
+            <option value="whatsapp">WhatsApp</option>
+            <option value="sms">SMS</option>
+          </select>
+        </div>
+        <div className="grid gap-1.5">
+          <Label mono>WhatsApp / SMS-Nummer (mit Ländervorwahl)</Label>
+          <Input
+            value={form.whatsappPhone}
+            onChange={(e) => setForm({ ...form, whatsappPhone: e.target.value })}
+            placeholder="+49 151 …"
+          />
         </div>
         <div className="grid gap-1.5 sm:col-span-2">
           <Label mono>Notizen</Label>

@@ -6,8 +6,10 @@ import { db } from "@/lib/db/client";
 import {
   orders,
   orderShots,
+  orderShotAssets,
   orderShotComments,
   orderAssignments,
+  assetReactions,
   auditLog,
 } from "@/lib/db/schema";
 import { createNotification } from "@/app/studio/actions/notifications";
@@ -174,4 +176,88 @@ export async function submitShotComment(input: {
   );
 
   revalidatePath(`/share/${input.token}`);
+}
+
+async function ensureAssetBelongsToOrder(assetId: string, orderId: string) {
+  const [row] = await db
+    .select({ id: orderShotAssets.id })
+    .from(orderShotAssets)
+    .innerJoin(orderShots, eq(orderShots.id, orderShotAssets.orderShotId))
+    .where(and(eq(orderShotAssets.id, assetId), eq(orderShots.orderId, orderId)))
+    .limit(1);
+  if (!row) throw new Error("Asset not found");
+}
+
+/** Toggle „Lieblings-Shot" auf einem Asset (Markierung gilt aus Kundensicht). */
+export async function toggleAssetFavorite(input: { token: string; assetId: string }) {
+  const order = await getOrderByToken(input.token);
+  await ensureAssetBelongsToOrder(input.assetId, order.id);
+
+  const existing = await db
+    .select({ id: assetReactions.id })
+    .from(assetReactions)
+    .where(
+      and(
+        eq(assetReactions.orderShotAssetId, input.assetId),
+        eq(assetReactions.kind, "favorite"),
+      ),
+    )
+    .limit(1);
+
+  if (existing.length > 0) {
+    await db.delete(assetReactions).where(eq(assetReactions.id, existing[0].id));
+  } else {
+    await db.insert(assetReactions).values({
+      orderShotAssetId: input.assetId,
+      kind: "favorite",
+    });
+  }
+
+  revalidatePath(`/share/${input.token}`);
+  return { ok: true, favorited: existing.length === 0 };
+}
+
+/** Kommentar zu einem konkreten Asset (z. B. „dieses bitte heller"). */
+export async function addAssetComment(input: {
+  token: string;
+  assetId: string;
+  body: string;
+}) {
+  const order = await getOrderByToken(input.token);
+  await ensureAssetBelongsToOrder(input.assetId, order.id);
+
+  const body = input.body.trim();
+  if (body.length < 1) throw new Error("Kommentar darf nicht leer sein.");
+
+  await db.insert(assetReactions).values({
+    orderShotAssetId: input.assetId,
+    kind: "comment",
+    body: body.slice(0, 1000),
+  });
+
+  if (order.studioStatus === "client_approval") {
+    await db
+      .update(orders)
+      .set({ studioStatus: "revision" })
+      .where(eq(orders.id, order.id));
+  }
+
+  const assignments = await db
+    .select({ userId: orderAssignments.userId })
+    .from(orderAssignments)
+    .where(eq(orderAssignments.orderId, order.id));
+  await Promise.all(
+    assignments.map((a) =>
+      createNotification({
+        userId: a.userId,
+        type: "client_comment",
+        title: `Asset-Kommentar — ${order.shortCode}`,
+        body: body.slice(0, 120),
+        orderId: order.id,
+      }),
+    ),
+  );
+
+  revalidatePath(`/share/${input.token}`);
+  return { ok: true };
 }

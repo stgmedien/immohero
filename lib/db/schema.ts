@@ -250,6 +250,8 @@ export const customers = pgTable(
     aboBundleSlug: varchar("abo_bundle_slug", { length: 64 }),
     aboNotes: text("abo_notes"),
     aboActivatedAt: timestamp("abo_activated_at"),
+    preferredChannel: varchar("preferred_channel", { length: 16 }).notNull().default("email"),
+    whatsappPhone: varchar("whatsapp_phone", { length: 32 }),
     archivedAt: timestamp("archived_at"),
     createdById: text("created_by_id").references(() => users.id, { onDelete: "set null" }),
     createdAt: timestamp("created_at").notNull().defaultNow(),
@@ -503,6 +505,11 @@ export const orders = pgTable(
     cancelReason: text("cancel_reason"),
     refundedCents: integer("refunded_cents").notNull().default(0),
     refundedAt: timestamp("refunded_at"),
+    referredByCode: varchar("referred_by_code", { length: 16 }),
+    reminder24SentAt: timestamp("reminder_24_sent_at"),
+    reminder2SentAt: timestamp("reminder_2_sent_at"),
+    feedbackRequestedAt: timestamp("feedback_requested_at"),
+    rebookingMailSentAt: timestamp("rebooking_mail_sent_at"),
 
     shareToken: varchar("share_token", { length: 32 })
       .notNull()
@@ -823,6 +830,101 @@ export const emailLog = pgTable("email_log", {
   error: text("error"),
 });
 
+/* ------------------------------- Feedback (NPS) ------------------------------- */
+
+export const feedback = pgTable(
+  "feedback",
+  {
+    id: text("id").primaryKey().$defaultFn(() => crypto.randomUUID()),
+    orderId: text("order_id")
+      .notNull()
+      .references(() => orders.id, { onDelete: "cascade" }),
+    customerEmail: text("customer_email").notNull(),
+    score: integer("score"),
+    comment: text("comment"),
+    token: varchar("token", { length: 32 })
+      .notNull()
+      .$defaultFn(() => crypto.randomUUID().replace(/-/g, ""))
+      .default(sql`replace(gen_random_uuid()::text, '-', '')`),
+    createdAt: timestamp("created_at").notNull().defaultNow(),
+    completedAt: timestamp("completed_at"),
+  },
+  (table) => ({
+    orderIdx: index("feedback_order_idx").on(table.orderId),
+    tokenIdx: uniqueIndex("feedback_token_idx").on(table.token),
+  }),
+);
+
+/* ------------------------------- Referral Codes ------------------------------- */
+
+export const referralCodes = pgTable(
+  "referral_code",
+  {
+    id: text("id").primaryKey().$defaultFn(() => crypto.randomUUID()),
+    code: varchar("code", { length: 16 }).notNull(),
+    ownerCustomerId: text("owner_customer_id").references(() => customers.id, {
+      onDelete: "set null",
+    }),
+    ownerEmail: text("owner_email"),
+    discountCents: integer("discount_cents").notNull().default(5000),
+    maxUses: integer("max_uses"),
+    usesCount: integer("uses_count").notNull().default(0),
+    expiresAt: timestamp("expires_at"),
+    createdAt: timestamp("created_at").notNull().defaultNow(),
+  },
+  (table) => ({
+    codeIdx: uniqueIndex("referral_code_code_idx").on(table.code),
+    ownerIdx: index("referral_code_owner_idx").on(table.ownerCustomerId),
+  }),
+);
+
+/* ------------------------------- Order Attachments (customer uploads) ------------------------------- */
+
+export const orderAttachments = pgTable(
+  "order_attachment",
+  {
+    id: text("id").primaryKey().$defaultFn(() => crypto.randomUUID()),
+    orderId: text("order_id")
+      .notNull()
+      .references(() => orders.id, { onDelete: "cascade" }),
+    uploadedByUserId: text("uploaded_by_user_id").references(() => users.id, {
+      onDelete: "set null",
+    }),
+    filename: text("filename").notNull(),
+    blobUrl: text("blob_url").notNull(),
+    blobPathname: text("blob_pathname").notNull(),
+    sizeBytes: bigint("size_bytes", { mode: "number" }).notNull(),
+    mimeType: text("mime_type").notNull(),
+    kind: varchar("kind", { length: 32 }).notNull().default("customer_supplied"),
+    note: text("note"),
+    createdAt: timestamp("created_at").notNull().defaultNow(),
+  },
+  (table) => ({
+    orderIdx: index("order_attachment_order_idx").on(table.orderId),
+  }),
+);
+
+/* ------------------------------- Asset Reactions (favorites + comments) ------------------------------- */
+
+export const assetReactionKindEnum = pgEnum("asset_reaction_kind", ["favorite", "comment"]);
+
+export const assetReactions = pgTable(
+  "asset_reaction",
+  {
+    id: text("id").primaryKey().$defaultFn(() => crypto.randomUUID()),
+    orderShotAssetId: text("order_shot_asset_id")
+      .notNull()
+      .references(() => orderShotAssets.id, { onDelete: "cascade" }),
+    kind: assetReactionKindEnum("kind").notNull(),
+    authorEmail: text("author_email"),
+    body: text("body"),
+    createdAt: timestamp("created_at").notNull().defaultNow(),
+  },
+  (table) => ({
+    assetIdx: index("asset_reaction_asset_idx").on(table.orderShotAssetId),
+  }),
+);
+
 export const auditLog = pgTable("audit_log", {
   id: serial("id").primaryKey(),
   userId: text("user_id").references(() => users.id, { onDelete: "set null" }),
@@ -863,5 +965,13 @@ export type Consultation = typeof consultations.$inferSelect;
 export type NewConsultation = typeof consultations.$inferInsert;
 export type Lead = typeof leads.$inferSelect;
 export type NewLead = typeof leads.$inferInsert;
+export type Feedback = typeof feedback.$inferSelect;
+export type NewFeedback = typeof feedback.$inferInsert;
+export type ReferralCode = typeof referralCodes.$inferSelect;
+export type NewReferralCode = typeof referralCodes.$inferInsert;
+export type OrderAttachment = typeof orderAttachments.$inferSelect;
+export type NewOrderAttachment = typeof orderAttachments.$inferInsert;
+export type AssetReaction = typeof assetReactions.$inferSelect;
+export type NewAssetReaction = typeof assetReactions.$inferInsert;
 
 export const _sqlHelper = sql;

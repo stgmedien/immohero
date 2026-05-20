@@ -6,6 +6,8 @@ import { canAccessCustomers } from "@/lib/access";
 import { db } from "@/lib/db/client";
 import { asc, ilike, isNull, or, desc } from "drizzle-orm";
 import { customers } from "@/lib/db/schema";
+import { getHealthForCustomers } from "@/lib/health-score";
+import { eurosPrecise } from "@/lib/utils";
 import { StudioTopbar } from "@/components/studio/topbar";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -36,6 +38,8 @@ export default async function CustomersPage({ searchParams }: { searchParams: Pr
     )
     .orderBy(desc(customers.createdAt))
     .limit(200);
+
+  const healthMap = await getHealthForCustomers(rows.map((r) => r.id));
 
   return (
     <>
@@ -83,10 +87,37 @@ export default async function CustomersPage({ searchParams }: { searchParams: Pr
                       <p className="text-xs text-[var(--color-ink-3)] truncate">
                         {c.primaryEmail ?? "—"} {c.primaryPhone ? `· ${c.primaryPhone}` : ""}
                       </p>
+                      {(() => {
+                        const h = healthMap.get(c.id);
+                        if (!h || h.orderCount === 0) return null;
+                        return (
+                          <p className="mt-0.5 text-[11px] text-[var(--color-ink-mute)]">
+                            {h.orderCount} Auftr. · {eurosPrecise(h.revenueCents)}
+                            {h.avgNps !== null ? ` · NPS ⌀ ${h.avgNps.toFixed(1)}` : ""}
+                          </p>
+                        );
+                      })()}
                     </div>
-                    <Badge tone={c.kind === "company" ? "info" : "neutral"}>
-                      {c.kind === "company" ? "Firma" : "Privat"}
-                    </Badge>
+                    {(() => {
+                      const h = healthMap.get(c.id);
+                      const tone = h?.tone === "ok"
+                        ? "ok"
+                        : h?.tone === "warn"
+                          ? "warn"
+                          : h?.tone === "danger"
+                            ? "danger"
+                            : "neutral";
+                      return (
+                        <div className="flex items-center gap-2">
+                          {h && h.orderCount > 0 && (
+                            <Badge tone={tone}>{h.label}</Badge>
+                          )}
+                          <Badge tone={c.kind === "company" ? "info" : "neutral"}>
+                            {c.kind === "company" ? "Firma" : "Privat"}
+                          </Badge>
+                        </div>
+                      );
+                    })()}
                   </Link>
                 </li>
               ))}

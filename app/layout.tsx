@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Inter_Tight, Instrument_Serif, JetBrains_Mono } from "next/font/google";
 import { Toaster } from "sonner";
+import { MaintenanceBanner } from "@/components/site/maintenance-banner";
 import "./globals.css";
 
 const inter = Inter({
@@ -77,6 +78,14 @@ export default function RootLayout({
             __html: `(function(){try{if('serviceWorker'in navigator){navigator.serviceWorker.getRegistrations().then(function(rs){if(!rs||!rs.length)return;Promise.all(rs.map(function(r){return r.unregister().catch(function(){})})).then(function(){return (window.caches?caches.keys().then(function(ks){return Promise.all(ks.map(function(k){return caches.delete(k)}))}):Promise.resolve())}).then(function(){try{if(!sessionStorage.getItem('ih_sw_purged')){sessionStorage.setItem('ih_sw_purged','1');location.reload()}}catch(e){location.reload()}})})}}catch(e){}})();`,
           }}
         />
+        <MaintenanceBanner />
+        {process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN ? (
+          <script
+            defer
+            data-domain={process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN}
+            src="https://plausible.io/js/script.outbound-links.js"
+          />
+        ) : null}
         {children}
         <Toaster
           position="bottom-right"
