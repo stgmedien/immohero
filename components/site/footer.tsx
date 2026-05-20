@@ -29,6 +29,8 @@ export function Footer() {
             { href: "/pakete", label: "Pakete" },
             { href: "/faq", label: "FAQ" },
             { href: "/ueber-uns", label: "Über uns" },
+            { href: "/changelog", label: "Changelog" },
+            { href: "/status", label: "Status" },
             { href: "/kontakt", label: "Kontakt" },
           ]}
         />

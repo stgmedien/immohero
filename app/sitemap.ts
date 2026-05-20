@@ -16,6 +16,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/datenschutz",
     "/agb",
     "/buchen",
+    "/changelog",
+    "/status",
   ];
 
   const servicePaths = SERVICES.map((s) => `/services/${s.slug}`);
