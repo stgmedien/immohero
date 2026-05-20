@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { Logo } from "./logo";
+import { getLocale, t } from "@/lib/i18n";
 
-export function Footer() {
+export async function Footer() {
+  const locale = await getLocale();
   const year = new Date().getFullYear();
   return (
     <footer className="mt-24 border-t border-[var(--color-line)] bg-[var(--color-bg-alt)]/60">
@@ -9,44 +11,44 @@ export function Footer() {
         <div className="space-y-4">
           <Logo />
           <p className="max-w-xs text-sm text-[var(--color-ink-soft)]">
-            Professionelle Immobilienmedien, in OWL & NRW geliefert. Foto, Drohne, Video, 360°, Grundriss, Text.
+            {t(locale, "footer_tagline")}
           </p>
         </div>
         <FooterColumn
-          title="Services"
+          title={t(locale, "footer_col_services")}
           links={[
             { href: "/services/fotografie", label: "Fotografie" },
-            { href: "/services/drohne", label: "Drohne / Luftbild" },
+            { href: "/services/drohne", label: "Drohne / Drone" },
             { href: "/services/video-reel", label: "Video / Reel" },
-            { href: "/services/tour-360", label: "360°-Tour" },
+            { href: "/services/tour-360", label: "360°" },
             { href: "/services/grundriss-2d", label: "Grundriss 2D" },
             { href: "/services/matterport", label: "Matterport" },
           ]}
         />
         <FooterColumn
-          title="Unternehmen"
+          title={t(locale, "footer_col_company")}
           links={[
-            { href: "/pakete", label: "Pakete" },
-            { href: "/faq", label: "FAQ" },
-            { href: "/ueber-uns", label: "Über uns" },
-            { href: "/changelog", label: "Changelog" },
-            { href: "/status", label: "Status" },
-            { href: "/kontakt", label: "Kontakt" },
+            { href: "/pakete", label: t(locale, "footer_link_packages") },
+            { href: "/faq", label: t(locale, "footer_link_faq") },
+            { href: "/ueber-uns", label: t(locale, "footer_link_about") },
+            { href: "/changelog", label: t(locale, "footer_link_changelog") },
+            { href: "/status", label: t(locale, "footer_link_status") },
+            { href: "/kontakt", label: t(locale, "footer_link_contact") },
           ]}
         />
         <FooterColumn
-          title="Rechtliches"
+          title={t(locale, "footer_col_legal")}
           links={[
-            { href: "/impressum", label: "Impressum" },
-            { href: "/datenschutz", label: "Datenschutz" },
-            { href: "/agb", label: "AGB" },
+            { href: "/impressum", label: t(locale, "footer_link_imprint") },
+            { href: "/datenschutz", label: t(locale, "footer_link_privacy") },
+            { href: "/agb", label: t(locale, "footer_link_terms") },
           ]}
         />
       </div>
       <div className="border-t border-[var(--color-line)]">
         <div className="container-page flex flex-col gap-2 py-6 text-xs text-[var(--color-ink-mute)] md:flex-row md:items-center md:justify-between">
           <span>© {year} ImmoHero · Jonathan Kreutzheide · Gütersloh</span>
-          <span>Alle Preise inkl. MwSt. wenn nicht anders ausgewiesen.</span>
+          <span>{t(locale, "footer_copy")}</span>
         </div>
       </div>
     </footer>
