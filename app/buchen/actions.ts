@@ -39,7 +39,9 @@ export async function createCheckoutSession(payload: BookingDraft) {
 
   const plzOk = await isPlzInServiceArea(draft.property.plz);
   if (!plzOk) {
-    throw new Error("Diese Postleitzahl liegt außerhalb unseres Service-Gebiets.");
+    // Sanfter UX-Pfad: zurück zur Adress-Eingabe mit Fehler-Flag — der User
+    // sieht dort eine Erklärung und kann die PLZ direkt korrigieren.
+    redirect("/buchen/adresse?error=plz");
   }
 
   const summary = summarizeBooking({

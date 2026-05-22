@@ -1,6 +1,6 @@
 "use client";
-import { useState, useTransition } from "react";
-import { useRouter } from "next/navigation";
+import { useEffect, useState, useTransition } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -14,11 +14,22 @@ import { t } from "@/lib/i18n";
 
 export function PropertyStep() {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const { draft, patchProperty } = useBooking();
   const locale = useLocale();
   const [pending, startTransition] = useTransition();
   const [plzMessage, setPlzMessage] = useState<{ ok: boolean; text: string } | null>(null);
   const [errors, setErrors] = useState<Partial<Record<string, string>>>({});
+  const hasPlzReturnError = searchParams.get("error") === "plz";
+
+  // Beim Wiederbetreten der Seite die hinterlegte PLZ erneut verifizieren,
+  // damit ein "ok"/"nicht ok" sofort sichtbar ist — sonst rennt der User
+  // einmal blind weiter und scheitert erst im Kasse-Schritt.
+  useEffect(() => {
+    const stored = draft.property.plz;
+    if (/^\d{5}$/.test(stored)) verifyPlz(stored);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const submit = () => {
     const next: Partial<Record<string, string>> = {};
@@ -83,6 +94,14 @@ export function PropertyStep() {
       <section>
         <h2 className="font-serif text-2xl">{t(locale, "prop_address_title")}</h2>
         <p className="text-sm text-[var(--color-ink-soft)]">{t(locale, "prop_address_sub")}</p>
+
+        {hasPlzReturnError && (
+          <div className="mt-3 rounded-lg border border-[var(--color-accent-soft)] bg-[var(--color-accent-soft)] p-3 text-sm text-[var(--color-accent)]">
+            {locale === "en"
+              ? "The ZIP you entered is outside our service area (OWL/NRW). Please correct it below — then continue with the booking."
+              : "Die angegebene PLZ liegt außerhalb unseres Service-Gebiets (OWL/NRW). Bitte unten korrigieren — danach kannst du die Buchung fortsetzen."}
+          </div>
+        )}
 
         <div className="mt-4 grid gap-4">
           <div className="grid gap-2">
