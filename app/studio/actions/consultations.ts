@@ -2,6 +2,7 @@
 
 import { revalidatePath } from "next/cache";
 import { eq } from "drizzle-orm";
+import * as Sentry from "@sentry/nextjs";
 import { auth } from "@/lib/auth";
 import { canAccessCustomers } from "@/lib/access";
 import { db } from "@/lib/db/client";
@@ -51,6 +52,7 @@ export async function acceptConsultation(input: {
   let googleHtmlLink = c.googleHtmlLink;
   let meetingUrl = input.meetingUrl?.trim() || null;
   const useMeet = input.meetingProvider === "google_meet";
+  let calendarSyncError: string | null = null;
 
   if (isGoogleCalendarConfigured()) {
     try {
@@ -94,8 +96,39 @@ export async function acceptConsultation(input: {
         if (useMeet && !meetingUrl && ev.meetUrl) meetingUrl = ev.meetUrl;
       }
     } catch (err) {
-      console.error("[consultations] google sync failed (continuing)", err);
+      // Frueher: nur console.error -> Termin wurde als bestaetigt markiert
+      // ohne Calendar-Event. Jetzt: Sentry-Alert + Audit-Log + Fehler an den
+      // Studio-User zurueckgeben, damit die UX nicht luegt.
+      const message = err instanceof Error ? err.message : String(err);
+      calendarSyncError = message;
+      console.error("[consultations] google sync FAILED", err);
+      Sentry.captureException(err, {
+        tags: { feature: "consultation_accept", calendarId: CALENDAR_ID },
+        extra: { consultationId: c.id, orderId: c.orderId },
+      });
+      await db.insert(auditLog).values({
+        userId: session.user.id,
+        userName: session.user.name ?? null,
+        action: "consultation_calendar_sync_failed",
+        entityType: "consultation",
+        entityId: c.id,
+        payload: { error: message },
+      });
     }
+  } else {
+    calendarSyncError = "Google Calendar ist nicht konfiguriert (Env-Vars fehlen).";
+  }
+
+  // Wenn Calendar-Sync fehlgeschlagen ist UND der User Google Meet wollte:
+  // Aktion abbrechen, weil ohne Calendar-Event auch kein Meet-Link da ist.
+  // Bei manuellem Link (Teams/Zoom/custom) machen wir trotzdem weiter und
+  // warnen die Studio-UI.
+  if (calendarSyncError && useMeet && !meetingUrl) {
+    throw new Error(
+      `Google Calendar konnte nicht erreicht werden (${calendarSyncError}). ` +
+        `Ohne Calendar gibt es keinen Google-Meet-Link — bitte Calendar-Verbindung ` +
+        `pruefen oder einen externen Meeting-Link (Teams/Zoom) einsetzen.`,
+    );
   }
 
   await db
