@@ -50,6 +50,13 @@
       "when": 1779234165183,
       "tag": "0006_luxuriant_saracen",
       "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1782980126621,
+      "tag": "0007_stale_magneto",
+      "breakpoints": true
     }
   ]
 }

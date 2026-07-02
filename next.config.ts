@@ -11,6 +11,21 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "*.public.blob.vercel-storage.com" },
     ],
   },
+  async headers() {
+    return [
+      {
+        // Pilot-Widget darf auf den eigenen Plattformen eingebettet werden
+        source: "/widget/:path*",
+        headers: [
+          {
+            key: "Content-Security-Policy",
+            value:
+              "frame-ancestors 'self' https://immohero.org https://*.immohero.org https://aeroone.eu https://*.aeroone.eu http://localhost:*",
+          },
+        ],
+      },
+    ];
+  },
 };
 
 // withSentryConfig lädt das SDK; Source-Map-Upload passiert nur, wenn

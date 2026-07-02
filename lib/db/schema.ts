@@ -12,6 +12,8 @@ import {
   jsonb,
   bigint,
   serial,
+  vector,
+  real,
 } from "drizzle-orm/pg-core";
 import { sql } from "drizzle-orm";
 
@@ -760,6 +762,8 @@ export const consultations = pgTable(
     requestedStart: timestamp("requested_start").notNull(),
     requestedEnd: timestamp("requested_end").notNull(),
     status: consultationStatusEnum("status").notNull().default("requested"),
+    // 'sales' = Buchungsfunnel-Beratung, 'pilot_assessor' = Pilot-Engine-Assessment
+    kind: varchar("kind", { length: 16 }).notNull().default("sales"),
     assignedUserId: text("assigned_user_id").references(() => users.id, {
       onDelete: "set null",
     }),
@@ -925,6 +929,218 @@ export const assetReactions = pgTable(
   }),
 );
 
+/* ============================ Pilot Journey Engine ============================ */
+
+export const pilotStageEnum = pgEnum("pilot_stage", ["assess", "route", "convert"]);
+export const pilotLevelEnum = pgEnum("pilot_level", ["basic", "intermediate", "advanced"]);
+export const regulationDocTypeEnum = pgEnum("regulation_doc_type", [
+  "regulation",
+  "guide",
+  "manual",
+]);
+
+export const pilotProfiles = pgTable(
+  "pilot_profile",
+  {
+    id: text("id").primaryKey().$defaultFn(() => crypto.randomUUID()),
+    email: text("email"),
+    name: text("name"),
+    locale: varchar("locale", { length: 2 }).notNull().default("de"),
+    country: varchar("country", { length: 2 }).notNull().default("DE"),
+    plz: varchar("plz", { length: 5 }),
+    equipment: jsonb("equipment").$type<{ model: string; euClass?: string | null; notes?: string }[]>(),
+    certificates: jsonb("certificates").$type<{
+      a1a3?: boolean;
+      a2?: boolean;
+      sts?: boolean;
+      other?: string;
+    }>(),
+    flightHours: integer("flight_hours"),
+    portfolio: jsonb("portfolio").$type<{ links?: string[]; selfAssessment?: string; hasRealEstateFootage?: boolean }>(),
+    level: pilotLevelEnum("level"),
+    levelScore: integer("level_score").notNull().default(0),
+    passportLevel: integer("passport_level").notNull().default(0),
+    memory: text("memory"),
+    persona: varchar("persona", { length: 16 }).notNull().default("academy"),
+    customerRecordId: text("customer_record_id").references(() => customers.id, {
+      onDelete: "set null",
+    }),
+    hubspotContactId: text("hubspot_contact_id"),
+    consentAt: timestamp("consent_at"),
+    createdAt: timestamp("created_at").notNull().defaultNow(),
+    updatedAt: timestamp("updated_at").notNull().defaultNow().$onUpdate(() => new Date()),
+  },
+  (table) => ({
+    emailIdx: index("pilot_profile_email_idx").on(table.email),
+    levelIdx: index("pilot_profile_level_idx").on(table.level),
+  }),
+);
+
+export const pilotSessions = pgTable(
+  "pilot_session",
+  {
+    id: text("id").primaryKey(), // client-generierte UUID (localStorage im Widget)
+    profileId: text("profile_id").references(() => pilotProfiles.id, { onDelete: "set null" }),
+    stage: pilotStageEnum("stage").notNull().default("assess"),
+    persona: varchar("persona", { length: 16 }).notNull().default("academy"),
+    locale: varchar("locale", { length: 2 }).notNull().default("de"),
+    ipHash: varchar("ip_hash", { length: 64 }),
+    messageCount: integer("message_count").notNull().default(0),
+    createdAt: timestamp("created_at").notNull().defaultNow(),
+    lastActiveAt: timestamp("last_active_at").notNull().defaultNow(),
+  },
+  (table) => ({
+    profileIdx: index("pilot_session_profile_idx").on(table.profileId),
+    ipIdx: index("pilot_session_ip_idx").on(table.ipHash),
+  }),
+);
+
+export const pilotMessages = pgTable(
+  "pilot_message",
+  {
+    id: text("id").primaryKey().$defaultFn(() => crypto.randomUUID()),
+    sessionId: text("session_id")
+      .notNull()
+      .references(() => pilotSessions.id, { onDelete: "cascade" }),
+    role: varchar("role", { length: 12 }).notNull(), // user | assistant
+    content: text("content").notNull(),
+    toolCalls: jsonb("tool_calls"),
+    tokensIn: integer("tokens_in").notNull().default(0),
+    tokensOut: integer("tokens_out").notNull().default(0),
+    createdAt: timestamp("created_at").notNull().defaultNow(),
+  },
+  (table) => ({
+    sessionIdx: index("pilot_message_session_idx").on(table.sessionId),
+    createdIdx: index("pilot_message_created_idx").on(table.createdAt),
+  }),
+);
+
+export const pilotEvents = pgTable(
+  "pilot_event",
+  {
+    id: text("id").primaryKey().$defaultFn(() => crypto.randomUUID()),
+    profileId: text("profile_id").references(() => pilotProfiles.id, { onDelete: "set null" }),
+    sessionId: text("session_id"),
+    type: varchar("type", { length: 48 }).notNull(),
+    payload: jsonb("payload"),
+    createdAt: timestamp("created_at").notNull().defaultNow(),
+  },
+  (table) => ({
+    typeIdx: index("pilot_event_type_idx").on(table.type),
+    createdIdx: index("pilot_event_created_idx").on(table.createdAt),
+  }),
+);
+
+export const pilotAssessments = pgTable(
+  "pilot_assessment",
+  {
+    id: text("id").primaryKey().$defaultFn(() => crypto.randomUUID()),
+    profileId: text("profile_id")
+      .notNull()
+      .references(() => pilotProfiles.id, { onDelete: "cascade" }),
+    frames: jsonb("frames").$type<{ url: string; ts: number }[]>(),
+    clientJitterMetric: real("client_jitter_metric"),
+    scores: jsonb("scores"),
+    feedback: jsonb("feedback"),
+    overall: integer("overall"),
+    suggestedLevel: pilotLevelEnum("suggested_level"),
+    model: varchar("model", { length: 48 }),
+    createdAt: timestamp("created_at").notNull().defaultNow(),
+  },
+);
+
+export const sampleBriefs = pgTable(
+  "sample_brief",
+  {
+    id: text("id").primaryKey().$defaultFn(() => crypto.randomUUID()),
+    profileId: text("profile_id")
+      .notNull()
+      .references(() => pilotProfiles.id, { onDelete: "cascade" }),
+    brief: jsonb("brief").notNull(),
+    submissionUrl: text("submission_url"),
+    reviewedAt: timestamp("reviewed_at"),
+    reviewScore: integer("review_score"),
+    createdAt: timestamp("created_at").notNull().defaultNow(),
+  },
+);
+
+export const regulationDocuments = pgTable(
+  "regulation_document",
+  {
+    id: text("id").primaryKey(), // z. B. "eu-2019-947"
+    country: varchar("country", { length: 2 }).notNull(),
+    authority: text("authority").notNull(),
+    language: varchar("language", { length: 2 }).notNull().default("de"),
+    docType: regulationDocTypeEnum("doc_type").notNull().default("regulation"),
+    title: text("title").notNull(),
+    sourceUrl: text("source_url").notNull(),
+    contentHash: varchar("content_hash", { length: 64 }),
+    effectiveDate: timestamp("effective_date"),
+    lastCrawledAt: timestamp("last_crawled_at"),
+    status: varchar("status", { length: 16 }).notNull().default("active"),
+  },
+);
+
+export const regulationChunks = pgTable(
+  "regulation_chunk",
+  {
+    id: text("id").primaryKey(), // z. B. "eu-2019-947#001"
+    documentId: text("document_id")
+      .notNull()
+      .references(() => regulationDocuments.id, { onDelete: "cascade" }),
+    sectionRef: text("section_ref"),
+    content: text("content").notNull(),
+    tokens: integer("tokens").notNull().default(0),
+    embedding: vector("embedding", { dimensions: 1024 }),
+  },
+  (table) => ({
+    docIdx: index("regulation_chunk_doc_idx").on(table.documentId),
+  }),
+);
+
+/* ============================ Academy ============================ */
+
+export const academyCourses = pgTable(
+  "academy_course",
+  {
+    id: text("id").primaryKey().$defaultFn(() => crypto.randomUUID()),
+    slug: varchar("slug", { length: 80 }).notNull(),
+    title: text("title").notNull(),
+    description: text("description"),
+    level: pilotLevelEnum("level").notNull().default("basic"),
+    position: integer("position").notNull().default(0),
+    published: boolean("published").notNull().default(false),
+    createdAt: timestamp("created_at").notNull().defaultNow(),
+    updatedAt: timestamp("updated_at").notNull().defaultNow().$onUpdate(() => new Date()),
+  },
+  (table) => ({
+    slugIdx: uniqueIndex("academy_course_slug_idx").on(table.slug),
+  }),
+);
+
+export const academyLessons = pgTable(
+  "academy_lesson",
+  {
+    id: text("id").primaryKey().$defaultFn(() => crypto.randomUUID()),
+    courseId: text("course_id")
+      .notNull()
+      .references(() => academyCourses.id, { onDelete: "cascade" }),
+    slug: varchar("slug", { length: 80 }).notNull(),
+    title: text("title").notNull(),
+    body: text("body").notNull().default(""),
+    durationMin: integer("duration_min"),
+    videoUrl: text("video_url"),
+    position: integer("position").notNull().default(0),
+    published: boolean("published").notNull().default(false),
+    createdAt: timestamp("created_at").notNull().defaultNow(),
+    updatedAt: timestamp("updated_at").notNull().defaultNow().$onUpdate(() => new Date()),
+  },
+  (table) => ({
+    courseIdx: index("academy_lesson_course_idx").on(table.courseId),
+    slugIdx: uniqueIndex("academy_lesson_slug_idx").on(table.courseId, table.slug),
+  }),
+);
+
 export const auditLog = pgTable("audit_log", {
   id: serial("id").primaryKey(),
   userId: text("user_id").references(() => users.id, { onDelete: "set null" }),
@@ -973,5 +1189,14 @@ export type OrderAttachment = typeof orderAttachments.$inferSelect;
 export type NewOrderAttachment = typeof orderAttachments.$inferInsert;
 export type AssetReaction = typeof assetReactions.$inferSelect;
 export type NewAssetReaction = typeof assetReactions.$inferInsert;
+export type PilotProfile = typeof pilotProfiles.$inferSelect;
+export type NewPilotProfile = typeof pilotProfiles.$inferInsert;
+export type PilotSession = typeof pilotSessions.$inferSelect;
+export type PilotMessage = typeof pilotMessages.$inferSelect;
+export type PilotEvent = typeof pilotEvents.$inferSelect;
+export type PilotAssessment = typeof pilotAssessments.$inferSelect;
+export type RegulationChunk = typeof regulationChunks.$inferSelect;
+export type AcademyCourse = typeof academyCourses.$inferSelect;
+export type AcademyLesson = typeof academyLessons.$inferSelect;
 
 export const _sqlHelper = sql;

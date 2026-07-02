@@ -7,6 +7,8 @@ export default function MarketingLayout({ children }: { children: React.ReactNod
       <TopNav />
       <main className="flex-1">{children}</main>
       <Footer />
+      {/* Pilot Journey Engine — Recruiter-Persona auf immohero.org */}
+      <script src="/pilot-widget.js" data-persona="recruiter" data-lang="de" defer />
     </>
   );
 }
