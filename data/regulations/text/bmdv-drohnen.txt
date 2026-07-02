@@ -1,0 +1,115 @@
+DirektZu:
+
+Link direkt zum Inhalt
+Link direkt zur Hauptnavigation und Suche
+Link direkt zur Suche
+Link direkt zur Servicenavigation
+
+
+
+
+
+
+
+
+Artikel
+
+
+
+EU-Regelungen für Drohnen
+
+
+
+
+
+
+Alle aktuellen Inhalte
+
+
+
+
+
+
+
+
+
+Quelle: Fotolia / nesterenko_max
+
+
+Seit Beginn des Jahres 2021 gelten EU-weite Regelungen für den Betrieb unbemannter Fluggeräte (Drohnen), die auf eine Entscheidung der Europäischen Kommission vom 24. Mai 2019 zurückgehen. Die rechtlichen Grundlagen auf nationaler Ebene (LuftVG, LuftVO, LuftVZO) wurden daraufhin durch das „Gesetz zur Anpassung nationaler Regelungen an die Durchführungsverordnung (EU) 2019/947 der Kommission vom 24. Mai 2019 über die Vorschriften und Verfahren für den Betrieb der unbemannten Luftfahrt“ angepasst.
+Das sind die wichtigsten neuen Regeln für Drohnenbetreiber:
+1. Der Betrieb von Drohnen wird in drei Betriebskategorien unterteilt:
+
+„Offen“:
+
+betrifft den Betrieb von Drohnen, die
+
+eine Startmasse von weniger als 25 Kilogramm haben,innerhalb der Sichtweite bis maximal 120 Meter Höhe fliegen undkeine gefährlichen Güter transportieren oder Gegenstände abwerfen.
+Die „offene“ Kategorie ist noch einmal unterteilt in
+
+A1: < 250 g Startgewicht, kein Überfliegen von Menschenansammlungen,A2: < 4 kg Startgewicht, horizontaler Abstand zu Unbeteiligten mindestens 30 m,A3: < 25 kg Startgewicht, horizontaler Abstand von 150 Metern zu Wohn-, Gewerbe-, Industrie- und Erholungsgebieten
+
+„Speziell“:
+
+betrifft den Betrieb von Drohnen, deren Einsatzspektrum den Rahmen der „offenen“ Kategorie übersteigt, z. B. beim Betrieb außerhalb der Sichtweite und/oder ab 25 Kilogramm Startmasse.
+
+„Zulassungspflichtig“:
+
+betrifft den Betrieb von großen und schweren Drohnen, die z. B. zur Beförderung von Personen oder gefährlichen Gütern konstruiert sind.
+2. Registrierungspflicht
+
+Die Betreiber von Drohnen der „offenen“ Kategorie ab 250 Gramm, von Drohnen der „offenen“ Kategorie unter 250 Gramm, wenn sie mit einer Kamera oder mit einem anderen Sensor, der personenbezogene Daten erfassen kann, ausgestattet sind, sofern es sich NICHT um ein Spielzeug gemäß Spielzeugrichtlinie handelt, und von Drohnen der „speziellen“ Kategorie müssen sich selbst registrieren.Die Registrierungsnummer muss auf jeder von einem registrierten Betreiber eingesetzten Drohne sichtbar angebracht werden.Eigentümer von zulassungspflichtigen Drohnen müssen dieses ebenfalls registrieren lassen.
+3. Der neue EU-Kompetenznachweis für Fernpiloten:
+
+Der Kompetenznachweis wird bereits ab einer Startmasse von 250 Gramm verpflichtend (zuvor: ab einer Startmasse von mehr als 2 Kilogramm).In den Unterkategorien A1 und A3 der „offenen“ Kategorie besteht dieser aus einem theoretischen Online-Test auf der Webseite des Luftfahrt-Bundesamtes (LBA).
+
+Damit wird sichergestellt, dass der Kompetenznachweis in der Breite verpflichtend wird, aber für einfachere Betriebsarten unkompliziert zu erwerben ist.
+Für den Drohnenbetrieb in der Unterkategorie A2 muss zusätzlich zum Kompetenznachweis vom Fernpiloten ein praktisches Selbststudium abgeschlossen und eine weitere Theorieprüfung bei einer vom Luftfahrt-Bundesamt (LBA) benannten Stelle bestanden werden.
+4. Erlaubnis und Genehmigungen:
+
+Der Betrieb von bestimmten Drohnen in der Betriebskategorie „offen“ ist grundsätzlich erlaubnisfrei. Dazu gehören:
+
+Drohnen mit weniger als 25 Kilogramm Startmasse,die in unmittelbarem Sichtkontakt zum Fernpiloten während des gesamten Fluges, und die entsprechend der Vorgaben in den Unterkategorien A1, A2 und A3 betrieben werden.Diese Drohnen dürfen seit dem 31. Dezember 2020 in einer Höhe von maximal 120 Metern betrieben werden (zuvor: maximal 100 Meter).
+Für den Drohnenbetrieb, der von diesen Anforderungen abweicht und dann in der „speziellen“ Kategorie stattfindet, wird eine Betriebsgenehmigung benötigt bzw. alternativ dazu eine Betriebserklärung oder ein Betreiberzeugnis für Leicht-UAS (LUC) gemäß den EU-Regelungen.Nach Artikel 15 der Durchführungsverordnung 2019/947 der Kommission vom 24. Mai 2019 können die Mitgliedstaaten aus Gründen der Sicherheit und Gefahrenabwehr, des Schutzes der Privatsphäre und der Umwelt den UAS-Betrieb in bestimmten Gebieten (geografische Gebiete) untersagen oder nur unter Einhaltung besonderer Auflagen zulassen. Diese Gebiete wurden auf nationaler Ebene in § 21h Abs. 3 LuftVO konkretisiert.
+
+
+
+
+
+
+Weiterführende Informationen
+
+
+
+
+Drohnen FAQ
+
+
+
+
+Training und Prüfung für den EU-Kompetenznachweis
+
+
+
+
+UAS-Betreiberregistrierung
+
+
+
+
+Liste der vom LBA benannten Prüfstellen für Fernpiloten (PStF)
+
+
+
+
+Flyer: Drohnen - Freiheit und Sicherheit für die unbemannte Luftfahrt
+
+
+PDF, 2 MB, Barrierefrei
+
+
+
+General rules in the EU (english)
+
+
+PDF, 2 MB, Barrierefrei

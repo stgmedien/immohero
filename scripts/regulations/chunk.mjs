@@ -90,6 +90,7 @@ for (const file of files) {
     country: meta.country ?? "EU",
     authority: meta.authority ?? "",
     language: meta.language ?? "de",
+    docType: meta.docType ?? "regulation",
     sourceTitle: meta.title ?? id,
     sourceUrl: meta.url ?? "",
     effectiveDate: meta.fetchedAt?.slice(0, 10) ?? null,

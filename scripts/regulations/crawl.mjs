@@ -111,7 +111,7 @@ async function crawlHtml(src, manifest) {
       const { text: html, buf, finalUrl } = await fetchRaw(url, { headers: src.headers ?? {} });
       const text = htmlToText(html);
       if (text.length < 3000) throw new Error(`nur ${text.length} Zeichen extrahiert`);
-      saveDoc(manifest, { id: src.id, country: src.country, authority: src.authority, language: src.language, title: src.title, url: finalUrl }, text, buf, "html");
+      saveDoc(manifest, { id: src.id, country: src.country, authority: src.authority, language: src.language, docType: src.docType, title: src.title, url: finalUrl }, text, buf, "html");
       return;
     } catch (err) {
       console.log(`  … ${src.id}: ${url} fehlgeschlagen (${err.message}), nächster Kandidat`);
@@ -119,6 +119,26 @@ async function crawlHtml(src, manifest) {
   }
   manifest.push({ id: src.id, title: src.title, url: src.urls[0], status: "failed" });
   console.log(`  ✗ ${src.id}: alle URL-Kandidaten fehlgeschlagen`);
+}
+
+/** Direkte PDF-URL(s), z. B. Hersteller-Handbücher vom DJI-CDN. */
+async function crawlPdfDirect(src, manifest) {
+  for (const url of src.urls) {
+    try {
+      const { buf } = await fetchRaw(url, { timeoutMs: 180000, asBuffer: true, referer: src.referer });
+      if (buf.subarray(0, 5).toString() !== "%PDF-") throw new Error("keine PDF-Signatur");
+      console.log(`  … ${src.id}: PDF ${(buf.length / 1e6).toFixed(1)} MB, extrahiere Text …`);
+      const parser = new PDFParse({ data: new Uint8Array(buf) });
+      const parsed = await parser.getText();
+      await parser.destroy();
+      saveDoc(manifest, { id: src.id, country: src.country, authority: src.authority, language: src.language, docType: src.docType, title: src.title, url, pages: parsed.total }, parsed.text, buf, "pdf");
+      return;
+    } catch (err) {
+      console.log(`  … ${src.id}: ${url} fehlgeschlagen (${err.message}), nächster Kandidat`);
+    }
+  }
+  manifest.push({ id: src.id, title: src.title, url: src.urls[0], status: "failed" });
+  console.log(`  ✗ ${src.id}: alle PDF-Kandidaten fehlgeschlagen`);
 }
 
 async function crawlEasaPdf(src, manifest) {
@@ -135,7 +155,7 @@ async function crawlEasaPdf(src, manifest) {
     const parser = new PDFParse({ data: new Uint8Array(buf) });
     const parsed = await parser.getText();
     await parser.destroy();
-    saveDoc(manifest, { id: src.id, country: src.country, authority: src.authority, language: src.language, title: src.title, url: pdfUrl, pages: parsed.total }, parsed.text, buf, "pdf");
+    saveDoc(manifest, { id: src.id, country: src.country, authority: src.authority, language: src.language, docType: src.docType, title: src.title, url: pdfUrl, pages: parsed.total }, parsed.text, buf, "pdf");
   } catch (err) {
     manifest.push({ id: src.id, title: src.title, url: src.libraryUrl, status: "failed", error: err.message });
     console.log(`  ✗ ${src.id}: ${err.message}`);
@@ -153,7 +173,7 @@ async function crawlHub(src, manifest) {
     return;
   }
   // Hub-Seite selbst als Dokument
-  saveDoc(manifest, { id: src.id, country: src.country, authority: src.authority, language: src.language, title: pageTitle(hubHtml, src.title), url: src.hubUrl, partOf: src.id }, htmlToText(hubHtml), Buffer.from(hubHtml), "html");
+  saveDoc(manifest, { id: src.id, country: src.country, authority: src.authority, language: src.language, docType: src.docType, title: pageTitle(hubHtml, src.title), url: src.hubUrl, partOf: src.id }, htmlToText(hubHtml), Buffer.from(hubHtml), "html");
 
   const $ = cheerio.load(hubHtml);
   const origin = new URL(src.hubUrl).origin;
@@ -184,7 +204,7 @@ async function crawlHub(src, manifest) {
     try {
       const { text: html } = await fetchRaw(url);
       const text = htmlToText(html);
-      saveDoc(manifest, { id: `${src.id}-${String(i).padStart(2, "0")}`, country: src.country, authority: src.authority, language: src.language, title: pageTitle(html, url), url, partOf: src.id }, text, null, "html");
+      saveDoc(manifest, { id: `${src.id}-${String(i).padStart(2, "0")}`, country: src.country, authority: src.authority, language: src.language, docType: src.docType, title: pageTitle(html, url), url, partOf: src.id }, text, null, "html");
     } catch (err) {
       manifest.push({ id: `${src.id}-${String(i).padStart(2, "0")}`, url, status: "failed", error: err.message, partOf: src.id });
       console.log(`  ✗ ${src.id}-${i}: ${err.message}`);
@@ -201,6 +221,7 @@ for (const src of sources) {
   if (only && src.id !== only) continue;
   console.log(`\n▶ ${src.id} — ${src.title}`);
   if (src.type === "html") await crawlHtml(src, manifest);
+  else if (src.type === "pdf") await crawlPdfDirect(src, manifest);
   else if (src.type === "easa-pdf") await crawlEasaPdf(src, manifest);
   else if (src.type === "hub") await crawlHub(src, manifest);
   await sleep(700);

@@ -20,3 +20,20 @@ Datengrundlage für den Rechts-Layer der Pilot Journey Engine
   Diff-Erkennung im monatlichen Update-Cron.
 - `data/regulations/raw/` ist gitignored (große PDFs/HTML-Rohdaten);
   `text/` und `chunks/` sind committet und diffbar.
+
+## Handbücher (docType: manual)
+
+Verifizierte direkte PDF-URLs vom DJI-CDN (`dl.djicdn.com`) — nicht jedes
+Modell ist unter dem kanonischen Pfad verfügbar. Weitere Modelle ergänzen:
+PDF-URL von der DJI-Produkt-Download-Seite im Browser kopieren und als
+`type: "pdf"`-Quelle in `sources.json` eintragen.
+
+**Urheberrecht:** Handbücher sind DJI-Copyright. Nutzung nur intern als
+Assistenz-Wissensbasis mit Quellenangabe/Link; Handbuchtext nicht wörtlich
+republizieren, Repo nicht öffentlich stellen.
+
+## docType-Ebenen im Korpus
+
+- `regulation` — Rechtstexte (Zitierpflicht + Disclaimer im Bot erzwungen)
+- `guide` — Behörden-/Praxis-Infos (LBA, dipul, DFS, BMDV, EASA-Guides)
+- `manual` — Hersteller-Handbücher (Equipment-Fragen: "Wie aktiviere ich RTH?")

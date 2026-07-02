@@ -9,7 +9,8 @@
     "status": "ok",
     "chars": 129675,
     "sha256": "b05ae499522399a7b29adeea41a37799192033533c85a3805b37b42c32e18106",
-    "fetchedAt": "2026-07-02T07:53:44.555Z"
+    "fetchedAt": "2026-07-02T07:53:44.555Z",
+    "docType": "regulation"
   },
   {
     "id": "dipul",
@@ -22,7 +23,8 @@
     "status": "ok",
     "chars": 2310,
     "sha256": "b97c9a865bc77faefd8005a3ab13d902923b13dcd97fd52c186d9c845b271d6e",
-    "fetchedAt": "2026-07-02T07:54:11.300Z"
+    "fetchedAt": "2026-07-02T07:54:11.300Z",
+    "docType": "guide"
   },
   {
     "id": "dipul-01",
@@ -35,7 +37,8 @@
     "status": "ok",
     "chars": 739,
     "sha256": "225ecdb160cea113dde677da4ece92a058fd9ed3b7dae57e0b920a0e03b5ec19",
-    "fetchedAt": "2026-07-02T07:54:12.288Z"
+    "fetchedAt": "2026-07-02T07:54:12.288Z",
+    "docType": "guide"
   },
   {
     "id": "dipul-02",
@@ -48,7 +51,8 @@
     "status": "ok",
     "chars": 17741,
     "sha256": "c7b5ee3b88ae039eeb6d580449855711d06dcecff3073a880f3923184d03aecf",
-    "fetchedAt": "2026-07-02T07:54:13.210Z"
+    "fetchedAt": "2026-07-02T07:54:13.210Z",
+    "docType": "guide"
   },
   {
     "id": "dipul-03",
@@ -61,7 +65,8 @@
     "status": "ok",
     "chars": 593,
     "sha256": "cd76e175ad8ad27a6d1e615d1f4ace1148fc14320d7fcb9630cba34142abdbbe",
-    "fetchedAt": "2026-07-02T07:54:14.030Z"
+    "fetchedAt": "2026-07-02T07:54:14.030Z",
+    "docType": "guide"
   },
   {
     "id": "dipul-04",
@@ -74,7 +79,8 @@
     "status": "ok",
     "chars": 520,
     "sha256": "c9caa8fa267fd1fc52aaf8c88b1f7794fa0e09df9a331e61dae73c6e5c63a6df",
-    "fetchedAt": "2026-07-02T07:54:14.848Z"
+    "fetchedAt": "2026-07-02T07:54:14.848Z",
+    "docType": "guide"
   },
   {
     "id": "dipul-05",
@@ -87,7 +93,8 @@
     "status": "ok",
     "chars": 1193,
     "sha256": "ea7a87c36a5931c6bef64ed373b88555a60eae57179fa8162eee1dd6cddc37db",
-    "fetchedAt": "2026-07-02T07:54:15.765Z"
+    "fetchedAt": "2026-07-02T07:54:15.765Z",
+    "docType": "guide"
   },
   {
     "id": "dipul-06",
@@ -100,7 +107,8 @@
     "status": "ok",
     "chars": 881,
     "sha256": "52715dfb4108b3a70bbe280dccd15c5bc76c32147a310698fe1bedff0500132c",
-    "fetchedAt": "2026-07-02T07:54:16.583Z"
+    "fetchedAt": "2026-07-02T07:54:16.583Z",
+    "docType": "guide"
   },
   {
     "id": "dipul-07",
@@ -113,7 +121,8 @@
     "status": "ok",
     "chars": 2212,
     "sha256": "f1dc03b5d0ed1d1613e010216ffeab98861821c7c964caa49758e802122d3e08",
-    "fetchedAt": "2026-07-02T07:54:17.409Z"
+    "fetchedAt": "2026-07-02T07:54:17.409Z",
+    "docType": "guide"
   },
   {
     "id": "dipul-08",
@@ -126,7 +135,8 @@
     "status": "ok",
     "chars": 1356,
     "sha256": "2651ed2844be818b2e1c8c725e2c7936edf0849a9547e651e54f6c709fd42cab",
-    "fetchedAt": "2026-07-02T07:54:18.326Z"
+    "fetchedAt": "2026-07-02T07:54:18.326Z",
+    "docType": "guide"
   },
   {
     "id": "dipul-09",
@@ -139,7 +149,8 @@
     "status": "ok",
     "chars": 5583,
     "sha256": "059370b07006048a9a33e8bfe92c1f33015a5423dabe25421c0f222d036a4311",
-    "fetchedAt": "2026-07-02T07:54:19.235Z"
+    "fetchedAt": "2026-07-02T07:54:19.235Z",
+    "docType": "guide"
   },
   {
     "id": "dipul-10",
@@ -152,7 +163,8 @@
     "status": "ok",
     "chars": 1999,
     "sha256": "34405dce5805dd0860dd875b6b42a724d641efeca2a3c5221e206b082f582bb7",
-    "fetchedAt": "2026-07-02T07:54:20.097Z"
+    "fetchedAt": "2026-07-02T07:54:20.097Z",
+    "docType": "guide"
   },
   {
     "id": "easa-civil-drones",
@@ -165,7 +177,8 @@
     "status": "ok",
     "chars": 4890,
     "sha256": "6666121ca80785b24899c24e765bb632e3e0da559c42a7e0de6e292119d4918f",
-    "fetchedAt": "2026-07-02T07:54:20.935Z"
+    "fetchedAt": "2026-07-02T07:54:20.935Z",
+    "docType": "guide"
   },
   {
     "id": "easa-civil-drones-01",
@@ -178,7 +191,8 @@
     "status": "ok",
     "chars": 10611,
     "sha256": "b389721e399c1d32ae1ae8144618ac68f9604e83116bf17cd101c3cddc1185c8",
-    "fetchedAt": "2026-07-02T07:54:21.912Z"
+    "fetchedAt": "2026-07-02T07:54:21.912Z",
+    "docType": "guide"
   },
   {
     "id": "easa-civil-drones-02",
@@ -191,7 +205,8 @@
     "status": "ok",
     "chars": 9588,
     "sha256": "8a293bf0853a648f64afa525dc65ec1117fcfee89e48a97688a98650d6dca22d",
-    "fetchedAt": "2026-07-02T07:54:23.666Z"
+    "fetchedAt": "2026-07-02T07:54:23.666Z",
+    "docType": "guide"
   },
   {
     "id": "easa-civil-drones-03",
@@ -204,7 +219,8 @@
     "status": "ok",
     "chars": 7746,
     "sha256": "67dfc0f6403bf2bac69a49f4dfff762b22ba29b3e3e07d3e8d56894e53edb652",
-    "fetchedAt": "2026-07-02T07:54:24.972Z"
+    "fetchedAt": "2026-07-02T07:54:24.972Z",
+    "docType": "guide"
   },
   {
     "id": "easa-civil-drones-04",
@@ -217,7 +233,8 @@
     "status": "ok",
     "chars": 4341,
     "sha256": "78b33c007ad0903c8ab61945be217928c8d78ee27788fbedc77bf1f8871066ad",
-    "fetchedAt": "2026-07-02T07:54:26.219Z"
+    "fetchedAt": "2026-07-02T07:54:26.219Z",
+    "docType": "guide"
   },
   {
     "id": "easa-civil-drones-05",
@@ -230,7 +247,8 @@
     "status": "ok",
     "chars": 6184,
     "sha256": "035fab94f3a03f899d1b8cf08a71fc160bcb6e8eb801e6697b06d907ac579f35",
-    "fetchedAt": "2026-07-02T07:54:27.529Z"
+    "fetchedAt": "2026-07-02T07:54:27.529Z",
+    "docType": "guide"
   },
   {
     "id": "easa-civil-drones-06",
@@ -243,7 +261,8 @@
     "status": "ok",
     "chars": 7491,
     "sha256": "1b503cbbfd15eebfb3960c248aae4da72fb007007af5a2dd01c6862f47b36d99",
-    "fetchedAt": "2026-07-02T07:54:28.322Z"
+    "fetchedAt": "2026-07-02T07:54:28.322Z",
+    "docType": "guide"
   },
   {
     "id": "eu-2019-947",
@@ -255,7 +274,8 @@
     "status": "ok",
     "chars": 141834,
     "sha256": "de355de3cdebf68f616c15cf84e5d0e1bdc610151662cc019ef5b9608bf024e2",
-    "fetchedAt": "2026-07-02T07:56:43.916Z"
+    "fetchedAt": "2026-07-02T07:56:43.916Z",
+    "docType": "regulation"
   },
   {
     "id": "eu-2019-945",
@@ -267,7 +287,8 @@
     "status": "ok",
     "chars": 146113,
     "sha256": "d4a7ef67c4e4f614ad950201cf7a8d5c2c6be8e1bd605bec693a9cfbe79dfe0b",
-    "fetchedAt": "2026-07-02T07:56:46.620Z"
+    "fetchedAt": "2026-07-02T07:56:46.620Z",
+    "docType": "regulation"
   },
   {
     "id": "easa-easy-access-uas",
@@ -280,7 +301,8 @@
     "status": "ok",
     "chars": 1498743,
     "sha256": "deb207aa53c6282aa2305541ccf42099d74dca019775ed06e1a110467b5f48c2",
-    "fetchedAt": "2026-07-02T07:56:51.313Z"
+    "fetchedAt": "2026-07-02T07:56:51.313Z",
+    "docType": "regulation"
   },
   {
     "id": "lba-drohnen",
@@ -293,7 +315,8 @@
     "status": "ok",
     "chars": 1705,
     "sha256": "5391e0dfaeb6ea2e69f28a7246899f7cf94c92220c7c4751ef30cb81c5201098",
-    "fetchedAt": "2026-07-02T07:56:52.572Z"
+    "fetchedAt": "2026-07-02T07:56:52.572Z",
+    "docType": "guide"
   },
   {
     "id": "lba-drohnen-01",
@@ -306,7 +329,8 @@
     "status": "ok",
     "chars": 3765,
     "sha256": "2c49a5106974553045835968d038244fe61ff7cca86f326faa826ed03d8348aa",
-    "fetchedAt": "2026-07-02T07:56:53.662Z"
+    "fetchedAt": "2026-07-02T07:56:53.662Z",
+    "docType": "guide"
   },
   {
     "id": "lba-drohnen-02",
@@ -319,7 +343,8 @@
     "status": "ok",
     "chars": 11447,
     "sha256": "ac3558586d28a8208dfaf4c6362135727249dc851a411cc553f443d52570d93a",
-    "fetchedAt": "2026-07-02T07:56:54.423Z"
+    "fetchedAt": "2026-07-02T07:56:54.423Z",
+    "docType": "guide"
   },
   {
     "id": "lba-drohnen-03",
@@ -332,7 +357,8 @@
     "status": "ok",
     "chars": 10479,
     "sha256": "cca195170eebf8446d4d19bfdc95c07b3b9d581360046c821fde35af25a83cf5",
-    "fetchedAt": "2026-07-02T07:56:55.217Z"
+    "fetchedAt": "2026-07-02T07:56:55.217Z",
+    "docType": "guide"
   },
   {
     "id": "lba-drohnen-04",
@@ -345,7 +371,8 @@
     "status": "ok",
     "chars": 5056,
     "sha256": "df98d45e6ec516098d0690fdda90fd6579380f08fef76f23138b555c6e797936",
-    "fetchedAt": "2026-07-02T07:56:56.019Z"
+    "fetchedAt": "2026-07-02T07:56:56.019Z",
+    "docType": "guide"
   },
   {
     "id": "lba-drohnen-05",
@@ -358,7 +385,8 @@
     "status": "ok",
     "chars": 2590,
     "sha256": "a97c67de3d2d058fbd2caa4e836078f4e3c1ceb9ae885d09f747769cce63ec87",
-    "fetchedAt": "2026-07-02T07:56:57.033Z"
+    "fetchedAt": "2026-07-02T07:56:57.033Z",
+    "docType": "guide"
   },
   {
     "id": "lba-drohnen-06",
@@ -371,7 +399,8 @@
     "status": "ok",
     "chars": 2862,
     "sha256": "ccb89348d17b60ff754d037042c78c716956d18fa2da7368f1edec3e6ba4fb4c",
-    "fetchedAt": "2026-07-02T07:56:57.970Z"
+    "fetchedAt": "2026-07-02T07:56:57.970Z",
+    "docType": "guide"
   },
   {
     "id": "lba-drohnen-07",
@@ -384,7 +413,8 @@
     "status": "ok",
     "chars": 9432,
     "sha256": "5ba745a72526f68bcc3a2bb4feab2a1fcbafa37355bfb4d925f2f4900fc91d42",
-    "fetchedAt": "2026-07-02T07:56:58.998Z"
+    "fetchedAt": "2026-07-02T07:56:58.998Z",
+    "docType": "guide"
   },
   {
     "id": "lba-drohnen-08",
@@ -397,7 +427,8 @@
     "status": "ok",
     "chars": 3445,
     "sha256": "7280dcc65f866a5b182e96552ba55721a3f50be0f67209972765a5496da3e64c",
-    "fetchedAt": "2026-07-02T07:57:00.120Z"
+    "fetchedAt": "2026-07-02T07:57:00.120Z",
+    "docType": "guide"
   },
   {
     "id": "lba-drohnen-09",
@@ -410,7 +441,8 @@
     "status": "ok",
     "chars": 10434,
     "sha256": "e68170b83b03a5b4688018929a4f0b6c86ac912857faf34fc5dcbcd9f6ed994f",
-    "fetchedAt": "2026-07-02T07:57:01.285Z"
+    "fetchedAt": "2026-07-02T07:57:01.285Z",
+    "docType": "guide"
   },
   {
     "id": "lba-drohnen-10",
@@ -423,6 +455,144 @@
     "status": "ok",
     "chars": 4073,
     "sha256": "2c65d35a7f9adca606cfa724467e763dee0a090075623f859fa2e85737b38734",
-    "fetchedAt": "2026-07-02T07:57:02.475Z"
+    "fetchedAt": "2026-07-02T07:57:02.475Z",
+    "docType": "guide"
+  },
+  {
+    "id": "dfs-drohnenflug",
+    "country": "DE",
+    "authority": "Deutsche Flugsicherung (DFS)",
+    "language": "de",
+    "docType": "guide",
+    "title": "Drohnenflug | DFS Deutsche Flugsicherung GmbH",
+    "url": "https://www.dfs.de/homepage/de/drohnenflug/",
+    "partOf": "dfs-drohnenflug",
+    "status": "ok",
+    "chars": 2994,
+    "sha256": "2dcce8bd554980a30aea57de69c93616d4a20f7ae7df8eb284edc989fe97b428",
+    "fetchedAt": "2026-07-02T08:04:57.061Z"
+  },
+  {
+    "id": "dfs-drohnenflug-01",
+    "country": "DE",
+    "authority": "Deutsche Flugsicherung (DFS)",
+    "language": "de",
+    "docType": "guide",
+    "title": "Checkliste für Drohnenpiloten | DFS Deutsche Flugsicherung GmbH",
+    "url": "https://www.dfs.de/homepage/de/drohnenflug/checkliste-fuer-drohnenpiloten",
+    "partOf": "dfs-drohnenflug",
+    "status": "ok",
+    "chars": 4510,
+    "sha256": "413dba0a6db9ecea23f913f8d57738230878e7462f034788ce80ac19f674d6b8",
+    "fetchedAt": "2026-07-02T08:04:58.232Z"
+  },
+  {
+    "id": "dfs-drohnenflug-02",
+    "country": "DE",
+    "authority": "Deutsche Flugsicherung (DFS)",
+    "language": "de",
+    "docType": "guide",
+    "title": "FAQ zum Drohnenflug | DFS Deutsche Flugsicherung GmbH",
+    "url": "https://www.dfs.de/homepage/de/drohnenflug/faq-zum-drohnenflug",
+    "partOf": "dfs-drohnenflug",
+    "status": "ok",
+    "chars": 6158,
+    "sha256": "0cc53b53e38056b29a12757d8eafc7d22a7e0d9477cf25688f6bdec46fbc9900",
+    "fetchedAt": "2026-07-02T08:04:59.162Z"
+  },
+  {
+    "id": "dfs-drohnenflug-03",
+    "country": "DE",
+    "authority": "Deutsche Flugsicherung (DFS)",
+    "language": "de",
+    "docType": "guide",
+    "title": "Anträge und Genehmigungen | DFS Deutsche Flugsicherung GmbH",
+    "url": "https://www.dfs.de/homepage/de/drohnenflug/antraege-und-genehmigungen",
+    "partOf": "dfs-drohnenflug",
+    "status": "ok",
+    "chars": 3542,
+    "sha256": "2aadededc2cf3536ea939e7c1c598bef115529603f02db89e1f4bad2fdeb3c4a",
+    "fetchedAt": "2026-07-02T08:05:00.087Z"
+  },
+  {
+    "id": "dfs-drohnenflug-04",
+    "country": "DE",
+    "authority": "Deutsche Flugsicherung (DFS)",
+    "language": "de",
+    "docType": "guide",
+    "title": "Verkehrsmanagement für Drohnen | DFS Deutsche Flugsicherung GmbH",
+    "url": "https://www.dfs.de/homepage/de/drohnenflug/verkehrsmanagement-fuer-drohnen",
+    "partOf": "dfs-drohnenflug",
+    "status": "ok",
+    "chars": 6158,
+    "sha256": "4da1081d8f12694355a91547a4f31c44fcdb1821e6b870de6ed988037a717bcd",
+    "fetchedAt": "2026-07-02T08:05:01.056Z"
+  },
+  {
+    "id": "dfs-drohnenflug-05",
+    "country": "DE",
+    "authority": "Deutsche Flugsicherung (DFS)",
+    "language": "de",
+    "docType": "guide",
+    "title": "Drohnen an Flughäfen | DFS Deutsche Flugsicherung GmbH",
+    "url": "https://www.dfs.de/homepage/de/drohnenflug/drohnen-an-flughaefen",
+    "partOf": "dfs-drohnenflug",
+    "status": "ok",
+    "chars": 1139,
+    "sha256": "25101891df37bba694b4c925a889658599caa7578d13fe394546d3b9dfc2c2d3",
+    "fetchedAt": "2026-07-02T08:05:01.929Z"
+  },
+  {
+    "id": "dfs-drohnenflug-06",
+    "country": "DE",
+    "authority": "Deutsche Flugsicherung (DFS)",
+    "language": "de",
+    "docType": "guide",
+    "title": "Barriere melden | DFS Deutsche Flugsicherung GmbH",
+    "url": "https://www.dfs.de/homepage/de/barriere-melden/?referer=https://www.dfs.de/homepage/de/drohnenflug",
+    "partOf": "dfs-drohnenflug",
+    "status": "too_short",
+    "chars": 117
+  },
+  {
+    "id": "bmdv-drohnen",
+    "country": "DE",
+    "authority": "BMDV",
+    "language": "de",
+    "docType": "guide",
+    "title": "BMDV — Drohnen: Regeln und Informationen für unbemannte Luftfahrt",
+    "url": "https://www.bmv.de/SharedDocs/DE/Artikel/LF/drohnen.html",
+    "status": "ok",
+    "chars": 4701,
+    "sha256": "6cb50997ba851a34bb200c9023334510dbf3266a11dcfae07b2547e1f91d4375",
+    "fetchedAt": "2026-07-02T08:05:04.322Z"
+  },
+  {
+    "id": "manual-dji-mini-4-pro",
+    "country": "EU",
+    "authority": "DJI (Hersteller)",
+    "language": "de",
+    "docType": "manual",
+    "title": "DJI Mini 4 Pro — Benutzerhandbuch (offiziell, DE)",
+    "url": "https://dl.djicdn.com/downloads/DJI_Mini_4_Pro/DJI_Mini_4_Pro_User_Manual_DE.pdf",
+    "pages": 121,
+    "status": "ok",
+    "chars": 209917,
+    "sha256": "bbda1da023b70f718ecd37735b2cae9f1b272e9b03ef212ac15c58b5f199d732",
+    "fetchedAt": "2026-07-02T08:05:08.807Z"
+  },
+  {
+    "id": "manual-dji-mavic-3-pro",
+    "country": "EU",
+    "authority": "DJI (Hersteller)",
+    "language": "de",
+    "docType": "manual",
+    "title": "DJI Mavic 3 Pro — Benutzerhandbuch (offiziell, DE)",
+    "url": "https://dl.djicdn.com/downloads/DJI_Mavic_3_Pro/DJI_Mavic_3_Pro_User_Manual_DE.pdf",
+    "pages": 115,
+    "status": "ok",
+    "chars": 205678,
+    "sha256": "b30f7cd7570ac29f4558a213e0a249739634804b1998e9df249ef23ebef5818f",
+    "fetchedAt": "2026-07-02T08:05:14.399Z"
   }
 ]

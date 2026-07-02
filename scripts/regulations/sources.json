@@ -1,5 +1,5 @@
 {
-  "comment": "Quellkorpus der Pilot Journey Engine. Nur amtliche/authoritative Quellen für den Rechts-Layer. type: html = direkte Seite(n), easa-pdf = PDF-Link von der EASA-Library-Seite entdecken, hub = Startseite crawlen und interne Unterseiten nach linkPattern mitnehmen.",
+  "comment": "Quellkorpus der Pilot Journey Engine. type: html = direkte Seite(n), pdf = direkte PDF-URL(s), easa-pdf = PDF-Link von der EASA-Library-Seite entdecken, hub = Startseite crawlen und interne Unterseiten nach linkPattern mitnehmen. docType: regulation (Rechtstexte, Zitierpflicht) | guide (Behörden-/Praxis-Infos) | manual (Hersteller-Handbücher; nur intern nutzen, Quelle zitieren, nicht wörtlich republizieren).",
   "sources": [
     {
       "id": "eu-2019-947",
@@ -8,11 +8,15 @@
       "language": "de",
       "title": "Durchführungsverordnung (EU) 2019/947 über Vorschriften und Verfahren für den Betrieb unbemannter Luftfahrzeuge (konsolidierte Fassung)",
       "type": "html",
-      "headers": { "Accept": "application/xhtml+xml", "Accept-Language": "deu" },
+      "headers": {
+        "Accept": "application/xhtml+xml",
+        "Accept-Language": "deu"
+      },
       "urls": [
         "http://publications.europa.eu/resource/celex/02019R0947-20220404",
         "http://publications.europa.eu/resource/celex/32019R0947"
-      ]
+      ],
+      "docType": "regulation"
     },
     {
       "id": "eu-2019-945",
@@ -21,11 +25,15 @@
       "language": "de",
       "title": "Delegierte Verordnung (EU) 2019/945 über unbemannte Luftfahrzeugsysteme (Produktklassen, konsolidierte Fassung)",
       "type": "html",
-      "headers": { "Accept": "application/xhtml+xml", "Accept-Language": "deu" },
+      "headers": {
+        "Accept": "application/xhtml+xml",
+        "Accept-Language": "deu"
+      },
       "urls": [
         "http://publications.europa.eu/resource/celex/02019R0945-20200809",
         "http://publications.europa.eu/resource/celex/32019R0945"
-      ]
+      ],
+      "docType": "regulation"
     },
     {
       "id": "easa-easy-access-uas",
@@ -34,7 +42,8 @@
       "language": "en",
       "title": "Easy Access Rules for Unmanned Aircraft Systems (Regulations (EU) 2019/947 & 2019/945)",
       "type": "easa-pdf",
-      "libraryUrl": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
+      "libraryUrl": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu",
+      "docType": "regulation"
     },
     {
       "id": "de-luftvo",
@@ -45,7 +54,8 @@
       "type": "html",
       "urls": [
         "https://www.gesetze-im-internet.de/luftvo_2015/BJNR189410015.html"
-      ]
+      ],
+      "docType": "regulation"
     },
     {
       "id": "lba-drohnen",
@@ -56,7 +66,8 @@
       "type": "hub",
       "hubUrl": "https://www.lba.de/DE/Drohnen/Drohnen_node.html",
       "linkPattern": "/DE/Drohnen/",
-      "maxPages": 10
+      "maxPages": 10,
+      "docType": "guide"
     },
     {
       "id": "dipul",
@@ -67,7 +78,8 @@
       "type": "hub",
       "hubUrl": "https://www.dipul.de/homepage/de/",
       "linkPattern": "/homepage/de/",
-      "maxPages": 10
+      "maxPages": 10,
+      "docType": "guide"
     },
     {
       "id": "easa-civil-drones",
@@ -78,7 +90,56 @@
       "type": "hub",
       "hubUrl": "https://www.easa.europa.eu/en/domains/civil-drones",
       "linkPattern": "/civil-drones",
-      "maxPages": 6
+      "maxPages": 6,
+      "docType": "guide"
+    },
+    {
+      "id": "dfs-drohnenflug",
+      "country": "DE",
+      "authority": "Deutsche Flugsicherung (DFS)",
+      "language": "de",
+      "title": "DFS — Drohnenflug: Luftraum, Regeln, praktische Hinweise",
+      "type": "hub",
+      "docType": "guide",
+      "hubUrl": "https://www.dfs.de/homepage/de/drohnenflug/",
+      "linkPattern": "/drohnenflug",
+      "maxPages": 12
+    },
+    {
+      "id": "bmdv-drohnen",
+      "country": "DE",
+      "authority": "BMDV",
+      "language": "de",
+      "title": "BMDV — Drohnen: Regeln und Informationen für unbemannte Luftfahrt",
+      "type": "html",
+      "docType": "guide",
+      "urls": [
+        "https://bmdv.bund.de/SharedDocs/DE/Artikel/LF/drohnen.html"
+      ]
+    },
+    {
+      "id": "manual-dji-mini-4-pro",
+      "country": "EU",
+      "authority": "DJI (Hersteller)",
+      "language": "de",
+      "title": "DJI Mini 4 Pro — Benutzerhandbuch (offiziell, DE)",
+      "type": "pdf",
+      "docType": "manual",
+      "urls": [
+        "https://dl.djicdn.com/downloads/DJI_Mini_4_Pro/DJI_Mini_4_Pro_User_Manual_DE.pdf"
+      ]
+    },
+    {
+      "id": "manual-dji-mavic-3-pro",
+      "country": "EU",
+      "authority": "DJI (Hersteller)",
+      "language": "de",
+      "title": "DJI Mavic 3 Pro — Benutzerhandbuch (offiziell, DE)",
+      "type": "pdf",
+      "docType": "manual",
+      "urls": [
+        "https://dl.djicdn.com/downloads/DJI_Mavic_3_Pro/DJI_Mavic_3_Pro_User_Manual_DE.pdf"
+      ]
     }
   ]
 }
