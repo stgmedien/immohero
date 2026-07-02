@@ -56,6 +56,7 @@ export function PilotChat({
   const [gateName, setGateName] = useState("");
   const [gateConsent, setGateConsent] = useState(false);
   const [gateBusy, setGateBusy] = useState(false);
+  const [gateError, setGateError] = useState<string | null>(null);
   const [pendingMessage, setPendingMessage] = useState<string | null>(null);
   const [notConfigured, setNotConfigured] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -163,13 +164,22 @@ export function PilotChat({
   async function submitGate() {
     if (!gateEmail || !gateConsent || gateBusy) return;
     setGateBusy(true);
+    setGateError(null);
     try {
       const res = await fetch("/api/pilot-engine/lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ sessionId: sessionId(), email: gateEmail, name: gateName, consent: gateConsent }),
       });
-      const data = (await res.json()) as { ok: boolean; returning?: boolean };
+      const data = (await res.json()) as { ok: boolean; returning?: boolean; error?: string };
+      if (!data.ok) {
+        setGateError(
+          data.error === "bad_email"
+            ? locale === "en" ? "Please enter a valid email address." : "Bitte eine gültige E-Mail-Adresse eingeben."
+            : locale === "en" ? "Saving failed — please try again." : "Speichern fehlgeschlagen — bitte nochmal versuchen.",
+        );
+        return;
+      }
       if (data.ok) {
         setShowGate(false);
         setMessages((m) => [
@@ -276,6 +286,9 @@ export function PilotChat({
               placeholder="E-Mail"
               className="mt-2 w-full rounded-lg border border-[var(--color-line)] px-3 py-2 text-sm"
             />
+            {gateError && (
+              <p className="mt-2 text-xs text-red-600">{gateError}</p>
+            )}
             <label className="mt-2 flex items-start gap-2 text-[11px] text-[var(--color-ink-soft)]">
               <input type="checkbox" checked={gateConsent} onChange={(e) => setGateConsent(e.target.checked)} className="mt-0.5" />
               <span>

@@ -7,6 +7,7 @@
  * - Kosten-Logging pro Nachricht (tokens_in/out)
  */
 import Anthropic from "@anthropic-ai/sdk";
+import * as Sentry from "@sentry/nextjs";
 import { NextRequest } from "next/server";
 import { createHash } from "node:crypto";
 import { and, asc, eq, gte, sql as dsql } from "drizzle-orm";
@@ -27,7 +28,7 @@ import {
 } from "@/lib/pilot/engine";
 import { toolsForStage, executeTool, type ToolContext, type Stage } from "@/lib/pilot/tools";
 
-export const maxDuration = 120;
+export const maxDuration = 300;
 
 const MAX_MESSAGE_CHARS = 2000;
 const MAX_SESSION_MESSAGES = 60;
@@ -220,7 +221,16 @@ export async function POST(request: NextRequest) {
         emit({ t: "end" });
       } catch (err) {
         console.error("[pilot-engine] chat failed", err);
-        emit({ t: "error", message: "Der Guide ist kurz nicht erreichbar — bitte gleich nochmal senden." });
+        Sentry.captureException(err, { tags: { feature: "pilot_engine_chat" } });
+        const raw = err instanceof Error ? err.message : String(err);
+        let friendly = "Der Guide ist kurz nicht erreichbar — bitte gleich nochmal senden.";
+        if (/credit balance/i.test(raw)) {
+          friendly =
+            "Der Guide macht gerade eine kurze Pause (Kontingent aufgebraucht). Das Team ist informiert — schau bitte später nochmal vorbei!";
+        } else if (/overloaded|rate.?limit|429|529/i.test(raw)) {
+          friendly = "Gerade ist viel los — bitte in ein paar Sekunden nochmal senden.";
+        }
+        emit({ t: "error", message: friendly });
         emit({ t: "end" });
       } finally {
         controller.close();

@@ -4,6 +4,7 @@
  * das ist der "agentische Funnel" statt freiem Chatbot.
  */
 import type Anthropic from "@anthropic-ai/sdk";
+import * as Sentry from "@sentry/nextjs";
 import { eq } from "drizzle-orm";
 import { db } from "@/lib/db/client";
 import {
@@ -19,6 +20,11 @@ import { estimateEarnings } from "./earnings";
 import { recommendEquipment, EQUIPMENT_CATALOG } from "./equipment";
 import { profileCompleteness, computeLevelScore, levelFromScore, computePassportLevel } from "./scoring";
 import { getAvailableConsultationSlots, consultationWindow } from "@/lib/consultation";
+import {
+  createConsultationEvent,
+  isGoogleCalendarConfigured,
+  CALENDAR_ID,
+} from "@/lib/google-calendar";
 import { shotsForOrder } from "@/lib/shots";
 
 export type Stage = "assess" | "route" | "convert";
@@ -322,6 +328,43 @@ export async function executeTool(
           return JSON.stringify({ ok: false, error: "invalid_slot", instruction: "Slot ungültig oder zu kurzfristig — erneut get_call_slots aufrufen und wählen lassen." });
         }
         const { start: s, end: e } = consultationWindow(start.toISOString());
+
+        // Direkt-Buchung über die verbundene Google-Calendar-API:
+        // Event + Google-Meet-Link sofort anlegen, Einladung geht per
+        // sendUpdates=all automatisch an den Piloten. Fällt der Kalender aus,
+        // bleibt es eine "requested"-Anfrage, die das Team manuell bestätigt.
+        let googleEventId: string | null = null;
+        let googleHtmlLink: string | null = null;
+        let meetUrl: string | null = null;
+        let confirmed = false;
+        if (isGoogleCalendarConfigured()) {
+          try {
+            const ev = await createConsultationEvent({
+              summary: `Aero One Pilot-Assessment — ${p.name ?? p.email}`,
+              description: [
+                "30-minütiges Assessor-Videogespräch (gebucht über den Pilot-Guide).",
+                `Level-Einstufung: ${p.level ?? "offen"} (Score ${p.levelScore}, Passport ${p.passportLevel})`,
+                p.equipment?.length ? `Equipment: ${p.equipment.map((eq) => eq.model).join(", ")}` : null,
+                p.flightHours != null ? `Flugstunden: ${p.flightHours}` : null,
+                typeof input.note === "string" && input.note ? `Notiz: ${input.note.slice(0, 300)}` : null,
+              ]
+                .filter(Boolean)
+                .join("\n"),
+              startIso: s.toISOString(),
+              endIso: e.toISOString(),
+              attendees: [{ email: p.email, displayName: p.name ?? undefined }],
+              addGoogleMeet: true,
+            });
+            googleEventId = ev.eventId;
+            googleHtmlLink = ev.htmlLink;
+            meetUrl = ev.meetUrl;
+            confirmed = true;
+          } catch (err) {
+            console.error("[pilot-engine] direct calendar booking failed", err);
+            Sentry.captureException(err, { tags: { feature: "pilot_assessor_booking" } });
+          }
+        }
+
         const [row] = await db
           .insert(consultations)
           .values({
@@ -330,15 +373,32 @@ export async function executeTool(
             customerName: p.name,
             requestedStart: s,
             requestedEnd: e,
-            status: "requested",
-            customerNote: typeof input.note === "string" ? input.note.slice(0, 500) : `Pilot-Assessment (Level: ${p.level ?? "offen"}, Score ${p.levelScore})`,
+            status: confirmed ? "confirmed" : "requested",
+            meetingProvider: confirmed ? "google_meet" : null,
+            meetingUrl: meetUrl,
+            googleEventId,
+            googleHtmlLink,
+            googleCalendarId: confirmed ? CALENDAR_ID : null,
+            confirmedAt: confirmed ? new Date() : null,
+            customerNote: typeof input.note === "string" && input.note ? input.note.slice(0, 500) : `Pilot-Assessment (Level: ${p.level ?? "offen"}, Score ${p.levelScore})`,
           })
           .returning({ id: consultations.id });
-        await logEvent(ctx, "call_booked", { consultationId: row.id, start: s.toISOString() });
+        await logEvent(ctx, "call_booked", { consultationId: row.id, start: s.toISOString(), confirmed });
+
+        if (confirmed) {
+          return JSON.stringify({
+            ok: true,
+            confirmed: true,
+            booked: { start: s.toISOString(), duration_min: 30 },
+            meet_url: meetUrl,
+            instruction: `Der Termin ist FEST GEBUCHT und steht im Kalender. Eine Google-Kalender-Einladung mit dem Meet-Link ist an ${p.email} unterwegs. Nenne dem Nutzer Datum, Uhrzeit und den Meet-Link direkt.`,
+          });
+        }
         return JSON.stringify({
           ok: true,
+          confirmed: false,
           booked: { start: s.toISOString(), duration_min: 30 },
-          instruction: "Bestätige die Anfrage: Das Team bestätigt den Termin per E-Mail mit Video-Link. Kein weiterer Schritt nötig.",
+          instruction: "Anfrage ist eingegangen (Kalender kurzzeitig nicht erreichbar) — das Team bestätigt den Termin per E-Mail mit Video-Link.",
         });
       }
 
