@@ -1,0 +1,563 @@
+Skip to main content
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Popular
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DownloadsRelated Content
+
+
+
+
+
+
+
+
+
+In this site you can find:
+
+What is a specific UAS (drone) operation?
+Registration of drone operators
+This is what is needed to operate in the specific category
+If you are planning a drone operation under the specific category….
+Do I need to apply for an operational authorization before each flight?
+Geographical zones
+Stay informed
+
+What is a specific UAS (drone) operation?
+A drone can be operated in the ‘specific’ category when it is operated outside of the operational limitations laid out under the ‘open’ drone category. If the risk of the operation is even higher, the drone must be operated in the ‘certified’ category. Hereafter you can find information only on the drone’s specific category.
+Examples of UAS operations in the ‘specific’ category are:
+
+BVLOS – Beyond Visual Line Of Sight
+When using a drone with MTOM (maximum take of mass) > 25 kg
+flying higher than 120m above ground level
+when dropping material
+when operating drone in an urban environment with a MTOM> 4 kg or without a class identification label
+
+Registration of drone operators
+As for the open category, all drone operators in the specific category need to register themselves (not the actual drone/s). If the operator is already registered (e.g. because they operate a drone in the open category) there is no need to register again, even for operations in the specific category. UAS operators need to register themselves in the Member State where they have their residence for natural persons or where they have their principal place of business for legal persons. Third country operators that do not have their principal place of business in an EASA Member State need to register in the first EASA Member State in which they perform an operation.
+This is what is needed to operate in the specific category
+The ‘specific’ category caters for riskier operations not covered under the ‘open’ category.
+To fly in the specific category, as a drone operator and before starting the flight/s, an operational authorisation from the National Aviation Authority (NAA) of the state of registration is needed. Even if the intention is to conduct the operation in a state other than the one of registration, the authorisation is issued by the NAA of the state of registration. Please see this link on how to conduct operation in a state different from the one of registration.
+The authorization is required unless the operation is conducted in accordance with an European Standard Scenario (STS) (applicable from 1st January 2024) or if you have been granted by the NAA a Light UAS operator certificate (LUC) with privileges.
+If you are planning a drone operation under the specific category….
+To recap, there are four different ways to operate in the specific category:
+
+Submit a declaration based on a Standard scenario (STS);
+Obtain an operational authorisation following a PDRA;
+Obtain an operational authorisation without a PDRA;
+Have a LUC.
+
+Whenever an UAS operator has decided to operate in the specific category, the UAS operator has the responsibility to develop an Operations Manual.
+The Operations Manual together with other applicable documents are submitted to the NAA in order to:
+
+obtain an operational authorization following a PDRA (in this case the Operations Manual is sent to the NAA with the PDRA);
+obtain an operational authorization without a PDRA (in this case the Operations Manual is sent to the NAA together with the SORA procedure);
+be certified as a Light UAS operator (in this case the Operations Manual is sent together with the documents mentioned in UAS.LUC.010).
+
+Please find attached in the “Downloads” section of this page the Operations Manual example/template that can be used. This example is in a word format and represents the Operations Manual developed for a SAIL II UAS operation.
+Do I need to apply for an operational authorization before each flight?
+An operational authorisation covers all flights conducted within the limits defined in it and it may be valid for an unlimited number of flights and time, unless the NAA explicitly limits them. However if the operator intends to operate in an area covered by a geographical zone, they may be required to have a flight authorization.
+Geographical zones
+If the operator intends to operate in an area covered by a geographical zone , then a flight authorization issued by the authority in charge of the geographical zone is needed. (e.g if the operator has a contract to clean the windows of a prison protected by a geographical zone, they may need the flight authorization from the authority in charge of the prison). This authorization is independent of the category in which the flight is conducted and it’s necessary even if the flight is performed according to an EU STS or in the open category.
+To support States in the publication of information on the UAS geographical zones in the common digital format as required by the drones regulation, EASA issued respective guidance and acceptable means of compliance making reference to the EUROCAE ED-269 standard. At this link it is possible to find “Guidelines for GeoZones data sets” giving additional information on the application of the above mentioned standard.
+Remote identification
+Starting from 1 January 2024, all drones operated in the specific category (including those operating in national or EU standard scenarios) need to be equipped with a remote identification system. Some companies have already placed on the market modules providing a direct remote identification system, providing the ‘EU Declaration of Conformity’ and you can find a list below. Please be aware that EASA did not verify the compliance of such components and the declaration of conformity is submitted under the sole responsibility of the manufacturer.
+EU Declaration of Conformity list
+
+Manufacturer
+
+Module name & website link
+
+Function
+
+EU Declaration of Conformity
+
+Aerobits
+idME (Remote ID)
+
+Direct remote identification
+
+EU Declaration of Conformity
+
+Aerobits
+idME+ (Remote ID)
+
+Direct remote identification
+
+EU Declaration of Conformity
+
+Aerobits
+
+idME PRO (Remote ID)
+
+Direct remote identification
+
+EU Declaration of Conformity
+
+AirPlate
+AirPlate (Remote ID Pro)
+
+Direct remote identification
+
+EU Declaration of Conformity
+
+Bluemark
+DroneBeacon db120
+
+Direct remote identification
+
+EU Declaration of Conformity
+
+Bluemark
+DroneBeacon db121
+
+Direct remote identification
+
+EU Declaration of Conformity
+
+Bluemark
+DroneBeacon db121PCB
+
+Direct remote identification
+
+EU Declaration of Conformity
+
+Bluemark
+DroneBeacon db121FPV
+
+Direct remote identification
+
+EU Declaration of Conformity
+
+Bluemark
+DroneBeacon db150FVP
+
+Direct remote identification
+
+EU Declaration of Conformity
+
+Bluemark
+DroneBeacon db152FVP
+
+Direct remote identification
+
+EU Declaration of Conformity
+
+Bluemark
+DroneBeacon db153FVP
+
+Direct remote identification
+
+EU Declaration of Conformity
+
+Dronavia
+Fly ID & Fly ID Light Direct Remote ID (DRI)
+
+Direct remote identification
+
+EU Declaration of Conformity
+
+Drone Defence
+Aeroping — Air traffic monitoring platform
+
+Direct remote identification
+
+EU Declaration of Conformity
+
+Dronetag
+Dronetag BS (Bare minimum for Remote ID)
+
+Direct remote identification
+
+EU Declaration of Conformity
+
+Dronetag
+Dronetag Beacon
+
+Direct remote identification
+
+EU Declaration of Conformity
+
+Dronetag
+Dronetag Mini
+
+Direct remote identification
+
+EU Declaration of Conformity
+
+Dronetag
+Dronetag Mini 4G
+
+Direct remote identification
+
+EU Declaration of Conformity
+
+FLARM
+Atom UAV
+
+Direct remote identification
+
+EU Declaration of Conformity
+
+FLARM
+Aurora
+
+Direct remote identification
+
+EU Declaration of Conformity
+
+Italdron
+Italdron professional drones and UAV
+
+Direct remote identification
+
+EU Declaration of Conformity
+
+PrimeCor
+
+PrimeCor Tracker
+
+Direct remote identification
+
+EU Declaration of Conformity
+
+TopView
+
+TopView Pollicino
+
+Direct remote identification
+
+EU Declaration of Conformity
+
+Zing Drone Solutions
+
+Zingdrones Z-RID LITE
+
+Direct remote identification
+
+EU Declaration of Conformity
+
+For additional information please contact the team.
+
+Stay informed on Civil drones:
+
+Create an EASA account
+Follow the category "Civil drones (Unmanned aircraft)"
+Decide how you want to be notified
+
+
+
+
+Downloads
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[pdf]
+Guidelines on Design verification for UAS operated in the ‘specific’ category
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[pdf]
+Guidelines for UAS operations in the open and specific categories
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[external]
+What is U-space
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[docx]
+EASA Operations Manual example for UAS operations at SAIL II
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[docx]
+EASA Operations Manual example for UAS operations under PDRA S-01
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Related Content
+
+
+
+
+
+Easy Access Rules for Unmanned Aircraft Systems (Regulation (EU) 2019/947 and Regulation (EU) 2019/945)
+
+
+
+
+
+
+
+FAQs Drones (UAS)
+
+
+
+
+
+
+
+Special Condition Light UAS
+
+
+
+
+
+
+
+
+
+
+
+Video: Flying a Drone professionally - Find out what is important for your business
+
+
+
+
+
+
+
+Video: Explanation of Specific category
+
+
+
+
+
+
+
+Video: Methodology for the Specific Ops Risk Assessment (SORA) by JARUS - UAS Workshop 2018
+
+
+
+
+
+
+
+Video: The new design verification drone operations in the “specific” category process for authorisation
+
+
+
+
+
+
+
+Video: Path to Design Verification - Rotorcraft & VTOL Symposium 2021 - Rotorcraft & VTOL 2021
+
+
+
+
+
+
+
+
+
+
+
+
+
+11 Jun 2019
+
+
+
+
+Regulation
+
+
+
+
+
+
+
+
+
+
+Commission Implementing Regulation (EU) 2019/947
+
+
+
+
+UAS Air Operations & UAS Aircrew

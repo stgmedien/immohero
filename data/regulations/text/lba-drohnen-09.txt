@@ -1,0 +1,396 @@
+Navigation und Service
+
+Springe direkt zu:
+
+
+Inhalt
+Hauptmenü
+Suche
+
+
+
+
+
+
+
+Sie sind hier:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Drohnen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fragen und Antworten
+
+
+
+
+
+
+
+
+
+
+
+Fragen und Antworten zu den Gebühren
+FAQ-Gebühren
+
+
+
+Warum muss ich Gebühren bezahlen und wo wird auf die Gebühren hingewiesen?
+Dass für die UAS-Betreiberregistrierung und die Ausstellung von EU-Fernpiloten-Kenntnisnachweisen Gebühren zu erheben sind, ergibt sich aus der Kostenverordnung der Luftfahrtverwaltung (LuftKostV) und im Gebührenverzeichnis (Anlage zu § 2 Absatz 1 LuftKostV), die am 18.06.2021 in Kraft trat: Bundesgesetzblatt
+
+Für Leistungen im Bereich Drohnen, die ab dem 18.06.2021 in Anspruch genommen wurden, erhebt das Luftfahrt-Bundesamt daher Gebühren.
+
+nach oben
+An welcher Stelle kann ich nachlesen, dass und welche Leistungen des LBA im Bereich der Drohnen etwas kosten?
+Die anfallenden Gebühren für die Leistungen im Bereich Drohnen sind mit Veröffentlichung im Bundesgesetzblatt am 17.06.2021 in der Kostenverordnung der Luftfahrtverwaltung (LuftKostV) und im Gebührenverzeichnis (Anlage zu § 2 Absatz 1 LuftKostV) nachlesbar: https://www.gesetze-im-internet.de/luftkostv/
+
+Den konkreten Gebührentatbestand und die entsprechende Ziffer aus dem Gebührenverzeichnis können Sie Ihrem persönlichen Kostenbescheid entnehmen (Seite 2).
+
+nach oben
+Wo finde ich meinen persönlichen Kostenbescheid?
+Der Kostenbescheid steht Ihnen nach Login in Ihrem Nutzerkonto zum Download zur Verfügung. Den Login-Bereich finden Sie im Themenbereich „Drohnen“ verlinkt, ebenso in der Ihnen zugegangenen E-Mail.
+
+nach oben
+Wieso stehen Leistungsdatum und Mehrwertsteuer nicht mit auf meinem Bescheid? Kann man das ergänzen?
+Es handelt sich bei den Gebührenbescheiden nicht um Rechnungen im Sinne des § 14 UStG. Deshalb sind Angaben nach § 14 UStG, wie die Ausweisung der Mehrwertsteuer, nicht enthalten. Es ist auch nicht möglich, diese zu ergänzen, da es sich um Gebührenbescheide nach öffentlichem Recht handelt.
+
+nach oben
+Sind die Ansprüche des LBA nicht bereits verjährt?
+Nach § 1 Absatz 2 LuftKostV in Verbindung mit § 20 Absatz 1 VwKostG gilt eine Verjährungsfrist von vier Jahren. Die Gebühren werden erst mit dem Kostenbescheid festgesetzt, wodurch die Gebührenschuld entsteht, sodass für die Verjährung der zweite Satz des § 20 Absatz 1 VwKostG und damit die Frist von vier Jahren zutrifft.
+
+Das bedeutet konkret, dass die ab dem 18.06.2021 (in Krafttreten der LuftKostV und des Gebührenverzeichnisses) entstandenen Ansprüche noch mit Gebührenbescheid erhoben werden können und nicht verjährt sind.
+
+nach oben
+Warum gilt nicht die dreijährige Verjährungsfrist aus dem BGB?
+Es handelt sich bei den Gebühren um Kosten aus dem Bereich des öffentlichen Rechts und nicht des bürgerlichen Rechts. Für diese Gebühren gelten die spezielleren Regelungen der LuftKostV und des VwKostG.
+
+nach oben
+Handelt es sich bei den berechneten Gebühren für die Betreiberregistrierung um einmalige Gebühren oder muss ich diese nun regelmäßig zahlen?
+Es handelt sich bei den Registrierungsgebühren als UAS-Betreiber um einmalige Gebühren. Sollte sich daran etwas ändern, wären zunächst die rechtlichen Grundlagen, z. B. LuftKostV oder LuftVG anzupassen.
+
+Beachten Sie aber bitte, dass bei einer Löschung der Betreiberregistrierung im Falle einer erneuten Anschaffung eines UAS, für welches die Registrierungspflicht gilt, eine Neuregistrierung notwendig würde, die dann erneut gebührenpflichtig wäre.
+
+nach oben
+Ich benötige keine Registrierung als Betreiber mehr. Was muss ich tun?
+Wenn Sie die Registrierung und die damit verbundene e-ID (UAS-Betreibernummer) nicht aufrecht erhalten möchten, können Sie mit dem Formblatt auf unserer Internetseite im Bereich "Fernpiloten - Änderung des Nutzer-Kontos" die Löschung beantragen.
+
+Das Nutzerkonto wird nach Löschungsanfrage deaktiviert, sodass kein Zugriff mehr möglich ist. Deaktivierte Daten werden 5 Jahre nach Setzen in Deaktivierung gelöscht.
+
+Der jetzige Gebührenbescheid wird damit aber nicht hinfällig, die Kosten sind dennoch zu entrichten.
+
+Beachten Sie bitte auch, dass bei einer Löschung der Betreiberregistrierung im Falle einer erneuten Anschaffung eines UAS, für welches die Registrierungspflicht gilt, eine Neuregistrierung notwendig würde, die dann erneut gebührenpflichtig wäre.
+
+nach oben
+Handelt es sich bei den berechneten Gebühren für die Kenntnisnachweise für Fernpiloten um einmalige Gebühren oder muss ich diese nun regelmäßig zahlen?
+Die Ausstellungsgebühren für die Fernpiloten-Nachweise fallen einmalig je (Erst-) Ausstellung an. Die Nachweise sind jeweils fünf Jahre ab Ausstellungsdatum gültig. Wenn Sie die Nachweise verlängern möchten, ist ein Antrag erforderlich, und es fallen erneut Gebühren an. Sofern Sie die Nachweise nicht verlängern möchten, müssen Sie nichts weiter unternehmen. Die Fernpiloten-Nachweise laufen automatisch aus und es fallen dann keine Gebühren an.
+
+nach oben
+Ich nutze meine Drohne nicht (mehr) bzw. benötige keinen Nachweis mehr. Muss ich die Gebühren trotzdem bezahlen?
+Wenn Sie die Prüfung absolviert und einen Fernpiloten-Nachweis erhalten haben, wurde die kostenpflichtige Amtshandlung erbracht und die Gebührenschuld ist entstanden. Es ist nicht ausschlaggebend, ob und wie lange Sie die Fernpiloten-Nachweise tatsächlich genutzt haben.
+
+Die Gebührenpflicht besteht auch dann, wenn Sie sich dazu entschließen, Ihr Nutzerkonto für die Zukunft löschen zu lassen.
+
+nach oben
+Ich habe eine E-Mail bekommen, in der Leistungen für 170 Euro aufgeführt werden. Ich habe aber nicht alle dieser Leistungen in Anspruch genommen. Muss ich das alles zahlen?
+Mit der E-Mail haben wir darüber informiert, dass der persönliche Kostenbescheid zum Abruf bereitsteht. Die E-Mail beinhaltet außerdem eine Übersicht der häufigsten gebührenpflichtigen Amtshandlungen/Leistungen aus dem Bereich „UAS“ (Drohnen). Die konkrete, auf Sie entfallende Gebühr finden Sie in Ihrem persönlichen Kostenbescheid.
+
+nach oben
+
+
+
+Fragen und Antworten zum Nutzerkonto
+FAQ-Nutzerkonto
+
+
+
+Ich möchte mein Nutzerkonto löschen. Was muss ich tun?
+Wenn Sie Ihr Nutzerkonto als Fernpilot oder UAS-Betreiber und die damit verbundene e-ID (UAS-Betreibernummer) nicht aufrecht erhalten möchten, können Sie mit dem Formblatt auf unserer Internetseite im Bereich "Fernpiloten - Änderung des Nutzer-Kontos"" die Löschung beantragen.
+
+
+
+Beachten Sie bitte auch, dass bei einer Löschung der Betreiberregistrierung im Falle einer erneuten Anschaffung eines UAS, für welches die Registrierungspflicht gilt, eine Neuregistrierung notwendig würde, die dann erneut gebührenpflichtig wäre.
+
+nach oben
+Was kann ich tun, wenn ich meinen Benutzernamen zu meinem Nutzerkonto nicht mehr weiß?
+Zugang zu Ihrem Benutzerkonto erhalten Sie über https://uas-registration.lba-openuav.de/
+
+Ihr Benutzername ist immer die E-Mailadresse, die Sie für die Registrierung oder Anmeldung verwendet haben. An diese E-Mailadresse ist auch die E-Mailbenachrichtigung versendet worden. Sollten Sie sich unsicher sein, wenden Sie sich bitte an per E-Mail an uas@lba.de.
+
+nach oben
+Was kann ich tun, wenn ich mein Passwort vergessen habe?
+
+Zugang zu Ihrem Benutzerkonto erhalten Sie über https://uas-registration.lba-openuav.de/
+
+Das Passwort können Sie über die „Passwort-vergessen-Funktion“ zurücksetzen. Eine detaillierte Beschreibung dazu finden Sie auf unserer Internetseite unter Betreiberregistrierung.
+
+nach oben
+Meine E-Mail-Adresse hat sich geändert. Was muss ich tun?
+Nach § 66a Absatz 3 Satz 2 Luftverkehrsgesetz (LuftVG) sind Sie verpflichtet, Ihre Daten stets aktuell zu halten und Änderungen unverzüglich mitzuteilen.
+
+Hat sich Ihre E-Mailadresse geändert, reichen Sie die Änderung über das Änderungsformblatt bei uns ein. Dafür steht Ihnen das entsprechende Formblatt im Bereich "Fernpiloten - Änderung des Nutzer-Kontos" zur Verfügung.
+
+
+
+nach oben
+Meine Anschrift, mein Name, meine Versicherung oder andere Daten haben sich geändert. Was muss ich tun?
+Nach § 66a Absatz 3 Satz 2 Luftverkehrsgesetz (LuftVG) sind Sie verpflichtet, Ihre Daten stets aktuell zu halten und Änderungen unverzüglich mitzuteilen.
+
+Falls sich Ihr Name, Ihre Anschrift, Ihre Versicherung oder andere Daten geändert haben,  melden Sie sich bitte mit Ihrem Benutzerkonto auf der Prüfungsplattform (https://uas-registration.lba-openuav.de//) an. Nach der Anmeldung erreichen Sie dann über das Dashboard die erforderlichen Optionen um Ihre Daten zu bearbeiten. Eine nachträgliche Abänderung des Gebührenbescheids erfolgt jedoch nicht.
+
+nach oben
+Ich kann mich nicht anmelden. Eine Fehlermeldung erscheint, und/oder die Seite lädt nicht. Was kann ich tun?
+Die Fehlermeldung erscheint meist dann, wenn Sie versuchen, sich über ein Smartphone anzumelden und/oder einen Browser nutzen, der die Anmeldung bzw. die Seite blockiert. Nutzen Sie ggf. ein anderes Gerät zur Anmeldung und verwenden Sie einen anderen Browser. Sollte es weiterhin nicht gehen, melden Sie sich bitte per E-Mail unter uas@lba.de oder postalisch beim Luftfahrt-Bundesamt, Referat B 5, 38144 Braunschweig.
+
+nach oben
+Ich kann den Bescheid in meinem Benutzerkonto nicht sehen. Was kann ich tun?
+Sehr wahrscheinlich wird der Anzeigefehler durch den verwendeten Browser verursacht. Bitte rufen Sie das Benutzerkonto zunächst über einen anderen (aktuellen) Browser auf.
+
+Prüfen Sie bitte, ob Sie sich mit der richtigen E-Mailadresse (als Benutzername) anmelden, an die Ihnen auch der Hinweis bezüglich des Bescheides gesendet worden ist.
+
+Nutzen Sie ggf. ein anderes Gerät zur Anmeldung und verwenden Sie einen anderen Browser. Sollte es weiterhin nicht gehen, melden Sie sich bitte vorzugsweise per E-Mail unter uas@lba.de oder postalisch beim Luftfahrt-Bundesamt, Referat B 5, 38144 Braunschweig.
+
+nach oben
+Meine private Anschrift steht auf dem Bescheid, obwohl ich den Nachweis für die Arbeit benötige. Können Sie das umschreiben?
+Bescheide werden stets an die Person adressiert, die die Amtshandlung veranlasst bzw. zu deren Gunsten die Amtshandlung vorgenommen wurde. Eine nachträgliche Umschreibung auf den Arbeitgeber o. ä. ist nicht möglich. Die Verrechnung mit Ihrem Arbeitgeber veranlassen Sie bitte deshalb eigenständig.
+
+nach oben
+
+
+
+
+
+
+Sie sind hier:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Drohnen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fragen und Antworten
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Gebühren

@@ -1,0 +1,25 @@
+Seiten{{ sa2search.resultSets['self:live'].result.totalCount > sa2search.resultSets['self:live'].perPage ? '> ' + sa2search.resultSets['self:live'].perPage : sa2search.resultSets['self:live'].result.totalCount}}Die Suche konnte nicht ausgeführt werden. Bitte versuchen Sie es zu einem späteren Zeitpunkt erneut.
+{{ item.name }}
+
+
+
+
+
+
+
+Digitale Plattform Unbemannte Luftfahrt
+
+
+
+
+
+dipul | Digitale Plattform Unbemannte LuftfahrtLayout 1InformationenDer Betrieb von Drohnen ist komplex und entwickelt sich stetig weiter. Zudem sind beim Drohnenbetrieb stets die neuen, rechtlichen Grundlagen auf dem Gebiet der unbemannten Luftfahrt zu berücksichtigen. Hier finden Sie als Privatperson sowie als Unternehmen Informationen rund um das Thema der unbemannten Luftfahrt.Mehr
+
+Map ToolFür Ihren Drohnenbetrieb steht Ihnen hier eine interaktive Karte zur Verfügung. Da das Betreiben einer Drohne geographischen Einschränkungen unterliegt, können Sie mithilfe dieser Karte einsehen, in welchen Gebieten das Fliegen mit einer Drohne nur unter bestimmten Voraussetzungen möglich ist.Erklärvideo zu Map ToolMehr
+Anträge & BehördendiensteHier finden Sie Anträge im Zusammenhang mit dem Drohnenbetrieb und die Möglichkeit der Betreiberregistrierung.Mehr
+
+Pressemitteilungen & aktuelle MeldungenEisenbahnverträglicher UAS-BetriebDie DB InfraGO AG definiert Anforderungen für einen eisenbahnverträglichen UAS-Betrieb per …WeiterlesenDrohnen-Lichtshows:
+Ausnahmen für UAS-Betreiber verlängert /
+Information zur VersicherungWeiterhin wird bei Drohnen-Lichtshows in der speziellen Kategorie kein grünes Blinklicht und keine …WeiterlesenEinrichtung eines geografischen Gebietes am Flughafen Magdeburg-CochstedtAusnahmen für die offene Kategorie am nationalen Erprobungszentrum in Magdeburg-CochstedtWeiterlesenVerlängerung der Ausnahmen von SERA für unbemannte Luftfahrzeuge in der „speziellen“ KategorieDie Nationale Ausnahmeregelung nach Artikel 71 der Verordnung (EU) 2018/1139 wird bis auf Weiteres …WeiterlesenAdvanced-Air-Mobility-Strategie des BMDVVorstellung der AAM-Strategie am 11. Dezember 2024 im BMDV in Berlin.Weiterlesen
+
+Layout 1Temporäre BetriebseinschränkungenAlle wichtigen Informationen zu den aktuellen NOTAMs, RMZs und TMZs für UAS im deutschen Luftraum.Übersicht aller temporären BetriebseinschränkungenMehr

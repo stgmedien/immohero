@@ -1,0 +1,19 @@
+Seiten{{ sa2search.resultSets['self:live'].result.totalCount > sa2search.resultSets['self:live'].perPage ? '> ' + sa2search.resultSets['self:live'].perPage : sa2search.resultSets['self:live'].result.totalCount}}Die Suche konnte nicht ausgeführt werden. Bitte versuchen Sie es zu einem späteren Zeitpunkt erneut.
+{{ item.name }}
+
+
+
+
+
+
+
+Digitale Plattform Unbemannte Luftfahrt
+
+
+
+
+
+
+
+
+Informationen zum Einsatz von Drohnen in DeutschlandAuf den folgenden Seiten werden allgemeine Informationen, Entwicklungen und Regelungen im Bereich der unbemannten Luftfahrzeuge zur Verfügung gestellt. Drohnen sind eine faszinierende und zunehmend wichtige Technologie, die in vielen Bereichen des täglichen Lebens Anwendung finden. Auf den folgenden Seiten erfahren Sie mehr über die sich stetig entwickelnde Welt der Drohnen, ihre vielfältigen Einsatzmöglichkeiten und die gesetzlichen Rahmenbedingungen, die sicherstellen, dass Drohnen sicher und verantwortungsvoll genutzt werden können. AllgemeinesKategorisierung des DrohnenbetriebsGeografische gebieteAktuellesDas Bundesministerium für Verkehr möchte mit diesem Onlineangebot die relevanten Informationen zum Betrieb von Drohnen zur Verfügung stellen.

@@ -1,0 +1,330 @@
+Skip to main content
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DownloadsRelated Content
+
+
+
+
+
+
+
+
+
+In this site you can find:
+
+Where to apply for an operational authorisation
+What is to be provided in the application
+Operational authorisation with a PDRA
+Operational authorisation without a PDRA
+Authorising an operational application
+Validity of an authorisation
+Drone authorisation process with an NAA
+Stay informed
+
+The operational authorisation is required for all UAS operations in the ‘specific’ category (unless covered by a STS or the drone operator has a LUC with appropriate privileges). It defines the conditions the operator must observe when conduct all flights in the operation:
+Where to apply?
+The applicant needs to apply to the National Aviation Authority (NAA) in the state where he/she is registered as an operator.
+What is to be provided in the application for the operational authorisation?
+A duly filled application form, a copy of the Operations Manual (OM) (please check the EASA Operations Manual example for UAS operations at SAIL II) and of the compliance evidence document whose content varies depending on the risk of operation. For example, for low risk operations, the documents may be very small and simple. The OM (example for SAIL II UAS operations) should contain all information that the staff of the operator should know in order to ensure the safety of the operation. It contains a detailed description of the intended operations, as well as an insight of the organisation’s culture and the operating procedures.
+Operational authorisation with a PDRA
+If the operation you intend to conduct is covered by one of the published PDRAs you need to submit to the NAA a copy of the:
+
+your  application form,
+a table of the desired PDRA, duly filled in
+the operator manual.
+
+
+
+The PDRA table helps you to develop the operator manual that should contain all information that a staff of the operator should know in order to ensure the safety of the operation. It contains a detailed description of the intended operations, as well as an insight of the organization’s culture and the operating procedures.
+Operational authorisation without a PDRA
+If the operation intended to be conducted is not covered by any PDRA you need to firstly carry out a specific risk assessment. Regulation (EU) 2019/947 proposes the SORA (specific operational risk assessment) methodology to be used for this purpose. You can find the SORA As the AMC 1 to Article 11 of Regulation (EU) 2019/947.
+This methodology helps to identify the risk level of the operation and also to identify the mitigations and operational safety objectives needed to make the operation safe. When the drone operator believes to have properly classified the operation he/she should contact the National Aviation Authority (NAA) to apply for an operational authorization and have the NAA to review the risk assessment.
+
+Then the drone operator should demonstrate compliance with all mitigations and safety objectives to be ready for completing the application.
+
+The main requirements of this risk assessment can be found in Article 11 of Regulation (EU) 2019/947. At this moment the UAS operator needs to submit to the NAA a copy of:
+
+your application form from the NAA,
+the risk assessment and compliance evidences
+the operator manual.
+
+Authorising an operational application
+(Article 12 of Regulation (EU) 2019/947)The NAA will issue an operational authorisation, when it considers that the risks are adequately mitigated. Then it will provide the drone operator with the operational authorisation as soon as possible, and the operation can then start. See below If you want to operate in a state different from the state of registration.
+Validity of an authorisation
+The operational authorisation will be valid in all EASA member state for all flights conducted within the limitations and duration defined in the authorisation. However, the NAA may impose a limitation in time and/or number of flights. Operation in a state different from the state of registration (Article 13 of Regulation (EU) 2019/947) please see the dedicated page.
+Drone authorisation process with an NAA
+As a drone operator in the EASA Member States it is important to get an authorisation from the National Aviation Authority (NAA) of the country in which your organisation is based.
+Operational authorisations are needed to start a drone operation in the specific category. An authorisation is not needed if the operation is covered by a Standard Scenario or you already have a Light UAS operator certificate - LUC with the appropriate privileges.
+The authorization process involves submitting an application to the NAA and includes an assessment of the risk of the intended operations, the provision of the organisation’s Operations Manual (OM) and the required evidence to show compliance with the applicable requirements. It is also necessary to demonstrate competence as a drone operator and evidence of training, certifications and experience will be required to demonstrate your ability to conduct operations safely and responsibly.
+The National Aviation Authorities will evaluate the applications and grant authorizations. They review your application, and ensure your operations comply with the regulatory requirements. Effective communication and collaboration with the NAA is vital throughout the authorization process. Respond promptly to any requests for additional information, provide accurate details to ensure a smooth process.  The timeline for authorization may vary depending on the complexity of your operations and the workload of the Authority. It is advisable to submit your application well in advance to allow sufficient time for processing.
+Obtaining an authorization demonstrates your compliance with the applicable requirements and it allows you to conduct specific category operations. These requirements are proportionate to risk level of your operation.
+The authorisation is issued once the operator has shown compliance with the applicable requirements of the European Drone Rules in Regulation (EU) 2019/947, which is applicable since 31 December 2020. More information can be found on the operating a drone page. This harmonizes the rules for drone operations across the European Union, including Iceland, Norway, Switzerland, and Liechtenstein – the EASA Member States. Once you receive your authorisation, this means you can use it to operate your drone in all these countries.
+In summary, contact the NAA in the EASA country where you are based. They will then guide your through the full process and inform you on what authorisations and permits you need for your type of activity.
+For additional information please contact the team.
+
+Stay informed on Operational authorisation:
+
+Create an EASA account
+Follow the category "Civil drones (Unmanned aircraft)"
+Decide how you want to be notified
+
+
+
+
+
+
+Downloads
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[pdf]
+Form for Application for an operational authorisation for the ‘specific’ category
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[pdf]
+Form for Operational authorisation for the ‘specific’ category
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[docx]
+EASA Operations Manual example for UAS operations at SAIL II
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Related Content
+
+
+
+
+
+
+
+
+
+
+
+30 Jun 2026
+
+
+
+
+Easy Access Rules
+
+
+Popular
+
+
+
+
+
+
+
+Easy Access Rules for Unmanned Aircraft Systems
+
+
+
+
+Revision from June 2026 — Available in pdf, xml, and online format
+
+
+
+
+
+
+
+
+
+
+
+
+
+FAQs Drones (UAS)
+
+
+
+
+
+
+
+Videos on Operational authorisation in Europe – presentations on lesson learned » EUROPEAN DRONE FORUM Nov 2021 (eudroneforum.org)
+
+
+
+
+
+
+
+
+
+
+
+
+
+11 Jun 2019
+
+
+
+
+Regulation
+
+
+
+
+
+
+
+
+
+
+Commission Implementing Regulation (EU) 2019/947
+
+
+
+
+UAS Air Operations & UAS Aircrew

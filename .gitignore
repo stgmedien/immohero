@@ -54,3 +54,7 @@ playwright/.cache/
 public/sw.js.map
 public/swe-worker-*.js
 .vercel
+
+# Regulatorik-Rohdaten (grosse PDFs/HTML) — text/ und chunks/ sind committet
+data/regulations/raw/
+data/regulations/embeddings/

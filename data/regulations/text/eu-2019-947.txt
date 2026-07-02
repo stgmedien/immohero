@@ -1,0 +1,6463 @@
+02019R0947 — DE — 04.04.2022 — 004.006
+
+Dieser Text dient lediglich zu Informationszwecken und hat keine Rechtswirkung. Die EU-Organe übernehmen keine Haftung für seinen Inhalt. Verbindliche Fassungen der betreffenden Rechtsakte einschließlich ihrer Präambeln sind nur die im Amtsblatt der Europäischen Union veröffentlichten und auf EUR-Lex verfügbaren Texte. Diese amtlichen Texte sind über die Links in diesem Dokument unmittelbar zugänglich
+
+
+
+
+
+
+►B
+
+
+
+DURCHFÜHRUNGSVERORDNUNG (EU) 2019/947 DER KOMMISSION
+vom 24. Mai 2019
+über die Vorschriften und Verfahren für den Betrieb unbemannter Luftfahrzeuge
+
+(Text von Bedeutung für den EWR)
+
+(ABl. L 152 vom 11.6.2019, S. 45)
+
+
+
+Geändert durch:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Amtsblatt
+
+
+
+
+Nr.
+
+
+Seite
+
+
+Datum
+
+
+
+
+
+►M1
+
+
+
+
+DURCHFÜHRUNGSVERORDNUNG (EU) 2020/639 DER KOMMISSION vom 12. Mai 2020
+
+
+
+L 150
+
+
+1
+
+
+13.5.2020
+
+
+
+
+
+►M2
+
+
+
+
+DURCHFÜHRUNGSVERORDNUNG (EU) 2020/746 DER KOMMISSION vom 4. Juni 2020
+
+
+
+L 176
+
+
+13
+
+
+5.6.2020
+
+
+
+
+
+M3
+
+
+
+
+DURCHFÜHRUNGSVERORDNUNG (EU) 2021/1166 DER KOMMISSION vom 15. Juli 2021
+
+
+
+L 253
+
+
+49
+
+
+16.7.2021
+
+
+
+
+
+►M4
+
+
+
+
+DURCHFÜHRUNGSVERORDNUNG (EU) 2022/425 DER KOMMISSION vom 14. März 2022
+
+
+
+L 87
+
+
+20
+
+
+15.3.2022
+
+
+
+
+
+►M5
+
+
+
+
+DURCHFÜHRUNGSVERORDNUNG (EU) 2022/525 DER KOMMISSION vom 1. April 2022
+
+
+
+L 105
+
+
+3
+
+
+4.4.2022
+
+
+
+
+
+
+Berichtigt durch:
+
+
+
+
+
+
+
+
+
+►C1
+
+
+
+
+Berichtigung, ABl. L 003 vom 5.1.2023, S.  19 (2019/947)
+
+
+
+
+
+
+
+
+
+
+
+
+▼B
+
+DURCHFÜHRUNGSVERORDNUNG (EU) 2019/947 DER KOMMISSION
+vom 24. Mai 2019
+über die Vorschriften und Verfahren für den Betrieb unbemannter Luftfahrzeuge
+(Text von Bedeutung für den EWR)
+
+
+
+
+Artikel 1
+Gegenstand
+Diese Verordnung enthält detaillierte Bestimmungen für den Betrieb unbemannter Luftfahrzeugsysteme sowie für das Personal, darunter auch für Fernpiloten und an diesem Betrieb beteiligte Organisationen.
+Artikel 2
+Begriffsbestimmungen
+Für die Zwecke dieser Verordnung gelten die Begriffsbestimmungen der Verordnung (EU) 2018/1139.
+Außerdem gelten folgende Begriffsbestimmungen:
+
+
+
+
+
+1.
+
+
+„unbemanntes Luftfahrzeugsystem“ (unmanned aircraft system, UAS) : ein unbemanntes Luftfahrzeug sowie die Ausrüstung für dessen Fernsteuerung;
+
+
+
+
+
+
+
+
+2.
+
+
+„Betreiber eines unbemannten Luftfahrzeugsystems (UAS-Betreiber)“ (unmanned aircraft system operator, UAS operator) : eine juristische oder natürliche Person, die ein oder mehrere UAS betreibt oder zu betreiben gedenkt;
+
+
+
+
+
+
+
+
+3.
+
+
+„Menschenansammlungen“ (assemblies of people) : eine Vielzahl von Menschen, die so dicht gedrängt stehen, dass es einer einzelnen Person nahezu unmöglich ist, sich aus dieser Menge zu entfernen;
+
+
+
+
+
+
+
+
+4.
+
+
+„geografisches UAS-Gebiet“ (UAS geographical zone) : ein von der zuständigen Behörde festgelegter Teil des Luftraums, der den UAS-Betrieb ermöglicht, einschränkt oder ausschließt, um den mit dem UAS-Betrieb verbundenen Risiken für die Sicherheit, den Schutz der Privatsphäre und personenbezogener Daten, die Sicherheitslage oder die Umwelt Rechnung zu tragen;
+
+
+
+
+
+
+
+
+5.
+
+
+„Robustheit“ (robustness) : die Wirkung der Maßnahmen zur Risikominderung, die sich aus dem Zugewinn an Sicherheit durch diese Maßnahmen und dem Maß an Absicherung und Integrität ergibt, das durch den Zugewinn an Sicherheit erreicht wurde;
+
+
+
+
+
+
+
+
+6.
+
+
+„Standardszenario“ (standard scenario) : eine UAS-Betriebsart in der Kategorie „speziell“ nach Anlage 1 des Anhangs, für die eine genaue Liste von Maßnahmen zur Risikominderung festgelegt wurde und über deren Anwendung bei der Durchführung dieser Betriebsart der Betreiber bei der zuständigen Behörde eine Erklärung abgeben kann;
+
+
+
+
+
+
+
+
+7.
+
+
+„Betrieb in direkter Sicht“ (visual line of sight operation, VLOS) : eine UAS-Betriebsart, bei der der Fernpilot in der Lage ist, einen ununterbrochenen und nicht unterstützten Sichtkontakt mit dem unbemannten Luftfahrzeug aufrechtzuerhalten, sodass er dessen Flugweg so steuern kann, dass Kollisionen mit anderen Luftfahrzeugen, Menschen und Hindernissen vermieden werden;
+
+
+
+
+
+
+
+
+8.
+
+
+„Betrieb außerhalb direkter Sicht“ (beyond visual line of sight operation, BVLOS) : eine UAS-Betriebsart, die nicht in VLOS durchgeführt wird;
+
+
+
+
+
+
+
+
+9.
+
+
+„Betreiberzeugnis für Leicht-UAS“ (light UAS operator certificate, LUC) : ein einem UAS-Betreiber von der zuständigen Behörde nach Teil C des Anhangs ausgestelltes Zertifikat;
+
+
+
+
+
+
+
+
+10.
+
+
+„Flugmodell-Verein oder -Vereinigung“ (model aircraft club or association) : eine Organisation mit rechtmäßigem Sitz in einem Mitgliedstaat, die dem Zweck dient, mit UAS Freizeitflüge, Flugveranstaltungen, sportliche Aktivitäten oder Wettbewerbe durchzuführen;
+
+
+
+
+
+
+
+
+11.
+
+
+„gefährliche Güter“ (dangerous goods) :
+von einem unbemannten Luftfahrzeug als Nutzlast mitgeführte Gegenstände oder Stoffe, die bei einem Zwischenfall oder einem Unfall eine Gefahr für die Gesundheit, die Sicherheit, Sachen oder die Umwelt darstellen, insbesondere:
+
+
+a)
+
+
+explosive Stoffe (Gefahr der Massenexplosion, Gefahr durch Splitter, Spreng- und Wurfstücke, geringe Gefahr durch Luftstoß, hohe Brandgefahr, Sprengmittel, extrem unempfindliche Explosivstoffe),
+
+
+
+
+b)
+
+
+Gase (entzündbare Gase, nicht entzündbare Gase, giftige Gase, Sauerstoff, Gefahr beim Einatmen),
+
+
+
+
+c)
+
+
+entzündbare flüssige Stoffe (entzündbare flüssige Stoffe, brennbare Stoffe, Heizöl, Ottokraftstoffe),
+
+
+
+
+d)
+
+
+entzündbare feste Stoffe (entzündbare feste Stoffe, selbstentzündliche Feststoffe, gefährlich bei Berührung mit Wasser),
+
+
+
+
+e)
+
+
+entzündend (oxidierend) wirkende Stoffe und organische Peroxide,
+
+
+
+
+f)
+
+
+giftige und ansteckungsgefährliche Stoffe (Gift, Biogefährdung),
+
+
+
+
+g)
+
+
+radioaktive Stoffe,
+
+
+
+
+h)
+
+
+ätzende Stoffe;
+
+
+
+
+
+
+
+
+
+
+12.
+
+
+„Nutzlast“ (payload) : Instrumente, Mechanismen, Ausrüstungen, Teile, Geräte, Zubehörteile oder Zusatzteile, einschließlich Kommunikationsausrüstungen, die in das Luftfahrzeug eingebaut bzw. an diesem angebracht sind und nicht dazu verwendet werden oder verwendet werden sollen, das Luftfahrzeug im Flug zu betreiben oder zu steuern, ohne jedoch Teil des Flugwerks, eines Motors oder eines Propellers zu sein;
+
+
+
+
+
+
+
+
+13.
+
+
+„direkte Fernidentifizierung“ (direct remote identification) : ein System, das die lokale Übertragung von Informationen über ein im Betrieb befindliches unbemanntes Luftfahrzeug gewährleistet und auch die Kennzeichnung des unbemannten Luftfahrzeugs umfasst, sodass diese Informationen ohne physischen Zugang zum unbemannten Luftfahrzeug abgerufen werden können;
+
+
+
+
+
+
+
+
+14.
+
+
+„Follow-me-Modus“ : ein Betriebsmodus eines UAS, bei dem das unbemannte Luftfahrzeug dem Fernpiloten innerhalb eines vorher festgelegten Radius ständig folgt;
+
+
+
+
+
+
+
+
+15.
+
+
+„Geo-Sensibilisierung“ (Geo-awareness) : eine Funktion, die ausgehend von den durch die Mitgliedstaaten bereitgestellten Daten eine potenzielle Verletzung der Luftraumgrenzen erkennt und die Fernpiloten warnt, sodass diese sofortige und wirksame Maßnahmen zur Vermeidung dieser Verletzung ergreifen können;
+
+
+
+
+
+
+
+
+16.
+
+
+„privat hergestelltes UAS“ (privately built UAS) : ein UAS, das vom Erbauer für seine eigenen Zwecke zusammengebaut oder hergestellt wurde, mit Ausnahme von UAS, die aus Bauteilen zusammengesetzt werden, die als Fertigbausatz in Verkehr gebracht werden;
+
+
+
+
+
+
+
+
+17.
+
+
+„autonomer Betrieb“ (autonomous operation) : ein Betrieb, bei dem das unbemannte Luftfahrzeug in Betrieb ist, ohne dass der Fernpilot eingreifen kann;
+
+
+
+
+
+
+
+
+18.
+
+
+„unbeteiligte Personen“ (uninvolved persons) : Personen, die nicht am UAS-Betrieb beteiligt sind oder die die Anweisungen und Sicherheitsvorschriften des UAS-Betreibers nicht kennen;
+
+
+
+
+
+
+
+
+19.
+
+
+„Bereitstellung auf dem Markt“ (making available on the market) : jede entgeltliche oder unentgeltliche Abgabe eines Erzeugnisses zum Vertrieb, Verbrauch oder zur Verwendung auf dem Unionsmarkt im Rahmen einer Geschäftstätigkeit;
+
+
+
+
+
+
+
+
+20.
+
+
+„Inverkehrbringen“ (placing on the market) : die erstmalige Bereitstellung eines Erzeugnisses auf dem Unionsmarkt;
+
+
+
+
+
+
+
+
+21.
+
+
+„kontrollierter Bereich am Boden“ (controlled ground area) : ein Bereich am Boden, innerhalb dessen das UAS betrieben wird und der UAS-Betreiber dafür sorgen kann, dass nur beteiligte Personen anwesend sind;
+
+
+
+
+
+
+
+
+22.
+
+
+„höchstzulässige Startmasse“ (maximum take-off mass, MTOM) : die vom Hersteller oder Erbauer festgelegte höchstzulässige Masse des unbemannten Luftfahrzeugs, einschließlich Nutzlast und Kraftstoff, mit der bzw. dem das unbemannte Luftfahrzeug betrieben werden kann;
+
+
+
+
+
+
+
+
+23.
+
+
+„unbemanntes Segelflugzeug“ (unmanned sailplane) : ein unbemanntes Luftfahrzeug, das durch die dynamische Reaktion der Luft an den festen Auftriebsflächen in der Luft gehalten wird, wobei es im Gleitflug nicht von einem Triebwerk abhängig ist. Es kann für den Notfall mit einem Motor ausgerüstet sein;
+
+
+
+
+▼M1
+
+
+
+
+
+
+24.
+
+
+„Beobachter unbemannter Luftfahrzeuge“ : eine Person, die sich neben dem Fernpiloten befindet und durch nicht unterstützte visuelle Beobachtung des unbemannten Luftfahrzeugs den Fernpiloten dabei unterstützt, das unbemannte Luftfahrzeug im VLOS zu halten und den Flug sicher durchzuführen;
+
+
+
+
+
+
+
+
+25.
+
+
+„Luftraumbeobachter“ : eine Person, die den Fernpiloten unterstützt, indem sie den Luftraum, in dem das unbemannte Luftfahrzeug eingesetzt wird, durch nicht unterstütztes visuelles Scanning auf mögliche Gefahren in der Luft absucht;
+
+
+
+
+
+
+
+
+26.
+
+
+„Steuereinheit“ (command unit, CU) : die Ausrüstung oder das Ausrüstungssystem zur Fernsteuerung unbemannter Luftfahrzeuge im Sinne von Artikel 3 Nummer 32 der Verordnung (EU) 2018/1139, die/das die Kontrolle oder Überwachung des unbemannten Luftfahrzeugs in jeder Flugphase unterstützt, mit Ausnahme von Infrastrukturen, die den Steuerungs- und Kontrolllinkdienst (C2) unterstützen;
+
+
+
+
+
+
+
+
+27.
+
+
+„C2-Link-Dienst“ (C2 link service) : ein von einem Dritten bereitgestellter Kommunikationsdienst, der die Steuerung und Kontrolle zwischen dem unbemannten Luftfahrzeug und der Steuereinheit (CU) sicherstellt;
+
+
+
+
+
+
+
+
+28.
+
+
+„Fluggeografie“ (flight geography) : die räumlich und zeitlich definierten Lufträume, in denen der UAS-Betreiber den Betrieb nach den in Anlage 5 Punkt 6 Buchstabe c des Anhangs genannten normalen Verfahren durchzuführen beabsichtigt;
+
+
+
+
+
+
+
+
+29.
+
+
+„fluggeografischer Bereich“ (flight geography area) : die Projektion der Fluggeografie auf die Erdoberfläche;
+
+
+
+
+
+
+
+
+30.
+
+
+„Contingency-Raum“ (contingency volume) : der Luftraum außerhalb der Fluggeografie, in dem die in Anlage 5 Punkt 6 Buchstabe d des Anhangs genannten Contingency-Verfahren Anwendung finden;
+
+
+
+
+
+
+
+
+31.
+
+
+„Contingency-Bereich“ (contingency area) : die Projektion des Contingency-Raums auf die Erdoberfläche;
+
+
+
+
+
+
+
+
+32.
+
+
+„Betriebsraum“ (operational volume) : die Kombination aus Fluggeografie und Contingency-Raum;
+
+
+
+
+
+
+
+
+33.
+
+
+„Bodensicherheitsbereich“ (ground risk buffer) : ein Bereich über der Erdoberfläche, der den Betriebsraum umgibt und festgelegt ist, um das Risiko für Dritte auf der Oberfläche zu minimieren, falls das unbemannte Luftfahrzeug den Betriebsraum verlässt;
+
+
+
+
+
+
+
+
+34.
+
+
+„Nacht“ : die Stunden zwischen dem Ende der bürgerlichen Abenddämmerung und dem Beginn der bürgerlichen Morgendämmerung gemäß der Durchführungsverordnung (EU) Nr. 923/2012 der Kommission (
+1
+).
+
+
+
+
+▼B
+
+Artikel 3
+UAS-Betriebskategorien
+Für den UAS-Betrieb gelten vorbehaltlich der nachstehenden Bedingungen die in den Artikeln 4, 5 und 6 festgelegten Kategorien „offen“, „speziell“ und „zulassungspflichtig“:
+
+
+a)
+
+
+Für den UAS-Betrieb in der „offenen“ Kategorie muss der UAS-Betreiber vor der Aufnahme des Betriebs weder eine Betriebsgenehmigung einholen noch eine Betriebserklärung abgeben.
+
+
+
+
+b)
+
+
+Für den UAS-Betrieb in der „speziellen“ Kategorie wird eine von der zuständigen Behörde nach Artikel 12 erteilte Betriebsgenehmigung benötigt oder eine nach Artikel 16 erteilte Genehmigung oder — unter den in Artikel 5 Absatz 5 genannten Umständen — eine von dem UAS-Betreiber abgegebene Erklärung.
+
+
+
+
+c)
+
+
+Für den UAS-Betrieb in der „zulassungspflichtigen“ Kategorie wird eine Zulassung des UAS nach der Delegierten Verordnung (EU) 2019/945 sowie ein Betreiberzeugnis und gegebenenfalls eine Fernpiloten-Lizenz benötigt.
+
+
+Artikel 4
+Die UAS-Betriebskategorie „offen“
+
+(1)
+
+Die Betriebskategorie eines UAS gilt nur dann als „offen“, wenn folgende Voraussetzungen erfüllt sind:
+
+
+a)
+
+
+Das UAS fällt unter eine der in der Delegierten Verordnung (EU) 2019/945 genannten Klassen, ist privat hergestellt oder erfüllt die in Artikel 20 genannten Bedingungen;
+
+
+
+
+b)
+
+
+Das unbemannte Luftfahrzeug hat eine höchstzulässige Startmasse von weniger als 25 kg.
+
+
+
+
+c)
+
+
+Der Fernpilot sorgt dafür, dass das unbemannte Luftfahrzeug in einer sicheren Entfernung von Menschen gehalten und nicht über Menschenansammlungen geflogen wird.
+
+
+
+
+d)
+
+
+Der Fernpilot hält das unbemannte Luftfahrzeug zu jedem Zeitpunkt in VLOS-Betrieb, es sei denn, es fliegt im Follow-me-Modus oder es wird ein Beobachter nach Teil A des Anhangs hinzugezogen.
+
+
+
+
+e)
+
+
+Während des Flugs wird das unbemannte Luftfahrzeug entsprechend Teil A des Anhangs in einem Abstand von 120 m vom nächstgelegenen Punkt auf der Erdoberfläche gehalten, sofern es nicht ein Hindernis überfliegt.
+
+
+
+
+f)
+
+
+Während des Flugs führt das unbemannte Luftfahrzeug keine gefährlichen Güter mit oder wirft Material ab.
+
+
+
+
+
+(2)
+Der UAS-Betrieb in der „offenen“ Kategorie ist nach den Anforderungen in Teil A des Anhangs in drei Unterkategorien eingeteilt.
+
+Artikel 5
+Die UAS-Betriebskategorie „speziell“
+
+(1)
+Sofern eine der in Artikel 4 oder in Teil A des Anhangs festgelegten Anforderungen nicht erfüllt ist, ist der UAS-Betreiber verpflichtet, bei der zuständigen Behörde des Mitgliedstaats, in dem das UAS registriert ist, eine Betriebsgenehmigung nach Artikel 12 einzuholen.
+
+
+(2)
+Für die Beantragung einer Betriebsgenehmigung nach Artikel 12 bei der zuständigen Behörde hat der Betreiber eine Risikobewertung nach Artikel 11 durchzuführen und diese zusammen mit dem Antrag einzureichen, in dem auch geeignete Maßnahmen zur Risikominderung darlegt sind.
+
+
+(3)
+Nach Punkt UAS.SPEC.040 in Teil B des Anhangs erteilt die zuständige Behörde eine Betriebsgenehmigung, wenn sie nach Artikel 12 der Auffassung ist, dass die Betriebsrisiken in geeigneter Weise gemindert werden.
+
+
+(4)
+
+Die zuständige Behörde vermerkt in der Betriebsgenehmigung, ob
+
+
+a)
+
+
+die Genehmigung für einen in Bezug auf Zeit, Ort oder beides einmaligen oder mehrmaligen Betrieb gilt. Die Betriebsgenehmigung enthält eine Liste mit genauen Angaben zu den risikomindernden Maßnahmen für den jeweiligen Betrieb.
+
+
+
+
+b)
+
+
+sich diese auf die Genehmigung eines LUC-Betriebs nach Teil C des Anhangs bezieht.
+
+
+
+
+
+▼M1
+
+
+(5)
+Legt der UAS-Betreiber der zuständigen Behörde des Eintragungsmitgliedstaats eine Erklärung nach Punkt UAS.SPEC.020 in Teil B des Anhangs für einen Betrieb vor, der einem Standardszenario nach Anlage 1 jenes Anhangs genügt, muss der UAS-Betreiber keine Betriebsgenehmigung nach den Absätzen 1 bis 4 beantragen und es gilt das Verfahren nach Artikel 12 Absatz 5. Der UAS-Betreiber verwendet die in Anlage 2 jenes Anhangs genannte Erklärung.
+
+
+▼B
+
+
+(6)
+
+Eine Betriebsgenehmigung oder eine Erklärung werden nicht benötigt,
+
+
+a)
+
+
+wenn der UAS-Betreiber in Besitz eines LUC-Zeugnisses mit den entsprechenden Rechten nach Punkt UAS.LUC.060 des Anhangs ist,
+
+
+
+
+b)
+
+
+wenn der Betrieb im Rahmen eines Flugmodell-Vereins oder einer Flugmodell-Vereinigung durchgeführt wird, der/die Inhaber einer Genehmigung nach Artikel 16 ist.
+
+
+
+
+Artikel 6
+Die UAS-Betriebskategorie „zulassungspflichtig“
+
+(1)
+
+Die Betriebskategorie eines UAS gilt nur dann als „zulassungspflichtig“, wenn folgende Voraussetzungen erfüllt sind:
+
+
+a)
+
+
+Das UAS gilt nach Artikel 40 Absatz 1 Buchstaben a, b und c der Delegierten Verordnung (EU) 2019/945 als zulassungspflichtig und
+
+
+
+
+b)
+
+
+der Betrieb wird unter den folgenden Bedingungen durchgeführt:
+
+
+i)
+
+
+Menschenansammlungen werden überflogen,
+
+
+
+
+ii)
+
+
+es werden Menschen befördert,
+
+
+
+
+iii)
+
+
+es werden gefährliche Güter transportiert, die bei einem Unfall ein hohes Risiko für Dritte darstellen können.
+
+
+
+
+
+
+
+(2)
+Darüber hinaus fällt ein UAS-Betrieb dann in die Kategorie „zulassungspflichtig“, wenn die zuständige Behörde anhand einer Risikobewertung nach Artikel 11 der Auffassung ist, dass das Betriebsrisiko ohne eine Zulassung des UAS und des UAS-Betreibers und, je nach Sachlage, ohne Fernpiloten-Lizenz nicht angemessen gemindert werden kann.
+
+Artikel 7
+Vorschriften und Verfahren für den Betrieb unbemannter Luftfahrzeugsysteme
+
+(1)
+Der UAS-Betrieb in der „offenen“ Kategorie unterliegt den Betriebsbeschränkungen in Teil A des Anhangs.
+
+
+(2)
+Der UAS-Betrieb in der „speziellen“ Kategorie unterliegt den Betriebsbeschränkungen, die in der Betriebsgenehmigung nach Artikel 12, in der Genehmigung nach Artikel 16 oder in einem Standardszenario nach Anlage 1 des Anhangs, zu dem der UAS-Betreiber eine Erklärung abgegeben hat, vermerkt sind.
+
+Dieser Absatz gilt nicht für den Fall, dass der UAS-Betreiber Inhaber eines LUC mit entsprechenden Rechten ist.
+Der UAS-Betrieb in der „speziellen“ Kategorie unterliegt den geltenden betrieblichen Anforderungen, die in der Durchführungsverordnung (EU) Nr. 923/2012 der Kommission (
+2
+) festgelegt sind.
+
+(3)
+Der UAS-Betrieb in der „zulassungspflichtigen“ Kategorie unterliegt den geltenden betrieblichen Anforderungen, die in der Durchführungsverordnung (EU) Nr. 923/2012 und den Verordnungen (EU) Nr. 965/2012 (
+3
+) und (EU) Nr. 1332/2011 (
+4
+) der Kommission festgelegt sind.
+
+Artikel 8
+Vorschriften und Verfahren in Bezug auf die Kompetenz von Fernpiloten
+
+(1)
+Fernpiloten, die ein UAS in der „offenen“ Kategorie betreiben, müssen den in Teil A des Anhangs festgelegten Kompetenzanforderungen genügen.
+
+
+(2)
+
+Fernpiloten, die UAS in der „speziellen“ Kategorie betreiben, müssen den Kompetenzanforderungen genügen, die in der von der zuständigen Behörde erteilten Betriebsgenehmigung oder im Standardszenario nach Anlage 1 des Anhangs oder im LUC-Zeugnis festgelegt sind, wobei sie mindestens über die folgenden Kompetenzen verfügen müssen:
+
+
+a)
+
+
+Fähigkeit zur Anwendung von Betriebsverfahren (Normal-, Contingency- und Notfallverfahren, Flugplanung, Inspektionen vor und nach dem Flug),
+
+
+
+
+b)
+
+
+Fähigkeit zum Umgang mit der Luftfahrtkommunikation,
+
+
+
+
+c)
+
+
+Fähigkeit zur Beherrschung der Flugroute unbemannter Luftfahrzeuge und der Automatisierung,
+
+
+
+
+d)
+
+
+Führung, Teamarbeit und Selbstmanagement,
+
+
+
+
+e)
+
+
+Problemlösung und Entscheidungsfindung,
+
+
+
+
+f)
+
+
+Lageerfassung,
+
+
+
+
+g)
+
+
+Bewältigung der Arbeitsbelastung,
+
+
+
+
+h)
+
+
+je nach Sachverhalt Koordinierung und Übergabe.
+
+
+
+
+
+(3)
+Fernpiloten, die im Rahmen von Flugmodell-Vereinen oder -Vereinigungen UAS betreiben, müssen den Mindestanforderungen an die Kompetenz genügen, die in der nach Artikel 16 erteilten Genehmigung festgelegt sind.
+
+Artikel 9
+Mindestalter für Fernpiloten
+
+(1)
+Fernpiloten, die UAS in der „offenen“ und „speziellen“ Kategorie betreiben, müssen ein Mindestalter von 16 Jahren haben.
+
+
+(2)
+
+Kein Mindestalter gilt für Fernpiloten,
+
+
+a)
+
+
+wenn sie ein UAS der Klasse C0 nach Teil 1 des Anhangs der Delegierten Verordnung (EU) 2019/945 in der Unterkategorie A1 nach Teil A des Anhangs betreiben, bei dem es sich um ein Spielzeug im Sinne der Richtlinie 2009/48/EG handelt,
+
+
+
+
+b)
+
+
+wenn sie ein privat hergestelltes UAS mit einer höchstzulässigen Startmasse von weniger als 250 g betreiben,
+
+
+
+
+c)
+
+
+wenn sie das UAS unter der direkten Aufsicht eines Fernpiloten betreiben, der den Anforderungen von Absatz 1 und Artikel 8 genügt.
+
+
+
+
+
+(3)
+
+Die Mitgliedstaaten können abhängig von den landesspezifischen Risiken für den UAS-Betrieb in ihrem Hoheitsgebiet das Mindestalter wie folgt senken:
+
+
+a)
+
+
+für Fernpiloten, die ein UAS in der „offenen“ Kategorie betreiben, um bis zu vier Jahre,
+
+
+
+
+b)
+
+
+für Fernpiloten, die ein UAS in der „speziellen“ Kategorie betreiben, um bis zu zwei Jahre.
+
+
+
+
+
+(4)
+Senkt ein Mitgliedstaat das Mindestalter für Fernpiloten, dürfen diese Fernpiloten ein UAS nur im Hoheitsgebiet jenes Mitgliedstaats betreiben.
+
+
+(5)
+Die Mitgliedstaaten können für Fernpiloten, die UAS im Rahmen von Flugmodell-Vereinen oder -Vereinigungen betreiben, ein anderes Mindestalter in die nach Artikel 16 erteilte Genehmigung eintragen.
+
+Artikel 10
+Vorschriften und Verfahren in Bezug auf die Lufttüchtigkeit unbemannter Luftfahrzeugsysteme
+Sofern sie nicht privat hergestellt sind, für den in Artikel 16 genannten Betrieb verwendet werden oder die Bedingungen von Artikel 20 erfüllen, müssen die UAS, die für den in dieser Verordnung erfassten Betrieb eingesetzt werden, den technischen Anforderungen, Vorschriften und Verfahren für die Lufttüchtigkeit genügen, die in den delegierten Rechtsakten festgelegt sind, die auf der Grundlage von Artikel 58 der Verordnung (EU) 2018/1139 erlassen wurden.
+Artikel 11
+Vorschriften für die Bewertung des Betriebsrisikos
+
+(1)
+
+Eine Bewertung des Betriebsrisikos umfasst
+
+
+a)
+
+
+eine Beschreibung der Merkmale des UAS-Betriebs,
+
+
+
+
+b)
+
+
+einen Vorschlag für angemessene Ziele für die Betriebssicherheit,
+
+
+
+
+c)
+
+
+eine Identifizierung der Betriebsrisiken am Boden und in der Luft unter Berücksichtigung
+
+
+i)
+
+
+der Frage, inwieweit Dritte oder Gegenstände am Boden durch die Tätigkeit gefährdet werden könnten,
+
+
+
+
+ii)
+
+
+der Komplexität, Leistungsfähigkeit und betrieblichen Merkmale des betreffenden unbemannten Luftfahrzeugs,
+
+
+
+
+iii)
+
+
+des Zwecks des Fluges, der UAS-Art, der Wahrscheinlichkeit einer Kollision mit anderen Luftfahrzeugen und der genutzten Luftraumklasse,
+
+
+
+
+iv)
+
+
+der Art, des Umfangs und der Komplexität des UAS-Betriebs oder der Tätigkeit, darunter gegebenenfalls Umfang und Art des von der zuständigen Organisation oder Person abgefertigten Verkehrs und
+
+
+
+
+v)
+
+
+der Frage, inwieweit Personen, die von den mit dem Betrieb verbundenen Risiken betroffen sein könnten, diese Risiken bewerten und begrenzen können.
+
+
+
+
+
+
+d)
+
+
+eine Identifizierung der möglichen Maßnahmen zur Risikominderung,
+
+
+
+
+e)
+
+
+eine Festlegung des notwendigen Maßes an Robustheit der ausgewählten Risikominderungsmaßnahmen, damit der Betrieb sicher durchgeführt werden kann.
+
+
+
+
+
+(2)
+
+Die Beschreibung des UAS-Betriebs umfasst mindestens Folgendes:
+
+
+a)
+
+
+die Art der durchgeführten Tätigkeiten,
+
+
+
+
+b)
+
+
+das Betriebsumfeld und den geografischen Bereich für den beabsichtigten Betrieb, insbesondere den Überflug von Menschen, Orografie, Luftraumart, Luftraumband, in dem der Betrieb stattfinden wird, und welches Luftraumband als notwendiger Risikopuffer dienen soll, einschließlich der betrieblichen Anforderungen mit Blick auf das geografische Gebiet,
+
+
+
+
+c)
+
+
+die Komplexität des Betriebs mit Angaben zur Planung und Ausführung sowie zur Kompetenz, Erfahrung und Zusammensetzung des Personals und zu den erforderlichen technischen Mitteln für die geplante Durchführung des Betriebs,
+
+
+
+
+d)
+
+
+die technischen Merkmale des UAS, einschließlich seiner Leistungsfähigkeit im Hinblick auf die Bedingungen des geplanten Betriebs sowie gegebenenfalls seine Registrierungsnummer,
+
+
+
+
+e)
+
+
+die Kompetenz des Personals, das den Betrieb durchführt, einschließlich seiner Zusammensetzung, Aufgaben, Zuständigkeiten, Ausbildung und Erfahrung aus jüngster Zeit.
+
+
+
+
+
+(3)
+Für die Bewertung ist ein im Hinblick auf die spezifischen Merkmale des UAS-Betriebs angestrebtes Sicherheitsniveau vorzuschlagen, das dem der bemannten Luftfahrt gleichwertig ist.
+
+
+(4)
+
+Für die Identifizierung der Risiken sind Angaben zu allen nachstehenden Punkten zu machen:
+
+
+a)
+
+
+dem ungeminderten Risiko des Betriebs am Boden unter Berücksichtigung der Art des Betriebs und der Betriebsbedingungen, einschließlich der folgenden Mindestkriterien:
+
+
+i)
+
+
+VLOS oder BVLOS,
+
+
+
+
+ii)
+
+
+Bevölkerungsdichte der überflogenen Bereiche,
+
+
+
+
+iii)
+
+
+Überflug von Menschenansammlungen,
+
+
+
+
+iv)
+
+
+Abmessungsmerkmale des unbemannten Luftfahrzeugs,
+
+
+
+
+
+
+b)
+
+
+dem ungeminderten Risiko des Betriebs in der Luft unter Berücksichtigung sämtlicher nachstehender Aspekte:
+
+
+i)
+
+
+der genauen Angaben zum Luftraumband, in dem der Betrieb stattfindet, erweitert um das für Contingency-Verfahren benötigte Luftraumband,
+
+
+
+
+ii)
+
+
+der Luftraumklasse,
+
+
+
+
+iii)
+
+
+der Auswirkungen auf den sonstigen Luftverkehr und das Flugverkehrsmanagement (ATM), insbesondere
+
+
+—
+
+
+die Höhe des Betriebs,
+
+
+
+
+—
+
+
+den kontrollierten Luftraum bzw. nicht kontrollierten Luftraum,
+
+
+
+
+—
+
+
+das Umfeld eines Flugplatzes oder das sonstige Umfeld,
+
+
+
+
+—
+
+
+den Luftraum über Stadtgebieten oder über dem ländlichen Raum,
+
+
+
+
+—
+
+
+die Trennung vom sonstigen Verkehr.
+
+
+
+
+
+
+
+
+
+(5)
+
+Für die Identifizierung möglicher Maßnahmen zur Risikominderung, die für das vorgeschlagene angestrebte Sicherheitsniveau benötigt werden, sind folgende Möglichkeiten in Betracht zu ziehen:
+
+
+a)
+
+
+Sicherheitsmaßnahmen für Menschen am Boden;
+
+
+
+
+b)
+
+
+strategische Betriebsbeschränkungen für den UAS-Betrieb, insbesondere
+
+
+i)
+
+
+Einschränkung der geografischen Bereiche, in denen der Betrieb stattfindet,
+
+
+
+
+ii)
+
+
+Begrenzung der Dauer oder der geplanten Zeitnische, in der der Betrieb stattfindet,
+
+
+
+
+
+
+c)
+
+
+strategische Risikominderung durch gemeinsame Flugvorschriften oder gemeinsame Luftraumstrukturen und -dienste;
+
+
+
+
+d)
+
+
+Fähigkeit zum Umgang mit etwaigen widrigen Betriebsbedingungen;
+
+
+
+
+e)
+
+
+organisatorische Faktoren wie die vom UAS-Betreiber ausgearbeiteten Betriebs- und Instandhaltungsverfahren sowie Instandhaltungsverfahren entsprechend dem Benutzerhandbuch des Herstellers;
+
+
+
+
+f)
+
+
+Umfang der Kompetenz und des Sachverstands des an der Flugsicherheit beteiligten Personals;
+
+
+
+
+g)
+
+
+das Risiko menschlicher Fehler bei der Anwendung der Betriebsverfahren;
+
+
+
+
+h)
+
+
+die Konstruktionsmerkmale und Leistung des UAS, insbesondere:
+
+
+i)
+
+
+die Verfügbarkeit von Mitteln für die Minderung des Kollisionsrisikos,
+
+
+
+
+ii)
+
+
+die Verfügbarkeit von Systemen zur Begrenzung der Energie beim Aufprall oder der Zerbrechlichkeit des unbemannten Luftfahrzeugs,
+
+
+
+
+iii)
+
+
+die Konstruktion des UAS nach anerkannten Standards und die ausfallsichere Konstruktion.
+
+
+
+
+
+
+
+(6)
+Die Robustheit der vorgeschlagenen Minderungsmaßnahmen ist im Hinblick auf deren Vereinbarkeit mit den Sicherheitszielen und den Risiken des beabsichtigten Betriebs zu bewerten, damit insbesondere sichergestellt ist, dass der Betrieb in jeder Phase sicher ist.
+
+Artikel 12
+Betriebsgenehmigung für die Kategorie „speziell“
+
+(1)
+Die zuständige Behörde prüft die Risikobewertung und die Robustheit der Minderungsmaßnahmen, die vom UAS-Betreiber vorgeschlagen werden, um die Sicherheit des UAS-Betriebs in allen Flugphasen aufrechtzuerhalten.
+
+
+(2)
+
+Die zuständige Behörde erteilt die Betriebsgenehmigung, sofern sie nach Prüfung zu dem Ergebnis kommt, dass
+
+
+a)
+
+
+die betrieblichen Sicherheitsziele den Betriebsrisiken Rechnung tragen;
+
+
+
+
+b)
+
+
+die Kombination der Risikominderungsmaßnahmen angesichts der Betriebsbedingungen, der Kompetenz des beteiligten Personals sowie der technischen Merkmale des unbemannten Luftfahrzeugs angemessen und ausreichend robust ist, um angesichts der identifizierten Risiken am Boden und in der Luft die Sicherheit des Betriebs zu gewährleisten;
+
+
+
+
+c)
+
+
+der UAS-Betreiber eine Erklärung abgegeben hat, in der er bestätigt, dass der beabsichtigte Betrieb den einschlägigen Vorschriften der Union und der Mitgliedstaaten genügt, insbesondere in Bezug auf den Schutz der Privatsphäre, den Datenschutz, die Haftung, Versicherung, Sicherheit und Umweltschutz.
+
+
+
+
+
+(3)
+Erachtet die zuständige Behörde den Betrieb als nicht hinreichend sicher, teilt sie dies dem Antragsteller unter Angabe der Gründe für die Ablehnung des Antrags mit.
+
+
+(4)
+
+Erteilt die zuständige Behörde eine Betriebsgenehmigung macht sie darin Angaben
+
+
+a)
+
+
+zum Umfang der Genehmigung,
+
+
+
+
+b)
+
+
+zu den geltenden „speziellen“ Bedingungen im Hinblick auf
+
+
+i)
+
+
+den UAS-Betrieb und die Betriebsbeschränkungen,
+
+
+
+
+ii)
+
+
+die geforderte Kompetenz des UAS-Betreibers und gegebenenfalls der Fernpiloten,
+
+
+
+
+iii)
+
+
+die technischen Merkmale des UAS, einschließlich, je nach Sachlage, der Zulassung des UAS,
+
+
+
+
+
+
+c)
+
+
+zu Folgendem:
+
+
+i)
+
+
+zur UAS-Betreibernummer und zu den technischen Merkmalen des UAS,
+
+
+
+
+ii)
+
+
+zur Bewertung des Betriebsrisikos durch den UAS-Betreiber,
+
+
+
+
+iii)
+
+
+zu den Betriebsbeschränkungen und Betriebsbedingungen,
+
+
+
+
+iv)
+
+
+zu den vom UAS-Betreiber anzuwendenden Minderungsmaßnahmen,
+
+
+
+
+v)
+
+
+zu den Orten, an denen der Betrieb genehmigt ist, sowie zu sonstigen Orten in einem Mitgliedstaat nach Artikel 13,
+
+
+
+
+vi)
+
+
+zu sämtlichen Dokumenten und Aufzeichnungen in Bezug auf die Art des Betriebs sowie zur Art der Ereignisse, die zusätzlich zu den in der Verordnung (EU) Nr. 376/2014 des Europäischen Parlaments und des Rates (
+5
+) festgelegten Ereignissen gemeldet werden sollten.
+
+
+
+
+
+
+
+(5)
+
+Nach Eingang der in Artikel 5 Absatz 5 genannten Erklärung hat die zuständige Behörde
+
+
+a)
+
+
+zu überprüfen, dass sie alle in Punkt UAS.SPEC.020(2) des Anhangs genannten Elemente enthält,
+
+
+
+
+b)
+
+
+dem UAS-Betreiber gegenüber, sofern dies der Fall ist, den Erhalt und die Vollständigkeit der Erklärung unverzüglich zu bestätigen, sodass der Betreiber den Betrieb aufnehmen kann.
+
+
+
+
+Artikel 13
+Grenzübergreifender Betrieb oder Betrieb außerhalb des Eintragungsstaats
+
+(1)
+
+Beabsichtigt ein UAS-Betreiber einen Betrieb in der „speziellen“ Kategorie, für den bereits eine Betriebsgenehmigung nach Artikel 12 erteilt wurde, ganz oder teilweise im Luftraum eines anderen Mitgliedstaats als dem des Eintragungsmitgliedstaats durchzuführen, hat der UAS-Betreiber der zuständigen Behörde des Mitgliedstaats, in dem der Betrieb durchgeführt werden soll, einen Antrag vorzulegen, der Folgendes umfasst:
+
+
+a)
+
+
+ein Exemplar der dem UAS-Betreiber nach Artikel 12 erteilten Betriebsgenehmigung und
+
+
+
+
+b)
+
+
+Angaben zu den Orten, an denen der Betrieb durchgeführt werden soll, einschließlich, sofern erforderlich, aktualisierter Maßnahmen zur Minderung der nach Artikel 11 Absatz 2 Buchstabe b festgestellten Risiken, die sich speziell aus dem lokalen Luftraum sowie aus den Gelände- und Bevölkerungsmerkmalen und den klimatischen Bedingungen ergeben.
+
+
+
+
+
+(2)
+Nach Eingang des in Absatz 1 genannten Antrags prüft die zuständige Behörde des Mitgliedstaats, in dem der Betrieb durchgeführt werden soll, den Antrag unverzüglich und bestätigt gegenüber der zuständigen Behörde des Eintragungsmitgliedstaats und dem UAS-Betreiber, dass die aktualisierten Minderungsmaßnahmen nach Absatz 1 Buchstabe b für den Betrieb am beabsichtigten Ort zufriedenstellend sind. Nach Erhalt dieser Bestätigung kann der UAS-Betreiber den beabsichtigten Betrieb aufnehmen und der Eintragungsmitgliedstaat vermerkt die aktualisierten Minderungsmaßnahmen, die der UAS-Betreiber anzuwenden hat, in der nach Artikel 12 erteilten Betriebsgenehmigung.
+
+
+(3)
+Beabsichtigt ein UAS-Betreiber einen Betrieb in der „speziellen“ Kategorie, für den bereits eine Erklärung nach Artikel 5 Absatz 5 abgegeben wurde, ganz oder teilweise im Luftraum eines anderen Mitgliedstaats als dem des Eintragungsmitgliedstaats durchzuführen, hat der UAS-Betreiber der zuständigen Behörde des Mitgliedstaats, in dem der Betrieb durchgeführt werden soll, ein Exemplar der Erklärung vorzulegen, die er dem Eintragungsmitgliedstaat vorgelegt hatte, sowie ein Exemplar der Bestätigung des Eingangs und der Vollständigkeit.
+
+
+▼M1
+
+
+(4)
+
+Beabsichtigt ein UAS-Betreiber, der Inhaber eines LUC mit Rechten nach Punkt UAS.LUC.060 des Anhangs ist, einen Betrieb in der „speziellen“ Kategorie ganz oder teilweise im Luftraum eines anderen Mitgliedstaats als dem des Eintragungsmitgliedstaats durchzuführen, hat der UAS-Betreiber der zuständigen Behörde des Mitgliedstaats, in dem der Betrieb durchgeführt werden soll, Folgendes vorzulegen:
+
+
+a)
+
+
+eine Kopie der Genehmigungsbedingungen nach Punkt UAS.LUC.050 des Anhangs und
+
+
+
+
+b)
+
+
+Angaben zu dem Ort oder den Orten, an denen der Betrieb gemäß Absatz 1 Buchstabe b dieses Artikels durchgeführt werden soll.
+
+
+
+
+
+▼B
+
+Artikel 14
+Registrierung des UAS-Betreibers und zulassungspflichtiger UAS
+
+(1)
+Die Mitgliedstaaten errichten und pflegen Systeme zur genauen Registrierung von UAS-Betreibern und zulassungspflichtigen UAS, deren Betrieb ein Risiko für die Sicherheit und die Gefahrenabwehr, den Schutz der Privatsphäre, personenbezogener Daten oder der Umwelt darstellen kann.
+
+
+(2)
+
+Die Registrierungssysteme für UAS-Betreiber müssen Felder für die Eingabe und den Austausch folgender Informationen vorsehen:
+
+
+a)
+
+
+vollständiger Name und Geburtsdatum bei natürlichen Personen und Namen und Identifizierungsnummer bei juristischen Personen,
+
+
+
+
+b)
+
+
+Anschrift des UAS-Betreibers,
+
+
+
+
+c)
+
+
+E-Mail-Adresse und Telefonnummer des UAS-Betreibers,
+
+
+
+
+d)
+
+
+Nummer der Versicherungspolice für das UAS, sofern nach Unions- oder nationalem Recht gefordert,
+
+
+
+
+e)
+
+
+Bestätigung folgender Erklärung durch juristische Personen: „Das unmittelbar am Betrieb beteiligte Personal verfügt über die zur Durchführung seiner Aufgaben notwendigen Kompetenzen und das UAS wird nur von Fernpiloten mit angemessenem Kompetenzniveau betrieben“,
+
+
+
+
+f)
+
+
+vorhandene Betriebsgenehmigungen und LUC sowie Erklärungen mit einer Bestätigung nach Artikel 12 Absatz 5 Buchstabe b.
+
+
+
+
+
+(3)
+
+Die Registrierungssysteme für zulassungspflichtige unbemannte Luftfahrzeuge müssen Felder für die Eingabe und den Austausch folgender Informationen vorsehen:
+
+
+a)
+
+
+Name des Herstellers,
+
+
+
+
+b)
+
+
+Herstellerbezeichnung des unbemannten Luftfahrzeugs,
+
+
+
+
+c)
+
+
+Seriennummer des unbemannten Luftfahrzeugs,
+
+
+
+
+d)
+
+
+vollständiger Name, Anschrift, E-Mail-Adresse und Telefonnummer der natürlichen oder juristischen Person, unter deren Namen das unbemannte Luftfahrzeug registriert ist.
+
+
+
+
+
+(4)
+Die Mitgliedstaaten sorgen dafür, dass die Registrierungssysteme digital und interoperabel sind und es ermöglichen, über die in Artikel 74 der Verordnung (EU) 2018/1139 genannte Datenbank gegenseitig auf die Daten zuzugreifen und diese auszutauschen.
+
+
+(5)
+
+UAS-Betreiber registrieren sich selbst,
+
+
+a)
+
+
+wenn sie in der „offenen“ Kategorie eines der folgenden unbemannten Luftfahrzeuge betreiben:
+
+▼M5
+
+
+
+i)
+
+
+ein Luftfahrzeug mit einer MTOM von 250 g oder mehr, oder ein Luftfahrzeug, das bei einem Aufprall auf einen Menschen eine kinetische Energie von über 80 Joule übertragen kann,
+
+
+
+▼B
+
+
+
+ii)
+
+
+ein mit einem Sensor, der personenbezogene Daten erfassen kann, ausgerüstetes Luftfahrzeug, sofern es nicht der Richtlinie 2009/48/EG genügt.
+
+
+
+
+
+
+b)
+
+
+wenn sie in der „speziellen“ Kategorie ein unbemanntes Luftfahrzeug einer beliebigen Masse betreiben.
+
+
+
+
+
+(6)
+UAS-Betreiber registrieren sich selbst in dem Mitgliedstaat, in dem sie — bei natürlichen Personen — ihren Wohnsitz oder — bei juristischen Personen — ihren Hauptgeschäftssitz haben und stellen sicher, dass die von ihnen registrierten Daten korrekt sind. Ein UAS-Betreiber kann zu keinem Zeitpunkt in mehr als einem Mitgliedstaat registriert sein.
+
+Die Mitgliedstaaten stellen eine eindeutige digitale Registrierungsnummer für UAS-Betreiber aus sowie für registrierungspflichtige UAS, sodass sie individuell identifiziert werden können.
+Die Generierung der Registrierungsnummern für UAS-Betreiber erfolgt nach Standards, die die Interoperabilität der Registrierungssysteme unterstützen.
+
+(7)
+Eigentümer eines zulassungspflichtigen unbemannten Luftfahrzeugs müssen dieses registrieren lassen.
+
+Die Nationalität und das Eintragungskennzeichen des unbemannten Luftfahrzeugs wird nach ICAO Anhang 7 festgestellt. Ein unbemanntes Luftfahrzeug kann zu keinem Zeitpunkt in mehr als einem Mitgliedstaat registriert sein.
+
+(8)
+UAS-Betreiber, die die in Absatz 5 genannten Bedingungen erfüllen, bringen ihre Registrierungsnummer auf jedem unbemannten Luftfahrzeug an.
+
+
+▼M1
+
+
+(9)
+Zusätzlich zu den in Absatz 2 festgelegten Daten können die Mitgliedstaaten von den UAS-Betreibern zusätzliche Identitätsangaben einholen.
+
+
+▼B
+
+Artikel 15
+Betriebsbedingungen für geografische UAS-Gebiete
+
+(1)
+
+Bei der Festlegung geografischer UAS-Gebiete aus Gründen der Sicherheit und Gefahrenabwehr, des Schutzes der Privatsphäre oder der Umwelt können die Mitgliedstaaten
+
+▼M1
+
+
+
+a)
+
+
+einen bestimmten oder sämtlichen UAS-Betrieb untersagen, besondere Auflagen für einen bestimmten oder sämtlichen UAS-Betrieb verhängen oder UAS-Betreiber verpflichten, eine Fluggenehmigung für einen bestimmten oder sämtlichen UAS-Betrieb zu beantragen,
+
+
+
+▼B
+
+
+
+b)
+
+
+für den UAS-Betrieb bestimmte Umweltauflagen festlegen,
+
+
+
+
+c)
+
+
+nur bestimmten UAS-Klassen den Zugang gewähren,
+
+
+
+
+d)
+
+
+den Zugang nur solchen UAS gewähren, die mit bestimmten technischen Merkmalen, insbesondere mit Fernidentifizierungssystemen oder Geo-Sensibilisierungssystemen ausgerüstet sind.
+
+
+
+
+
+(2)
+Auf der Grundlage einer Risikobewertung durch die zuständige Behörde können Mitgliedstaaten bestimmte geografische Gebiete ausweisen, in denen der UAS-Betrieb von einer oder mehreren Anforderungen des Betriebs in der „offenen“ Kategorie ausgenommen ist.
+
+
+(3)
+Weisen Mitgliedstaaten geografische UAS-Gebiete nach den Absätzen 1 oder 2 für Geo-Sensibilisierungszwecke aus, sorgen sie dafür, dass die Informationen über diese geografischen UAS-Gebiete, auch deren Geltungsdauer, in einem gemeinsamen einheitlichen digitalen Format veröffentlicht werden.
+
+Artikel 16
+UAS-Betrieb im Rahmen von Flugmodell-Vereinen und -Vereinigungen
+
+(1)
+Auf Antrag eines Flugmodell-Vereins oder einer Flugmodell-Vereinigung kann die zuständige Behörde eine Genehmigung für den UAS-Betrieb im Rahmen des Flugmodell-Vereins oder der Flugmodell-Vereinigung erteilen.
+
+
+(2)
+
+Die in Absatz 1 genannte Genehmigung kann auf der Grundlage einer der folgenden Voraussetzungen erteilt werden:
+
+
+a)
+
+
+einschlägige nationale Vorschriften;
+
+
+
+
+b)
+
+
+bewährte Verfahren, Organisationsstrukturen und Managementsysteme der Flugmodell-Vereine oder -Vereinigungen, die gewährleisten, dass
+
+
+i)
+
+
+Fernpiloten, die im Rahmen von Flugmodell-Vereinen oder -Vereinigungen UAS betreiben, Kenntnis der Bedingungen und Beschränkungen haben, die in der von der zuständigen Behörde erteilten Genehmigung festgelegt sind;
+
+
+
+
+ii)
+
+
+Fernpiloten, die im Rahmen von Flugmodell-Vereinen oder -Vereinigungen UAS betreiben, dabei unterstützt werden, die Mindestkompetenz für den sicheren UAS-Betrieb im Einklang mit den in der Genehmigung festgelegten Bedingungen und Beschränkungen zu erlangen;
+
+
+
+
+iii)
+
+
+der Flugmodell-Verein oder die Flugmodell-Vereinigung angemessene Maßnahmen ergreift, wenn er/sie Kenntnis davon erhält, dass ein Fernpilot, der UAS im Rahmen von Flugmodell-Vereinen oder -Vereinigungen betreibt, den in der Genehmigung genannten Bedingungen und Beschränkungen nicht genügt, und die zuständige Behörde entsprechend informiert;
+
+
+
+
+iv)
+
+
+der Flugmodell-Verein oder die Flugmodell-Vereinigung der zuständigen Behörde auf Verlangen die für Aufsichts- und Monitoringzwecke notwendigen Unterlagen vorlegt.
+
+
+
+
+
+
+
+(3)
+Die in Absatz 1 genannte Genehmigung enthält Angaben, unter welchen Bedingungen der UAS-Betrieb im Rahmen von Flugmodell-Vereinen oder -Vereinigungen durchgeführt werden darf, und ist auf das Hoheitsgebiet des Mitgliedstaats beschränkt, in dem sie ausgestellt wurde.
+
+
+(4)
+
+
+
+►C1
+
+Die Mitgliedstaaten können es Flugmodell-Vereinen oder -Vereinigungen ermöglichen, ihre Mitglieder in deren Namen in die Registrierungssysteme einzutragen, die nach Artikel 14 eingerichtet wurden. ◄ Ist dies nicht der Fall, registrieren sich die Mitglieder von Flugmodell-Vereinen oder -Vereinigungen selbst nach Artikel 14.
+
+Artikel 17
+Benennung der zuständigen Behörde
+
+(1)
+Jeder Mitgliedstaat benennt eine oder mehrere Stellen als zuständige Behörde für die in Artikel 18 genannten Aufgaben.
+
+
+(2)
+
+Benennt ein Mitgliedstaat mehrere Stellen als zuständige Behörde,
+
+
+a)
+
+
+legt er die Zuständigkeitsbereiche für jede zuständige Behörde genau fest,
+
+
+
+
+b)
+
+
+legt er geeignete Koordinierungsmechanismen zwischen diesen Stellen fest, damit eine wirksame Aufsicht über alle Organisationen und Personen, die dieser Verordnung unterliegen, gewährleistet ist.
+
+
+
+
+Artikel 18
+Aufgaben der zuständigen Behörde
+Die zuständige Behörde ist für Folgendes verantwortlich:
+
+
+a)
+
+
+die Durchsetzung der Verordnung;
+
+
+
+
+b)
+
+
+die Erteilung, die Aussetzung oder den Widerruf von Zeugnissen von UAS-Betreibern und von Lizenzen von Fernpiloten, die UAS der Kategorie „zulassungspflichtig“ betreiben;
+
+
+
+
+c)
+
+
+die Ausstellung von Nachweisen für Fernpiloten über den Abschluss einer Online-Prüfung ihrer Theoriekenntnisse nach den Punkten UAS.OPEN.020 und UAS.OPEN.040 des Anhangs sowie Ausstellung, Änderung, Aussetzung, Einschränkung oder Widerruf von Zeugnissen über die Kompetenz von Fernpiloten nach Punkt UAS.OPEN.030 des Anhangs;
+
+
+
+
+d)
+
+
+die Ausstellung, Änderung, Aussetzung, Einschränkung oder den Widerruf von Betriebsgenehmigungen und LUC sowie Überprüfung der Vollständigkeit der Erklärungen, die für die Durchführung des UAS-Betriebs in der Kategorie „speziell“ benötigt werden;
+
+
+
+
+e)
+
+
+Aufbewahrung von Unterlagen, Aufzeichnungen und Berichten über Genehmigungen und Erklärungen für den UAS-Betrieb sowie über Zeugnisse über die Kompetenz von Fernpiloten und LUC;
+
+
+
+
+f)
+
+
+Zurverfügungstellung von Informationen in einem gemeinsamen einheitlichen digitalen Format über von den Mitgliedstaaten innerhalb ihres nationalen Luftraums ausgewiesene geografische UAS-Gebiete;
+
+
+
+
+g)
+
+
+Ausstellung einer Bestätigung des Eingangs und der Vollständigkeit nach Artikel 12 Absatz 5 Buchstabe b oder einer Bestätigung nach Artikel 13 Absatz 2;
+
+
+
+
+h)
+
+
+Aufbau eines risikobasierten Aufsichtssystems für
+
+
+i)
+
+
+UAS-Betreiber, die eine Erklärung vorgelegt haben oder Inhaber einer Betriebsgenehmigung oder eines LUC sind;
+
+
+
+
+ii)
+
+
+Flugmodell-Vereine oder -Vereinigungen, die Inhaber einer Genehmigung nach Artikel 16 sind;
+
+
+
+
+
+
+i)
+
+
+die Festlegung einer Audit-Planung anhand des Risikoprofils für andere Betriebskategorien als die Kategorie „offen“, sowie die Festlegung des Konformitätsniveaus und der Sicherheitsbilanz der UAS-Betreiber, die eine Erklärung vorgelegt haben oder Inhaber eines von der zuständigen Behörde ausgestellten Zeugnisses sind;
+
+
+
+
+j)
+
+
+die Durchführung von Inspektionen für andere Betriebskategorien als die Kategorie „offen“ bei UAS-Betreibern, die eine Erklärung vorgelegt haben oder Inhaber eines von der zuständigen Behörde ausgestellten Zeugnisses sind, die die UAS prüft und gewährleistet, dass die UAS-Betreiber und Fernpiloten dieser Verordnung genügen;
+
+
+
+
+k)
+
+
+die Umsetzung eines Systems zur Erkennung und Prüfung von Störungen aufgrund der Nichtkonformität von UAS-Betreibern in der „offenen“ oder „speziellen“ Kategorie, die nach Artikel 19 Absatz 2 gemeldet wurden;
+
+
+
+
+l)
+
+
+Versorgung von UAS-Betreibern mit Informationen und Leitlinien zur Förderung der Sicherheit des UAS-Betriebs;
+
+
+
+
+m)
+
+
+Aufbau und Pflege von Systemen zur Registrierung von UAS-Betreibern und zulassungspflichtigen UAS, deren Betrieb ein Risiko für die Sicherheit und Gefahrenabwehr sowie für den Schutz der Privatsphäre, personenbezogener Daten oder der Umwelt darstellen kann.
+
+
+Artikel 19
+Sicherheitsinformationen
+
+(1)
+Die zuständigen Behörden der Mitgliedstaaten sowie die Marktüberwachungs- und Grenzkontrollbehörden nach Artikel 36 der Delegierten Verordnung (EU) 2019/945 kooperieren in Sicherheitsfragen und legen Verfahren für den effizienten Austausch von Sicherheitsinformationen fest.
+
+
+(2)
+Im Einklang mit der Verordnung (EU) Nr. 376/2014 meldet jeder UAS-Betreiber der zuständigen Behörde sicherheitsrelevante Ereignisse und tauscht Informationen über sein UAS aus.
+
+
+(3)
+Nach Artikel 119 der Verordnung (EU) 2018/1139 und ihren Durchführungsrechtsakten sammeln, analysieren und veröffentlichen die Agentur der Europäischen Union für Flugsicherheit (im Folgenden die „Agentur“) sowie die zuständigen Behörden Sicherheitsinformationen über den UAS-Betrieb in ihrem Hoheitsgebiet.
+
+
+(4)
+Erhalten die Agentur und die zuständigen Behörden Informationen nach den Absätzen 1, 2 oder 3, ergreifen sie die notwendigen Maßnahmen, um auf der Grundlage der besten verfügbaren Daten und Analysen etwaige Sicherheitsfragen zu klären, wobei sie die wechselseitigen Abhängigkeiten zwischen den verschiedenen Bereichen der Flugsicherheit sowie zwischen der Flugsicherheit, der Cybersicherheit und sonstigen Bereichen des Luftrechts berücksichtigen.
+
+
+(5)
+Ergreift die zuständige Behörde oder die Agentur Maßnahmen nach Absatz 4, unterrichtet sie unverzüglich alle einschlägigen interessierten Parteien und Organisationen, die diesen Maßnahmen nach der Verordnung (EU) 2018/1139 und ihren Durchführungsrechtsakten genügen müssen.
+
+Artikel 20
+Besondere Bestimmungen für den Einsatz bestimmter UAS in der „offenen“ Kategorie
+UAS-Arten im Sinne des Beschlusses Nr. 768/2008/EG des Europäischen Parlaments und des Rates (
+6
+), die der Delegierten Verordnung (EU) 2019/945 nicht genügen und die nicht privat hergestellt sind, dürfen unter den folgenden Bedingungen weiter betrieben werden, sofern sie vor dem
+
+►M4
+
+1. Januar 2024 ◄ in Verkehr gebracht wurden:
+
+
+a)
+
+
+in Unterkategorie A1 nach Teil A des Anhangs, sofern das unbemannte Luftfahrzeug, einschließlich Nutzlast, eine höchstzulässige Startmasse von weniger als 250 g hat;
+
+
+
+
+b)
+
+
+in Unterkategorie A3 nach Teil A des Anhangs, sofern das unbemannte Luftfahrzeug, einschließlich Nutzlast, eine höchstzulässige Startmasse von weniger als 25 kg hat.
+
+
+Artikel 21
+Anpassungen von Genehmigungen, Erklärungen und Zeugnissen
+
+(1)
+UAS-Betreibern erteilte Genehmigungen, Zeugnisse über die Kompetenz von Fernpiloten und Erklärungen von UAS-Betreibern oder gleichwertige Dokumente, die auf der Grundlage nationaler Vorschriften ausgestellt wurden, bleiben bis
+
+►M2
+
+1. Januar 2022 ◄ gültig.
+
+
+(2)
+Bis zum
+
+►M2
+
+1. Januar 2022 ◄ wandeln die Mitgliedstaaten ihre vorhandenen Zeugnisse über die Kompetenz von Fernpiloten sowie ihre Genehmigungen für UAS-Betreiber oder Erklärungen oder gleichwertige Dokumente, auch solche, die bis zu diesem Zeitpunkt ausgestellt wurden, entsprechend dieser Verordnung um.
+
+
+(3)
+Unbeschadet des Artikels 14 darf der UAS-Betrieb im Rahmen von Flugmodell-Vereinen und -Vereinigungen entsprechend dem nationalen Recht ohne eine Genehmigung nach Artikel 16 bis
+
+►M2
+
+1. Januar 2023 ◄ fortgeführt werden.
+
+
+▼M1
+
+Artikel 22
+
+▼M4
+
+Unbeschadet des Artikels 20 wird der Einsatz von UAS in der „offenen“ Kategorie, die den Anforderungen der Teile 1 bis 5 des Anhangs der Delegierten Verordnung (EU) 2019/945 der Kommission (
+7
+) nicht genügen, für einen Übergangszeitraum gestattet, der am 31. Dezember 2023 endet, sofern
+
+▼M1
+
+
+
+a)
+
+
+unbemannte Luftfahrzeuge mit einer Startmasse von weniger als 500 g von einem Fernpiloten, der das von dem betreffenden Mitgliedstaat festgelegte Kompetenzniveau erfüllt, im Rahmen der betrieblichen Anforderungen in Punkt UAS.OPEN.020 Nummer 1 von Teil A des Anhangs betrieben werden;
+
+
+
+
+b)
+
+
+unbemannte Luftfahrzeuge mit einer Startmasse von weniger als 2 kg von einem Fernpiloten, dessen Kompetenzniveau dem in Punkt UAS.OPEN.030 Nummer 2 von Teil A des Anhangs mindestens gleichwertig ist, unter Einhaltung eines horizontalen Mindestabstands von 50 m zu Menschen betrieben werden;
+
+
+
+
+c)
+
+
+unbemannte Luftfahrzeuge mit einer Startmasse von weniger als 25 kg von einem Fernpiloten, dessen Kompetenzniveau dem in Punkt UAS.OPEN.020 Nummer 4 Buchstabe b von Teil A des Anhangs mindestens gleichwertig ist, im Rahmen der betrieblichen Anforderungen in Punkt UAS.OPEN.040 Nummern 1 und 2 betrieben werden.
+
+
+Artikel 23
+
+(1)
+Diese Verordnung tritt am zwanzigsten Tag nach ihrer Veröffentlichung im Amtsblatt der Europäischen Union in Kraft.
+
+
+▼M2
+
+Sie gilt ab dem 31. Dezember 2020.
+
+▼M4
+
+
+(2)
+Artikel 5 Absatz 5 gilt ab dem 1. Januar 2024.
+
+
+(3)
+Punkte UAS.OPEN.060 Absatz 2 Buchstabe g und UAS.SPEC.050 Absatz 1 Buchstabe l Ziffer i des Anhangs gelten ab dem 1. Juli 2022 und Punkt UAS.SPEC.050 Absatz 1 Buchstabe l Ziffer ii des Anhangs gilt ab dem 1. Januar 2024.
+
+
+(4)
+Unbeschadet des Artikels 21 Absatz 1 dürfen die Mitgliedstaaten bis zum 31. Dezember 2023 Erklärungen von UAS-Betreibern nach Artikel 5 Absatz 5, die auf nationalen Standardszenarien oder Gleichwertigem beruhen, akzeptieren, sofern diese nationalen Szenarien den Anforderungen von Punkt UAS.SPEC.020 des Anhangs genügen.
+
+Die Gültigkeit solcher Erklärungen endet am 1. Januar 2026.
+
+▼M2
+
+
+(5)
+Artikel 15 Absatz 3 gilt ab dem 1. Januar 2022.
+
+
+▼B
+
+Diese Verordnung ist in allen ihren Teilen verbindlich und gilt unmittelbar in jedem Mitgliedstaat.
+
+▼M1
+
+
+
+
+
+
+
+
+ANHANG
+UAS-BETRIEB IN DEN KATEGORIEN „OFFEN“ UND „SPEZIELL“
+
+TEIL A
+
+UAS-BETRIEB IN DER KATEGORIE „OFFEN“
+UAS.OPEN.010 Allgemeine Bestimmungen
+
+1. Der UAS-Betrieb in der Kategorie „offen“ ist abhängig von den Betriebsbeschränkungen, den Anforderungen an den Fernpiloten und den technischen Anforderungen an das UAS in die drei Unterkategorien A1, A2 und A3 unterteilt.
+
+
+2. Beginnt bei einem UAS-Betrieb der Flug des unbemannten Luftfahrzeugs von einer natürlichen Erhebung im Gelände oder über einem Gelände mit natürlichen Erhebungen, ist das unbemannte Luftfahrzeug in einem Abstand von 120 m vom nächstgelegenen Punkt auf der Erdoberfläche zu halten. Die Messung des Abstands ist an die geografischen Merkmale des Geländes, wie Ebenen, Hügel oder Berge, anzupassen.
+
+
+3. Fliegt ein unbemanntes Luftfahrzeug in einem horizontalen Abstand von 50 m zu einem künstlichen Hindernis, das höher als 105 m ist, kann die höchstzulässige Höhe des UAS-Betriebs auf Antrag der für das Hindernis zuständigen Stelle auf bis zu 15 m über der Höhe des Hindernisses erhöht werden.
+
+
+4. Abweichend von Nummer 2 können unbemannte Segelflugzeuge mit einer MTOM, einschließlich Nutzlast, von weniger als 10 kg in einem Abstand von über 120 m vom nächstgelegenen Punkt auf der Erdoberfläche geflogen werden, sofern das unbemannte Segelflugzeug zu keiner Zeit in einer Höhe von über 120 m über dem Fernpiloten geflogen wird.
+
+UAS.OPEN.020 UAS-Betrieb in Unterkategorie A1
+Der UAS-Betrieb in Unterkategorie A1 muss allen folgenden Bedingungen genügen:
+
+
+1.
+
+
+Die in Nummer 5 Buchstabe d genannten unbemannten Luftfahrzeuge müssen so betrieben werden, dass ein Fernpilot eines unbemannten Luftfahrzeugs keine Menschenansammlungen überfliegt und nach vernünftigem Ermessen davon ausgehen kann, dass keine unbeteiligten Personen überflogen werden. Werden unerwarteter Weise unbeteiligte Personen überflogen, verkürzt der Fernpilot die Zeit, in der das unbemannte Luftfahrzeug diese Personen überfliegt, soweit wie möglich.
+
+
+
+
+2.
+
+
+Die in Nummer 5 Buchstaben a bis c genannten unbemannten Luftfahrzeuge müssen so betrieben werden, dass der Fernpilot des unbemannten Luftfahrzeugs unbeteiligte Personen, aber niemals Menschenansammlungen überfliegen darf.
+
+
+
+
+3.
+
+
+Abweichend von Artikel 4 Absatz 1 Buchstabe d müssen die unbemannten Luftfahrzeuge im eingeschalteten Follow-me-Modus bis zu einem Abstand von 50 m vom Fernpiloten betrieben werden.
+
+
+
+
+4.
+
+
+Der UAS-Betrieb muss von einem Fernpiloten durchgeführt werden, der
+
+
+a)
+
+
+mit den vom Hersteller des UAS erstellten und mitgelieferten Anweisungen vertraut ist,
+
+
+
+
+b)
+
+
+im Falle eines unbemannten Luftfahrzeugs der Klasse C1 nach Teil 2 des Anhangs der Delegierten Verordnung (EU) 2019/945 einen Online-Lehrgang absolviert und erfolgreich (mit mindestens 75 % der erreichbaren Gesamtpunktzahl) mit einer Online-Theorieprüfung abgeschlossen hat, die von der zuständigen Behörde oder von einer von der zuständigen Behörde eines Mitgliedstaates benannten Stelle durchgeführt wurde. Die Prüfung muss 40 Multiple-Choice-Fragen umfassen, die sich angemessen auf die folgenden Sachgebiete verteilen:
+
+
+i)
+
+
+Flugsicherheit,
+
+
+
+
+ii)
+
+
+Luftraumbeschränkungen,
+
+
+
+
+iii)
+
+
+Luftrecht,
+
+
+
+
+iv)
+
+
+menschliches Leistungsvermögen und dessen Grenzen,
+
+
+
+
+v)
+
+
+Betriebsverfahren,
+
+
+
+
+vi)
+
+
+allgemeine Kenntnisse zu UAS,
+
+
+
+
+vii)
+
+
+Schutz der Privatsphäre und der Daten,
+
+
+
+
+viii)
+
+
+Versicherung,
+
+
+
+
+ix)
+
+
+Luftsicherheit.
+
+
+
+
+
+
+
+
+5.
+
+
+Der UAS-Betrieb muss mit einem unbemannten Luftfahrzeug durchgeführt werden,
+
+
+a)
+
+
+das im Falle eines privat hergestellten UAS eine MTOM, einschließlich Nutzlast, von weniger als 250 g und eine Betriebshöchstgeschwindigkeit von unter 19 m/s hat, oder
+
+
+
+
+b)
+
+
+die Anforderungen von Artikel 20 Buchstabe a erfüllt,
+
+
+
+
+c)
+
+
+das als ein UAS der Klasse C0 gekennzeichnet ist und die Anforderungen dieser Klasse nach Teil 1 des Anhangs der Delegierten Verordnung (EU) 2019/945 erfüllt, oder
+
+
+
+
+d)
+
+
+das als ein UAS der Klasse C1 gekennzeichnet ist und die Anforderungen dieser Klasse nach Teil 2 des Anhangs der Delegierten Verordnung (EU) 2019/945 erfüllt und mit einem eingeschalteten und aktualisierten System für die direkte Fernidentifizierung und einer Geo-Sensibilisierungsfunktion betrieben wird.
+
+
+
+
+UAS.OPEN.030 UAS-Betrieb in Unterkategorie A2
+Der UAS-Betrieb in Unterkategorie A2 muss allen folgenden Bedingungen genügen:
+
+
+1.
+
+
+Das unbemannte Luftfahrzeug muss so betrieben werden, dass es keine unbeteiligten Personen überfliegt und ein horizontaler Sicherheitsabstand von mindestens 30 m von diesen Personen eingehalten wird. Der Fernpilot kann den horizontalen Sicherheitsabstand auf ein Minimum von 5 m von einer unbeteiligten Person verkürzen, sofern der Langsamflugmodus des unbemannten Luftfahrzeugs eingeschaltet ist und die Situation im Hinblick auf folgende Faktoren bewertet wurde:
+
+
+a)
+
+
+Wetterbedingungen,
+
+
+
+
+b)
+
+
+Leistungsfähigkeit des unbemannten Luftfahrzeugs,
+
+
+
+
+c)
+
+
+Trennung des überflogenen Gebiets.
+
+
+
+
+
+
+2.
+
+
+Der UAS-Betrieb muss von einem Fernpiloten durchgeführt werden, der mit dem vom Hersteller des UAS erstellten Anweisungen vertraut und Inhaber eines Fernpiloten-Zeugnisses ist, das von der zuständigen Behörde oder einer von der zuständigen Behörde eines Mitgliedstaates benannten Stelle ausgestellt wurde. Dieses Zeugnis wird ausgestellt, nachdem alle folgenden Bedingungen in der angegebenen Reihenfolge erfüllt wurden:
+
+
+a)
+
+
+Abschluss eines Online-Lehrgangs und Bestehen der Online-Theorieprüfung nach Punkt UAS.OPEN.020 Nummer 4 Buchstabe b,
+
+
+
+
+b)
+
+
+Abschluss eines praktischen Selbststudiums der Betriebsbedingungen für UAS der Unterkategorie A3 nach Punkt UAS.Open.040 Nummern 1 und 2,
+
+
+
+
+c)
+
+
+Erklärung des Abschlusses des praktischen Selbststudiums nach Buchstabe b und Bestehen (mit mindestens 75 % der erreichbaren Gesamtpunktzahl) einer zusätzlichen Theorieprüfung, die von der zuständigen Behörde oder bei einer von der zuständigen Behörde eines Mitgliedstaats benannten Stelle durchgeführt wurde. Die Prüfung muss mindestens 30 Multiple-Choice-Fragen umfassen, mit denen die Kenntnisse des Fernpiloten in der technischen und betrieblichen Minderung der Risiken am Boden geprüft werden und die sich angemessen auf die folgenden Sachgebiete verteilen:
+
+
+i)
+
+
+Meteorologie,
+
+
+
+
+ii)
+
+
+UAS-Flugleistung,
+
+
+
+
+iii)
+
+
+technische und betriebliche Minderung von Risiken am Boden.
+
+
+
+
+
+
+
+
+3.
+
+
+Der UAS-Betrieb muss mit einem unbemannten Luftfahrzeug durchgeführt werden, das als ein UAS der Klasse C2 gekennzeichnet ist, die Anforderungen dieser Klasse nach Teil 3 des Anhangs der Delegierten Verordnung (EU) 2019/945 erfüllt und mit einem eingeschalteten und aktualisierten System für die direkte Fernidentifizierung und einer Geo-Sensibilisierungsfunktion betrieben wird.
+
+
+UAS.OPEN.040 UAS-Betrieb in Unterkategorie A3
+Der UAS-Betrieb in Unterkategorie A3 muss allen folgenden Bedingungen genügen:
+
+
+1.
+
+
+Er muss in einem Gebiet durchgeführt werden, in dem der Fernpilot nach vernünftigem Ermessen davon ausgehen kann, dass innerhalb des Bereichs, in dem das unbemannte Luftfahrzeug während des gesamten UAS-Betriebs geflogen wird, keine unbeteiligte Person gefährdet wird.
+
+
+
+
+2.
+
+
+Er muss einen horizontalen Sicherheitsabstand von mindestens 150 m zu Wohn-, Gewerbe-, Industrie- oder Erholungsgebieten wahren.
+
+
+
+
+3.
+
+
+Er muss von einem Fernpiloten durchgeführt werden, der mit dem vom Hersteller des UAS erstellten Anweisungen vertraut ist sowie einen Online-Lehrgang absolviert und eine Online-Theorieprüfung nach Punkt UAS.OPEN.020 Nummer 4 Buchstabe b bestanden hat.
+
+
+
+
+4.
+
+
+Er muss mit einem unbemannten Luftfahrzeug durchgeführt werden,
+
+
+a)
+
+
+das im Falle eines privat hergestellten UAS eine MTOM, einschließlich Nutzlast, von weniger als 25 kg hat, oder
+
+
+
+
+b)
+
+
+das die Anforderungen von Artikel 20 Buchstabe b erfüllt,
+
+
+
+
+c)
+
+
+das als ein UAS der Klasse C2 gekennzeichnet ist und die Anforderungen dieser Klasse nach Teil 3 des Anhangs der Delegierten Verordnung (EU) 2019/945 erfüllt und mit einem eingeschalteten und aktualisierten System für die direkte Fernidentifizierung und einer Geo-Sensibilisierungsfunktion betrieben wird,
+
+
+
+
+d)
+
+
+das als ein UAS der Klasse C3 gekennzeichnet ist und die Anforderungen dieser Klasse nach Teil 4 des Anhangs der Delegierten Verordnung (EU) 2019/945 erfüllt und mit einem eingeschalteten und aktualisierten System für die direkte Fernidentifizierung und einer Geo-Sensibilisierungsfunktion betrieben wird, oder
+
+
+
+
+e)
+
+
+das als ein UAS der Klasse C4 gekennzeichnet ist und die Anforderungen dieser Klasse nach Teil 5 des Anhangs der Delegierten Verordnung (EU) 2019/945 erfüllt.
+
+
+
+
+UAS.OPEN.050 Verantwortung des UAS-Betreibers
+Der UAS-Betreiber muss alle nachstehenden Anforderungen erfüllen:
+
+
+1.
+
+
+Er muss Betriebsverfahren ausarbeiten, die an die Art des Betriebs und das damit verbundene Risiko angepasst sind.
+
+
+
+
+2.
+
+
+Er muss dafür sorgen, dass bei jedem Betrieb der Funkfrequenzbereich effizient genutzt wird, und fördert dessen effiziente Nutzung, um schädliche Störungen zu vermeiden.
+
+
+
+
+3.
+
+
+Er muss für jeden Flug einen Fernpiloten benennen.
+
+
+
+
+4.
+
+
+Er muss gewährleisten, dass die Fernpiloten sowie alle sonstigen Personen, die Aufgaben zur Unterstützung des Betriebs wahrnehmen, mit den vom Hersteller des UAS erstellten Anweisungen vertraut sind und
+
+
+a)
+
+
+über ausreichenden Sachverstand in der Unterkategorie des beabsichtigten UAS-Betriebs nach den Punkten UAS.OPEN.020, UAS.OPEN.030 bzw. UAS.OPEN.040 verfügen, um ihre Aufgaben wahrzunehmen, oder, sofern es sich um anderes Personal als die Fernpiloten handelt, einen vom Betreiber ausgearbeiteten Lehrgang zur Ausbildung am Arbeitsplatz abgeschlossen haben,
+
+
+
+
+b)
+
+
+mit den Verfahren des UAS-Betreibers völlig vertraut sind,
+
+
+
+
+c)
+
+
+die für den beabsichtigten UAS-Betrieb relevanten Informationen erhalten, die von dem Mitgliedstaat nach Artikel 15 für die geografischen Gebiete veröffentlicht wurden, in denen der Betrieb durchgeführt werden soll.
+
+
+
+
+
+
+5.
+
+
+Je nach Sachlage und abhängig vom vorgesehenen Betriebsort muss er die im Geo-Sensibilisierungssystem enthaltenen Informationen aktualisieren.
+
+
+
+
+6.
+
+
+Er muss im Falle eines Betriebs mit einem unbemannten Luftfahrzeug einer der in den Teilen 1 bis 5 des Anhangs der Delegierten Verordnung (EU) 2019/945 festgelegten Klassen gewährleisten, dass
+
+
+a)
+
+
+dem UAS die entsprechende EU-Konformitätserklärung mit den Angaben der jeweiligen Klasse beiliegt, und
+
+
+
+
+b)
+
+
+das entsprechende Klassen-Identifizierungskennzeichen auf dem unbemannten Luftfahrzeug angebracht ist.
+
+
+
+
+
+
+7.
+
+
+Er muss dafür sorgen, dass bei einem UAS-Betrieb in der Unterkategorie A2 oder A3 alle beteiligten Personen, die sich in dem Betriebsgebiet aufhalten, über die Risiken informiert wurden und der Teilnahme ausdrücklich zugestimmt haben.
+
+
+UAS.OPEN.060 Verantwortung des Fernpiloten
+
+
+1.
+
+
+Vor Aufnahme des UAS-Betriebs muss der Fernpilot
+
+
+a)
+
+
+über die für die Unterkategorie des beabsichtigten UAS-Betriebs nach den Punkten UAS.OPEN.020, UAS.OPEN.030 bzw. UAS.OPEN.040 geeignete Kompetenz für die Wahrnehmung seiner Aufgaben verfügen und einen Nachweis seiner Kompetenz während des UAS-Betriebs mit sich führen, sofern es sich nicht um ein unbemanntes Luftfahrzeug nach Punkt UAS.OPEN.020 Nummer 5 Buchstabe a, b oder c handelt,
+
+
+
+
+b)
+
+
+die aktuellen und für den beabsichtigten UAS-Betrieb relevanten Informationen einholen, die von dem Mitgliedstaat nach Artikel 15 für jedes der geografischen Gebiete veröffentlicht wurden, in denen der Betrieb durchgeführt werden soll,
+
+
+
+
+c)
+
+
+das Betriebsumfeld beobachten, auf Hindernisse überprüfen und feststellen, ob unbeteiligte Personen anwesend sind, sofern es sich nicht um einen Betrieb der Unterkategorie A1 mit einem unbemannten Luftfahrzeug nach Punkt UAS.OPEN.020 Nummer 5 Buchstabe a, b oder c handelt,
+
+
+
+
+d)
+
+
+sicherstellen, dass das UAS in einem für den beabsichtigten Flug sicheren Zustand ist, und gegebenenfalls prüfen, ob die direkte Fernidentifizierung eingeschaltet und aktuell ist,
+
+
+
+
+e)
+
+
+überprüfen, dass durch die Masse einer zusätzlichen Nutzlast, die das UAS möglicherweise mit sich führt, weder dessen vom Hersteller festgelegte MTOM noch das MTOM-Limit seiner Klasse überschritten wird.
+
+
+
+
+
+
+2.
+
+
+Während des Flugs
+
+
+a)
+
+
+darf der Fernpilot keine Aufgaben ausführen, wenn er unter dem Einfluss psychoaktiver Substanzen oder Alkohol steht oder aufgrund von Verletzung, Müdigkeit, Medikamenteneinnahme, Krankheit oder aus sonstigen Gründen nicht in der Lage ist, seine Aufgaben wahrzunehmen,
+
+
+
+
+b)
+
+
+muss der Fernpilot das unbemannte Luftfahrzeug in VLOS halten und ständig den das unbemannte Luftfahrzeug umgebenden Luftraum im Blick (visual scan) behalten, um jedes Risiko einer Kollision mit einem bemannten Luftfahrzeug zu vermeiden. Der Fernpilot muss den Flug unterbrechen, sobald der Betrieb ein Risiko für ein anderes Luftfahrzeug, Menschen, Tiere, die Umwelt oder Eigentum darstellt,
+
+
+
+
+c)
+
+
+muss sich der Fernpilot an die nach Artikel 15 für geografische Gebiete festgelegten Betriebsbeschränkungen halten,
+
+
+
+
+d)
+
+
+muss der Fernpilot in der Lage sein, die Kontrolle über das unbemannte Luftfahrzeug aufrechtzuerhalten, sofern nicht ein Verlust der Datenverbindung vorliegt oder er das unbemannte Luftfahrzeug im Gleitflug betreibt,
+
+
+
+
+e)
+
+
+muss der Fernpilot das UAS nach den vom Hersteller des UAS erstellten Anweisungen betreiben und dabei möglicherweise geltende Beschränkungen berücksichtigen,
+
+
+
+
+f)
+
+
+muss der Fernpilot sich an gegebenenfalls vorhandene Verfahren des Betreibers halten,
+
+
+
+
+g)
+
+
+muss der Fernpilot, sofern es sich um einen Nachtflug handelt, sicherstellen, dass an dem unbemannten Luftfahrzeug das grüne Blinklicht eingeschaltet ist.
+
+
+
+
+
+
+3.
+
+
+Während des Flugs dürfen Fernpiloten und UAS-Betreiber nicht an Gebiete heranfliegen oder in Gebieten fliegen, in denen ein Notfalleinsatz stattfindet, sofern sie nicht von den zuständigen Notfalldiensten die Erlaubnis hierfür erhalten haben.
+
+
+
+
+4.
+
+
+Für die Zwecke von Nummer 2 Buchstabe b können Fernpiloten von Beobachtern unbemannter Luftfahrzeuge unterstützt werden. In diesem Fall muss zwischen dem Fernpiloten und dem Beobachter unbemannter Luftfahrzeuge eine klare und effektive Kommunikation festgelegt werden.
+
+
+UAS.OPEN.070 Gültigkeitsdauer der Online-Theoriekenntnisse und der Zeugnisse für Fernpiloten
+
+
+1.
+
+
+Die nach Punkt UAS.OPEN.020 Nummer 4 Buchstabe b und UAS.OPEN.040 Nummer 3 geforderten Online-Theoriekenntnisse von Fernpiloten und die nach Punkt UAS.OPEN.030 Nummer 2 geforderten Zeugnisse für Fernpiloten gelten für fünf Jahre.
+
+
+
+
+2.
+
+
+Die Online-Theoriekenntnisse von Fernpiloten und deren Zeugnisse können innerhalb ihrer Gültigkeitsdauer nur verlängert werden, wenn
+
+
+a)
+
+
+ein Nachweis der Befähigung nach Punkt UAS.OPEN.020 Nummer 4 Buchstabe b bzw. Punkt UAS.OPEN.030 Nummer 2 vorgelegt oder
+
+
+
+
+b)
+
+
+eine Auffrischungsschulung der Theoriekenntnisse in den Sachgebieten nach Punkt UAS.OPEN.020 Nummer 4 Buchstabe b bzw. Punkt UAS.OPEN.030 Nummer 2, die von der zuständigen Behörde oder einer von der zuständigen Behörde benannten Stelle angeboten wird, absolviert wird.
+
+
+
+
+
+
+3.
+
+
+Für die Verlängerung der Online-Theoriekenntnisse oder der Zeugnisse von Fernpiloten nach deren Ablauf muss der Fernpilot Nummer 2 Buchstabe a genügen.
+
+
+
+TEIL B
+
+UAS-BETRIEB IN DER KATEGORIE „SPEZIELL“
+UAS.SPEC.010 Allgemeine Bestimmungen
+Der UAS-Betreiber legt der zuständigen Behörde eine Bewertung des Betriebsrisikos für den beabsichtigten Betrieb nach Artikel 11 vor oder eine Erklärung im Falle der Anwendbarkeit von Punkt UAS.SPEC.020, sofern er nicht nach Teil C dieses Anhangs Inhaber eines Betreiberzeugnisses für Leicht-UAS (LUC) und der entsprechenden Rechte ist. Der UAS-Betreiber bewertet regelmäßig die Angemessenheit der getroffenen Risikominderungsmaßnahmen und aktualisiert sie nach Bedarf.
+UAS.SPEC.020 Betriebserklärung
+
+
+1.
+
+
+Nach Artikel 5 kann der UAS-Betreiber über die Einhaltung eines Standardszenarios, wie es in Anlage 1 zu diesem Anhang festgelegt ist, eine Betriebserklärung bei der zuständigen Behörde des Eintragungsmitgliedstaats abgeben und zwar als Alternative zu den Punkten UAS.SPEC.30 und UAS.SPEC.40 für den Betrieb
+
+
+a)
+
+
+von unbemannten Luftfahrzeugen mit
+
+
+i)
+
+
+einer maximalen charakteristischen Abmessung von bis zu 3 m in VLOS über einem kontrollierten Bereich am Boden, jedoch nicht über Menschenansammlungen,
+
+
+
+
+ii)
+
+
+einer maximalen charakteristischen Abmessung von bis zu 1 m in VLOS, jedoch nicht über Menschenansammlungen,
+
+
+
+
+iii)
+
+
+einer maximalen charakteristischen Abmessung von bis zu 1 m in BVLOS, über dünn besiedelten Gebieten,
+
+
+
+
+iv)
+
+
+einer maximalen charakteristischen Abmessung von bis zu 3 m in BVLOS, über einem kontrollierten Bereich am Boden,
+
+
+
+
+
+
+b)
+
+
+unter 120 m vom nächstgelegenen Punkt auf der Erdoberfläche und
+
+
+i)
+
+
+in einem unkontrollierten Luftraum (Klasse F oder G), sofern die Mitgliedstaaten keine anderen Beschränkungen durch geografische UAS-Gebiete vorgegeben haben, in denen die Wahrscheinlichkeit, auf bemannte Luftfahrzeuge zu treffen, nicht gering ist, oder
+
+
+
+
+ii)
+
+
+in einem kontrollierten Luftraum entsprechend den veröffentlichten Verfahren für den Betriebsbereich, sodass eine geringe Wahrscheinlichkeit, auf bemannte Luftfahrzeuge zu treffen, gewährleistet ist.
+
+
+
+
+
+
+
+
+2.
+
+
+Die Erklärung eines UAS-Betreibers muss Folgendes enthalten:
+
+
+a)
+
+
+administrative Angaben zum UAS-Betreiber,
+
+
+
+
+b)
+
+
+eine Erklärung, dass der Betrieb die betrieblichen Anforderungen von Nummer 1 sowie ein in Anlage 1 des Anhangs festgelegtes Standardszenario erfüllt,
+
+
+
+
+c)
+
+
+die Verpflichtung des UAS-Betreibers zur Einhaltung der einschlägigen Risikominderungsmaßnahmen, die für die Betriebssicherheit gefordert werden, darunter die entsprechenden Anweisungen für den Betrieb, für die Konstruktion des unbemannten Luftfahrzeugs und die Kompetenz des beteiligten Personals,
+
+
+
+
+d)
+
+
+die Bestätigung des UAS-Betreibers, dass für jeden in der Erklärung genannten Flug ein angemessener Versicherungsschutz besteht, sofern dieser nach Unionsrecht oder nationalem Recht vorgeschrieben ist.
+
+
+
+
+
+
+3.
+
+
+Nach Eingang der Erklärung prüft die zuständige Behörde, ob die Erklärung alle in Nummer 2 aufgeführten Elemente enthält und bestätigt gegenüber dem UAS-Betreiber unverzüglich den Eingang und die Vollständigkeit der Unterlagen.
+
+
+
+
+4.
+
+
+Nach Erhalt der Bestätigung über den Eingang und die Vollständigkeit der Unterlagen hat der UAS-Betreiber das Recht, den Betrieb aufzunehmen.
+
+
+
+
+5.
+
+
+Der UAS-Betreiber unterrichtet die zuständige Behörde unverzüglich über etwaige Änderungen der in der eingereichten Betriebserklärung gemachten Angaben.
+
+
+
+
+6.
+
+
+Ein UAS-Betreiber, der Inhaber eines LUC und der entsprechenden Rechte nach Teil C dieses Anhangs ist, muss keine Erklärung einreichen.
+
+
+UAS.SPEC.030 Antrag auf Betriebsgenehmigung
+
+
+1.
+
+
+Vor Aufnahme des UAS-Betriebs in der „speziellen“ Kategorie muss der UAS-Betreiber bei der zuständigen nationalen Behörde des Eintragungsmitgliedstaats eine Betriebsgenehmigung beantragen, es sei denn,
+
+
+a)
+
+
+Punkt UAS.SPEC.020 findet Anwendung oder
+
+
+
+
+b)
+
+
+der UAS-Betreiber ist Inhaber eines LUC-Zeugnisses und der entsprechenden Rechte nach Teil C des Anhangs.
+
+
+
+
+
+
+2.
+
+
+Der UAS-Betreiber reicht einen Antrag auf Aktualisierung der Betriebsgenehmigung ein, wenn sich erhebliche Änderungen gegenüber dem in der Betriebsgenehmigung aufgeführten Betrieb oder den dort genannten Risikominderungsmaßnahmen ergeben haben.
+
+
+
+
+3.
+
+
+Der Antrag auf Erteilung einer Betriebsgenehmigung stützt sich auf die in Artikel 11 genannte Risikobewertung und muss darüber hinaus folgende Angaben enthalten:
+
+
+a)
+
+
+die UAS-Betreibernummer,
+
+
+
+
+b)
+
+
+den Namen des verantwortlichen Betriebsleiters oder den Namen des UAS-Betreibers im Falle einer natürlichen Person,
+
+
+
+
+c)
+
+
+eine Bewertung des Betriebsrisikos,
+
+
+
+
+d)
+
+
+eine Liste der vom UAS-Betreiber vorgeschlagenen Risikominderungsmaßnahmen mit hinreichenden Informationen für die zuständige Behörde zur Bewertung der Angemessenheit der Risikominderungsmaßnahmen,
+
+
+
+
+e)
+
+
+ein Betriebshandbuch, sofern angesichts des Risikos und der Komplexität des Betriebs erforderlich,
+
+
+
+
+f)
+
+
+eine Bestätigung des UAS-Betreibers, dass zum Zeitpunkt der Aufnahme des UAS-Betriebs ein angemessener Versicherungsschutz besteht, sofern dieser nach Unionsrecht oder nationalem Recht vorgeschrieben ist.
+
+
+
+
+UAS.SPEC.040 Erteilung einer Betriebsgenehmigung
+
+
+1.
+
+
+Bei Eingang eines Antrags nach Punkt UAS.SPEC.030 erteilt die zuständige Behörde unverzüglich eine Betriebsgenehmigung nach Artikel 12, sofern sie der Auffassung ist, dass der Betrieb die folgenden Bedingungen erfüllt:
+
+
+a)
+
+
+alle Angaben nach Punkt UAS.SPEC.030 Nummer 3 wurden gemacht,
+
+
+
+
+b)
+
+
+ein Verfahren für die Koordinierung mit den einschlägigen Diensteanbietern für den Luftraum ist vorhanden, falls der Betrieb insgesamt oder teilweise in kontrolliertem Luftraum durchgeführt werden soll.
+
+
+
+
+
+
+2.
+
+
+Die zuständige Behörde vermerkt in der Betriebsgenehmigung den genauen Umfang der Genehmigung nach Artikel 12.
+
+
+UAS.SPEC.050 Verantwortung des UAS-Betreibers
+
+
+1.
+
+
+Der UAS-Betreiber muss alle nachstehenden Anforderungen erfüllen:
+
+
+a)
+
+
+Er muss Verfahren und Beschränkungen festlegen, die an die Art des beabsichtigten Betriebs und das damit verbundene Risiko angepasst sind, wie beispielsweise
+
+
+i)
+
+
+Betriebsverfahren zur Gewährleistung der Betriebssicherheit,
+
+
+
+
+ii)
+
+
+Verfahren zur Gewährleistung, dass die für den Betriebsbereich geltenden Sicherheitsanforderungen beim beabsichtigten Betrieb eingehalten werden,
+
+
+
+
+iii)
+
+
+Maßnahmen zum Schutz vor gesetzeswidrigen Störungen und unbefugtem Zugang,
+
+
+
+
+iv)
+
+
+Verfahren zur Gewährleistung, dass der gesamte Betrieb die Vorgaben der Verordnung (EU) 2016/679 zum Schutz natürlicher Personen bei der Verarbeitung personenbezogener Daten und zum freien Datenverkehr berücksichtigt. So ist insbesondere in den Fällen, in denen die nationale Datenschutzbehörde nach Artikel 35 der Verordnung (EU) 2016/679 dies verlangt, eine Datenschutz-Folgenabschätzung durchzuführen,
+
+
+
+
+v)
+
+
+Leitlinien für Fernpiloten für die Planung des UAS-Betriebs, damit Belästigungen, auch durch Lärm und sonstige Emissionen, für Mensch und Tier so gering wie möglich gehalten werden.
+
+
+
+
+
+
+b)
+
+
+Er benennt einen Fernpiloten für jeden Flug oder gewährleistet, bei autonomem Betrieb, dass in allen Phasen des Flugs die Zuständigkeiten und Aufgaben, insbesondere die in Punkt UAS.SPEC.060 Nummern 2 und 3 festgelegten im Einklang mit den Verfahren nach Buchstabe a ordnungsgemäß zugewiesen werden.
+
+
+
+
+c)
+
+
+Er muss dafür sorgen, dass bei jedem Betrieb der Funkfrequenzbereich effizient genutzt wird, und fördert dessen effiziente Nutzung, um schädliche Störungen zu vermeiden.
+
+
+
+
+d)
+
+
+Er sorgt dafür, dass vor Aufnahme des Betriebs die Fernpiloten allen nachstehenden Bedingungen genügen:
+
+
+i)
+
+
+Sie sind zur Ausübung ihrer Aufgaben entsprechend der geforderten Ausbildung befähigt, wie sie in der Betriebsgenehmigung oder, sofern Punkt UAS.SPEC.020 Anwendung findet, in den Bedingungen und Beschränkungen, die in dem jeweiligen Standardszenario in Anlage 1 oder im LUC festgelegt sind, angegeben ist.
+
+
+
+
+ii)
+
+
+Sie absolvieren eine kompetenzbasierte Ausbildung für Fernpiloten, die auch die in Artikel 8 Absatz 2 genannten Kompetenzen umfasst.
+
+
+
+
+iii)
+
+
+Sie absolvieren die in der Betriebsgenehmigung genannte Ausbildung für Fernpiloten für den Betrieb, für den diese Genehmigung erforderlich ist, wobei die Ausbildung in Zusammenarbeit mit einer von der zuständigen Behörde benannten Stelle durchgeführt wird.
+
+
+
+
+iv)
+
+
+Sie absolvieren eine Ausbildung für Fernpiloten für den in der Erklärung genannten Betrieb, der im Einklang mit den im Standardszenario aufgeführten Risikominderungsmaßnahmen durchgeführt wird.
+
+
+
+
+v)
+
+
+Sie wurden über das Betriebshandbuch des UAS-Betreibers informiert, sofern durch die Risikobewertung und die nach Buchstabe a festgelegten Verfahren erforderlich.
+
+
+
+
+vi)
+
+
+Er holt aktuelle, für den beabsichtigten Betrieb relevante Informationen zu jedem der nach Artikel 15 festgelegten geografischen Gebiete ein.
+
+
+
+
+
+
+e)
+
+
+Er sorgt dafür, dass Personal, das wesentliche Aufgaben für den UAS-Betrieb wahrnimmt, ausgenommen der Fernpilot selbst, allen nachstehenden Bedingungen genügt:
+
+
+i)
+
+
+Es hat eine vom Betreiber entwickelte Ausbildung am Arbeitsplatz abgeschlossen.
+
+
+
+
+ii)
+
+
+Es wurde über das Betriebshandbuch des UAS-Betreibers informiert, sofern durch die Risikobewertung und die nach Buchstabe a festgelegten Verfahren erforderlich.
+
+
+
+
+iii)
+
+
+Es hat aktuelle, für den beabsichtigten Betrieb relevante Informationen zu jedem der nach Artikel 15 festgelegten geografischen Gebiete eingeholt.
+
+
+
+
+
+
+f)
+
+
+Er führt jeden Betrieb im Rahmen der Beschränkungen, Bedingungen und Risikominderungsmaßnahmen aus, die in der Erklärung oder in der Betriebsgenehmigung festgelegt wurden.
+
+
+
+
+g)
+
+
+Er führt und gewährleistet die Aufbewahrung aktueller Aufzeichnungen
+
+
+i)
+
+
+zu allen relevanten Qualifikationen und Lehrgängen, die der Fernpilot und sonstiges, mit wesentlichen Aufgaben für den UAS-Betrieb befasstes Personal sowie Instandhaltungspersonal absolviert haben, für mindestens drei Jahre nach dem Ende des Beschäftigungsverhältnisses dieser Personen bei der Organisation oder nachdem diese Personen eine andere Aufgabe in der Organisation übernommen haben,
+
+
+
+
+ii)
+
+
+zu den bei dem UAS durchgeführten Instandhaltungstätigkeiten für die Dauer von mindestens drei Jahren,
+
+
+
+
+iii)
+
+
+der Informationen über den UAS-Betrieb, auch zu etwaigen ungewöhnlichen technischen oder betrieblichen Ereignissen oder sonstigen Daten, die im Rahmen der Erklärung oder der Betriebsgenehmigung gefordert werden, für die Dauer von mindestens drei Jahren.
+
+
+
+
+
+
+h)
+
+
+Er nutzt UAS, die mindestens so konstruiert sind, dass ein etwaiges Versagen nicht dazu führt, dass sie in einen Bereich außerhalb des Betriebsraums fliegen oder einen tödlichen Unfall verursachen. Darüber hinaus müssen die Mensch-Maschine-Schnittstellen so beschaffen sein, dass sie das Risiko eines Pilotenfehlers minimieren und keine unverhältnismäßige Ermüdung verursachen.
+
+
+
+
+i)
+
+
+Er sorgt dafür, dass das UAS in einem für den sicheren Betrieb geeigneten Zustand bleibt, indem
+
+
+i)
+
+
+mindestens Instandhaltungsanweisungen festgelegt werden und ausreichend geschultes und qualifiziertes Instandhaltungspersonal beschäftigt wird und
+
+
+
+
+ii)
+
+
+je nach Sachverhalt Punkt UAS.SPEC.100 eingehalten wird,
+
+
+
+
+iii)
+
+
+ein unbemanntes Luftfahrzeug eingesetzt wird, das so konstruiert ist, dass Lärm und sonstige Emissionen unter Berücksichtigung des beabsichtigten Betriebs und der geografischen Gebiete, in denen Lärm und die sonstigen Emissionen von Luftfahrzeugen ein Problem darstellen können, minimiert werden.
+
+
+
+
+
+
+j)
+
+
+Er erstellt und aktualisiert fortlaufend eine Liste der für jeden Flug benannten Piloten.
+
+
+
+
+k)
+
+
+Er erstellt und aktualisiert fortlaufend eine Liste des vom Betreiber für die Durchführung der Instandhaltungstätigkeiten eingestellten Instandhaltungspersonals.
+
+
+
+
+l)
+
+
+Er stellt sicher, dass jedes einzelne unbemannte Luftfahrzeug
+
+
+i)
+
+
+mit mindestens einem grünen Blinklicht für die Sichtbarkeit des unbemannten Luftfahrzeugs bei Nacht und
+
+
+
+
+ii)
+
+
+mit einem eingeschalteten und aktuellen Fernidentifikationssystem ausgerüstet ist.
+
+
+
+
+
+
+UAS.SPEC.060 Verantwortung des Fernpiloten
+
+
+1.
+
+
+Der Fernpilot
+
+
+a)
+
+
+darf keine Aufgaben ausführen, wenn er unter dem Einfluss psychoaktiver Substanzen oder Alkohol steht oder aufgrund von Verletzung, Müdigkeit, Medikamenteneinnahme, Krankheit oder aus sonstigen Gründen nicht in der Lage ist, seine Aufgaben wahrzunehmen,
+
+
+
+
+b)
+
+
+muss über die entsprechende Kompetenz als Fernpilot verfügen, wie sie in der Betriebsgenehmigung, im Standardszenario nach Anlage 1 oder im LUC festgelegt ist, und einen Nachweis der Kompetenz während des UAS-Betriebs mit sich führen,
+
+
+
+
+c)
+
+
+muss sich mit den vom Hersteller des UAS erstellten Anweisungen vertraut gemacht haben.
+
+
+
+
+
+
+2.
+
+
+Vor Aufnahme eines UAS-Betriebs muss der Fernpilot alle nachstehenden Bedingungen erfüllen:
+
+
+a)
+
+
+Er holt aktuelle, für den beabsichtigten Betrieb relevante Informationen zu jedem der nach Artikel 15 festgelegten geografischen Gebiete ein.
+
+
+
+
+b)
+
+
+Er stellt sicher, dass das Betriebsumfeld mit den genehmigten oder erklärten Beschränkungen und Bedingungen vereinbar ist.
+
+
+
+
+c)
+
+
+Er stellt sicher, dass das UAS in einem für den beabsichtigten Flug sicheren Zustand ist, und prüft gegebenenfalls, ob die direkte Fernidentifizierung eingeschaltet und aktuell ist.
+
+
+
+
+d)
+
+
+Er stellt sicher, dass die Informationen über den Betrieb der betreffenden Flugverkehrsdienststelle (ATS), sonstigen Luftraumnutzern und einschlägigen Interessenträgern entsprechend den Auflagen der Betriebsgenehmigung oder den Bedingungen übermittelt wurden, die von dem Mitgliedstaat für das geografische Gebiet, in dem der Betrieb durchgeführt werden soll, nach Artikel 15 veröffentlicht wurden.
+
+
+
+
+
+
+3.
+
+
+Während des Flugs muss der Fernpilot
+
+
+a)
+
+
+sich an die genehmigten oder erklärten Beschränkungen und Bedingungen halten,
+
+
+
+
+b)
+
+
+jedes Kollisionsrisiko mit einem bemannten Luftfahrzeug vermeiden und einen Flug unterbrechen, wenn dessen Fortsetzung ein Risiko für andere Luftfahrzeuge, Menschen, Tiere, die Umwelt oder Eigentum darstellen kann,
+
+
+
+
+c)
+
+
+sich an die nach Artikel 15 für geografische Gebiete festgelegten Betriebsbeschränkungen halten,
+
+
+
+
+d)
+
+
+sich an die Verfahren des Betreibers halten,
+
+
+
+
+e)
+
+
+darauf achten, nicht an Gebiete heranzufliegen oder in Gebieten zu fliegen, in denen ein Notfalleinsatz stattfindet, sofern er nicht von den zuständigen Notfalldiensten die Erlaubnis hierfür erhalten hat.
+
+
+
+
+UAS.SPEC.070 Übertragbarkeit einer Betriebsgenehmigung
+Eine Betriebsgenehmigung ist nicht übertragbar.
+UAS.SPEC.080 Gültigkeitsdauer einer Betriebsgenehmigung
+
+1. Die zuständige Behörde trägt in die Betriebsgenehmigung selbst deren Laufzeit ein.
+
+
+2. Unbeschadet Nummer 1 bleibt die Betriebsgenehmigung so lange gültig wie der UAS-Betreiber die einschlägigen Bestimmungen dieser Verordnung sowie die in der Betriebsgenehmigung festgelegten Bedingungen einhält.
+
+
+3. Bei einem Widerruf oder einer Rückgabe der Betriebsgenehmigung hat der UAS-Betreiber der zuständigen Behörde dies unverzüglich und elektronisch zu bestätigen.
+
+UAS.SPEC.085 Gültigkeitsdauer einer Betriebserklärung
+Eine Betriebserklärung ist auf zwei Jahre befristet. Die Erklärung gilt unter folgenden Bedingungen nicht mehr als vollständig im Sinne von Punkt UAS.SPEC.020 Nummer 4:
+
+
+1.
+
+
+Im Zuge der Ausübung ihrer Aufsicht über den UAS-Betreiber hat die zuständige Behörde festgestellt, dass der UAS-Betrieb nicht entsprechend der Betriebserklärung durchgeführt wird.
+
+
+
+
+2.
+
+
+Die Bedingungen des UAS-Betriebs haben sich in einem Umfang geändert, dass die Betriebserklärung nicht mehr den geltenden Bestimmungen dieser Verordnung genügt.
+
+
+
+
+3.
+
+
+Der zuständigen Behörde wird kein Zugang nach Punkt UAS.SPEC.090 gewährt.
+
+
+UAS.SPEC.090 Zugang
+Zum Nachweis der Einhaltung dieser Verordnung hat ein UAS-Betreiber jeder Person, die von der zuständigen Behörde hierfür ordnungsgemäß ermächtigt wurde, den Zugang zu allen Anlagen, UAS, Unterlagen, Aufzeichnungen, Daten und Verfahren oder zu sonstigem für seine Tätigkeit relevantem Material zu gewähren, das Gegenstand der Betriebsgenehmigung oder der Betriebserklärung ist, unabhängig davon, ob er seine Tätigkeit einer anderen Organisation als Auftraggeber oder Unterauftraggeber übertragen hat.
+UAS.SPEC.100 Einsatz zugelassener Ausrüstung und zugelassener unbemannter Luftfahrzeuge
+
+1. Wird für einen UAS-Betrieb ein unbemanntes Luftfahrzeug, für das ein Lufttüchtigkeitszeugnis oder ein eingeschränktes Lufttüchtigkeitszeugnis ausgestellt wurde, oder eine zugelassene Ausrüstung eingesetzt, hat der UAS-Betreiber in seinen Aufzeichnungen die Betriebsdauer oder die Dauer der Indienststellung entweder entsprechend den für die zugelassene Ausrüstung geltenden Anweisungen und Verfahren oder entsprechend der Organisationszulassung oder -genehmigung zu vermerken.
+
+
+2. Der UAS-Betreiber muss sich an die Anweisungen halten, die in der Zulassung des unbemannten Luftfahrzeugs oder der Ausrüstung festgelegt sind, sowie an alle sonstigen, von der Agentur für die Lufttüchtigkeit oder den Betrieb herausgegebenen Anweisungen.
+
+
+TEIL C
+
+BETREIBERZEUGNIS FÜR LEICHT-UAS (LUC)
+UAS.LUC.010 Allgemeine Anforderungen an die Ausstellung eines LUC
+
+1. Jede juristische Person kann auf der Grundlage dieses Teils die Ausstellung eines LUC beantragen.
+
+
+2. Der Antrag auf Ausstellung eines LUC oder auf Änderung eines vorhandenen LUC ist bei der zuständigen Behörde einzureichen und muss alle folgenden Angaben enthalten:
+
+
+
+a)
+
+
+eine Beschreibung des Managementsystems des UAS-Betreibers, einschließlich seiner Organisationsstruktur und seines Sicherheitsmanagementsystems,
+
+
+
+
+b)
+
+
+die Namen des verantwortlichen Personals des UAS-Betreibers, einschließlich der Namen der Personen, die für die Genehmigung des UAS-Betriebs zuständig sind,
+
+
+
+
+c)
+
+
+eine Erklärung, dass alle der zuständigen Behörde übermittelten Unterlagen vom Antragsteller geprüft und als im Einklang mit den einschlägigen Anforderungen befunden wurden.
+
+
+
+3. Sind die Anforderungen dieses Teils erfüllt, können dem LUC-Antragsteller die Rechte nach Punkt UAS.LUC.060 gewährt werden.
+
+UAS.LUC.020 Verantwortung des LUC-Inhabers
+Der LUC-Inhaber muss
+
+
+1.
+
+
+den Anforderungen der Punkte UAS.SPEC.050 und UAS.SPEC.060 genügen,
+
+
+
+
+2.
+
+
+muss dem in den Genehmigungsbedingungen festgelegten Genehmigungsumfang und den dort festgelegten Rechten genügen,
+
+
+
+
+3.
+
+
+ein System für die Ausübung der Betriebskontrolle über jeden Betrieb, der zu den LUC-Bedingungen durchgeführt wird, festlegen und aufrechterhalten,
+
+
+
+
+4.
+
+
+eine Risikobewertung des beabsichtigten Betriebs nach Artikel 11 durchführen, sofern es sich nicht um einen Betrieb handelt, für den eine Betriebserklärung nach Punkt UAS.SPEC.020 ausreicht,
+
+
+
+
+5.
+
+
+über den Betrieb, der auf der Grundlage der nach Punkt UAS.LUC.060 gewährten Rechte durchgeführt wird, Aufzeichnungen über die folgenden Positionen führen und gewährleisten, dass für einen Zeitraum von mindestens drei Jahren diese Aufzeichnungen vor Beschädigung, Änderung und Diebstahl geschützt sind:
+
+
+a)
+
+
+die Bewertung des Betriebsrisikos, sofern nach Nummer 4 gefordert, und die entsprechenden Belege,
+
+
+
+
+b)
+
+
+die ergriffenen Risikominderungsmaßnahmen und
+
+
+
+
+c)
+
+
+die Qualifikation und Erfahrung des Personals, das am UAS-Betrieb, am Compliance-Monitoring und am Sicherheitsmanagement beteiligt ist,
+
+
+
+
+
+
+6.
+
+
+die in Nummer 5 Buchstabe c genannten personenbezogenen Aufzeichnungen in der gesamten Zeit, in der die betreffende Person für die Organisation tätig ist, und bis zu drei Jahre nach dem Ausscheiden der Person aus der Organisation aufbewahren.
+
+
+UAS.LUC.030 Sicherheitsmanagementsystem
+
+1. Ein UAS-Betreiber, der ein LUC beantragt, muss ein Sicherheitsmanagementsystem festlegen, einrichten und aufrechterhalten, das der Größe der Organisation sowie der Art und Komplexität ihrer Tätigkeiten entspricht und den mit diesen Tätigkeiten verbundenen Gefahren und Risiken Rechnung trägt.
+
+
+2. Der UAS-Betreiber muss alle nachstehenden Anforderungen erfüllen:
+
+
+
+a)
+
+
+Er ernennt einen verantwortlichen Betriebsleiter, der dafür sorgt, dass innerhalb der Organisation alle Tätigkeiten nach den geltenden Standards ausgeführt werden und die Organisation stets im Einklang mit den Anforderungen an das Managementsystem und den Verfahren steht, die im LUC-Handbuch nach Punkt UAS.LUC.040 aufgeführt sind.
+
+
+
+
+b)
+
+
+Er legt für die gesamte Organisation klare Vorgaben für die Zuständigkeiten und die Rechenschaft fest.
+
+
+
+
+c)
+
+
+Er legt eine Sicherheitspolitik und entsprechende Sicherheitsziele fest und hält diese aufrecht.
+
+
+
+
+d)
+
+
+Er ernennt Sicherheitspersonal, das an zentraler Stelle die Sicherheitspolitik ausführt.
+
+
+
+
+e)
+
+
+Er legt Verfahren für das Management von Sicherheitsrisiken fest und hält diese aufrecht, auch zur Identifizierung von Sicherheitsrisiken, die mit den Tätigkeiten des UAS-Betreibers in Verbindung stehen, bewertet diese Risiken und sorgt für das Management der damit verbundenen Risiken, worunter auch Maßnahmen zur Minderung dieser Risiken und die Überprüfung der Wirksamkeit dieser Maßnahmen fallen.
+
+
+
+
+f)
+
+
+Er fördert die Sicherheit in der Organisation durch
+
+
+i)
+
+
+Aus- und Weiterbildung und
+
+
+
+
+ii)
+
+
+Kommunikation.
+
+
+
+
+
+
+g)
+
+
+Er dokumentiert alle zentralen Verfahren für das Sicherheitsmanagementsystem, um gegenüber dem Personal die Verantwortlichkeiten sowie die Verfahren zur Änderung dieser Dokumentation deutlich zu machen. Die zentralen Verfahren umfassen
+
+
+i)
+
+
+Sicherheitsberichte und interne Untersuchungen,
+
+
+
+
+ii)
+
+
+Betriebskontrolle,
+
+
+
+
+iii)
+
+
+Sicherheitskommunikation,
+
+
+
+
+iv)
+
+
+Ausbildung und Förderung der Sicherheit,
+
+
+
+
+v)
+
+
+Compliance-Monitoring,
+
+
+
+
+vi)
+
+
+Management von Sicherheitsrisiken,
+
+
+
+
+vii)
+
+
+Änderungsmanagement,
+
+
+
+
+viii)
+
+
+Schnittstellen zwischen Organisationen,
+
+
+
+
+ix)
+
+
+Rückgriff auf Unterauftragnehmer und Partner.
+
+
+
+
+
+
+h)
+
+
+Er sieht eine unabhängige Funktion für das Compliance-Monitoring und die angemessene Umsetzung der einschlägigen Bestimmungen dieser Verordnung vor, auch ein System für die Rückmeldung von Verstößen an den verantwortlichen Betriebsleiter, damit bei Bedarf eine wirksame Umsetzung von Korrekturmaßnahmen sichergestellt ist.
+
+
+
+
+i)
+
+
+Er sieht eine Funktion vor, mit der sichergestellt wird, dass Sicherheitsrisiken, die von einem von einem Unterauftragnehmer gelieferten Dienst oder Erzeugnis ausgehen, im Rahmen des Sicherheitsmanagementsystems des Betreibers bewertet und gemindert werden.
+
+
+
+3. Ist die Organisation Inhaber sonstiger Organisationszulassungen nach der Verordnung (EU) 2018/1139 kann das Sicherheitsmanagementsystem des UAS-Betreibers in das Sicherheitsmanagementsystem integriert werden, das im Rahmen dieser anderen zusätzlichen Zulassungen vorgeschrieben ist.
+
+UAS.LUC.040 LUC-Handbuch
+
+1. Ein LUC-Inhaber stellt der zuständigen Behörde ein LUC-Handbuch zur Verfügung, in dem direkt oder durch Querverweise seine Organisation, die einschlägigen Verfahren und die durchgeführten Tätigkeiten beschrieben werden.
+
+
+2. Das Handbuch enthält eine vom verantwortlichen Betriebsleiter unterzeichnete Erklärung, mit der dieser bestätigt, dass sich die Organisation zu jedem Zeitpunkt an diese Verordnung und das genehmigte LUC-Handbuch hält. Handelt es sich bei dem verantwortlichen Betriebsleiter nicht gleichzeitig um den Hauptgeschäftsführer der Organisation, ist die Bestätigung vom Hauptgeschäftsführer gegenzuzeichnen.
+
+
+3. Werden Tätigkeiten von einer Partnerorganisation oder von Unterauftragnehmern wahrgenommen, nimmt der UAS-Betreiber in das LUC-Handbuch die Verfahren für das Management der Beziehungen des LUC-Inhabers zu diesen Partnerorganisationen oder Unterauftragnehmern auf.
+
+
+4. Das LUC-Handbuch wird bei Bedarf geändert, damit es stets eine aktuelle Beschreibung der Organisation des LUC-Inhabers enthält; Kopien der Änderungen sind der zuständigen Behörde vorzulegen.
+
+
+5. Der UAS-Betreiber sorgt dafür, dass sein gesamtes Personal entsprechend seinen Funktionen und Aufgaben die einschlägigen Teile des LUC-Handbuchs erhält.
+
+UAS.LUC.050 Bedingungen für die Ausstellung eines LUC
+
+1. Die zuständige Behörde stellt ein LUC aus, nachdem sie sich davon überzeugt hat, dass der UAS-Betreiber den Punkten UAS.LUC.020, UAS.LUC.030 und UAS.LUC.040 genügt.
+
+
+2. Das LUC umfasst
+
+
+
+a)
+
+
+die Identifizierung des UAS-Betreibers,
+
+
+
+
+b)
+
+
+die Rechte des UAS-Betreibers,
+
+
+
+
+c)
+
+
+die genehmigten Betriebsarten,
+
+
+
+
+d)
+
+
+je nach Sachlage die für den Betrieb genehmigten Bereiche, Gebiete oder Luftraumklassen,
+
+
+
+
+e)
+
+
+etwaige besondere Beschränkungen oder Bedingungen.
+
+
+UAS.LUC.060 Rechte des LUC-Inhabers
+Sofern die vorgelegten Unterlagen zu ihrer Zufriedenheit ausfallen,
+
+
+1.
+
+
+legt die zuständige Behörde die Bedingungen für die dem UAS-Betreiber gewährten Rechte im LUC fest und
+
+
+
+
+2.
+
+
+kann dem LUC-Inhaber im Rahmen der Genehmigungsbedingungen das Recht gewähren, seinen eigenen Betrieb zu genehmigen,
+
+
+a)
+
+
+ohne dass eine Betriebserklärung vorgelegt oder
+
+
+
+
+b)
+
+
+ein Antrag auf Betriebsgenehmigung gestellt werden muss.
+
+
+
+
+UAS.LUC.070 Änderungen des LUC-Managementsystems
+Nach Ausstellung eines LUC erfordern die folgenden Änderungen eine vorherige Genehmigung durch die zuständige Behörde:
+
+
+1.
+
+
+jede Änderung der Genehmigungsbedingungen eines UAS-Betreibers,
+
+
+
+
+2.
+
+
+jede erhebliche Änderung der Elemente des Sicherheitsmanagementsystems des LUC-Inhabers, wie sie nach Punkt UAS.LUC.030 gefordert sind.
+
+
+UAS.LUC.075 Übertragbarkeit eines LUC
+Mit Ausnahme eines von der zuständigen Behörde nach Punkt UAS.LUC.070 genehmigten Wechsels des Eigentümers der Organisation ist ein LUC nicht übertragbar.
+UAS.LUC.080 Gültigkeitsdauer eines LUC
+
+1. Ein LUC wird für eine unbegrenzte Dauer ausgestellt. Seine Gültigkeit ist davon abhängig, dass:
+
+
+
+a)
+
+
+der LUC-Inhaber die einschlägigen Anforderungen dieser Verordnung und des Mitgliedstaats, der das Zeugnis ausgestellt hat, weiterhin erfüllt, und
+
+
+
+
+b)
+
+
+das LUC nicht zurückgegeben oder widerrufen wird.
+
+
+
+2. Bei einem Widerruf oder einer Rückgabe eines LUC, hat der LUC-Inhaber der zuständigen Behörde dies unverzüglich und elektronisch zu bestätigen.
+
+UAS.LUC.090 Zugang
+Zum Nachweis der Einhaltung dieser Verordnung hat ein LUC-Inhaber jeder Person, die von der zuständigen Behörde hierfür ordnungsgemäß ermächtigt wurde, den Zugang zu allen Anlagen, UAS, Unterlagen, Aufzeichnungen, Daten und Verfahren oder zu sonstigem für seine Tätigkeit relevantem Material zu gewähren, das Gegenstand der Zulassung, der Betriebsgenehmigung oder der Betriebserklärung ist, unabhängig davon, ob er seine Tätigkeit einer anderen Organisation als Auftraggeber oder Unterauftraggeber übertragen hat.
+
+
+
+
+
+
+
+Anlage 1
+
+Standardszenarien als Grundlage für eine Erklärung
+
+
+KAPITEL I
+
+
+STS-01 – VLOS über einem kontrollierten Bereich am Boden in einem bewohnten Gebiet
+
+
+UAS.STS-01.010 Allgemeine Bestimmungen
+
+
+1. Während des Flugs muss das unbemannte Luftfahrzeug in einer Höhe bis zu 120 m vom nächstgelegenen Punkt auf der Erdoberfläche gehalten werden. Die Messung des Abstands ist an die geografischen Merkmale des Geländes, wie Ebenen, Hügel oder Berge, anzupassen.
+
+
+2. Fliegt ein unbemanntes Luftfahrzeug in einem horizontalen Abstand von 50 m zu einem künstlichen Hindernis, das höher als 105 m ist, kann die höchstzulässige Höhe des UAS-Betriebs auf Antrag der für das Hindernis zuständigen Stelle auf bis zu 15 m über der Höhe des Hindernisses erhöht werden.
+
+
+3. Die höchstzulässige Höhe des Betriebsraums darf nicht mehr als 30 m über der nach den Nummern 1 und 2 höchstzulässigen Höhe liegen.
+
+
+4. Während des Flugs darf das unbemannte Luftfahrzeug keine gefährlichen Güter mit sich führen.
+
+
+UAS.STS-01.020 UAS-Betrieb nach STS-01
+
+
+1. Der UAS-Betrieb nach STS-01 muss allen folgenden Bedingungen genügen:
+
+
+
+a)
+
+
+Das unbemannte Luftfahrzeug muss jederzeit in VLOS gehalten werden.
+
+
+
+
+b)
+
+
+Der UAS-Betrieb muss nach dem in Punkt UAS.STS-01.030 Nummer 1 genannten Betriebshandbuch durchgeführt werden.
+
+
+
+
+c)
+
+
+Der UAS-Betrieb muss über einem kontrollierten Bereich am Boden durchgeführt werden, der Folgendes umfasst:
+
+
+i)
+
+
+Für den Betrieb mit einem ungefesselten unbemannten Luftfahrzeug:
+
+
+A)
+
+
+den fluggeografischen Bereich,
+
+
+
+
+B)
+
+
+den Contingency-Bereich, dessen äußere Grenze(n) mindestens 10 m über die Grenze(n) des fluggeografischen Bereichs hinausgeht/hinausgehen, und
+
+
+
+
+C)
+
+
+den Bodensicherheitsbereich, der die über die äußeren Grenze(n) des Contingency-Bereichs hinausgehende Strecke abdeckt, der mindestens die folgenden Parameter erfüllt:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Die vom Bodensicherheitsbereich abzudeckende Mindeststrecke für ungefesselte unbemannte Luftfahrzeuge
+
+
+
+
+Maximale Höhe über Grund
+
+
+mit einer MTOM von bis zu 10 kg
+
+
+mit einer MTOM über 10 kg
+
+
+
+
+30 m
+
+
+10 m
+
+
+20 m
+
+
+
+
+60 m
+
+
+15 m
+
+
+30 m
+
+
+
+
+90 m
+
+
+20 m
+
+
+45 m
+
+
+
+
+120 m
+
+
+25 m
+
+
+60 m
+
+
+
+
+
+
+
+
+
+
+
+ii)
+
+
+für den Betrieb mit einem gefesselten unbemannten Luftfahrzeug: einen Radius entsprechend der Seillänge zuzüglich 5 m um den Befestigungspunkt des Seils an der Erdoberfläche.
+
+
+
+
+
+
+d)
+
+
+Der UAS-Betrieb muss mit einer Bodengeschwindigkeit von unter 5 m/s bei einem ungefesselten unbemannten Luftfahrzeug erfolgen.
+
+
+
+
+e)
+
+
+Der UAS-Betrieb muss von einem Fernpiloten durchgeführt werden, der
+
+
+i)
+
+
+Inhaber eines Zeugnisses über die Theoriekenntnisse von Fernpiloten nach Anlage A dieses Kapitels ist, das von der zuständigen Behörde oder einer von der zuständigen Behörde benannten Stelle eines Mitgliedstaats ausgestellt wurde,
+
+
+
+
+ii)
+
+
+Inhaber einer Akkreditierung über den Abschluss der praktischen Prüfung für STS-01 nach Beilage A zu diesem Kapitel ist, die
+
+
+A)
+
+
+von einer Stelle ausgestellt wurde, die eine Erklärung über die Einhaltung der Anforderungen von Anlage 3 abgegeben hat und von der zuständigen Behörde eines Mitgliedstaats anerkannt ist, oder
+
+
+
+
+B)
+
+
+von einem UAS-Betreiber ausgestellt wurde, der bei der zuständigen Behörde des Eintragungsmitgliedstaats eine Erklärung über die Einhaltung von STS-01 sowie der Anforderungen von Anlage 3 abgegeben hat.
+
+
+
+
+
+
+
+
+f)
+
+
+Der UAS-Betrieb muss mit einem unbemannten Luftfahrzeug durchgeführt werden, das als ein UAS der Klasse C5 gekennzeichnet ist, die Anforderungen dieser Klasse nach Teil 16 des Anhangs der Delegierten Verordnung (EU) 2019/945 erfüllt und mit einem eingeschalteten und aktualisierten System für die direkte Fernidentifizierung betrieben wird.
+
+
+
+2. Der Fernpilot erhält das Zeugnis über seine Theoriekenntnisse für den Betrieb unter Standardszenarien nach
+
+
+
+a)
+
+
+Abschluss eines Online-Lehrgangs und Bestehen der Online-Theorieprüfung nach Punkt UAS.OPEN.020 Nummer 4 Buchstabe b und
+
+
+
+
+b)
+
+
+Bestehen einer zusätzlichen Theorieprüfung, die nach Beilage A zu diesem Kapitel von der zuständigen Behörde oder von einer von der zuständigen Behörde eines Mitgliedstaates benannten Stelle durchgeführt wurde.
+
+
+
+3. Das Zeugnis gilt für fünf Jahre. Eine Verlängerung ist innerhalb der Gültigkeit nur möglich bei
+
+
+
+a)
+
+
+Vorlage eines Befähigungsnachweises nach Nummer 2,
+
+
+
+
+b)
+
+
+Absolvierung einer Auffrischungsschulung der Theoriekenntnisse in den Sachgebieten nach Nummer 2, das von der zuständigen Behörde oder einer von der zuständigen Behörde benannten Stelle angeboten wird.
+
+
+
+4. Für die Verlängerung des Zeugnisses nach dessen Ablauf muss der Fernpilot Nummer 2 genügen.
+
+
+UAS.STS-01.030 Verantwortung des UAS-Betreibers
+
+Zusätzlich zu den in Punkt UAS.SPEC.050 festgelegten Verantwortlichkeiten muss der UAS-Betreiber
+
+
+1.
+
+
+ein Betriebshandbuch erstellen mit den in Anlage 5 festgelegten Elementen,
+
+
+
+
+2.
+
+
+den Betriebsraum und den Bodensicherheitsbereich für den geplanten Betrieb festlegen, einschließlich des kontrollierten Bereichs am Boden, der sich aus den Projektionen sowohl des Betriebsraums als auch des Sicherheitsbereichs auf die Erdoberfläche ergibt,
+
+
+
+
+3.
+
+
+die Angemessenheit der Contingency- und Notverfahren durch eine der folgenden Maßnahmen gewährleisten:
+
+
+a)
+
+
+eigens hierfür durchgeführte Testflüge,
+
+
+
+
+b)
+
+
+Simulationen, sofern die Simulation repräsentativ für den Verwendungszweck ist,
+
+
+
+
+
+
+4.
+
+
+einen wirksamen und für den Betrieb geeigneten Notfallplan ausarbeiten, der mindestens Folgendes umfasst:
+
+
+a)
+
+
+einen Plan zur Eindämmung einer möglichen Ausweitung einer Notsituation,
+
+
+
+
+b)
+
+
+die Bedingungen für die Alarmierung der einschlägigen Behörden und Organisationen,
+
+
+
+
+c)
+
+
+die Kriterien zur Feststellung einer Notsituation,
+
+
+
+
+d)
+
+
+eine klare Abgrenzung der Aufgaben des/der Fernpiloten und sonstigen, mit wesentlichen Aufgaben für den UAS-Betrieb befassten Personals,
+
+
+
+
+
+
+5.
+
+
+dafür sorgen, dass die Leistung, die für einen extern bereitgestellten und für die Sicherheit des Flugs notwendigen Dienst erbracht wird, für den geplanten Betrieb angemessen ist,
+
+
+
+
+6.
+
+
+gegebenenfalls die Zuweisung der Aufgaben und Verantwortlichkeiten zwischen dem Betreiber und externen Diensteanbietern festlegen,
+
+
+
+
+7.
+
+
+aktuelle Information für die Geo-Sensibilisierungsfunktion hochladen, sofern das UAS mit dieser Funktion ausgestattet ist und dies in dem geografischen UAS-Gebiet für den beabsichtigten Betriebsort erforderlich ist,
+
+
+
+
+8.
+
+
+dafür sorgen, dass vor Aufnahme des Betriebs der kontrollierte Bereich am Boden festgelegt wurde und der in Punkt UAS.STS-01.020 Nummer 1 Buchstabe c Ziffer i C festgelegten Mindeststrecke in wirksamer Weise genügt, und gegebenenfalls eine Koordinierung mit den zuständigen Behörden erfolgt ist,
+
+
+
+
+9.
+
+
+dafür sorgen, dass vor Aufnahme des Betriebs alle sich im kontrollierten Bereich am Boden befindlichen Personen
+
+
+a)
+
+
+über das Betriebsrisiko informiert wurden,
+
+
+
+
+b)
+
+
+gegebenenfalls kurze Anweisungen oder Schulungen über die Sicherheitsvorkehrungen und ‐maßnahmen erhalten haben, die der UAS-Betreiber zu ihrem Schutz ergriffen hat, und
+
+
+
+
+c)
+
+
+der Beteiligung am Betrieb ausdrücklich zugestimmt haben,
+
+
+
+
+
+
+10.
+
+
+gewährleisten, dass
+
+
+a)
+
+
+dem UAS die entsprechende EU-Konformitätserklärung beiliegt, auch die Angaben zur Klasse C5 oder zur Klasse C3 und dem Zusatzbausatz, und
+
+
+
+
+b)
+
+
+das C5-Identifizierungskennzeichen an dem unbemannten Luftfahrzeug oder am Zusatzbausatz angebracht ist.
+
+
+
+
+
+UAS.STS-01.040 Verantwortung des Fernpiloten
+
+Zusätzlich zu den in Punkt UAS.SPEC.060 festgelegten Verantwortlichkeiten
+
+
+1.
+
+
+muss der Fernpilot vor Aufnahme eines UAS-Betriebs die Funktionsfähigkeit der Vorrichtungen zur Beendigung des Flugs des unbemannten Luftfahrzeugs überprüfen und prüfen, ob die direkte Fernidentifizierung eingeschaltet und aktuell ist.
+
+
+
+
+2.
+
+
+Während des Flugs gilt Folgendes:
+
+
+a)
+
+
+Der Fernpilot muss das unbemannte Luftfahrzeug in VLOS halten und ständig den das unbemannte Luftfahrzeug umgebenden Luftraum im Blick (visual scan) behalten, um jedes Risiko einer Kollision mit einem bemannten Luftfahrzeug zu vermeiden. Der Fernpilot muss den Flug unterbrechen, sobald der Betrieb ein Risiko für ein anderes Luftfahrzeug, Menschen, Tiere, die Umwelt oder Eigentum darstellt.
+
+
+
+
+b)
+
+
+Für die Zwecke von Buchstabe a kann der Fernpilot von Beobachtern unbemannter Luftfahrzeuge unterstützt werden. In diesem Fall muss zwischen dem Fernpiloten und dem Beobachter unbemannter Luftfahrzeuge eine klare und effektive Kommunikation festgelegt werden.
+
+
+
+
+c)
+
+
+Der Fernpilot muss in der Lage sein, die Kontrolle über das unbemannte Luftfahrzeug aufrechtzuerhalten, sofern nicht ein Verlust des Steuerungs- und Kontrolllinks (C2) vorliegt.
+
+
+
+
+d)
+
+
+Der Fernpilot darf jeweils nur ein unbemanntes Luftfahrzeug betreiben.
+
+
+
+
+e)
+
+
+Der Fernpilot darf ein unbemanntes Luftfahrzeug nicht von einem sich bewegenden Fahrzeug aus betreiben.
+
+
+
+
+f)
+
+
+Der Fernpilot darf die Kontrolle über ein unbemanntes Luftfahrzeug nicht an eine andere Steuereinheit abgeben.
+
+
+
+
+g)
+
+
+Der Fernpilot muss die vom UAS-Betreiber für anormale Situationen festgelegten Contingency-Verfahren durchführen, auch wenn Anzeichen dafür hat, dass das unbemannte Luftfahrzeug die Grenzen der Fluggeografie möglicherweise überschreitet.
+
+
+
+
+h)
+
+
+Der Fernpilot muss die vom UAS für Notsituationen festgelegten Notverfahren durchführen, auch indem er die Vorrichtung zur Beendigung des Flugs auslöst, wenn er Anzeichen dafür hat, dass das unbemannte Luftfahrzeug die Grenzen des Betriebsraums möglicherweise überschreitet.
+
+
+
+
+
+BEILAGE A: PRÜFUNG DER THEORIEKENNTNISSE UND PRAKTISCHEN FÄHIGKEITEN VON FERNPILOTEN NACH STS-01
+
+1.
+Prüfung der Theoriekenntnisse
+
+
+
+
+a)
+
+
+Die Prüfung nach Punkt UAS.STS-01.020 Nummer 2 Buchstabe b muss mindestens 40 Multiple-Choice-Fragen umfassen, mit denen die Kenntnisse des Fernpiloten in der technischen und betrieblichen Risikominderung geprüft werden und die sich angemessen auf die folgenden Sachgebiete verteilen:
+
+
+i)
+
+
+Luftrecht,
+
+
+
+
+ii)
+
+
+menschliches Leistungsvermögen und dessen Grenzen,
+
+
+
+
+iii)
+
+
+Betriebsverfahren,
+
+
+
+
+iv)
+
+
+technische und betriebliche Minderung von Risiken am Boden,
+
+
+
+
+v)
+
+
+allgemeine Kenntnisse zu UAS,
+
+
+
+
+vi)
+
+
+Meteorologie,
+
+
+
+
+vii)
+
+
+Flugleistung des UAS und
+
+
+
+
+viii)
+
+
+technische und betriebliche Minderung von Risiken in der Luft.
+
+
+
+
+
+
+b)
+
+
+Sind Fernpilotenschüler bereits in Besitz eines Zeugnisses für Fernpiloten nach Punkt UAS.OPEN.030 Nummer 2 muss die Prüfung mindestens 30 Multiple-Choice-Fragen umfassen, die sich angemessen auf die Sachgebiete nach Nummer 1 Buchstabe a Ziffern i bis v verteilen.
+
+
+
+
+c)
+
+
+Für das Bestehen der Prüfung der Theoriekenntnisse muss der Fernpilotenschüler mindestens 75 % der Gesamtpunktzahl erreichen.
+
+
+2.
+Praktische Ausbildung und Beurteilung praktischer Fähigkeiten
+
+
+Die praktische Ausbildung und die Beurteilung der praktischen Fähigkeiten für den Betrieb unter den Bedingungen eines Standardszenarios müssen mindestens die in Tabelle 1 erfassten Sachgebiete und Bereiche umfassen:
+
+
+
+
+
+
+
+
+Tabelle 1
+
+
+Sachgebiete und Bereiche, die durch die praktische Ausbildung und die Beurteilung der praktischen Fähigkeiten abgedeckt sein müssen
+
+
+
+
+
+
+
+Sachgebiet
+
+
+Bereiche
+
+
+
+
+a)  Maßnahmen vor dem Flug
+
+
+i)  Flugbetriebliche Planung, Betrachtung des Luftraums und Abschätzung der Risiken vor Ort unter Einbeziehung folgender Aspekte:
+A)  Festlegung der Ziele des geplanten Flugbetriebs,
+B)  Sicherstellung, dass der festgelegte Betriebsraum und die jeweiligen Sicherheitsbereiche (z. B. Bodensicherheitsbereiche) für den geplanten Flugbetrieb geeignet sind,
+C)  Erkennung der Hindernisse im Betriebsraum, die den geplanten Flugbetrieb behindern könnten,
+D)  Erkennung, ob Windgeschwindigkeit und/oder Windrichtung durch die Topografie oder Hindernisse im Betriebsraum beeinflusst werden könnten,
+E)  Auswahl der relevanten Luftrauminformationsdaten (einschließlich geografischer UAS-Gebiete), die sich auf den geplanten Flugbetrieb auswirken können,
+F)  Gewährleistung, dass das UAS für den geplanten Flugbetrieb geeignet ist,
+G)  Gewährleistung, dass die gewählte Nutzlast mit dem für den Flugbetrieb eingesetzten UAS vereinbar ist,
+H)  Umsetzung der erforderlichen Maßnahmen zur Einhaltung der Beschränkungen und Bedingungen, die nach den Betriebshandbuchverfahren für das jeweilige Szenario für den Betriebsbereich und den Bodensicherheitsbereich für den geplanten Flugbetrieb gelten,
+I)  Umsetzung der notwendigen Verfahren für den Betrieb im kontrollierten Luftraum, auch gegebenenfalls im Hinblick auf das Protokoll für die Kommunikation mit der Flugverkehrskontrolle für die Erteilung von Freigaben und Anweisungen,
+J)  Bestätigung, dass alle notwendigen Unterlagen für den geplanten Flugbetrieb an Ort und Stelle vorliegen und
+K)  Einweisung aller Beteiligten in den geplanten Flugbetrieb.
+ii)  Vorflugkontrolle und Einrichtung des UAS (einschließlich Flugmodi und Stromversorgungsrisiken) unter Einbeziehung der folgenden Aspekte:
+A)  Beurteilung des allgemeinen Zustands des UAS,
+B)  Gewährleistung, dass alle entfernbaren Komponenten des UAS ordnungsgemäß gesichert sind,
+C)  Sicherstellung, dass die Konfigurationen der UAS-Software kompatibel sind,
+D)  Kalibrierung der UAS-Instrumente,
+E)  Identifizierung etwaiger Mängel, die den geplanten Flugbetrieb gefährden könnten,
+F)  Gewährleistung eines ausreichenden Ladezustands der Batterie für den geplanten Flugbetrieb,
+G)  Sicherstellung, dass die Funktionen des UAS zur Beendigung des Flugs und zu deren Auslösung funktionsfähig sind,
+H)  Überprüfung der ordnungsgemäßen Funktionsweise des Steuerungs- und Kontrolllinks,
+I)  Einschaltung der Geo-Sensibilisierungsfunktion und Hochladen der Informationen für diese Funktion (sofern die Geo-Sensibilisierungsfunktion verfügbar ist) und
+J)  Einstellung der Systeme für die Begrenzung von Höhe und Geschwindigkeit (falls vorhanden).
+iii)  Kenntnisse grundlegender Maßnahmen, die im Notfall, auch bei Problemen mit dem UAS oder bei einem Kollisionsrisiko in der Luft, während des Flugs zu ergreifen sind.
+
+
+
+
+b)  Verfahren während des Flugs
+
+
+i)  Zu jedem Zeitpunkt muss eine gute Übersicht gewahrt und das unbemannte Luftfahrzeug im Luftraum in direkter Sicht (VLOS) gehalten werden, was eine Lageerfassung des Ortes in Bezug auf den Betriebsraum und sonstige Luftraumnutzer, Hindernisse, Gelände und unbeteiligte Personen beinhaltet.
+ii)  Präzise und kontrollierte Flugmanöver, die für das entsprechende STS repräsentativ sind, müssen in unterschiedlichen Höhen und für unterschiedliche Strecken durchgeführt werden (hierunter fallen auch Flüge im Handbetrieb bzw. im nicht-GNSS-unterstützten Modus oder gleichwertigem, sofern damit ausgestattet). Mindestens folgende Manöver müssen durchgeführt werden:
+A)  Schweben in Position (nur für Drehflügler),
+B)  Übergang vom Schweben in den Vorwärtsflug (nur für Drehflügler),
+C)  Steig- und Sinkflug vom Horizontalflug,
+D)  Kurven im Horizontalflug,
+E)  Geschwindigkeitskontrolle im Horizontalflug,
+F)  Maßnahmen nach Ausfall eines Motors/Antriebssystems und
+G)  Ausweichmaßnahmen (Manöver) zur Vermeidung von Kollisionen
+iii)  Echtzeit-Überwachung des UAS-Zustands und Beschränkungen der Flugdauer.
+Flug unter anormalen Bedingungen:
+A)  Beherrschung eines teilweisen oder vollständigen Stromausfalls des UAS-Antriebssystems unter Gewährleistung der Sicherheit von Dritten am Boden,
+B)  Beherrschung des Flugwegs des unbemannten Luftfahrzeugs in anormalen Situationen,
+C)  Beherrschung einer Situation, in der die Positionsbestimmungsgeräte des unbemannten Luftfahrzeugs beeinträchtigt sind,
+D)  Beherrschung einer Situation, in der eine unbeteiligte Person in den Betriebsraum oder den kontrollierten Bereich am Boden eindringt, und das Ergreifen geeigneter Maßnahmen zur Aufrechterhaltung der Sicherheit,
+E)  Ergreifen von Abhilfemaßnahmen als Reaktion auf Situationen, in denen davon ausgegangen werden kann, dass das unbemannte Luftfahrzeug die während der Flugvorbereitung festgelegten Grenzen der Fluggeografie (Contingency-Verfahren) und des Betriebsraums (Notverfahren) überschreitet,
+F)  Beherrschung der Situation, in der sich ein Luftfahrzeug dem Betriebsraum nähert, und
+G)  Demonstration der Wiederherstellung des Steuerungs- und Kontrolllinks nach einem absichtlichen (simulierten) Verlust dieser Verbindung.
+
+
+
+
+c)  Maßnahmen nach dem Flug
+
+
+i)  Ausschalten und Sichern des UAS,
+ii)  Inspektion nach dem Flug und Aufzeichnung aller relevanten Daten zum allgemeinen Zustand des UAS (seiner Systeme, Komponenten und Stromquellen) sowie zur Ermüdung der Besatzung.
+iii)  Nachbesprechung des Flugbetriebs.
+iv)  Identifizierung von Situationen, die eine Ereignismeldung erfordern, und Ausfüllen der erforderlichen Ereignismeldung.
+
+
+
+
+
+
+KAPITEL II
+
+
+STS-02 – BVLOS über einem kontrollierten Bereich am Boden in einem dünn besiedelten Gebiet mit Luftraumbeobachtern
+
+
+UAS.STS-02.010 Allgemeine Bestimmungen
+
+
+1. Während des Flugs muss das unbemannte Luftfahrzeug in einer Höhe bis zu 120 m vom nächstgelegenen Punkt auf der Erdoberfläche gehalten werden. Die Messung des Abstands ist an die geografischen Merkmale des Geländes, wie Ebenen, Hügel oder Berge, anzupassen.
+
+
+2. Fliegt ein unbemanntes Luftfahrzeug in einem horizontalen Abstand von 50 m zu einem künstlichen Hindernis, das höher als 105 m ist, kann die höchstzulässige Höhe des UAS-Betriebs auf Antrag der für das Hindernis zuständigen Stelle auf bis zu 15 m über der Höhe des Hindernisses erhöht werden.
+
+
+3. Die höchstzulässige Höhe des Betriebsraums darf nicht mehr als 30 m über der nach den Nummern 1 und 2 höchstzulässigen Höhe liegen.
+
+
+4. Während des Flugs darf das unbemannte Luftfahrzeug keine gefährlichen Güter mit sich führen.
+
+
+UAS.STS-02.020 UAS-Betrieb nach STS-02
+
+Für den UAS-Betrieb nach STS-02 gilt Folgendes:
+
+
+1.
+
+
+Der UAS-Betrieb muss nach dem in Punkt UAS.STS-02.030 Nummer 1 genannten Betriebshandbuch durchgeführt werden.
+
+
+
+
+2.
+
+
+Der UAS-Betrieb muss über einem kontrollierten Bereich am Boden durchgeführt werden, der vollständig in einem dünn besiedelten Gebiet liegt und Folgendes umfasst:
+
+
+a)
+
+
+den fluggeografischen Bereich,
+
+
+
+
+b)
+
+
+den Contingency-Bereich, dessen äußere Grenze(n) mindestens 10 m über die Grenze(n) des fluggeografischen Bereichs hinausgeht/hinausgehen,
+
+
+
+
+c)
+
+
+einen Bodensicherheitsbereich, der mindestens eine Strecke abdeckt, die das UA voraussichtlich zurücklegt, nachdem die in den Anweisungen des UAS-Herstellers angegebenen Vorrichtungen zur Beendigung des Flugs aktiviert wurden, und der den Betriebsbedingungen innerhalb der vom UAS-Hersteller festgelegten Grenzen Rechnung trägt.
+
+
+
+
+
+
+3.
+
+
+Der UAS-Betrieb muss in einem Bereich durchgeführt werden, in dem die Flugsicht mehr als 5 km beträgt.
+
+
+
+
+4.
+
+
+Während des Starts und der Wiederherstellung der Verbindung zum unbemannten Luftfahrzeug (sofern Letzteres nicht das Ergebnis einer Flugbeendigung im Notfall ist) muss der Fernpilot in Sichtkontakt mit dem unbemannten Luftfahrzeug bleiben.
+
+
+
+
+5.
+
+
+Wird für den UAS-Betrieb kein Luftraumbeobachter eingesetzt, darf das unbemannte Luftfahrzeug nicht weiter als 1 km vom Fernpiloten entfernt fliegen und muss, wenn es nicht in direkter Sicht des Fernpiloten (VLOS) fliegt, einem vorab programmierten Flugweg folgen.
+
+
+
+
+6.
+
+
+Werden für den UAS-Betrieb einer oder mehrere Luftraumbeobachter eingesetzt, sind alle folgenden Bedingungen einzuhalten:
+
+
+a)
+
+
+Die Luftraumbeobachter sind so positioniert, dass eine angemessene Erfassung des Betriebsraums und des umgebenden Luftraums mit der in Nummer 3 angegebenen Mindestflugsicht gegeben ist.
+
+
+
+
+b)
+
+
+Das unbemannte Luftfahrzeug wird in einer Entfernung von höchstens 2 km vom Fernpiloten betrieben.
+
+
+
+
+c)
+
+
+Das unbemannte Luftfahrzeug wird in einer Entfernung von höchstens 1 km von dem dem unbemannten Luftfahrzeug am nächsten befindlichen Luftraumbeobachter betrieben.
+
+
+
+
+d)
+
+
+Der Abstand zwischen einem der Luftraumbeobachter und dem Fernpiloten beträgt nicht mehr als 1 km.
+
+
+
+
+e)
+
+
+Für die Kommunikation zwischen dem Fernpiloten und dem/den Luftraumbeobachter(n) sind robuste und effektive Kommunikationsmittel vorhanden.
+
+
+
+
+
+
+7.
+
+
+Der UAS-Betrieb muss von einem Fernpiloten durchgeführt werden, der Folgendes innehat:
+
+
+a)
+
+
+ein von der zuständigen Behörde oder einer von der zuständigen Behörde eines Mitgliedstaats benannten Stelle ausgestelltes Zeugnis für Fernpiloten, das seine Theoriekenntnisse für den Betrieb unter Standardszenarien nachweist;
+
+
+
+
+b)
+
+
+eine Akkreditierung über den Abschluss der praktischen Prüfung für STS-02 nach Beilage A zu diesem Kapitel, die
+
+
+A)
+
+
+von einer Stelle ausgestellt wurde, die eine Erklärung über die Einhaltung der Anforderungen von Anlage 3 abgegeben hat und von der zuständigen Behörde eines Mitgliedstaats anerkannt ist, oder
+
+
+
+
+B)
+
+
+von einem UAS-Betreiber ausgestellt wurde, der bei der zuständigen Behörde des Eintragungsmitgliedstaats eine Erklärung über die Einhaltung von STS-02 sowie der Anforderungen von Anlage 3 abgegeben hat.
+
+
+
+
+
+
+
+
+8.
+
+
+Der UAS-Betrieb muss mit einem unbemannten Luftfahrzeug durchgeführt werden, das allen folgenden Bedingungen genügt:
+
+
+a)
+
+
+Es ist als ein UAS der Klasse C6 gekennzeichnet und erfüllt die Anforderungen dieser Klasse nach Teil 17 des Anhangs der Delegierten Verordnung (EU) 2019/945.
+
+
+
+
+b)
+
+
+Es wird mit einem eingeschalteten System betrieben, dass verhindert, dass das unbemannte Luftfahrzeug die Fluggeografie verletzt.
+
+
+
+
+c)
+
+
+Es wird mit einem eingeschalteten und aktuellen System für die direkte Fernidentifizierung betrieben.
+
+
+
+
+
+
+9.
+
+
+Der Fernpilot erhält das Zeugnis über seine Theoriekenntnisse für den Betrieb unter Standardszenarien nach
+
+
+a)
+
+
+Abschluss eines Online-Lehrgangs und Bestehen der Online-Theorieprüfung nach Punkt UAS.OPEN.020 Nummer 4 Buchstabe b und
+
+
+
+
+b)
+
+
+Bestehen einer zusätzlichen Theorieprüfung, die nach Beilage A zu diesem Kapitel von der zuständigen Behörde oder von einer von der zuständigen Behörde eines Mitgliedstaates benannten Stelle durchgeführt wurde.
+
+
+
+
+
+
+10.
+
+
+Das Zeugnis gilt für fünf Jahre. Eine Verlängerung ist innerhalb der Gültigkeit nur möglich bei
+
+
+a)
+
+
+Vorlage eines Befähigungsnachweises nach Nummer 9,
+
+
+
+
+b)
+
+
+Absolvierung einer Auffrischungsschulung der Theoriekenntnisse in den Sachgebieten nach Nummer 9, die von der zuständigen Behörde oder einer von der zuständigen Behörde benannten Stelle angeboten wird.
+
+
+
+
+
+
+11.
+
+
+Für die Verlängerung des Zeugnisses nach dessen Ablauf muss der Fernpilot Nummer 9 genügen.
+
+
+
+UAS.STS-02.030 Verantwortung des UAS-Betreibers
+
+Zusätzlich zu den in Punkt UAS.SPEC.050 festgelegten Verantwortlichkeiten muss der UAS-Betreiber
+
+
+1.
+
+
+ein Betriebshandbuch erstellen mit den in Anlage 5 festgelegten Elementen,
+
+
+
+
+2.
+
+
+den betrieblichen Luftraum und den Bodensicherheitsbereich für den geplanten Betrieb festlegen, einschließlich des kontrollierten Bereichs am Boden, der sich aus den Projektionen sowohl des Betriebsraums als auch des Sicherheitsbereichs auf die Erdoberfläche ergibt,
+
+
+
+
+3.
+
+
+die Angemessenheit der Contingency- und Notverfahren durch eine der folgenden Maßnahmen gewährleisten:
+
+
+a)
+
+
+eigens hierfür durchgeführte Testflüge,
+
+
+
+
+b)
+
+
+Simulationen, sofern die Simulation repräsentativ für den Verwendungszweck ist,
+
+
+
+
+
+
+4.
+
+
+einen wirksamen und für den Betrieb geeigneten Notfallplan ausarbeiten, der mindestens Folgendes umfasst:
+
+
+a)
+
+
+einen Plan zur Eindämmung einer möglichen Ausweitung einer Notsituation,
+
+
+
+
+b)
+
+
+die Bedingungen für die Alarmierung der einschlägigen Behörden und Organisationen,
+
+
+
+
+c)
+
+
+die Kriterien zur Feststellung einer Notsituation,
+
+
+
+
+d)
+
+
+eine klare Abgrenzung der Aufgaben des/der Fernpiloten und sonstigen, mit wesentlichen Aufgaben für den UAS-Betrieb befassten Personals,
+
+
+
+
+
+
+5.
+
+
+dafür sorgen, dass die Leistung, die für einen extern bereitgestellten und für die Sicherheit des Flugs notwendigen Dienst erbracht wird, für den geplanten Betrieb angemessen ist,
+
+
+
+
+6.
+
+
+gegebenenfalls die Zuweisung der Aufgaben und Verantwortlichkeiten zwischen dem Betreiber und externen Dienstanbietern festlegen,
+
+
+
+
+7.
+
+
+aktuelle Information für die Geo-Sensibilisierungsfunktion hochladen, sofern das UAS mit dieser Funktion ausgestattet ist und dies in dem geografischen UAS-Gebiet für den beabsichtigten Betriebsort erforderlich ist,
+
+
+
+
+8.
+
+
+dafür sorgen, dass vor Aufnahme des Betriebs alle geeigneten Maßnahmen ergriffen wurden, um das Risiko eines Eindringens unbeteiligter Personen in den kontrollierten Bereich am Boden, der der in Punkt UAS.STS-02.020 Nummer 2 festgelegten Mindeststrecke genügt, zu verringern, und gegebenenfalls mit den zuständigen Behörden koordiniert wurden,
+
+
+
+
+9.
+
+
+dafür sorgen, dass vor Aufnahme des Betriebs alle sich im kontrollierten Bereich am Boden befindlichen Personen
+
+
+a)
+
+
+über das Betriebsrisiko informiert wurden,
+
+
+
+
+b)
+
+
+gegebenenfalls kurze Anweisungen und gegebenenfalls Schulungen über die Sicherheitsvorkehrungen und ‐maßnahmen erhalten haben, die der UAS-Betreiber zu ihrem Schutz ergriffen hat, und
+
+
+
+
+c)
+
+
+der Beteiligung am Betrieb ausdrücklich zugestimmt haben,
+
+
+
+
+
+
+10.
+
+
+vor Aufnahme des Betriebs und bei Einsatz von Luftraumbeobachtern
+
+
+a)
+
+
+dafür sorgen, dass die Luftraumbeobachter entlang des geplanten Flugwegs in ausreichender Zahl und korrekt platziert sind,
+
+
+
+
+b)
+
+
+überprüfen,
+
+
+i)
+
+
+dass die Sichtbarkeit und der geplante Abstand der Luftraumbeobachter innerhalb der im Betriebshandbuch festgelegten Grenzen liegen,
+
+
+
+
+ii)
+
+
+dass kein Luftraumbeobachter durch potenzielle Geländehindernisse behindert wird,
+
+
+
+
+iii)
+
+
+dass zwischen den von jedem Luftraumbeobachter abgedeckten Bereichen keine Lücken bestehen,
+
+
+
+
+iv)
+
+
+dass die Kommunikation zwischen den Luftraumbeobachtern festgelegt wurde und effektiv ist,
+
+
+
+
+v)
+
+
+dass etwaige von den Luftraumbeobachtern zur Bestimmung der Position des unbemannten Luftfahrzeugs eingesetzte Mittel funktionsfähig und wirksam sind,
+
+
+
+
+
+
+c)
+
+
+dafür sorgen, dass die Luftraumbeobachter eine Einweisung zum geplanten Flugweg des unbemannten Luftfahrzeugs und zur entsprechenden Zeitplanung erhalten,
+
+
+
+
+
+
+11.
+
+
+gewährleisten, dass
+
+
+a)
+
+
+dem UAS die entsprechende EU-Konformitätserklärung mit dem Verweis auf die Klasse C6 beiliegt,
+
+
+
+
+b)
+
+
+das Identifizierungskennzeichen der Klasse C6 auf dem unbemannten Luftfahrzeug angebracht ist.
+
+
+
+
+
+UAS.STS-02.040 Verantwortung des Fernpiloten
+
+Zusätzlich zu den in Punkt UAS.SPEC.060 festgelegten Verantwortlichkeiten muss der Fernpilot
+
+
+1.
+
+
+vor Aufnahme eines UAS-Betriebs
+
+
+a)
+
+
+das programmierbare Flugvolumen des unbemannten Luftfahrzeugs einstellen, damit es innerhalb der Fluggeografie verbleibt,
+
+
+
+
+b)
+
+
+überprüfen, ob die Vorrichtungen zur Beendigung des Flugs und die programmierbare Betriebsraumfunktion des unbemannten Luftfahrzeugs funktionsfähig sind, und prüfen, ob die direkte Fernidentifizierung eingeschaltet und aktuell ist.
+
+
+
+
+
+
+2.
+
+
+Während des Flugs gilt Folgendes:
+
+
+a)
+
+
+Der Fernpilot muss, sofern er nicht von Luftraumbeobachtern unterstützt wird, ständig den das unbemannte Luftfahrzeug umgebenden Luftraum im Blick (visual scan) behalten, um jedes Risiko einer Kollision mit einem bemannten Luftfahrzeug zu vermeiden. Der Fernpilot muss den Flug unterbrechen, sobald der Betrieb ein Risiko für ein anderes Luftfahrzeug, Menschen, Tiere, die Umwelt oder Eigentum darstellt.
+
+
+
+
+b)
+
+
+Der Fernpilot muss in der Lage sein, die Kontrolle über das unbemannte Luftfahrzeug aufrechtzuerhalten, sofern nicht ein Verlust des Steuerungs- und Kontrolllinks (C2) vorliegt.
+
+
+
+
+c)
+
+
+Der Fernpilot darf jeweils nur ein unbemanntes Luftfahrzeug betreiben.
+
+
+
+
+d)
+
+
+Der Fernpilot darf ein unbemanntes Luftfahrzeug nicht von einem sich bewegenden Fahrzeug aus betreiben.
+
+
+
+
+e)
+
+
+Der Fernpilot darf die Kontrolle über ein unbemanntes Luftfahrzeug nicht an eine andere Steuereinheit abgeben.
+
+
+
+
+f)
+
+
+Der Fernpilot muss den/die möglicherweise eingestellten Luftraumbeobachter zeitnah über jede Abweichung vom geplanten Flugweg und die damit verbundene Zeitplanung unterrichten.
+
+
+
+
+g)
+
+
+Der Fernpilot muss die vom UAS-Betreiber für anormale Situationen festgelegten Contingency-Verfahren durchführen, auch wenn er Anzeichen dafür hat, dass das unbemannte Luftfahrzeug die Grenzen der Fluggeografie möglicherweise überschreitet.
+
+
+
+
+h)
+
+
+Der Fernpilot muss die vom UAS für Notsituationen festgelegten Notverfahren durchführen, auch indem er die Vorrichtungen zur Beendigung des Flugs auslöst, wenn er Anzeichen dafür hat, dass das unbemannte Luftfahrzeug die Grenzen des Betriebsraums möglicherweise überschreitet.
+
+
+
+
+
+UAS.STS-02.050 Verantwortung des Luftraumbeobachters
+
+Für Luftraumbeobachter gilt Folgendes:
+
+
+1.
+
+
+Sie müssen den das unbemannte Luftfahrzeug umgebenden Luftraum ständig im Blick (visual scan) behalten, um jedes Risiko einer Kollision mit einem bemannten Luftfahrzeug zu erkennen.
+
+
+
+
+2.
+
+
+Sie müssen fortlaufend die Lage des unbemannten Luftfahrzeugs durch direkte Beobachtung des Luftraums oder mit Hilfe elektronischer Mittel erfassen.
+
+
+
+
+3.
+
+
+Sie müssen den Fernpiloten warnen, wenn sie eine Gefahr erkennen und ihn bei der Vermeidung oder Minimierung potenziell negativer Folgen unterstützen.
+
+
+
+BEILAGE A: THEORIEKENNTNISSE UND PRAKTISCHE FÄHIGKEITEN VON FERNPILOTEN NACH STS-02
+
+1.
+Prüfung der Theoriekenntnisse
+
+
+Die Prüfung wird nach Kapitel I Beilage A Nummer 1 festgelegt.
+2.
+Praktische Ausbildung und Beurteilung der praktischen Fähigkeiten
+
+
+Zusätzlich zu den in Kapitel I Beilage A Nummer A.2 festgelegten Bereichen werden folgende Bereiche abgedeckt:
+
+
+
+
+
+
+
+
+Tabelle 1
+
+
+Zusätzliche Sachgebiete und Bereiche nach STS-02, die durch die praktische Ausbildung und die Beurteilung der praktischen Fähigkeiten abgedeckt sein müssen
+
+
+
+
+
+
+
+Sachgebiet
+
+
+Bereiche
+
+
+
+
+a)  BVLOS-Flugbetrieb nach STS-02
+
+
+i)  Maßnahmen vor dem Flug — flugbetriebliche Planung, Betrachtung des Luftraums und Abschätzung der Risiken vor Ort. Die folgenden Punkte müssen aufgenommen werden:
+A)  Luftraum-Scanning,
+B)  Flugbetrieb mit Luftraumbeobachtern: geeignete Platzierung der Luftraumbeobachter und Abstimmung u. a. durch Sprechgruppen, Koordinierung und Kommunikation.
+ii)  Die Verfahren während des Flugs nach Kapitel I Beilage A Nummer 2 Buchstabe b Ziffer ii müssen sowohl in VLOS als auch BVLOS durchgeführt werden.
+
+
+
+
+
+
+
+
+
+
+
+
+Anlage 2
+
+Betriebserklärung
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Betriebserklärung
+
+
+
+
+
+
+Datenschutz: Die in dieser Erklärung enthaltenen personenbezogenen Daten werden von der zuständigen Behörde nach der Verordnung (EU) 2016/679 des Europäischen Parlaments und des Rates vom 27. April 2016 zum Schutz natürlicher Personen bei der Verarbeitung personenbezogener Daten, zum freien Datenverkehr und zur Aufhebung der Richtlinie 95/46/EG (Datenschutz-Grundverordnung) verarbeitet. Die Verarbeitung erfolgt für die Zwecke der Durchführung, Verwaltung und Nachbearbeitung der auf der Grundlage der Durchführungsverordnung (EU) 2019/947 der Kommission durchgeführten Aufsichtstätigkeiten.
+Sollten Sie weitere Informationen zur Verarbeitung Ihrer personenbezogenen Daten wünschen oder beabsichtigen, Ihre Rechte wahrzunehmen, indem Sie z. B. Zugang zu Ihren Daten oder die Berichtigung ungenauer oder unvollständiger Daten verlangen, wenden Sie sich bitte an die Kontaktstelle der zuständigen Behörde.
+Der Antragsteller hat jederzeit das Recht, bei der nationalen Datenschutzbehörde eine Beschwerde in Bezug auf die Verarbeitung seiner personenbezogenen Daten einzureichen.
+
+
+
+
+UAS-Betreibernummer
+
+
+
+
+
+
+
+
+Name des UAS-Betreibers
+
+
+
+
+
+
+
+
+UAS-Hersteller
+
+
+
+
+
+
+
+
+UAS-Modell
+
+
+
+
+
+
+
+
+UAS-Seriennummer
+
+
+
+
+
+
+
+
+
+Ich erkläre hiermit
+
+
+— die Einhaltung aller geltenden Bestimmungen der Durchführungsverordnung (EU) 2019/947 und des STS.x und
+
+
+
+— bestätige, dass für jeden in der Erklärung genannten Flug ein angemessener Versicherungsschutz besteht, sofern dieser nach Unionsrecht oder nationalem Recht vorgeschrieben ist.
+
+
+
+
+
+
+
+Datum
+
+
+
+
+
+
+
+
+Unterschrift oder sonstige Verifizierung
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Anlage 3
+
+Zusätzliche Anforderungen an von der zuständigen Behörde anerkannte Stellen und UAS-Betreiber, die Fernpiloten für den unter die Standardszenarien fallenden Flugbetrieb praktisch ausbilden und beurteilen
+
+Jede Stelle, die beabsichtigt, sich die Durchführung der praktischen Ausbildung und Beurteilung der praktischen Fähigkeiten von Fernpiloten durch die zuständige Behörde anerkennen zu lassen, muss der zuständigen Behörde unter Verwendung des Formblatts in Anlage 6 eine Erklärung über die Einhaltung der unten aufgeführten Anforderungen vorlegen.
+Ein UAS-Betreiber, der beabsichtigt, Fernpiloten für ein Standardszenario praktisch auszubilden und deren praktische Fähigkeiten zu beurteilen, muss zusätzlich zur Vorlage der Betriebserklärung für dieses STS der zuständigen Behörde unter Verwendung des Formblatts in Anlage 4 eine Erklärung über die Einhaltung der unten aufgeführten Anforderungen vorlegen.
+Beabsichtigt die zuständige Behörde oder der UAS-Betreiber, für ein STS die praktische Ausbildung und Beurteilung der praktischen Fähigkeiten von Fernpiloten in einem anderen als dem Eintragungsmitgliedstaat durchzuführen, muss ein Exemplar des Formblatts von Anlage 4 der zuständigen Behörde des Mitgliedstaats vorgelegt werden, in dem die Ausbildung stattfindet.
+Beabsichtigt eine von der zuständigen Behörde anerkannte Stelle, für ein STS die praktische Ausbildung und Beurteilung der praktischen Fähigkeiten von Fernpiloten in einem anderen als dem Anerkennungsmitgliedstaat durchzuführen, muss ein Nachweis über die Anerkennung bei der zuständigen Behörde des Mitgliedstaats vorgelegt werden, in dem die Ausbildung stattfindet.
+
+1. Die von der zuständigen Behörde anerkannte Stelle oder der UAS-Betreiber muss eine klare Trennung zwischen den Ausbildungstätigkeiten und sonstigen betrieblichen Aktivitäten nachweisen, um die Unabhängigkeit der Bewertung zu gewährleisten.
+
+
+2. Die von der zuständigen Behörde anerkannte Stelle oder der UAS-Betreiber muss in der Lage sein, die mit der gesamten Aufgabenstellung zusammenhängenden verwaltungstechnischen Tätigkeiten zu erbringen, worunter auch geeignetes Personal und der Einsatz aufgabengerechter Einrichtungen und Geräte gehören.
+
+
+3. Die von der zuständigen Behörde anerkannte Stelle oder der UAS-Betreiber muss über einen verantwortlichen Betriebsleiter verfügen, der die Verantwortung dafür trägt, dass alle Leistungen nach den in Nummer 8 genannten Informationen und Verfahren erbracht werden.
+
+
+4. Das für die praktische Ausbildung und die Beurteilung der praktischen Fähigkeiten zuständige Personal
+
+
+
+a)
+
+
+muss über die Befähigung zur Erbringung dieser Leistungen verfügen,
+
+
+
+
+b)
+
+
+muss unparteiisch sein und darf sich nicht an Beurteilungen beteiligen, wenn seine Objektivität beeinträchtigt sein könnte,
+
+
+
+
+c)
+
+
+muss über solide Theoriekenntnisse und Erfahrungen in der praktischen Ausbildung sowie zufriedenstellende Kenntnisse der Anforderungen an die von ihm durchzuführende Beurteilung der praktischen Fähigkeiten und über ausreichende Erfahrungen mit diesen Verfahren verfügen,
+
+
+
+
+d)
+
+
+muss in der Lage sein, die Erklärungen, Aufzeichnungen und Berichte zu verwalten, mit denen nachgewiesen wird, dass die Beurteilungen der einschlägigen praktischen Fähigkeiten durchgeführt wurden, und Schlussfolgerungen aus diesen Beurteilungen zu ziehen, und
+
+
+
+
+e)
+
+
+darf keine Informationen, die ihm vom Betreiber oder dem Fernpiloten zur Kenntnis gebracht wurden, an eine andere Person als der zuständigen Behörde auf deren Verlangen weitergeben.
+
+
+
+5. Die Ausbildung und Beurteilung muss sich auf die praktischen Fähigkeiten erstrecken, die für das jeweilige STS, für das die Erklärung abgegeben wird, in Beilage A des entsprechenden Kapitels festgelegt wurden.
+
+
+6. Die praktische Ausbildung und die Beurteilung der praktischen Fähigkeiten müssen in einem für die STS-Bedingungen repräsentativen Umfeld durchgeführt werden.
+
+
+7. Die Beurteilung der praktischen Fähigkeiten des Fernpilotenschülers muss in einer kontinuierlichen Bewertung erfolgen.
+
+
+8. Die von der zuständigen Behörde anerkannte Stelle oder der UAS-Betreiber muss nach Abschluss der Beurteilung der praktischen Fähigkeiten einen Beurteilungsbericht vorlegen, der
+
+
+
+a)
+
+
+mindestens Folgendes enthält:
+
+
+i)
+
+
+die Angaben zur Identität des Fernpilotenschülers,
+
+
+
+
+ii)
+
+
+die Angaben zur Identität der für die Beurteilung der praktischen Fähigkeiten zuständigen Person,
+
+
+
+
+iii)
+
+
+die Angaben zum STS, für das die Beurteilung der praktischen Fähigkeiten durchgeführt wurde,
+
+
+
+
+iv)
+
+
+die erreichte Punktzahl für jede vom Fernpilotenschüler durchgeführte Handlung,
+
+
+
+
+v)
+
+
+die Gesamtbeurteilung der praktischen Fähigkeiten des Fernpilotenschülers und
+
+
+
+
+vi)
+
+
+ein Feedback zur Beurteilung der praktischen Fähigkeiten mit Hinweisen zu gegebenenfalls noch verbesserungsfähigen Bereichen,
+
+
+
+
+
+
+b)
+
+
+von der Person ordnungsgemäß unterzeichnet und datiert wurde, die abschließend für die Beurteilung der praktischen Fähigkeiten zuständig ist, und
+
+
+
+
+c)
+
+
+aufgezeichnet und der zuständigen Behörde auf Verlangen zugänglich gemacht wird.
+
+
+
+9. Hat der Fernpilotenschüler laut Beurteilungsbericht ein zufriedenstellendes Niveau an praktischen Fähigkeiten erreicht, muss die von der zuständigen Behörde anerkannte Stelle oder der UAS-Betreiber dem Fernpilotenschüler eine Akkreditierung über den Abschluss der praktischen Ausbildung für das STS ausstellen.
+
+
+10. Die Ausstellung der Akkreditierung über den Abschluss nach Nummer 9 muss der zuständigen Behörde des Mitgliedstaats mitgeteilt werden, in dem die praktische Ausbildung und die Beurteilung durchgeführt wurden, und zwar unter Angabe der Identität des Fernpilotenschülers, des jeweiligen STS, des Ausstellungsdatums und der Identität der von dem Mitgliedstaat anerkannten Stelle oder des UAS-Betreibers, die/der die Akkreditierung erteilt hat.
+
+
+11. Die von der zuständigen Behörde anerkannte Stelle oder der UAS-Betreiber muss in das nach Anlage 5 erstellte Betreiberhandbuch einen eigenen Abschnitt zu den Ausbildungsinhalten mit folgenden Angaben aufnehmen:
+
+
+
+a)
+
+
+das für die Durchführung der praktischen Ausbildung und die Beurteilung der praktischen Fähigkeiten benannte Personal, darunter:
+
+
+i)
+
+
+eine Beschreibung der Kompetenzen der jeweiligen Personen,
+
+
+
+
+ii)
+
+
+die Aufgaben und Zuständigkeiten des Personals und
+
+
+
+
+iii)
+
+
+ein Organigramm mit den entsprechenden Verantwortungsketten,
+
+
+
+
+
+
+b)
+
+
+die Verfahren für die praktische Ausbildung und Beurteilung der praktischen Fähigkeiten, einschließlich Lehrplan zu den praktischen Fähigkeiten, die für das jeweilige STS, für das die Erklärung abgegeben wird, in Beilage A des entsprechenden Kapitels festgelegt wurden,
+
+
+
+
+c)
+
+
+eine Beschreibung des UAS und sonstiger Geräte, Instrumente und der Umgebung, die für die praktische Ausbildung und die Beurteilung der praktischen Fähigkeiten eingesetzt werden, und
+
+
+
+
+d)
+
+
+ein Muster für den Beurteilungsbericht.
+
+
+
+
+
+
+
+
+
+Anlage 4
+
+Erklärung von UAS-Betreibern, die beabsichtigen, eine praktische Ausbildung und Beurteilung der praktischen Fähigkeiten von Fernpiloten nach STS-x anzubieten
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+STS-x
+
+
+
+
+
+
+Erklärung von UAS-Betreibern, die beabsichtigen, eine praktische Ausbildung und Beurteilung der praktischen Fähigkeiten von Fernpiloten anzubieten
+
+
+
+
+
+
+Datenschutz: Die in dieser Erklärung enthaltenen personenbezogenen Daten werden von der zuständigen Behörde nach der Verordnung (EU) 2016/679 des Europäischen Parlaments und des Rates vom 27. April 2016 zum Schutz natürlicher Personen bei der Verarbeitung personenbezogener Daten, zum freien Datenverkehr und zur Aufhebung der Richtlinie 95/46/EG (Datenschutz-Grundverordnung) verarbeitet. Die Verarbeitung erfolgt für die Zwecke der Durchführung, Verwaltung und Nachbearbeitung der auf der Grundlage der Durchführungsverordnung (EU) 2019/947 der Kommission durchgeführten Aufsichtstätigkeiten.
+Sollten Sie weitere Informationen zur Verarbeitung Ihrer personenbezogenen Daten wünschen oder beabsichtigen, Ihre Rechte wahrzunehmen, indem Sie z. B. Zugang zu Ihren Daten oder die Berichtigung ungenauer oder unvollständiger Daten verlangen, wenden Sie sich bitte an die Kontaktstelle der zuständigen Behörde.
+Der Antragsteller hat jederzeit das Recht, bei der nationalen Datenschutzbehörde eine Beschwerde in Bezug auf die Verarbeitung seiner personenbezogenen Daten einzureichen.
+
+
+
+
+UAS-Betreibernummer
+
+
+
+
+
+
+
+
+Name des UAS-Betreibers
+
+
+
+
+
+
+
+
+
+Ich erkläre hiermit, dass
+
+
+— ich die Betriebserklärung für STS-x vorgelegt habe,
+
+
+
+— ich die Anforderungen in Anlage 3 zum Anhang der Durchführungsverordnung (EU) 2019/947 erfülle und
+
+
+
+— ich alle geltenden Bestimmungen der Durchführungsverordnung (EU) 2019/947, darunter auch die Anforderungen an den Betrieb nach STS.x, beim Betrieb eines UAS im Rahmen der Ausbildungstätigkeiten nach STS.x erfülle.
+
+
+
+
+
+
+
+Datum
+
+
+
+
+
+
+
+
+Unterschrift oder sonstige Verifizierung
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Anlage 5
+
+Betriebshandbuch für das Standardszenario
+
+Das in Anlage 1 festgelegte Betriebshandbuch für STS muss mindestens Folgendes enthalten:
+
+
+1.
+
+
+eine Erklärung, dass das Betriebshandbuch den einschlägigen Anforderungen dieser Verordnung und der Erklärung genügt sowie Anweisungen enthält, die von dem am Flugbetrieb beteiligten Personal einzuhalten sind,
+
+
+
+
+2.
+
+
+die Unterschrift zur Genehmigung des verantwortlichen Betriebsleiters oder des UAS-Betreibers im Falle einer natürlichen Person,
+
+
+
+
+3.
+
+
+eine Gesamtbeschreibung der Organisation des UAS-Betreibers,
+
+
+
+
+4.
+
+
+eine Beschreibung des Betriebskonzepts, die mindestens Folgendes enthält:
+
+
+a)
+
+
+die Art der in dem UAS-Betrieb durchgeführten Tätigkeiten sowie die damit verbundenen Risiken,
+
+
+
+
+b)
+
+
+die Betriebsumgebung und der geografische Bereich für den geplanten Betrieb, einschließlich
+
+
+i)
+
+
+der Merkmale des zu überfliegenden Bereichs im Hinblick auf Bevölkerungsdichte, Topografie, Hindernisse usw.,
+
+
+
+
+ii)
+
+
+der Merkmale des zu nutzenden Luftraums,
+
+
+
+
+iii)
+
+
+der Umweltbedingungen (einschließlich mindestens Wetter und elektromagnetische Umgebung),
+
+
+
+
+iv)
+
+
+der Festlegung des Betriebsraums und der Sicherheitsbereiche für die Risiken am Boden und in der Luft,
+
+
+
+
+
+
+c)
+
+
+die eingesetzten technischen Vorrichtungen und ihre wichtigsten Merkmale, deren Leistung und Beschränkungen, auch der UAS, der externen Systeme zur Unterstützung des UAS-Betriebs, der Einrichtungen usw.
+
+
+
+
+d)
+
+
+der Personalbedarf für den Flugbetrieb, einschließlich der Zusammensetzung des Teams, der Aufgaben und Zuständigkeiten, der Auswahlkriterien, der Erstausbildung und der Anforderungen an die fortlaufende Erfahrung und/oder die Fortbildung,
+
+
+
+
+
+
+5.
+
+
+die Instandhaltungsanweisungen zur Aufrechterhaltung eines sicheren Zustands des UAS, die sich gegebenenfalls auf die Instandhaltungsanweisungen und Anforderungen des UAS-Herstellers stützen,
+
+
+
+
+6.
+
+
+die Betriebsverfahren, die auf den vom UAS-Hersteller bereitzustellenden Anweisungen beruhen und Folgendes umfassen müssen:
+
+
+a)
+
+
+in Bezug auf die Minimierung menschlicher Fehler:
+
+
+i)
+
+
+eine klare Aufgabenteilung und
+
+
+
+
+ii)
+
+
+eine interne Prüfliste, anhand derer überprüft wird, ob das Personal die ihm zugewiesenen Aufgaben angemessen wahrnimmt,
+
+
+
+
+
+
+b)
+
+
+Berücksichtigung des Verschleißes externer Unterstützungssysteme für den UAS-Betrieb,
+
+
+
+
+c)
+
+
+die üblichen Verfahren, einschließlich mindestens
+
+
+i)
+
+
+der Vorbereitungen und Prüflisten vor dem Flug mit folgendem Inhalt:
+
+
+A)
+
+
+Bewertung des Betriebsraums und der entsprechenden Sicherheitsbereiche (Sicherheitsbereiche am Boden bzw. in der Luft), einschließlich Gelände und potenzielle Hindernisse, die es erschweren könnten, das unbemannte Luftfahrzeug in Sicht zu halten oder den Luftraum im Blick (visual scan) zu behalten, sowie des potenziellen Überflugs von unbeteiligten Personen oder von kritischen Infrastrukturen,
+
+
+
+
+B)
+
+
+Bewertung der Umgebung und des Luftraums, einschließlich der Nähe von geografischen UAS-Gebieten und potenziellen Aktivitäten anderer Luftraumnutzer,
+
+
+
+
+C)
+
+
+die Eignung der Umweltbedingungen für die Durchführung des UAS-Betriebs,
+
+
+
+
+D)
+
+
+die für die Wahrnehmung wesentlicher Aufgaben des UAS-Betriebs erforderliche Mindestpersonalstärke unter Angabe der Zuständigkeiten,
+
+
+
+
+E)
+
+
+die notwendigen Verfahren für die Kommunikation zwischen Fernpilot(en) und sonstigem, mit der Wahrnehmung der für den UAS-Betrieb wesentlichen Aufgaben befasstem Personal und gegebenenfalls mit externen Parteien,
+
+
+
+
+F)
+
+
+Einhaltung etwaiger besonderer Anforderungen der zuständigen Behörden im geplanten Betriebsgebiet, auch solcher an die Sicherheit, den Schutz der Privatsphäre, den Daten- und Umweltschutz und die Nutzung von Funkfrequenzen,
+
+
+
+
+G)
+
+
+die erforderlichen Risikominderungsmaßnahmen zur Gewährleistung eines sicheren Betriebs, insbesondere für den kontrollierten Bereich am Boden:
+
+
+a)
+
+
+Festlegung des kontrollierten Bereichs am Boden und
+
+
+
+
+b)
+
+
+Sicherung des kontrollierten Bereichs am Boden gegen das Eindringen Dritter während des Betriebs und erforderlichenfalls Koordinierung mit den lokalen Behörden,
+
+
+
+
+
+
+H)
+
+
+die Verfahren zur Überprüfung, ob das UAS in einem geeigneten Zustand ist, den geplanten Betrieb sicher durchzuführen,
+
+
+
+
+
+
+ii)
+
+
+Verfahren für den Start und die Wiederherstellung der Verbindung,
+
+
+
+
+iii)
+
+
+Verfahren während des Flugs, auch solcher, mit denen sichergestellt wird, dass das unbemannte Luftfahrzeug innerhalb der Fluggeografie verbleibt,
+
+
+
+
+iv)
+
+
+Verfahren nach dem Flug, auch Inspektionen zur Überprüfung des Zustands des UAS,
+
+
+
+
+v)
+
+
+Verfahren zur Erkennung potenziell in Konflikt stehender Luftfahrzeuge durch den Fernpiloten und — falls vom UAS-Betreiber vorgeschrieben — gegebenenfalls durch Beobachter des Luftraums bzw. unbemannter Luftfahrzeuge,
+
+
+
+
+
+
+d)
+
+
+Contingency-Verfahren, einschließlich mindestens
+
+
+i)
+
+
+Verfahren zum Umgang mit unbemannten Luftfahrzeugen, die die ausgewiesene Fluggeografie verlassen,
+
+
+
+
+ii)
+
+
+Verfahren zum Umgang mit unbeteiligten Personen, die in den kontrollierten Bereich am Boden eindringen,
+
+
+
+
+iii)
+
+
+Verfahren zum Umgang mit widrigen Betriebsbedingungen,
+
+
+
+
+iv)
+
+
+Verfahren zum Umgang mit dem Verschleiß externer Unterstützungssysteme für den Betrieb,
+
+
+
+
+v)
+
+
+die zu verwendende Sprechgruppe, falls Luftraumbeobachter eingesetzt werden,
+
+
+
+
+vi)
+
+
+Verfahren zur Vermeidung etwaiger Konflikte mit sonstigen Luftraumnutzern,
+
+
+
+
+
+
+e)
+
+
+Notverfahren zum Umgang mit Notfällen, einschließlich mindestens:
+
+
+i)
+
+
+Verfahren zur Vermeidung oder mindestens zur Minimierung von Schäden Dritter in der Luft und auf dem Boden,
+
+
+
+
+ii)
+
+
+Verfahren zum Umgang mit unbemannten Luftfahrzeugen, die den Betriebsraum verlassen,
+
+
+
+
+iii)
+
+
+Verfahren zur Wiederherstellung der Verbindung zum unbemannten Luftfahrzeug im Notfall,
+
+
+
+
+
+
+f)
+
+
+Sicherheitsverfahren nach Punkt UAS.SPEC.050 Nummer 1 Buchstabe a Ziffern ii und iii,
+
+
+
+
+g)
+
+
+Verfahren für den Schutz personenbezogener Daten nach Punkt UAS.SPEC.050 Nummer 1 Buchstabe a Ziffer iv,
+
+
+
+
+h)
+
+
+die Leitlinien zur Minimierung von Lärm und Umweltschäden nach Punkt UAS.SPEC.050 Nummer 1 Buchstabe a Ziffer v,
+
+
+
+
+i)
+
+
+Verfahren für die Ereignismeldung,
+
+
+
+
+j)
+
+
+Aufzeichnungsverfahren und
+
+
+
+
+k)
+
+
+Festlegungen, wie Fernpiloten und sonstiges mit wesentlichen Aufgaben für den UAS-Betrieb befasstes Personal sich vor Durchführung eines Betriebs als tauglich erklären können.
+
+
+
+
+
+
+
+
+
+
+
+Anlage 6
+
+Erklärung der Stelle, die beabsichtigt, sich die Durchführung der praktischen Ausbildung und Beurteilung der praktischen Fähigkeiten von Fernpiloten nach STS-x durch die zuständige Behörde anerkennen zu lassen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+STS-x
+
+
+
+
+
+
+Erklärung der Stelle, die beabsichtigt, sich die Durchführung der praktischen Ausbildung und Beurteilung der praktischen Fähigkeiten von Fernpiloten durch die zuständige Behörde anerkennen zu lassen
+
+
+
+
+
+
+Datenschutz: Die in dieser Erklärung enthaltenen personenbezogenen Daten werden von der zuständigen Behörde nach der Verordnung (EU) 2016/679 des Europäischen Parlaments und des Rates vom 27. April 2016 zum Schutz natürlicher Personen bei der Verarbeitung personenbezogener Daten, zum freien Datenverkehr und zur Aufhebung der Richtlinie 95/46/EG (Datenschutz-Grundverordnung) verarbeitet. Die Verarbeitung erfolgt für die Zwecke der Durchführung, Verwaltung und Nachbearbeitung der auf der Grundlage der Verordnung (EU) 2019/947 durchgeführten Aufsichtstätigkeiten.
+Sollten Sie weitere Informationen zur Verarbeitung Ihrer personenbezogenen Daten wünschen oder beabsichtigen, Ihre Rechte wahrzunehmen, indem Sie z. B. Zugang zu Ihren Daten oder die Berichtigung ungenauer oder unvollständiger Daten verlangen, wenden Sie sich bitte an die Kontaktstelle der zuständigen Behörde.
+Der Antragsteller hat jederzeit das Recht, bei der nationalen Datenschutzbehörde eine Beschwerde in Bezug auf die Verarbeitung seiner personenbezogenen Daten einzureichen.
+
+
+
+
+Identifizierung der Stelle
+
+
+
+
+
+
+
+
+Vor- und Zuname, Telefonnummer und E-Mail-Adresse der zuständigen Person
+
+
+
+
+
+
+
+
+
+Ich erkläre hiermit, dass
+
+
+— ich die Anforderungen in Anlage 3 zum Anhang der Durchführungsverordnung (EU) 2019/947 erfülle und
+
+
+
+— ich alle geltenden Bestimmungen der Durchführungsverordnung (EU) 2019/947, darunter auch die Anforderungen an den Betrieb nach STS.x, beim Betrieb eines UAS im Rahmen der Ausbildungstätigkeiten nach STS.x erfülle.
+
+
+
+
+
+
+
+Datum
+
+
+
+
+
+
+
+
+Unterschrift oder sonstige Verifizierung
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(
+1
+) Durchführungsverordnung (EU) Nr. 923/2012 der Kommission vom 26. September 2012 zur Festlegung gemeinsamer Luftverkehrsregeln und Betriebsvorschriften für Dienste und Verfahren der Flugsicherung und zur Änderung der Durchführungsverordnung (EU) Nr. 1035/2011 sowie der Verordnungen (EG) Nr. 1265/2007, (EG) Nr. 1794/2006, (EG) Nr. 730/2006, (EG) Nr. 1033/2006 und (EU) Nr. 255/2010 (ABl. L 281 vom 13.10.2012, S. 1).
+(
+2
+) Durchführungsverordnung (EU) Nr. 923/2012 der Kommission vom 26. September 2012 zur Festlegung gemeinsamer Luftverkehrsregeln und Betriebsvorschriften für Dienste und Verfahren der Flugsicherung und zur Änderung der Durchführungsverordnung (EU) Nr. 1035/2011 sowie der Verordnungen (EG) Nr. 1265/2007, (EG) Nr. 1794/2006, (EG) Nr. 730/2006, (EG) Nr. 1033/2006 und (EU) Nr. 255/2010 (ABl. L 281 vom 13.10.2012, S. 1).
+(
+3
+) Verordnung (EU) Nr. 965/2012 der Kommission vom 5. Oktober 2012 zur Festlegung technischer Vorschriften und von Verwaltungsverfahren in Bezug auf den Flugbetrieb gemäß der Verordnung (EG) Nr. 216/2008 des Europäischen Parlaments und des Rates (ABl. L 296 vom 25.10.2012, S. 1).
+(
+4
+) Verordnung (EU) Nr. 1332/2011 der Kommission vom 16. Dezember 2011 zur Festlegung gemeinsamer Anforderungen für die Nutzung des Luftraums und gemeinsamer Betriebsverfahren für bordseitige Kollisionswarnsysteme (ABl. L 336 vom 20.12.2011, S. 20).
+(
+5
+) Verordnung (EU) Nr. 376/2014 des Europäischen Parlaments und des Rates vom 3. April 2014 über die Meldung, Analyse und Weiterverfolgung von Ereignissen in der Zivilluftfahrt, zur Änderung der Verordnung (EU) Nr. 996/2010 des Europäischen Parlaments und des Rates und zur Aufhebung der Richtlinie 2003/42/EG des Europäischen Parlaments und des Rates und der Verordnungen (EG) Nr. 1321/2007 und (EG) Nr. 1330/2007 der Kommission (ABl. L 122 vom 24.4.2014, S. 18).
+(
+6
+) Beschluss Nr. 768/2008/EG des Europäischen Parlaments und des Rates vom 9. Juli 2008 über einen gemeinsamen Rechtsrahmen für die Vermarktung von Produkten und zur Aufhebung des Beschlusses 93/465/EWG des Rates (ABl. L 218 vom 13.8.2008, S. 82).
+(
+7
+) Delegierte Verordnung (EU) 2019/945 der Kommission vom 12. März 2019 über unbemannte Luftfahrzeugsysteme und Drittlandbetreiber unbemannter Luftfahrzeugsysteme (ABl. L 152 vom 11.6.2019, S. 1).

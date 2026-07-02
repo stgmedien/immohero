@@ -1,0 +1,541 @@
+Skip to main content
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Popular
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DownloadsRelated Content
+
+
+
+
+
+
+
+
+
+In this site you can find:
+
+What is a PDRA
+Typical example of a PDRA
+Why a PDRA helps
+List of published PDRAs and associated Operations Manuals (where available)
+PDRA under consideration
+How can you propose a PDRA? Contact us!
+Stay informed
+
+What is a PDRA
+The Predefined Risk Assessment (PDRA) is an operational scenario for which EASA has already carried out the risk assessment and has been published as an acceptable means of compliance (AMC) to the Article 11 (risk assessment) of Regulation (EU) 2019/947.
+The PDRA still requires an operational authorisation from the National Aviation Authority (NAA). However, the process will be much simplified. If the planned operation is covered by one of the published PDRAs, instead of carrying out the risk assessment, the UAS operator can just fill in the table of the PDRA, prepare the Operations Manual (OM) (please check the EASA Operations Manual for UAS operations conducted under PDRA-S01) and submit the application to the NAA of registration. The PDRA table is in reality a sort of checklist on how to develop the procedures that need to be contained in the OM (example for UAS operations conducted under PDRA-S01).
+Typical example of a PDRA
+This table shows a model example of what is a PDRA and what it could contain:
+
+Why a PDRA helps
+If the operation falls within the scope of one of the published PDRAs, it allows the applicant to quickly develop the operator manual and the evidences of compliance using the PDRA table to demonstrate that the operation is safe. Also, for the NAA the review of the documentation will be simplified.
+Therefore the applicant can submit to the NAA of the state of registration  a copy of the:
+
+application form;
+table of the desired PDRA, duly filled;
+Operator’s manual.
+
+List of published PDRAs and associated Operations Manuals (where available)
+
+PDRA-S01 — Agricultural works, short range cargo ops
+Operations Manual for PDRA-S01 operations
+PDRA-S02 — Surveillance, agricultural works, short range cargo ops
+PDRA-G01 — Surveillance, long range cargo ops
+PDRA-G02 — All range of ops
+PDRA-G03 — Linear inspections, agricultural works
+
+
+
+
+PDRA Ref
+UAS Characteristics
+Main Ops characteristics
+Typical ops
+
+PDRA-S01 AMC4 Article 11
+Max dimension 3m
+
+VLOS;
+Controlled ground area also over populated area;
+Controlled or uncontrolled airspace less than 150m AGL;
+
+Agricultural works, short range cargo ops
+
+PDRA-S02
+AMC5 Article 11
+
+MTOM=25 kg
+Max dim 3m
+
+BVLOS up to 1km or 2km with Airspace Observers;
+Controlled ground area over sparsely populated area;
+Controlled or uncontrolled airspace less than 150m AGL;
+
+Surveillance, agricultural works, short range cargo ops
+
+PDRA-G01
+AMC2 Article 11
+
+Max dim 3m
+
+BVLOS with Airspace Observers;
+over sparsely populated area;
+Uncontrolled airspace less than 150m AGL;.
+
+Surveillance, long range cargo ops
+
+PDRA-G02
+AMC3 Article 11
+
+Max dim 3m
+
+BVLOS;
+over sparsely populated area;
+Segregated airspace (Height of segregated airspace).
+
+All range of ops
+
+PDRA-G03
+AMC6 Article 11
+
+Max dim 3m
+
+BVLOS;
+over sparsely populated area;
+Controlled or uncontrolled airspace close to obstacles as defined in the PDRA
+
+Linear inspections, agricultural works
+
+PDRA under consideration
+EASA is keen in reducing the burden for drone operators to obtain an operational authorisation and support the expansion of the incipient European drone industry.  EASA intends to publish a number of PDRAs covering the most common drone operations. Some of these PDRAs are developed in conjunction with JARUS.
+More than four are currently under evaluation and development (this is not an exhaustive list):
+
+JARUS Ref
+UAS Charact.
+Main Ops characteristics
+Typical Operation
+
+PDRA-05
+Max dim 3m
+
+BVLOS;
+over sparsely populated area;
+in airspace where at least 50% of manned a/c can be detected, less than 120m AGL
+
+All range of ops
+
+PDRA-06
+Max dim 8m
+
+VLOS;
+Over controlled ground area;
+in airspace where at least 50% of manned a/c can be detected, less than 120m AGL
+
+Testing of prototype UAS
+
+PDRA-07
+Max dim 3m
+
+BVLOS;
+Over controlled ground area;
+Airport environment
+
+Airport/runway inspections
+
+PDRA-08
+Max dim 1m
+
+VLOS with Airspace Observers;
+Over controlled ground area;
+Segregated airspace;
+
+Swarming
+
+How can you propose a PDRA? Contact us
+We are committed to publish as many as possible to increase generally the possibility for operators to use PDRAs.
+We would like to hear your suggestions on new concept of operations for PDRAs. If you have any specific need for one or you want to provide suggestions on how to improve usability of the available one, email us at drones [at] easa.europa.eu (drones[at]easa[dot]europa[dot]eu)
+We will consider them carefully, whether how we can accommodate this with a new PDRA, or perhaps how adjust an existing PDRA.
+For additional information please contact the team.
+
+Stay informed on PDRA:
+
+Create an EASA account
+Follow the category "Civil drones (Unmanned aircraft)"
+Decide how you want to be notified
+
+
+
+
+
+
+Downloads
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[pdf]
+Form for Application for an operational authorisation for the ‘specific’ category
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[pdf]
+Form for Operational authorisation for the ‘specific’ category
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[docx]
+PDRA S-01: Agricultural works, short range cargo ops
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[docx]
+EASA Operations Manual example for UAS operations under PDRA S-01
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[docx]
+PDRA S-02: Surveillance, agricultural works, short range cargo ops
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[docx]
+PDRA G-01: Surveillance, long range cargo ops
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[docx]
+PDRA G-02: All range of ops
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[docx]
+PDRA G-03: Linear inspections, agricultural works
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Related Content
+
+
+
+
+
+
+
+
+
+
+
+30 Jun 2026
+
+
+
+
+Easy Access Rules
+
+
+Popular
+
+
+
+
+
+
+
+Easy Access Rules for Unmanned Aircraft Systems
+
+
+
+
+Revision from June 2026 — Available in pdf, xml, and online format
+
+
+
+
+
+
+
+
+
+
+
+
+
+FAQs Drones (UAS)
+
+
+
+
+
+
+
+
+
+
+
+
+
+11 Jun 2019
+
+
+
+
+Regulation
+
+
+
+
+
+
+
+
+
+
+Commission Implementing Regulation (EU) 2019/947
+
+
+
+
+UAS Air Operations & UAS Aircrew

@@ -1,0 +1,4967 @@
+02019R0945 — DE — 09.08.2020 — 001.004
+
+Dieser Text dient lediglich zu Informationszwecken und hat keine Rechtswirkung. Die EU-Organe übernehmen keine Haftung für seinen Inhalt. Verbindliche Fassungen der betreffenden Rechtsakte einschließlich ihrer Präambeln sind nur die im Amtsblatt der Europäischen Union veröffentlichten und auf EUR-Lex verfügbaren Texte. Diese amtlichen Texte sind über die Links in diesem Dokument unmittelbar zugänglich
+
+
+
+
+
+
+►B
+
+
+
+DELEGIERTE VERORDNUNG (EU) 2019/945 DER KOMMISSION
+vom 12. März 2019
+
+über unbemannte Luftfahrzeugsysteme und Drittlandbetreiber unbemannter Luftfahrzeugsysteme
+
+(ABl. L 152 vom 11.6.2019, S. 1)
+
+
+
+Geändert durch:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Amtsblatt
+
+
+
+
+Nr.
+
+
+Seite
+
+
+Datum
+
+
+
+
+
+►M1
+
+
+
+
+DELEGIERTE VERORDNUNG (EU) 2020/1058 DER KOMMISSION vom 27. April 2020
+
+
+
+L 232
+
+
+1
+
+
+20.7.2020
+
+
+
+
+
+M2
+
+
+
+
+DELEGIERTE VERORDNUNG (EU) 2022/851 DER KOMMISSION vom 22. März 2022
+
+
+
+L 150
+
+
+21
+
+
+1.6.2022
+
+
+
+
+
+
+
+
+
+
+
+▼B
+
+DELEGIERTE VERORDNUNG (EU) 2019/945 DER KOMMISSION
+vom 12. März 2019
+über unbemannte Luftfahrzeugsysteme und Drittlandbetreiber unbemannter Luftfahrzeugsysteme
+
+
+
+
+KAPITEL I
+
+Allgemeine Bestimmungen
+
+Artikel 1
+Gegenstand
+
+(1)
+Diese Verordnung enthält die Anforderungen an die Konstruktion und Herstellung unbemannter Luftfahrzeugsysteme (im Folgenden „UAS“), die für den Betrieb gemäß den in der Durchführungsverordnung (EU) 2019/947 festgelegten Vorschriften und Bedingungen bestimmt sind, sowie die Anforderungen an die Konstruktion und Herstellung von Zusatzgeräten für die Fernidentifikation. Sie enthält auch Festlegungen zur Bauart der UAS, deren Konstruktion, Herstellung und Instandhaltung einer Zulassung unterliegt.
+
+
+▼M1
+
+
+(2)
+Sie enthält zudem Vorschriften für die Bereitstellung von UAS, Zusatzbausätzen und Zusatzgeräten für die Fernidentifikation auf dem Markt und deren freien Verkehr in der Union.
+
+
+▼B
+
+
+(3)
+Zudem enthält diese Verordnung Vorschriften für UAS-Betreiber aus Drittländern, die UAS im einheitlichen europäischen Luftraum nach der Durchführungsverordnung (EU) 2019/947 betreiben.
+
+Artikel 2
+Anwendungsbereich
+
+▼M1
+
+
+(1)
+
+Kapitel II dieser Verordnung gilt für folgende Erzeugnisse:
+
+
+a)
+
+
+UAS, die nach den Vorschriften und Bedingungen für den UAS-Betrieb in der „offenen“ Kategorie oder auf der Grundlage von Betriebserklärungen für den UAS-Betrieb in der „speziellen“ Kategorie nach der Durchführungsverordnung (EU) 2019/947 bestimmt sind, ausgenommen privat hergestellte UAS, und die entsprechend den in jener Verordnung genannten sieben UAS-Klassen mit einem in den Teilen 1 bis 5, 16 und 17 des Anhangs jener Verordnung festgelegten Kennzeichen zur Identifizierung ihrer Klasse versehen sind;
+
+
+
+
+b)
+
+
+Zusatzbausätze der Klasse C5 nach Teil 16;
+
+
+
+
+c)
+
+
+Zusatzgeräte für die Fernidentifizierung nach Teil 6 des Anhangs dieser Verordnung.
+
+
+
+
+
+(2)
+Kapitel III dieser Verordnung gilt für UAS, die nach den Vorschriften und Bedingungen betrieben werden, die für die UAS-Betriebskategorien „zulassungspflichtig“ und „speziell“ nach der Durchführungsverordnung (EU) 2019/947 gelten, sofern sie nicht auf der Grundlage einer Erklärung betrieben werden.
+
+
+▼B
+
+
+(3)
+Kapitel IV dieser Verordnung gilt für UAS-Betreiber, deren Hauptgeschäftssitz sich in einem Drittland befindet, oder die in einem Drittland niedergelassen oder ansässig sind, sofern die UAS in der Union betrieben werden.
+
+
+(4)
+Diese Verordnung gilt nicht für UAS, die ausschließlich für den Betrieb in Innenräumen bestimmt sind.
+
+Artikel 3
+Begriffsbestimmungen
+Für die Zwecke dieser Verordnung gelten folgende Begriffsbestimmungen:
+
+
+
+
+
+1.
+
+
+„unbemanntes Luftfahrzeug“ (unmanned aircraft, UA) : ein Luftfahrzeug, das ohne einen an Bord befindlichen Piloten autonom oder ferngesteuert betrieben wird oder dafür konstruiert ist;
+
+
+
+
+
+
+
+
+2.
+
+
+„Ausrüstung zur Fernsteuerung von unbemannten Luftfahrzeugen“ (equipment to control unmanned aircraft remotely) : alle Instrumente, Ausrüstungen, Mechanismen, Geräte, Zubehörteile, Software oder Zusatzteile, die für den sicheren Betrieb eines unbemannten Luftfahrzeugs erforderlich sind und die keine Teile sind und nicht an Bord des unbemannten Luftfahrzeugs mitgeführt werden;
+
+
+
+
+
+
+
+
+3.
+
+
+„unbemanntes Luftfahrzeugsystem“ (unmanned aircraft system, UAS) : ein unbemanntes Luftfahrzeug sowie die Ausrüstung für dessen Fernsteuerung;
+
+
+
+
+
+
+
+
+4.
+
+
+„Betreiber eines unbemannten Luftfahrzeugsystems (UAS-Betreiber)“ (unmanned aircraft system operator, UAS operator) : eine juristische oder natürliche Person, die ein oder mehrere UAS betreibt oder zu betreiben gedenkt;
+
+
+
+
+
+
+
+
+5.
+
+
+„offene Kategorie“ (open category) : eine UAS-Betriebskategorie nach Artikel 4 der Durchführungsverordnung (EU) 2019/947;
+
+
+
+
+
+
+
+
+6.
+
+
+„spezielle Kategorie“ (specific category) : eine UAS-Betriebskategorie nach Artikel 5 der Durchführungsverordnung (EU) 2019/947;
+
+
+
+
+
+
+
+
+7.
+
+
+„zulassungspflichtige Kategorie“ (certified category) : eine UAS-Betriebskategorie nach Artikel 6 der Durchführungsverordnung (EU) 2019/947;
+
+
+
+
+
+
+
+
+8.
+
+
+„Harmonisierungsrechtsvorschriften der Union“ (Union harmonisation legislation) : Rechtsvorschriften der Union zur Harmonisierung der Bedingungen für das Inverkehrbringen von Erzeugnissen;
+
+
+
+
+
+
+
+
+9.
+
+
+„Akkreditierung“ (accreditation) : die Akkreditierung nach Artikel 2 Absatz 10 der Verordnung (EG) Nr. 765/2008;
+
+
+
+
+
+
+
+
+10.
+
+
+„Konformitätsbewertung“ (conformity assessment) : das Verfahren zum Nachweis der Einhaltung erzeugnisspezifischer Anforderungen;
+
+
+
+
+
+
+
+
+11.
+
+
+„Konformitätsbewertungsstelle“ (conformity assessment body) : eine Stelle, die Konformitätsbewertungstätigkeiten einschließlich Kalibrierungen, Prüfungen, Zertifizierungen und Inspektionen durchführt;
+
+
+
+
+
+
+
+
+12.
+
+
+„CE-Kennzeichnung“ (CE-marking) : eine Kennzeichnung, durch die der Hersteller erklärt, dass das Erzeugnis den geltenden Anforderungen genügt, die in den Harmonisierungsrechtsvorschriften der Union, nach denen die Anbringung der Kennzeichnung vorgeschrieben ist, festgelegt sind;
+
+
+
+
+
+
+
+
+13.
+
+
+„Hersteller“ (manufacturer) : jede natürliche oder juristische Person, die ein Erzeugnis herstellt bzw. entwickeln oder herstellen lässt und dieses Erzeugnis unter ihrem eigenen Namen oder ihrer eigenen Marke vermarktet;
+
+
+
+
+
+
+
+
+14.
+
+
+„Bevollmächtigter“ (authorised representative) : jede in der Union niedergelassene natürliche oder juristische Person, die von einem Hersteller schriftlich beauftragt wurde, in seinem Namen bestimmte Aufgaben wahrzunehmen;
+
+
+
+
+
+
+
+
+15.
+
+
+„Einführer“ (importer) : jede in der Union niedergelassene natürliche oder juristische Person, die ein Erzeugnis aus einem Drittland auf dem Unionsmarkt in Verkehr bringt;
+
+
+
+
+
+
+
+
+16.
+
+
+„Händler“ (distributor) : jede natürliche oder juristische Person in der Lieferkette, die ein Erzeugnis auf dem Markt bereitstellt, mit Ausnahme des Herstellers oder des Einführers;
+
+
+
+
+
+
+
+
+17.
+
+
+„Wirtschaftsakteure“ (economic operators) : der Hersteller, der Bevollmächtigte des Herstellers, der Einführer und der Händler der UAS;
+
+
+
+
+
+
+
+
+18.
+
+
+„Bereitstellung auf dem Markt“ (making available on the market) : jede entgeltliche oder unentgeltliche Abgabe eines Erzeugnisses zum Vertrieb, Verbrauch oder zur Verwendung auf dem Unionsmarkt im Rahmen einer Geschäftstätigkeit;
+
+
+
+
+
+
+
+
+19.
+
+
+„Inverkehrbringen“ (placing on the market) : die erstmalige Bereitstellung eines Erzeugnisses auf dem Unionsmarkt;
+
+
+
+
+
+
+
+
+20.
+
+
+„harmonisierte Norm“ (harmonised standard) : eine harmonisierte Norm nach Artikel 2 Nummer 1 Buchstabe c der Verordnung (EU) Nr. 1025/2012;
+
+
+
+
+
+
+
+
+21.
+
+
+„technische Spezifikation“ (technical specification) : ein Dokument, in dem die technischen Anforderungen festgelegt sind, denen ein Erzeugnis, ein Verfahren oder eine Dienstleistung genügen muss;
+
+
+
+
+
+
+
+
+22.
+
+
+„privat hergestelltes UAS“ (privately built UAS) : ein UAS, das vom Erbauer für seine eigenen Zwecke zusammengebaut oder hergestellt wurde, mit Ausnahme von UAS, die aus Bauteilen zusammengesetzt werden, die vom Hersteller als Fertigbausatz in Verkehr gebracht werden;
+
+
+
+
+
+
+
+
+23.
+
+
+„Marktüberwachungsbehörde“ (market surveillance authority) : eine Behörde eines Mitgliedstaats, die für die Durchführung der Marktüberwachung in dessen Hoheitsgebiet zuständig ist;
+
+
+
+
+
+
+
+
+24.
+
+
+„Rückruf“ (recall) : jede Maßnahme, die auf Erwirkung der Rückgabe eines dem Endnutzer bereits bereitgestellten Erzeugnisses abzielt;
+
+
+
+
+
+
+
+
+25.
+
+
+„Rücknahme“ (withdrawal) : jede Maßnahme, mit der verhindert werden soll, dass ein in der Lieferkette befindliches Erzeugnis auf dem Markt bereitgestellt wird;
+
+
+
+
+
+
+
+
+26.
+
+
+„einheitlicher europäischer Luftraum“ (single European sky airspace) : der Luftraum über dem Gebiet, auf das die Verträge Anwendung finden, sowie jeder andere Luftraum, in dem Mitgliedstaaten die Verordnung (EG) Nr. 551/2004 des Europäischen Parlaments und des Rates (
+1
+) nach Artikel 1 Absatz 3 jener Verordnung anwenden;
+
+
+
+
+
+
+
+
+27.
+
+
+„Fernpilot“ (remote pilot) : eine natürliche Person, die für die sichere Durchführung des Fluges eines unbemannten Luftfahrzeugs verantwortlich ist, wobei der Fernpilot die Flugsteuerung entweder manuell vornimmt oder, wenn das unbemannte Luftfahrzeug automatisch fliegt, dessen Kurs überwacht und in der Lage bleibt, jederzeit einzugreifen und seinen Kurs zu ändern;
+
+
+
+
+
+
+
+
+28.
+
+
+„höchstzulässige Startmasse“ (maximum take-off mass, MTOM) : die vom Hersteller oder Erbauer festgelegte höchstzulässige UA-Masse, einschließlich Nutzlast und Kraftstoff, mit der bzw. dem das UAS betrieben werden kann;
+
+
+
+
+
+
+
+
+29.
+
+
+„Nutzlast“ (payload) : alle Instrumente, Mechanismen, Ausrüstungen, Teile, Geräte, Zubehörteile oder Zusatzteile, einschließlich Kommunikationsausrüstungen, die in das Luftfahrzeug eingebaut bzw. an diesem angebracht sind und nicht dazu verwendet werden oder verwendet werden sollen, das Luftfahrzeug im Flug zu betreiben oder zu steuern, ohne jedoch Teil des Flugwerks, eines Motors oder eines Propellers zu sein;
+
+
+
+
+
+
+
+
+30.
+
+
+„Follow-me-Modus“ : ein Betriebsmodus eines UAS, bei dem das unbemannte Luftfahrzeug dem Fernpiloten innerhalb eines vorher festgelegten Radius ständig folgt;
+
+
+
+
+
+
+
+
+31.
+
+
+„direkte Fernidentifizierung“ (direct remote identification) : ein System, das die lokale Übertragung von Informationen über ein im Betrieb befindliches UA gewährleistet und auch die Kennzeichnung des UA umfasst, sodass diese Informationen ohne physischen Zugang zum UA abgerufen werden können;
+
+
+
+
+
+
+
+
+32.
+
+
+„Geo-Sensibilisierung“ (Geo-awareness) : eine Funktion, die ausgehend von den durch die Mitgliedstaaten bereitgestellten Daten eine potenzielle Verletzung der Luftraumgrenzen erkennt und die Fernpiloten warnt, sodass diese sofort wirksame Maßnahmen zur Vermeidung dieser Verletzung ergreifen können;
+
+
+
+
+
+
+
+
+33.
+
+
+„Schallleistungspegel LWA
+“ (sound power level) : A-bewerteter Schallleistungspegel in dB in Bezug auf 1 pW nach EN ISO 3744:2010;
+
+
+
+
+
+
+
+
+34.
+
+
+„gemessener Schallleistungspegel“ (measured sound power level) : ein anhand der Messungen nach Teil 13 des Anhangs ermittelter Schallleistungspegel; die Messwerte können entweder anhand eines einzigen UA ermittelt werden, das repräsentativ für die Art des Geräts ist, oder anhand eines Durchschnittswerts mehrerer UA;
+
+
+
+
+
+
+
+
+35.
+
+
+„garantierter Schallleistungspegel“ (guaranteed sound power level) : ein Schallleistungspegel, der nach den Anforderungen von Teil 13 des Anhangs ermittelt wurde und der die durch Produktionsschwankungen und Messverfahren bedingten Unsicherheiten beinhaltet und dessen Nichtüberschreiten vom Hersteller oder seinem in der Gemeinschaft niedergelassenen Bevollmächtigten nach Maßgabe der verwendeten technischen Instrumente, auf die in den technischen Unterlagen Bezug genommen wird, bestätigt wird;
+
+
+
+
+
+
+
+
+36.
+
+
+„schweben“ (hovering) : in der Luft in einer geografischen Position verharren;
+
+
+
+
+
+
+
+
+37.
+
+
+„Menschenansammlungen“ (assemblies of people) : eine Vielzahl von Menschen, die so dicht gedrängt stehen, dass es einer einzelnen Person nahezu unmöglich ist, sich aus dieser Menge zu entfernen;
+
+
+
+
+▼M1
+
+
+
+
+
+
+38.
+
+
+„Steuereinheit“ (command unit, CU) : die Ausrüstung oder das Ausrüstungssystem zur Fernsteuerung unbemannter Luftfahrzeuge im Sinne von Artikel 3 Nummer 32 der Verordnung (EU) 2018/1139, die die Kontrolle oder Überwachung des unbemannten Luftfahrzeugs in jeder Flugphase unterstützt, mit Ausnahme von Infrastrukturen, die den Steuerungs- und Kontrolllinkdienst (C2) unterstützen;
+
+
+
+
+
+
+
+
+39.
+
+
+„C2-Link-Dienst“ (C2 link service) : ein von einem Dritten bereitgestellter Kommunikationsdienst, der die Steuerung und Kontrolle zwischen dem unbemannten Luftfahrzeug und der Steuereinheit (CU) sicherstellt;
+
+
+
+
+
+
+
+
+40.
+
+
+„Nacht“ (night) : die Stunden zwischen dem Ende der bürgerlichen Abenddämmerung und dem Beginn der bürgerlichen Morgendämmerung im Sinne der Durchführungsverordnung (EU) Nr. 923/2012 (
+2
+).
+
+
+
+
+▼B
+
+
+
+
+
+KAPITEL II
+
+▼M1
+
+
+Für den Betrieb in der „offenen“ oder „speziellen“ Kategorie auf der Grundlage einer Betriebserklärung bestimmte UAS, Zusatzbausätze mit einem Klassen-Identifizierungskennzeichen und Zusatzgeräte für die Fernidentifikation
+
+
+▼B
+
+
+
+
+
+
+ABSCHNITT 1
+
+
+
+Anforderungen an die Erzeugnisse
+
+
+Artikel 4
+Anforderungen
+
+▼M1
+
+
+(1)
+Die in Artikel 2 Absatz 1 genannten Erzeugnisse müssen die in den Teilen 1 bis 6, 16 und 17 des Anhangs festgelegten Anforderungen erfüllen.
+
+
+▼B
+
+
+(2)
+UAS, bei denen es sich nicht um Spielzeug im Sinne der Richtlinie 2009/48/EG handelt, müssen die einschlägigen Gesundheits- und Sicherheitsanforderungen der Richtlinie 2006/42/EG nur in Bezug auf solche Risiken einhalten, die nicht mit der Sicherheit des UA-Flugs in Zusammenhang stehen.
+
+
+(3)
+Die Software bereits auf dem Markt bereitgestellter Erzeugnisse darf nur dann aktualisiert werden, wenn solche Aktualisierungen die Konformität des Erzeugnisses nicht beeinträchtigen.
+
+Artikel 5
+Bereitstellung auf dem Markt und freier Verkehr der Erzeugnisse
+
+(1)
+Erzeugnisse dürfen nur dann auf dem Markt bereitgestellt werden, wenn sie den Anforderungen dieses Kapitels genügen und die Gesundheit oder Sicherheit von Personen, Tieren oder Eigentum nicht gefährden.
+
+
+(2)
+Die Mitgliedstaaten dürfen die Bereitstellung auf dem Markt von Erzeugnissen, die diesem Kapitel genügen, nicht aus Gründen verbieten, beschränken oder behindern, die im Zusammenhang mit den von diesem Kapitel erfassten Aspekten stehen.
+
+
+▼M1
+
+
+(3)
+Die Absätze 1 bis 4 von Artikel 4 der Verordnung (EU) 2019/1020 des Europäischen Parlaments und des Rates gelten ab dem 16. Juli 2021.
+
+
+▼B
+
+
+
+
+
+
+ABSCHNITT 2
+
+
+
+Pflichten der Wirtschaftsakteure
+
+
+Artikel 6
+Pflichten der Hersteller
+
+▼M1
+
+
+(1)
+Beim Inverkehrbringen ihres Erzeugnisses auf dem Unionsmarkt gewährleisten die Hersteller, dass dieses gemäß den in den Teilen 1 bis 6, 16 und 17 des Anhangs festgelegten Anforderungen konstruiert und hergestellt wurde.
+
+
+(2)
+Die Hersteller erstellen die technischen Unterlagen nach Artikel 17 und führen das einschlägige Konformitätsbewertungsverfahren nach Artikel 13 durch oder lassen es durchführen.
+
+Wurde die Konformität des Erzeugnisses mit den in den Teilen 1 bis 6, 16 und 17 des Anhangs festgelegten Anforderungen im Rahmen dieses Konformitätsbewertungsverfahrens nachgewiesen, stellt der Hersteller eine EU-Konformitätserklärung aus und bringt das CE-Zeichen an.
+
+▼B
+
+
+(3)
+Die Hersteller bewahren die technischen Unterlagen und die EU-Konformitätserklärung über einen Zeitraum von zehn Jahren ab dem Inverkehrbringen des Erzeugnisses auf.
+
+
+(4)
+Die Hersteller gewährleisten durch geeignete Verfahren, dass bei Serienfertigung stets die Konformität mit diesem Kapitel sichergestellt ist. Änderungen der Bauart des Erzeugnisses, seiner Merkmale oder der Software sowie Änderungen der harmonisierten Normen oder der technischen Spezifikationen, auf die bei Erklärung der Konformität eines Erzeugnisses verwiesen wird, werden angemessen berücksichtigt.
+
+Die Hersteller nehmen, falls dies angesichts der von einem Erzeugnis ausgehenden Risiken als angemessen betrachtet wird, zum Schutz der Gesundheit und Sicherheit der Verbraucher Stichproben von in Verkehr befindlichen Erzeugnissen, untersuchen Beschwerden und führen erforderlichenfalls ein Verzeichnis der Beschwerden, der nichtkonformen Erzeugnisse und der Rückrufe von Erzeugnissen und halten die Händler über diese Überwachung auf dem Laufenden.
+
+▼M1
+
+
+(5)
+Die Hersteller von UAS sorgen dafür, dass das UA eine Typennummer im Sinne des Beschlusses Nr. 768/2008/EG sowie eine eindeutige Seriennummer trägt, die seine Identifizierung ermöglichen, und gegebenenfalls den in den entsprechenden Teilen 2 bis 4, 16 und 17 des Anhangs festgelegten Anforderungen genügt. Hersteller von Zusatzbausätzen der Klasse C5 müssen sicherstellen, dass die Bausätze mit einer Typen- und eindeutigen Seriennummer versehen sind, die deren Identifizierung ermöglichen. Hersteller von Zusatzgeräten für die Fernidentifizierung sorgen dafür, dass diese Geräte mit einer Typen- und eindeutigen Seriennummer versehen sind, die deren Identifizierung ermöglichen, und den in Teil 6 des Anhangs festgelegten Anforderungen genügen. Auf jeden Fall sorgen die Hersteller dafür, dass die eindeutige Seriennummer auch in die EU-Konformitätserklärung oder vereinfachte EU-Konformitätserklärung nach Artikel 14 eingetragen ist.
+
+
+▼B
+
+
+(6)
+Die Hersteller geben ihren Namen, ihren eingetragenen Handelsnamen oder ihre eingetragene Handelsmarke, ihre Website und ihre Postanschrift, an der sie kontaktiert werden können, auf dem Erzeugnis oder, falls dies nicht möglich ist, auf der Verpackung oder in den dem Erzeugnis beigefügten Unterlagen an. Die Anschrift bezieht sich auf eine zentrale Anlaufstelle, an der der Hersteller erreichbar ist. Die Kontaktangaben sind in einer Sprache abzufassen, die von den Endnutzern und den Marktüberwachungsbehörden leicht verstanden werden kann.
+
+
+▼M1
+
+
+(7)
+Die Hersteller gewährleisten, dass dem Erzeugnis die Anweisungen des Herstellers und ein Informationsblatt entsprechend den Teilen 1 bis 6, 16 und 17 des Anhangs in einer vom betreffenden Mitgliedstaat festgelegten Sprache beiliegen, die von den Verbrauchern und sonstigen Endnutzern leicht verstanden werden kann. Diese Anweisungen des Herstellers und dieses Informationsblatt sowie alle Kennzeichnungen müssen klar, verständlich und lesbar sein.
+
+
+▼B
+
+
+(8)
+Die Hersteller gewährleisten, dass jedem Erzeugnis ein Exemplar der EU-Konformitätserklärung oder eine vereinfachte EU-Konformitätserklärung beigefügt ist. Wird nur eine vereinfachte EU-Konformitätserklärung bereitgestellt, muss darin die genaue Internetadresse angegeben sein, unter der der vollständige Text der EU-Konformitätserklärung erhältlich ist.
+
+
+(9)
+Hersteller, die der Auffassung sind oder Grund zu der Annahme haben, dass ein von ihnen in Verkehr gebrachtes Erzeugnis diesem Kapitel nicht entspricht, ergreifen unverzüglich die erforderlichen Korrekturmaßnahmen, um die Konformität dieses Erzeugnisses herzustellen oder es gegebenenfalls zurückzunehmen oder zurückzurufen. Geht von dem Erzeugnis ein Risiko aus, unterrichten die Hersteller hiervon unverzüglich die zuständigen Marktüberwachungsbehörden der Mitgliedstaaten, in denen sie das Erzeugnis auf dem Markt bereitgestellt haben, und machen dabei ausführliche Angaben insbesondere über die Nichtkonformität, die getroffenen Korrekturmaßnahmen und deren Ergebnisse.
+
+
+(10)
+Die Hersteller stellen der zuständigen nationalen Behörde auf deren begründetes Verlangen alle Informationen und Unterlagen, die für den Nachweis der Konformität des Erzeugnisses mit diesem Kapitel erforderlich sind, in Papierform oder auf elektronischem Wege in einer Sprache zur Verfügung, die von dieser Behörde leicht verstanden werden kann. Sie kooperieren mit dieser Behörde auf deren Verlangen bei allen Maßnahmen zur Abwendung von Risiken, die mit dem Erzeugnis verbunden sind, das sie in Verkehr gebracht haben.
+
+
+▼M1
+
+
+(11)
+Bringen Hersteller ein UAS der Klasse C5, der Klasse C6 oder ein Zusatzgerät für die Klasse C5 in Verkehr, müssen sie die Marktüberwachungsbehörde des Mitgliedstaats ihres Hauptgeschäftssitzes hiervon unterrichten.
+
+
+▼B
+
+Artikel 7
+Bevollmächtigte
+
+(1)
+Ein Hersteller kann schriftlich einen Bevollmächtigten benennen.
+
+Die Pflichten nach Artikel 6 Absatz 1 sowie die Pflicht zur Erstellung der technischen Unterlagen nach Artikel 6 Absatz 2 sind nicht Teil des Auftrags eines Bevollmächtigten.
+
+(2)
+
+Ein Bevollmächtigter nimmt die Aufgaben wahr, die in dem vom Hersteller erteilten Auftrag festgelegt sind. Der Auftrag gestattet dem Bevollmächtigten, mindestens folgende Aufgaben wahrzunehmen:
+
+
+a)
+
+
+Bereithaltung der EU-Konformitätserklärung und der technischen Unterlagen für die nationalen Marktüberwachungsbehörden über einen Zeitraum von zehn Jahren nach Inverkehrbringen des Erzeugnisses auf dem Unionsmarkt;
+
+
+
+
+b)
+
+
+auf begründetes Verlangen einer Marktüberwachungs- oder Grenzkontrollbehörde Aushändigung aller erforderlichen Informationen und Unterlagen zum Nachweis der Konformität eines Erzeugnisses;
+
+
+
+
+c)
+
+
+auf Verlangen der Marktüberwachungs- oder Grenzkontrollbehörde Kooperation bei allen Maßnahmen zur Beseitigung der Nichtkonformität des Erzeugnisses und zur Abwendung der Risiken, die von dem Erzeugnis ausgehen, das Gegenstand des dem Bevollmächtigten erteilten Auftrags ist.
+
+
+
+
+Artikel 8
+Pflichten der Einführer
+
+(1)
+Einführer dürfen nur solche Erzeugnisse auf dem Unionsmarkt in Verkehr bringen, die den in diesem Kapitel festgelegten Anforderungen genügen.
+
+
+(2)
+
+Bevor sie ein Erzeugnis auf dem Unionsmarkt in Verkehr bringen, müssen die Einführer Folgendes gewährleisten:
+
+
+a)
+
+
+der Hersteller hat das geeignete Konformitätsbewertungsverfahren nach Artikel 13 durchgeführt;
+
+
+
+
+b)
+
+
+der Hersteller hat die technischen Unterlagen nach Artikel 17 erstellt;
+
+
+
+
+c)
+
+
+das Erzeugnis ist mit dem CE-Kennzeichen und gegebenenfalls mit dem UA-Klassen-Identifizierungskennzeichen sowie mit der Angabe zum Schallleistungspegel versehen;
+
+
+
+
+d)
+
+
+dem Erzeugnis liegen die in Artikel 6 Absätze 7 und 8 genannten Unterlagen bei;
+
+
+
+
+e)
+
+
+der Hersteller hat die in Artikel 6 Absätze 5 und 6 genannten Anforderungen erfüllt.
+
+
+
+
+
+▼M1
+
+Ist ein Einführer der Auffassung oder hat er Grund zu der Annahme, dass ein Erzeugnis nicht den Anforderungen nach den Teilen 1 bis 6, 16 und 17 des Anhangs genügt, darf er dieses Erzeugnis nicht in Verkehr bringen, bevor die Konformität des Erzeugnisses nicht hergestellt ist. Geht von dem Erzeugnis ein Risiko für die Gesundheit und Sicherheit von Verbrauchern und Dritten aus, unterrichtet der Einführer hiervon zudem den Hersteller und die zuständigen nationalen Behörden.
+
+▼B
+
+
+(3)
+Die Einführer geben ihren Namen, ihren eingetragenen Handelsnamen oder ihre eingetragene Handelsmarke, ihre Website und ihre Postanschrift, an der sie kontaktiert werden können, auf dem Erzeugnis oder, falls dies nicht möglich ist, auf der Verpackung oder in den dem Erzeugnis beigefügten Unterlagen an. Die Kontaktangaben sind in einer für die Endnutzer und die Marktüberwachungsbehörden leicht zu verstehenden Sprache abzufassen.
+
+
+▼M1
+
+
+(4)
+Die Einführer gewährleisten, dass dem Erzeugnis die Anweisungen des Herstellers und ein Informationsblatt entsprechend den Teilen 1 bis 6, 16 und 17 des Anhangs in einer vom betreffenden Mitgliedstaat festgelegten Sprache beiliegen, die von den Verbrauchern und sonstigen Endnutzern leicht verstanden werden kann. Diese Anweisungen des Herstellers und dieses Informationsblatt sowie alle Kennzeichnungen müssen klar, verständlich und lesbar sein.
+
+
+▼B
+
+
+(5)
+Die Einführer gewährleisten, dass die Lagerungs- oder Transportbedingungen des Erzeugnisses, solange dieses sich in ihrer Verantwortung befindet, seine Konformität mit den in Artikel 4 festgelegten Anforderungen nicht beeinträchtigen.
+
+
+(6)
+Die Einführer nehmen, falls dies angesichts der von einem Erzeugnis ausgehenden Risiken als angemessen betrachtet wird, zum Schutz der Gesundheit und Sicherheit von Endnutzern und Dritten Stichproben von auf dem Markt bereitgestellten Erzeugnissen, untersuchen Beschwerden und führen erforderlichenfalls ein Verzeichnis der Beschwerden, der nichtkonformen Erzeugnisse und der Rückrufe und halten die Händler über diese Überwachung auf dem Laufenden.
+
+
+(7)
+Einführer, die der Auffassung sind oder Grund zu der Annahme haben, dass ein von ihnen in Verkehr gebrachtes Erzeugnis den einschlägigen Harmonisierungsrechtsvorschriften der Union nicht entspricht, ergreifen unverzüglich die erforderlichen Korrekturmaßnahmen, um die Konformität dieses Erzeugnisses herzustellen, es gegebenenfalls zurückzunehmen oder zurückzurufen. Geht von dem Erzeugnis ein Risiko aus, unterrichten die Einführer hiervon zudem unverzüglich die Marktüberwachungsbehörden der Mitgliedstaaten, in denen sie das Erzeugnis auf dem Markt bereitgestellt haben, und machen dabei ausführliche Angaben, insbesondere über die Nichtkonformität und die ergriffenen Korrekturmaßnahmen.
+
+
+(8)
+Die Einführer halten ab dem Inverkehrbringen des Erzeugnisses zehn Jahre lang ein Exemplar der EU-Konformitätserklärung für die Marktüberwachungsbehörden bereit und sorgen dafür, dass sie diesen die technischen Unterlagen auf Verlangen vorlegen können.
+
+
+(9)
+Die Einführer stellen der zuständigen nationalen Behörde auf deren begründetes Verlangen alle Informationen und Unterlagen, die für den Nachweis der Konformität des Erzeugnisses erforderlich sind, in Papierform oder auf elektronischem Wege in einer Sprache zur Verfügung, die von dieser zuständigen nationalen Behörde leicht verstanden werden kann. Sie kooperieren mit dieser Behörde auf deren Verlangen bei allen Maßnahmen zur Abwendung von Risiken, die mit dem Erzeugnis verbunden sind, das sie in Verkehr gebracht haben.
+
+
+▼M1
+
+
+(10)
+Bringen Einführer ein UAS der Klasse C5, der Klasse C6 oder ein Zusatzgerät für die Klasse C5 in Verkehr, müssen sie die Marktüberwachungsbehörde des Mitgliedstaats ihres Hauptgeschäftssitzes hiervon unterrichten.
+
+
+▼B
+
+Artikel 9
+Pflichten der Händler
+
+(1)
+Die Händler berücksichtigen die Anforderungen dieses Kapitels mit der gebührenden Sorgfalt, wenn sie ein Erzeugnis auf dem Markt bereitstellen.
+
+
+▼M1
+
+
+(2)
+Bevor sie ein Erzeugnis auf dem Markt bereitstellen, überprüfen die Händler, ob das Erzeugnis mit der CE-Kennzeichnung und, soweit erforderlich, mit dem Identifizierungskennzeichen für die UA-Klasse und der Angabe über den Schallleistungspegel versehen ist und ihm die in Artikel 6 Absätze 7 und 8 genannten Unterlagen beiliegen, und ob der Hersteller und der Einführer die Anforderungen von Artikel 6 Absätze 5 und 6 sowie von Artikel 8 Absatz 3 erfüllt haben.
+
+Die Händler gewährleisten, dass dem Erzeugnis die Anweisungen des Herstellers und ein Informationsblatt entsprechend den Teilen 1 bis 6, 16 und 17 des Anhangs in einer vom betreffenden Mitgliedstaat festgelegten Sprache beiliegen, die von den Verbrauchern und sonstigen Endnutzern leicht verstanden werden kann. Diese Anweisungen des Herstellers und dieses Informationsblatt sowie alle Kennzeichnungen müssen klar, verständlich und lesbar sein.
+
+▼B
+
+Ist ein Händler der Auffassung oder hat er Grund zu der Annahme, dass ein Erzeugnis nicht mit den Anforderungen nach Artikel 4 übereinstimmt, so stellt er dieses Produkt erst auf dem Markt bereit, nachdem die Konformität hergestellt worden ist. Geht von dem Erzeugnis ein Risiko aus, unterrichtet der Händler hiervon zudem den Hersteller oder den Einführer sowie die zuständigen Marktüberwachungsbehörden.
+
+(3)
+Die Händler gewährleisten, dass die Lagerungs- oder Transportbedingungen des Erzeugnisses, solange dieses sich in ihrer Verantwortung befindet, seine Konformität mit den in Artikel 4 festgelegten Anforderungen nicht beeinträchtigen.
+
+
+(4)
+Händler, die der Auffassung sind oder Grund zu der Annahme haben, dass ein von ihnen auf dem Markt bereitgestelltes Erzeugnis nicht den einschlägigen Harmonisierungsrechtsvorschriften der Union entspricht, stellen sicher, dass die erforderlichen Korrekturmaßnahmen ergriffen werden, um die Konformität dieses Erzeugnisses herzustellen, es gegebenenfalls zurückzunehmen oder zurückzurufen. Geht von dem Erzeugnis ein Risiko aus, unterrichten die Händler hiervon zudem unverzüglich die Marktüberwachungsbehörden der Mitgliedstaaten, in denen sie das Erzeugnis auf dem Markt bereitgestellt haben, und machen dabei ausführliche Angaben, insbesondere über die Nichtkonformität und die ergriffenen Korrekturmaßnahmen.
+
+
+(5)
+Die Händler stellen der zuständigen nationalen Behörde auf deren begründetes Verlangen alle Informationen und Unterlagen, die für den Nachweis der Konformität des Erzeugnisses erforderlich sind, in Papierform oder auf elektronischem Wege zur Verfügung. Sie kooperieren mit dieser Behörde auf deren Verlangen bei allen Maßnahmen zur Abwendung von Risiken, die mit Erzeugnissen verbunden sind, die sie auf dem Markt bereitgestellt haben.
+
+Artikel 10
+Umstände, unter denen die Pflichten der Hersteller auch für Einführer und Händler gelten
+Ein Einführer oder Händler gilt als Hersteller für die Zwecke dieses Kapitels und unterliegt den Verpflichtungen eines Herstellers nach Artikel 6, wenn er ein Erzeugnis unter seinem eigenen Namen oder seiner eigenen Marke in Verkehr bringt oder ein bereits auf dem Markt befindliches Erzeugnis so verändert, dass die Konformität mit den Anforderungen dieses Kapitels beeinträchtigt werden kann.
+Artikel 11
+Identifizierung der Wirtschaftsakteure
+
+(1)
+
+Die Wirtschaftsakteure nennen den Marktüberwachungsbehörden auf Verlangen die Wirtschaftsakteure,
+
+
+a)
+
+
+von denen sie ein Erzeugnis bezogen haben;
+
+
+
+
+b)
+
+
+an die sie ein Erzeugnis abgegeben haben.
+
+
+
+
+
+(2)
+
+Die Wirtschaftsakteure müssen diese in Absatz 1 genannten Informationen vorlegen können und zwar
+
+
+a)
+
+
+zehn Jahre nach dem Bezug des Erzeugnisses;
+
+
+
+
+b)
+
+
+zehn Jahre nach der Lieferung des Erzeugnisses.
+
+
+
+
+
+
+
+
+
+ABSCHNITT 3
+
+
+
+Konformität des Erzeugnisses
+
+
+Artikel 12
+Konformitätsvermutung
+
+▼M1
+
+Ein Erzeugnis, das mit harmonisierten Normen oder Teilen davon übereinstimmt, deren Bezugnahmen im Amtsblatt der Europäischen Union veröffentlicht worden sind, gilt als konform mit den in den Teilen 1 bis 6, 16 und 17 des Anhangs genannten Anforderungen, die von diesen Normen oder Teilen davon abgedeckt sind.
+
+▼B
+
+Artikel 13
+Konformitätsbewertungsverfahren
+
+▼M1
+
+
+(1)
+Der Hersteller nimmt mit einem der folgenden Verfahren eine Konformitätsbewertung des Erzeugnisses vor, um dessen Konformität mit den in den Teilen 1 bis 6, 16 und 17 des Anhangs genannten Anforderungen festzustellen. Bei der Konformitätsbewertung sind alle vorgesehenen und vorhersehbaren Betriebsbedingungen zu berücksichtigen.
+
+
+▼B
+
+
+(2)
+
+Folgende Verfahren stehen für die Konformitätsbewertung zur Verfügung:
+
+▼M1
+
+
+
+a)
+
+
+interne Fertigungskontrolle nach Teil 7 des Anhangs bei der Bewertung der Konformität eines Erzeugnisses mit den in den Teilen 1, 5, 6, 16 oder 17 des Anhangs festgelegten Anforderungen, unter der Bedingung, dass der Hersteller für all jene Anforderungen harmonisierte Normen angewandt hat, für die solche Normen vorhanden sind und deren Bezugnahmen im Amtsblatt der Europäischen Union veröffentlicht wurden;
+
+
+
+▼B
+
+
+
+b)
+
+
+EU-Baumusterprüfung, gefolgt von der Konformität mit der Bauart auf der Grundlage einer internen Fertigungskontrolle nach Teil 8 des Anhangs;
+
+
+
+
+c)
+
+
+Konformität auf der Grundlage einer vollständigen Qualitätssicherung nach Teil 9 des Anhangs, sofern nicht die Konformität eines Erzeugnisses bewertet wird, bei dem es sich um ein Spielzeug im Sinne der Richtlinie 2009/48/EG handelt.
+
+
+
+
+Artikel 14
+EU-Konformitätserklärung
+
+▼M1
+
+
+(1)
+Die EU-Konformitätserklärung nach Artikel 6 Absatz 8 muss Angaben dazu enthalten, dass die Konformität des Erzeugnisses mit den in den Teilen 1 bis 6, 16 und 17 des Anhangs festgelegten Anforderungen nachgewiesen wurde, sowie Angaben zur Klasse des UAS.
+
+
+▼B
+
+
+(2)
+Die EU-Konformitätserklärung muss in ihrem Aufbau dem Muster in Teil 11 des Anhangs entsprechen, die in jenem Teil aufgeführten Elemente enthalten und stets auf dem aktuellen Stand gehalten werden. Sie ist in die Sprache bzw. Sprachen zu übersetzen, die von dem Mitgliedstaat vorgeschrieben wird/werden, in dem das Erzeugnis in Verkehr gebracht wird bzw. auf dessen Markt das Erzeugnis bereitgestellt wird.
+
+
+(3)
+Die vereinfachte EU-Konformitätserklärung nach Artikel 6 Absatz 8 muss die in Teil 12 des Anhangs aufgeführten Elemente enthalten und stets auf dem aktuellen Stand gehalten werden. Sie ist in die Sprache bzw. Sprachen zu übersetzen, die von dem Mitgliedstaat vorgeschrieben wird/werden, in dem das Erzeugnis in Verkehr gebracht oder auf dem Markt bereitgestellt wird. Der vollständige Wortlaut der EU-Konformitätserklärung ist über eine in der vereinfachten EU-Konformitätserklärung angegebene Internetadresse in der Sprache oder in den Sprachen zur Verfügung zu stellen, die der Mitgliedstaat vorschreibt, in dem das Erzeugnis in Verkehr gebracht oder auf dem Markt bereitgestellt wird.
+
+
+(4)
+Unterliegt ein Erzeugnis mehreren Rechtsvorschriften der Union, in denen jeweils eine EU-Konformitätserklärung vorgeschrieben ist, so wird eine einzige EU-Konformitätserklärung für sämtliche Unionsvorschriften ausgestellt. In dieser Erklärung sind die betreffenden Rechtsvorschriften der Union samt ihren Bezugnahmen anzugeben.
+
+
+(5)
+Mit der Ausstellung der EU-Konformitätserklärung übernimmt der Hersteller die Verantwortung dafür, dass das Erzeugnis den Anforderungen dieses Kapitels genügt.
+
+Artikel 15
+Allgemeine Grundsätze der CE-Kennzeichnung
+Für die CE-Kennzeichnung gelten die allgemeinen Grundsätze des Artikels 30 der Verordnung (EG) Nr. 765/2008.
+Artikel 16
+Vorschiften und Bedingungen für die Anbringung der CE-Kennzeichnung, der Kennnummer der notifizierten Stelle, des Identifizierungskennzeichens der UAS-Klasse und der Kennzeichnung des Schallleistungspegels
+
+(1)
+Die CE-Kennzeichnung ist gut sichtbar, leserlich und dauerhaft auf dem Erzeugnis oder seiner an ihm angebrachten Datenplakette anzubringen. Falls dies aufgrund der Größe des Erzeugnisses nicht möglich oder nicht gerechtfertigt ist, ist sie auf der Verpackung anzubringen.
+
+
+▼M1
+
+
+(2)
+Das Identifizierungskennzeichen der UA-Klasse ist mit einer Mindestgröße von 5 mm sichtbar, leserlich und dauerhaft auf dem UA und gegebenenfalls auf jedem Zusatzteil eines C5-Zusatzbausatzes sowie auf seiner Verpackung anzubringen. Die Anbringung von Kennzeichnungen, Zeichen oder Beschriftungen auf einem Erzeugnis, bei denen davon auszugehen ist, dass sie für Dritte hinsichtlich der Bedeutung oder Form des Identifizierungskennzeichens der UA-Klasse irreführend sind, ist verboten.
+
+
+▼B
+
+
+(3)
+Die Kennzeichnung des Schallleistungspegels nach Teil 14 des Anhangs ist gegebenenfalls sichtbar, lesbar und dauerhaft auf dem UA anzubringen, sofern dies nicht aufgrund der Größe des Erzeugnisses unmöglich oder ungerechtfertigt ist, sowie auf der Verpackung.
+
+
+(4)
+Die CE-Kennzeichnung und gegebenenfalls die Kennzeichnung des Schallleistungspegels und das Identifizierungskennzeichen der UA-Klasse sind vor Bereitstellung des Erzeugnisses auf dem Markt anzubringen.
+
+
+(5)
+Auf das CE-Kennzeichen folgt die Kennnummer der notifizierten Stelle, wenn das Konformitätsbewertungsverfahren nach Teil 9 des Anhangs angewandt wird.
+
+Die Kennnummer der notifizierten Stelle ist entweder von der notifizierten Stelle selbst oder nach ihren Anweisungen durch den Hersteller oder seinen Bevollmächtigten anzubringen.
+
+(6)
+Die Mitgliedstaaten bauen auf bestehenden Mechanismen auf, um eine ordnungsgemäße Durchführung des Systems der CE-Kennzeichnung zu gewährleisten, und leiten im Fall einer missbräuchlichen Verwendung dieser Kennzeichnung angemessene Maßnahmen ein.
+
+Artikel 17
+Technische Unterlagen
+
+▼M1
+
+
+(1)
+Die technischen Unterlagen müssen alle sachdienlichen Angaben und Einzelheiten zu den Mitteln, mit denen der Hersteller sicherstellt, dass das Erzeugnis die in den Teilen 1 bis 6, 16 und 17 des Anhangs festgelegten Anforderungen erfüllt, enthalten. Sie müssen jedoch mindestens die in Teil 10 des Anhangs dargelegten Elemente enthalten.
+
+
+▼B
+
+
+(2)
+Die technischen Unterlagen sind vor dem Inverkehrbringen des Erzeugnisses zu erstellen und stets auf dem aktuellen Stand zu halten.
+
+
+(3)
+Die technischen Unterlagen und die Korrespondenz im Zusammenhang mit einem EU-Baumusterprüfverfahren oder der Bewertung der Qualitätssicherung des Herstellers sind in einer Amtssprache des Mitgliedstaats, in dem die notifizierte Stelle ihren Sitz hat, oder in einer von dieser Stelle zugelassenen Sprache abzufassen.
+
+
+▼M1
+
+
+(4)
+Stimmen die technischen Unterlagen mit den Absätzen 1, 2 und 3 nicht überein, kann die Marktüberwachungsbehörde den Hersteller oder Einführer auffordern, auf Kosten des Herstellers oder des Einführers und innerhalb einer bestimmten Frist bei einer von der Marktüberwachungsbehörde akzeptierten Stelle eine Prüfung durchführen zu lassen, um die Konformität des Erzeugnisses mit den in den Teilen 1 bis 6, 16 und 17 des Anhangs festgelegten und für das Erzeugnis geltenden Anforderungen zu überprüfen.
+
+
+▼B
+
+
+
+
+
+
+ABSCHNITT 4
+
+
+
+Notifizierung von Konformitätsbewertungsstellen
+
+
+Artikel 18
+Notifizierung
+Die Mitgliedstaaten notifizieren der Kommission und den übrigen Mitgliedstaaten die Stellen, die befugt sind, als unabhängige Dritte Konformitätsbewertungsaufgaben im Rahmen dieses Kapitels wahrzunehmen.
+Artikel 19
+Notifizierende Behörden
+
+(1)
+Die Mitgliedstaaten benennen eine notifizierende Behörde, die für die Einrichtung und Durchführung der erforderlichen Verfahren für die Bewertung und Notifizierung von Konformitätsbewertungsstellen und für die Überwachung der notifizierten Stellen, einschließlich der Einhaltung von Artikel 24, zuständig ist.
+
+
+(2)
+Die Mitgliedstaaten können entscheiden, dass die Bewertung und Überwachung nach Absatz 1 durch eine nationale Akkreditierungsstelle im Sinne der Verordnung (EG) Nr. 765/2008 erfolgt.
+
+
+(3)
+Falls die notifizierende Behörde die in Absatz 1 genannte Bewertung, Notifizierung oder Überwachung an eine nicht hoheitliche Stelle delegiert oder ihr auf andere Weise überträgt, muss diese Stelle eine juristische Person sein und den Anforderungen des Artikels 20 entsprechend genügen. Außerdem muss diese Stelle Vorsorge zur Deckung von aus ihrer Tätigkeit entstehenden Haftungsansprüchen treffen.
+
+
+(4)
+Die notifizierende Behörde trägt die volle Verantwortung für die von der in Absatz 3 genannten Stelle durchgeführten Tätigkeiten.
+
+Artikel 20
+Anforderungen an notifizierende Behörden
+
+(1)
+
+Eine notifizierende Behörde
+
+
+a)
+
+
+wird so eingerichtet, dass es zu keinerlei Interessenkonflikten mit den Konformitätsbewertungsstellen kommt;
+
+
+
+
+b)
+
+
+gewährleistet durch ihre Organisation und Arbeitsweise, dass bei der Ausübung ihrer Tätigkeiten Objektivität und Unparteilichkeit gewahrt sind;
+
+
+
+
+c)
+
+
+wird so strukturiert, dass jede Entscheidung über die Benennung einer Konformitätsbewertungsstelle von kompetenten Personen getroffen wird, die nicht mit den Personen identisch sind, welche die Bewertung durchgeführt haben;
+
+
+
+
+d)
+
+
+darf weder Tätigkeiten, die Konformitätsbewertungsstellen durchführen, noch Beratungsleistungen auf einer gewerblichen oder wettbewerblichen Basis anbieten oder erbringen;
+
+
+
+
+e)
+
+
+wahrt die Vertraulichkeit der von ihr erlangten Informationen;
+
+
+
+
+f)
+
+
+verfügt über eine ausreichende Anzahl kompetenter Mitarbeiter, sodass sie ihre Aufgaben ordnungsgemäß wahrnehmen kann.
+
+
+
+
+Artikel 21
+Informationspflichten in Bezug auf notifizierende Behörden
+
+(1)
+Jeder Mitgliedstaat unterrichtet die Kommission über seine Verfahren zur Bewertung und Notifizierung von Konformitätsbewertungsstellen und zur Überwachung notifizierter Stellen sowie über diesbezügliche Änderungen.
+
+
+(2)
+Die Kommission macht diese Informationen der Öffentlichkeit zugänglich.
+
+Artikel 22
+Anforderungen an notifizierte Stellen
+
+(1)
+Eine Konformitätsbewertungsstelle erfüllt für die Zwecke der Notifizierung die Anforderungen der Absätze 2 bis 11.
+
+
+(2)
+Eine Konformitätsbewertungsstelle ist nach dem nationalen Recht eines Mitgliedstaats zu gründen und mit Rechtspersönlichkeit auszustatten.
+
+
+(3)
+Bei einer Konformitätsbewertungsstelle muss es sich um einen unabhängigen Dritten handeln, der mit der Organisation, die er bewertet, in keiner Verbindung steht.
+
+Eine Stelle, die einem Wirtschaftsverband oder einem Fachverband angehört und die Erzeugnisse bewertet, an deren Konstruktion, Herstellung, Bereitstellung, Montage, Gebrauch oder Instandhaltung Unternehmen beteiligt sind, die von diesem Verband vertreten werden, kann als Konformitätsbewertungsstelle gelten, sofern nachgewiesen wird, dass sie unabhängig ist und keine Interessenskonflikte vorliegen.
+
+(4)
+Eine Konformitätsbewertungsstelle, ihre oberste Führungsebene und die für die Erfüllung der Konformitätsbewertungsaufgaben zuständigen Mitarbeiter dürfen nicht Konstrukteur, Hersteller, Lieferant, Installateur, Käufer, Eigentümer, Verwender oder Instandhaltungsbetrieb des zu bewertenden Erzeugnisses oder Vertreter einer dieser Parteien sein. Dies schließt nicht die Verwendung eines bereits einer Konformitätsbewertung unterzogenen Erzeugnisses, das für die Tätigkeit der Konformitätsbewertungsstelle nötig ist, oder die Verwendung eines solchen Erzeugnisses zum persönlichen Gebrauch aus.
+
+Konformitätsbewertungsstellen, ihre oberste Führungsebene und die für die Erfüllung der Konformitätsbewertungsaufgaben zuständigen Mitarbeiter dürfen weder direkt an Konstruktion, Herstellung bzw. Bau, Vermarktung, Installation, Verwendung oder Instandhaltung dieser Erzeugnisse beteiligt sein, noch die an diesen Tätigkeiten beteiligten Parteien vertreten. Sie dürfen sich nicht mit Tätigkeiten befassen, die ihre Unabhängigkeit bei der Beurteilung oder ihre Integrität im Zusammenhang mit den Konformitätsbewertungstätigkeiten, für die sie notifiziert sind, beeinträchtigen könnten. Dies gilt besonders für Beratungsdienste.
+Die Konformitätsbewertungsstellen gewährleisten, dass Tätigkeiten ihrer Zweigunternehmen oder Unterauftragnehmer weder die Vertraulichkeit noch die Objektivität oder Unparteilichkeit ihrer Konformitätsbewertungstätigkeiten beeinträchtigen.
+
+(5)
+Die Konformitätsbewertungsstellen und ihre Mitarbeiter führen die Konformitätsbewertungstätigkeiten mit der größtmöglichen Professionalität und der erforderlichen fachlichen Kompetenz in dem betreffenden Bereich durch; sie dürfen keinerlei Einflussnahme, insbesondere finanzieller Art, ausgesetzt sein, die sich auf ihre Beurteilung oder die Ergebnisse ihrer Konformitätsbewertungstätigkeit auswirken könnte und speziell von Personen oder Personengruppen ausgeht, die ein Interesse am Ergebnis dieser Tätigkeiten haben.
+
+
+(6)
+Eine Konformitätsbewertungsstelle ist in der Lage, alle Konformitätsbewertungsaufgaben zu bewältigen, die ihr nach Maßgabe der Teile 8 oder 9 des Anhangs zufallen und für die sie notifiziert wurde, unabhängig davon, ob diese Aufgaben von der Stelle selbst, in ihrem Auftrag oder unter ihrer Verantwortung ausgeführt werden.
+
+Eine Konformitätsbewertungsstelle muss jederzeit, für jedes Konformitätsbewertungsverfahren und für jede Art und Kategorie von Erzeugnissen, für die sie notifiziert wurde, über Folgendes verfügen:
+
+
+a)
+
+
+die erforderlichen Mitarbeiter mit Fachkenntnis und ausreichender einschlägiger Erfahrung, um die bei der Konformitätsbewertung anfallenden Aufgaben zu erfüllen;
+
+
+
+
+b)
+
+
+Beschreibungen von Verfahren, nach denen die Konformitätsbewertung durchgeführt wird, um die Transparenz und die Wiederholbarkeit dieser Verfahren sicherzustellen; angemessene Instrumente und geeignete Verfahren, bei denen zwischen den Aufgaben, die sie als notifizierte Stelle wahrnimmt, und anderen Tätigkeiten unterschieden wird;
+
+
+
+
+c)
+
+
+Verfahren zur Durchführung von Tätigkeiten unter gebührender Berücksichtigung der Größe eines Unternehmens, der Branche, in der es tätig ist, seiner Struktur, des Komplexitätsgrads des jeweiligen Erzeugnisses und des Massenfertigungs- oder Seriencharakters des Produktionsprozesses.
+
+
+Einer Konformitätsbewertungsstelle stehen die erforderlichen Mittel zur angemessenen Erledigung der technischen und administrativen Aufgaben zur Verfügung, die mit den Konformitätsbewertungstätigkeiten verbunden sind, und sie hat Zugang zu allen benötigten Ausrüstungen oder Einrichtungen.
+
+(7)
+
+Die Mitarbeiter, die für die Wahrnehmung der Konformitätsbewertungsaufgaben zuständig sind, verfügen über
+
+
+a)
+
+
+eine solide Fach- und Berufsausbildung, die alle Tätigkeiten für die Konformitätsbewertung in dem Bereich umfasst, für den die Konformitätsbewertungsstelle notifiziert wurde,
+
+
+
+
+b)
+
+
+eine hinreichende Kenntnis der Anforderungen, die mit den durchzuführenden Bewertungen verbunden sind, und die entsprechende Befugnis, solche Bewertungen durchzuführen,
+
+
+
+
+c)
+
+
+angemessene Kenntnisse und ein angemessenes Verständnis der Anforderungen, der geltenden harmonisierten Normen sowie der einschlägigen Harmonisierungsrechtsvorschriften der Union;
+
+
+
+
+d)
+
+
+die Fähigkeit zur Erstellung von EU-Baumusterprüfbescheinigungen oder Zulassungen von Qualitätssicherungssystemen, Protokollen und Berichten als Nachweis für durchgeführte Bewertungen.
+
+
+
+
+
+(8)
+Die Unparteilichkeit der Konformitätsbewertungsstellen, ihrer obersten Leitungsebenen und der für die Erfüllung der Konformitätsbewertungsaufgaben zuständigen Mitarbeiter wird garantiert.
+
+Die Vergütung der obersten Leitungsebene und der für die Erfüllung der Konformitätsbewertungsaufgaben zuständigen Mitarbeiter darf sich nicht nach der Anzahl der durchgeführten Bewertungen oder deren Ergebnissen richten.
+
+(9)
+Die Konformitätsbewertungsstellen schließen eine Haftpflichtversicherung ab, sofern die Haftpflicht nicht aufgrund der nationalen Rechtsvorschriften vom Mitgliedstaat übernommen wird oder der Mitgliedstaat selbst unmittelbar für die Konformitätsbewertung verantwortlich ist.
+
+
+(10)
+Informationen, welche die Mitarbeiter einer Konformitätsbewertungsstelle bei der Wahrnehmung ihrer Aufgaben gemäß den Teilen 8 und 9 des Anhangs oder einer der einschlägigen nationalen Durchführungsvorschriften erhalten, fallen unter die berufliche Schweigepflicht; dies gilt jedoch nicht gegenüber den zuständigen Behörden des Mitgliedstaats, in dem sie ihre Tätigkeiten ausüben. Eigentumsrechte werden geschützt.
+
+
+(11)
+Die Konformitätsbewertungsstellen wirken an den einschlägigen Normungsaktivitäten, den Regelungstätigkeiten auf dem Gebiet der UAS und der Frequenzplanung sowie den Aktivitäten der Koordinierungsgruppe notifizierter Stellen mit, die im Rahmen der jeweiligen Harmonisierungsrechtsvorschriften der Union geschaffen wurde, bzw. sorgen dafür, dass ihre für die Ausführung von Konformitätsbewertungsaufgaben zuständigen Mitarbeiter darüber informiert werden, und wenden die von dieser Gruppe ausgearbeiteten Verwaltungsentscheidungen und Dokumente als allgemeine Leitlinie an.
+
+Artikel 23
+Vermutung der Konformität von notifizierten Stellen
+Weist eine Konformitätsbewertungsstelle nach, dass sie die Kriterien der einschlägigen harmonisierten Normen oder von Teilen davon erfüllt, deren Bezugnahmen im Amtsblatt der Europäischen Union veröffentlicht worden sind, wird vermutet, dass sie die Anforderungen nach Artikel 22 erfüllt, insoweit als die anwendbaren harmonisierten Normen diese Anforderungen abdecken.
+Artikel 24
+Zweigunternehmen von notifizierten Stellen und Vergabe von Unteraufträgen
+
+(1)
+Vergibt die notifizierte Stelle bestimmte mit der Konformitätsbewertung verbundene Aufgaben an Unterauftragnehmer oder überträgt sie diese einem Zweigunternehmen, stellt sie sicher, dass der Unterauftragnehmer oder das Zweigunternehmen die Anforderungen von Artikel 22 erfüllt, und unterrichtet die notifizierende Behörde entsprechend.
+
+
+(2)
+Die notifizierten Stellen tragen die volle Verantwortung für die Aufgaben, die von Unterauftragnehmern oder Zweigunternehmen ausgeführt werden, unabhängig davon, wo diese niedergelassen sind.
+
+
+(3)
+Tätigkeiten dürfen nur mit Zustimmung des Kunden an einen Unterauftragnehmer vergeben oder einer Zweigstelle übertragen werden.
+
+
+(4)
+Die notifizierten Stellen halten die einschlägigen Unterlagen über die Begutachtung der Qualifikation des Unterauftragnehmers oder der Zweigstelle und die von ihm/ihr gemäß den Teilen 8 und 9 des Anhangs ausgeführten Arbeiten für die notifizierende Behörde bereit.
+
+Artikel 25
+Antrag auf Notifizierung
+
+(1)
+Eine Konformitätsbewertungsstelle beantragt ihre Notifizierung bei der notifizierenden Behörde des Mitgliedstaats, in dem sie niedergelassen ist.
+
+
+(2)
+Dem Antrag auf Notifizierung legt sie eine Beschreibung der Konformitätsbewertungstätigkeiten, des/der Konformitätsbewertungsmoduls/-e und des Erzeugnisses, für das diese Stelle Kompetenz beansprucht, sowie eine Akkreditierungsurkunde bei, die von einer nationalen Akkreditierungsstelle ausgestellt wurde und in der diese bescheinigt, dass die Konformitätsbewertungsstelle die Anforderungen von Artikel 22 erfüllt.
+
+Artikel 26
+Notifizierungsverfahren
+
+(1)
+Die notifizierenden Behörden dürfen nur Konformitätsbewertungsstellen notifizieren, die die Anforderungen von Artikel 22 erfüllen.
+
+
+(2)
+Sie notifizieren die Konformitätsbewertungsstellen gegenüber der Kommission und den übrigen Mitgliedstaaten mit Hilfe des von der Kommission entwickelten und verwalteten elektronischen Notifizierungsinstruments.
+
+
+(3)
+Eine Notifizierung enthält vollständige Angaben zu den Konformitätsbewertungstätigkeiten, dem/den betreffenden Konformitätsbewertungsmodul/-en und dem betreffenden Erzeugnis sowie die entsprechende Akkreditierungsurkunde.
+
+
+(4)
+Die betreffende Stelle darf die Tätigkeiten einer notifizierten Stelle nur dann ausüben, wenn weder die Kommission noch die übrigen Mitgliedstaaten innerhalb von zwei Wochen nach dieser Notifizierung Einwände erhoben haben.
+
+
+(5)
+Nur eine solche Stelle gilt für die Zwecke dieses Kapitels als notifizierte Stelle.
+
+
+(6)
+Die notifizierende Behörde meldet der Kommission und den übrigen Mitgliedstaaten jede später eintretende relevante Änderung der Notifizierung.
+
+Artikel 27
+Kennnummern und Verzeichnis der notifizierten Stellen
+
+(1)
+Die Kommission weist einer notifizierten Stelle eine Kennnummer zu.
+
+
+(2)
+Selbst wenn eine Stelle für mehrere Rechtsvorschriften der Union notifiziert ist, erhält sie nur eine einzige Kennnummer.
+
+
+(3)
+Die Kommission veröffentlicht das Verzeichnis der nach dieser Verordnung notifizierten Stellen samt den ihnen zugewiesenen Kennnummern und den Tätigkeiten, für die sie notifiziert wurden.
+
+Die Kommission stellt sicher, dass das Verzeichnis stets auf dem neuesten Stand ist.
+Artikel 28
+Änderung der Notifizierungen
+
+(1)
+Falls eine notifizierende Behörde feststellt oder darüber unterrichtet wird, dass eine notifizierte Stelle die in Artikel 22 genannten Anforderungen nicht mehr erfüllt oder dass sie ihren Verpflichtungen nicht nachkommt, schränkt sie die Notifizierung gegebenenfalls ein, setzt sie aus oder zieht sie zurück, wobei sie das Ausmaß berücksichtigt, in dem diesen Anforderungen nicht genügt oder diesen Verpflichtungen nicht nachgekommen wurde. Sie setzt die Kommission und die übrigen Mitgliedstaaten unverzüglich davon in Kenntnis.
+
+
+(2)
+Bei Einschränkung, Aussetzung oder Rücknahme der Notifizierung oder wenn die notifizierte Stelle ihre Tätigkeit einstellt, ergreift der notifizierende Mitgliedstaat die geeigneten Maßnahmen, um zu gewährleisten, dass die Akten dieser Stelle von einer anderen notifizierten Stelle weiter bearbeitet bzw. für die zuständigen notifizierenden Behörden und Marktüberwachungsbehörden auf deren Verlangen bereitgehalten werden.
+
+Artikel 29
+Anfechtung der Kompetenz notifizierter Stellen
+
+(1)
+Die Kommission untersucht alle Fälle, in denen sie die Kompetenz einer notifizierten Stelle oder die dauerhafte Erfüllung der entsprechenden Anforderungen und Pflichten durch eine notifizierte Stelle anzweifelt oder ihr Zweifel daran zur Kenntnis gebracht werden.
+
+
+(2)
+Der notifizierende Mitgliedstaat erteilt der Kommission auf Verlangen sämtliche Auskünfte über die Grundlage für die Notifizierung oder die Aufrechterhaltung der Kompetenz der betreffenden notifizierten Stelle.
+
+
+(3)
+Die Kommission stellt sicher, dass alle im Verlauf ihrer Untersuchungen erlangten sensiblen Informationen vertraulich behandelt werden.
+
+
+(4)
+Stellt die Kommission fest, dass eine notifizierte Stelle die Voraussetzungen für ihre Notifizierung nicht oder nicht mehr erfüllt, setzt sie den notifizierenden Mitgliedstaat entsprechend in Kenntnis und fordert ihn auf, die erforderlichen Korrekturmaßnahmen zu treffen, einschließlich eines Widerrufs der Notifizierung, sofern dies nötig ist.
+
+Artikel 30
+Operative Pflichten der notifizierten Stellen
+
+(1)
+Die notifizierten Stellen führen die Konformitätsbewertung im Einklang mit den Konformitätsbewertungsverfahren nach den Teilen 8 und 9 des Anhangs durch.
+
+
+(2)
+Konformitätsbewertungen werden unter Wahrung der Verhältnismäßigkeit durchgeführt, wobei unnötige Belastungen der Wirtschaftsakteure zu vermeiden sind. Die Konformitätsbewertungsstellen üben ihre Tätigkeiten unter gebührender Berücksichtigung der Größe eines Unternehmens, der Branche, in der es tätig ist, seiner Struktur sowie des Komplexitätsgrads des betreffenden Erzeugnisses und des Massenfertigungs- oder Seriencharakters des Fertigungsprozesses aus.
+
+Hierbei gehen sie allerdings so streng vor und halten ein Schutzniveau ein, wie es für die Konformität des UA bzw. UAS mit diesem Kapitel erforderlich ist.
+
+▼M1
+
+
+(3)
+Stellt eine notifizierte Stelle fest, dass ein Hersteller die in den Teilen 1 bis 6, 16 und 17 des Anhangs festgelegten Anforderungen bzw. entsprechende harmonisierte Normen oder technische Spezifikationen nicht erfüllt hat, fordert sie den Hersteller auf, angemessene Korrekturmaßnahmen zu ergreifen, und stellt keine EU-Baumusterprüfbescheinigung oder Zulassung eines Qualitätssicherungssystems aus.
+
+
+▼B
+
+
+(4)
+Hat eine notifizierte Stelle bereits eine EU-Baumusterprüfbescheinigung oder Zulassung eines Qualitätssicherungssystems ausgestellt und stellt im Rahmen der Überwachung der Konformität fest, dass ein Erzeugnis die Anforderungen nicht mehr erfüllt, fordert sie den Hersteller auf, angemessene Korrekturmaßnahmen zu ergreifen, und setzt die EU-Baumusterprüfbescheinigung oder Zulassung eines Qualitätssicherungssystems falls nötig aus oder zieht sie zurück.
+
+
+(5)
+Werden keine Korrekturmaßnahmen ergriffen oder zeigen sie nicht die nötige Wirkung, schränkt die notifizierte Stelle alle betreffenden EG-Baumusterprüfbescheinigungen oder Zulassungen eines Qualitätssicherungssystems ein, setzt sie aus oder zieht sie zurück.
+
+Artikel 31
+Einspruch gegen Entscheidungen notifizierter Stellen
+Die notifizierten Stellen sorgen dafür, dass ein transparentes und zugängliches Einspruchsverfahren gegen ihre Entscheidungen vorgesehen ist.
+Artikel 32
+Meldepflicht der notifizierten Stellen
+
+(1)
+
+Die notifizierten Stellen melden der notifizierenden Behörde
+
+
+a)
+
+
+im Einklang mit den in den Teilen 8 und 9 des Anhangs festgelegten Anforderungen jede Verweigerung, Einschränkung, Aussetzung oder Rücknahme einer EU-Baumusterprüfbescheinigung oder Zulassung eines Qualitätssicherungssystems;
+
+
+
+
+b)
+
+
+alle Umstände, die Folgen für den Anwendungsbereich oder die Bedingungen der Notifizierung haben;
+
+
+
+
+c)
+
+
+jedes Auskunftsersuchen über Konformitätsbewertungstätigkeiten, das sie von den Marktüberwachungsbehörden erhalten haben;
+
+
+
+
+d)
+
+
+auf Verlangen die Konformitätsbewertungstätigkeiten, denen sie im Geltungsbereich ihrer Notifizierung nachgegangen sind und die sonstigen Tätigkeiten, einschließlich grenzüberschreitender Tätigkeiten und Vergabe von Unteraufträgen, die sie ausgeführt haben.
+
+
+
+
+
+(2)
+Die notifizierten Stellen übermitteln den übrigen Stellen, die nach diesem Kapitel notifiziert sind und ähnlichen Konformitätsbewertungstätigkeiten für dieselben UA- oder UAS-Kategorien nachgehen, im Einklang mit den in den Teilen 8 und 9 des Anhangs festgelegten Anforderungen einschlägige Informationen über die negativen und auf Verlangen auch über die positiven Ergebnisse von Konformitätsbewertungen.
+
+
+(3)
+Die notifizierten Stellen erfüllen ihre Informationspflichten nach den Teilen 8 und 9 des Anhangs.
+
+Artikel 33
+Erfahrungsaustausch
+Die Kommission organisiert den Erfahrungsaustausch zwischen den nationalen Behörden der Mitgliedstaaten, die für die Notifizierungspolitik zuständig sind.
+Artikel 34
+Koordinierung der notifizierten Stellen
+
+(1)
+Die Kommission sorgt dafür, dass eine zweckmäßige Koordinierung und Kooperation zwischen den im Rahmen dieses Kapitels notifizierten Stellen in Form einer Sektorgruppe notifizierter Stellen eingerichtet und ordnungsgemäß weitergeführt wird.
+
+
+(2)
+Die notifizierten Stellen beteiligen sich direkt oder mittels benannter Vertreter an den Arbeiten dieser Gruppe.
+
+
+
+
+
+
+ABSCHNITT 5
+
+
+
+Überwachung des Unionsmarkts, Kontrolle der Erzeugnisse, die auf den Unionsmarkt gelangen und Schutzklauselverfahren der Union
+
+
+Artikel 35
+Marktüberwachung und Kontrolle der auf den Unionsmarkt gelangenden Erzeugnisse
+
+(1)
+Die Mitgliedstaaten gewährleisten die Organisation und Durchführung der Überwachung der auf dem Unionsmarkt in den Verkehr gebrachten Erzeugnisse nach Artikel 15 Absatz 3 und den Artikeln 16 bis 26 der Verordnung (EG) Nr. 765/2008.
+
+
+(2)
+Die Mitgliedstaaten gewährleisten die Organisation und Durchführung der Kontrolle der auf den Unionsmarkt gelangenden Erzeugnisse nach Artikel 15 Absatz 5 und den Artikeln 27, 28 und 29 der Verordnung (EG) Nr. 765/2008.
+
+
+(3)
+Die Mitgliedstaaten gewährleisten, dass ihre Marktüberwachungs- und Grenzkontrollbehörden mit den nach Artikel 17 der Durchführungsverordnung (EU) 2019/947 benannten zuständigen Behörden in Sicherheitsfragen kooperieren und legen geeignete Mechanismen für die Kommunikation und Koordinierung zwischen ihnen fest, wobei sie die Informationen bestmöglich nutzen, die in dem nach der Verordnung (EU) Nr. 376/2014 des Europäischen Parlaments und des Rates (
+3
+) festgelegten System zur Meldung von Ereignissen und in den nach den Artikeln 22 und 23 der Verordnung (EG) Nr. 765/2008 eingerichteten Informationssystemen enthalten sind.
+
+Artikel 36
+Verfahren auf nationaler Ebene zum Umgang mit Erzeugnissen, die ein Risiko darstellen
+
+▼M1
+
+
+(1)
+Haben die Marktüberwachungsbehörden eines Mitgliedstaats hinreichenden Grund zu der Annahme, dass ein Erzeugnis die Gesundheit oder Sicherheit von Menschen oder andere im öffentlichen Interesse schützenswerte Aspekte gefährdet, die unter dieses Kapitel fallen, beurteilen sie, ob das betreffende Erzeugnis alle geltenden, in diesem Kapitel festgelegten Anforderungen erfüllt. Die betroffenen Wirtschaftsakteure arbeiten zu diesem Zweck im erforderlichen Umfang mit den Marktüberwachungsbehörden zusammen.
+
+
+▼B
+
+Gelangen die Marktüberwachungsbehörden im Verlauf der Beurteilung nach Unterabsatz 1 zu dem Ergebnis, dass das Erzeugnis nicht die Anforderungen dieses Kapitels erfüllt, so fordern sie unverzüglich den betreffenden Wirtschaftsakteur auf, innerhalb einer von der Behörde vorgeschriebenen, der Art des Risikos angemessenen Frist alle geeigneten Korrekturmaßnahmen zu ergreifen, um die Übereinstimmung des Erzeugnisses mit diesen Anforderungen herzustellen, es zurückzunehmen oder zurückzurufen.
+Die Marktüberwachungsbehörden unterrichten die betroffene notifizierte Stelle entsprechend.
+Für die in Unterabsatz 2 genannten Maßnahmen gilt Artikel 21 der Verordnung (EG) Nr. 765/2008.
+
+(2)
+Sind die Marktüberwachungsbehörden der Auffassung, dass sich die Nichtkonformität nicht auf das Hoheitsgebiet ihres Mitgliedstaats beschränkt, unterrichten sie die Kommission und die übrigen Mitgliedstaaten über die Ergebnisse der Beurteilung und die Maßnahmen, zu denen sie den Wirtschaftsakteur aufgefordert haben.
+
+
+(3)
+Der Wirtschaftsakteur gewährleistet, dass für sämtliche betroffenen Erzeugnisse, die er unionsweit auf dem Markt bereitgestellt hat, alle geeigneten Korrekturmaßnahmen ergriffen werden.
+
+
+(4)
+Ergreift der betreffende Wirtschaftsakteur innerhalb der in Absatz 1 Unterabsatz 2 genannten Frist keine angemessenen Korrekturmaßnahmen, treffen die Marktüberwachungsbehörden alle geeigneten vorläufigen Maßnahmen, um die Bereitstellung des Erzeugnisses auf ihrem nationalen Markt zu untersagen oder einzuschränken, das Erzeugnis vom Markt zu nehmen oder zurückzurufen.
+
+Die Marktüberwachungsbehörden unterrichten die Kommission und die übrigen Mitgliedstaaten unverzüglich über diese Maßnahmen.
+
+(5)
+
+Aus den in Absatz 4 genannten Informationen gehen alle verfügbaren Angaben hervor, insbesondere die für die Identifizierung des nichtkonformen Erzeugnisses notwendigen Daten, die Herkunft des Erzeugnisses, die Art der vermeintlichen Nichtkonformität und das Risiko sowie die Art und Dauer der ergriffenen nationalen Maßnahmen und die Argumente des betreffenden Wirtschaftsakteurs. Die Marktüberwachungsbehörden geben insbesondere an, ob die fehlende Konformität auf eine der folgenden Ursachen zurückzuführen ist:
+
+
+a)
+
+
+Nichterfüllung der in Artikel 4 festgelegten Anforderungen durch das Erzeugnis
+
+
+
+
+b)
+
+
+Mängel der in Artikel 12 genannten harmonisierten Normen.
+
+
+
+
+
+(6)
+Die anderen Mitgliedstaaten außer jenem, der das Verfahren nach diesem Artikel eingeleitet hat, unterrichten die Kommission und die übrigen Mitgliedstaaten unverzüglich über alle erlassenen Maßnahmen und jede weitere ihnen vorliegende Information über die Nichtkonformität des Erzeugnisses sowie, falls sie der erlassenen nationalen Maßnahme nicht zustimmen, über ihre Einwände.
+
+
+(7)
+Erhebt weder ein Mitgliedstaat noch die Kommission innerhalb von drei Monaten nach Erhalt der in Absatz 5 genannten Informationen einen Einwand gegen eine vorläufige Maßnahme eines Mitgliedstaats, gilt diese Maßnahme als gerechtfertigt.
+
+
+(8)
+Die Mitgliedstaaten gewährleisten, dass unverzüglich geeignete beschränkende Maßnahmen hinsichtlich des betreffenden Erzeugnisses getroffen werden, wie etwa dessen Rücknahme vom Markt.
+
+Artikel 37
+Schutzklauselverfahren der Union
+
+(1)
+Wurden nach Abschluss des Verfahrens nach Artikel 36 Absätze 3 und 4 Einwände gegen eine Maßnahme eines Mitgliedstaats erhoben oder ist die Kommission der Auffassung, dass diese nationale Maßnahme nicht mit dem Unionsrecht vereinbar ist, konsultiert die Kommission unverzüglich die Mitgliedstaaten und den/die betroffenen Wirtschaftsakteur/-e und nimmt eine Beurteilung der nationalen Maßnahme vor. Anhand der Ergebnisse dieser Beurteilung entscheidet die Kommission, ob die nationale Maßnahme gerechtfertigt ist.
+
+Die Kommission richtet ihren Beschluss an alle Mitgliedstaaten und übermittelt ihnen und dem/den betroffenen Wirtschaftsakteur/-en diesen Beschluss unverzüglich.
+
+(2)
+Hält sie die nationale Maßnahme für gerechtfertigt, so ergreifen alle Mitgliedstaaten die erforderlichen Maßnahmen, um sicherzustellen, dass das nicht konforme Erzeugnis von ihrem Markt genommen oder zurückgerufen wird, und unterrichten die Kommission darüber. Gilt die nationale Maßnahme nicht als gerechtfertigt, muss der betreffende Mitgliedstaat sie zurücknehmen.
+
+
+(3)
+Wird die nationale Maßnahme als gerechtfertigt erachtet und wird die Nichtkonformität des Erzeugnisses mit Mängeln der in Artikel 36 Absatz 5 Buchstabe b dieser Verordnung genannten harmonisierten Normen begründet, so leitet die Kommission das Verfahren nach Artikel 11 der Verordnung (EU) Nr. 1025/2012 ein.
+
+Artikel 38
+Konforme Erzeugnisse, die ein Risiko darstellen
+
+(1)
+Stellt ein Mitgliedstaat nach einer Beurteilung nach Artikel 36 Absatz 1 fest, dass ein Erzeugnis ein Risiko für die Gesundheit oder Sicherheit von Menschen oder für andere im öffentlichen Interesse schützenswerte Aspekte, die unter dieses Kapitel fallen, darstellt, obwohl es die Anforderungen dieses Kapitels erfüllt, so fordert er den betreffenden Wirtschaftsakteur auf, alle geeigneten Maßnahmen zu ergreifen, um dafür zu sorgen, dass das betreffende Erzeugnis bei seinem Inverkehrbringen dieses Risiko nicht mehr aufweist oder dass es innerhalb einer der Art des Risikos angemessenen, vertretbaren Frist, die er vorschreiben kann, vom Markt genommen oder zurückgerufen wird.
+
+
+(2)
+Der Wirtschaftsakteur gewährleistet, dass sich die Korrekturmaßnahmen, die er ergreift, auf sämtliche betroffenen Erzeugnisse erstrecken, die er in der Union auf dem Markt bereitgestellt hat.
+
+
+(3)
+Der Mitgliedstaat unterrichtet die Kommission und die übrigen Mitgliedstaaten unverzüglich davon. Diese Informationen müssen alle verfügbaren Angaben enthalten, insbesondere die zur Identifizierung des betreffenden Erzeugnisses erforderlichen Daten sowie Daten zu seinem Ursprung, seiner Lieferkette, zur Art des Risikos sowie zur Art und Dauer der ergriffenen nationalen Maßnahmen.
+
+
+(4)
+Die Kommission konsultiert unverzüglich die Mitgliedstaaten und den/die betroffenen Wirtschaftsakteur/-e und nimmt eine Beurteilung der ergriffenen nationalen Maßnahmen vor. Anhand der Ergebnisse dieser Beurteilung beschließt die Kommission, ob die Maßnahmen gerechtfertigt sind, und schlägt, falls erforderlich, geeignete Maßnahmen vor.
+
+
+(5)
+Die Kommission richtet ihren Beschluss an alle Mitgliedstaaten und übermittelt ihnen und dem/den betroffenen Wirtschaftsakteur/-en diesen Beschluss unverzüglich.
+
+Artikel 39
+Formale Nichtkonformität
+
+(1)
+
+Unbeschadet des Artikels 36 fordert ein Mitgliedstaat den betreffenden Wirtschaftsakteur dazu auf, die jeweilige Nichtkonformität zu korrigieren, falls er bei einem unter dieses Kapitel fallenden Erzeugnis einen der folgenden Sachverhalte feststellt:
+
+
+a)
+
+
+Die CE-Kennzeichnung wurde unter Nichteinhaltung des Artikels 30 der Verordnung (EG) Nr. 765/2008 oder des Artikels 15 oder des Artikels 16 dieser Verordnung angebracht;
+
+
+
+
+b)
+
+
+die CE-Kennzeichnung oder Typennummer wurde nicht angebracht;
+
+
+
+
+c)
+
+
+die Kennnummer der notifizierten Stelle — falls das Konformitätsbewertungsverfahren nach Teil 9 des Anhangs angewendet wird — wurde unter Missachtung von Artikel 16 angebracht oder nicht angebracht;
+
+
+
+
+d)
+
+
+das Identifizierungskennzeichen der UA-Klasse wurde nicht angebracht;
+
+
+
+
+e)
+
+
+die Kennzeichnung des Schallleistungspegels, falls gefordert, wurde nicht angebracht;
+
+
+
+
+f)
+
+
+die Seriennummer wurde nicht angebracht oder hat nicht das richtige Format;
+
+
+
+
+g)
+
+
+das Handbuch oder das Informationsblatt liegen nicht vor;
+
+
+
+
+h)
+
+
+die EU-Konformitätserklärung fehlt oder wurde nicht ausgestellt;
+
+
+
+
+i)
+
+
+die EU-Konformitätserklärung wurde nicht korrekt ausgestellt;
+
+
+
+
+j)
+
+
+die technischen Unterlagen sind entweder nicht verfügbar oder unvollständig;
+
+
+
+
+k)
+
+
+es fehlt der Name des Herstellers, der Name des Einführers, der eingetragene Handelsname, die eingetragene Handelsmarke, die Web-Adresse oder die Postanschrift.
+
+
+
+
+
+(2)
+Besteht die Nichtkonformität nach Absatz 1 weiter, ergreift der betreffende Mitgliedstaat alle geeigneten Maßnahmen, um die Bereitstellung des Erzeugnisses auf dem Markt zu beschränken oder zu untersagen oder um dafür zu sorgen, dass es zurückgenommen oder zurückgerufen wird.
+
+
+
+
+
+KAPITEL III
+
+▼M1
+
+
+Anforderungen an UAS, die in den Kategorien „zulassungspflichtig“ und „speziell“ betrieben werden, sofern sie nicht unter eine Erklärung fallen
+
+Artikel 40
+Anforderungen an UAS, die in den Kategorien „zulassungspflichtig“ und „speziell“ betrieben werden, sofern sie nicht unter eine Erklärung fallen
+
+
+(1)
+
+
+Konstruktion, Herstellung und Instandhaltung von UAS erfordern eine Zulassung, wenn die UAS eine der folgenden Bedingungen erfüllen:
+
+
+a)
+
+
+ihre charakteristische Abmessung beträgt mindestens 3 m und sie sind so konstruiert, dass sie über Menschenansammlungen betrieben werden können;
+
+
+
+
+b)
+
+
+sie sind für die Beförderung von Menschen konstruiert;
+
+
+
+
+c)
+
+
+sie sind für den Transport gefährlicher Güter konstruiert und erfordern ein hohes Maß an Robustheit zur Minderung der Risiken für Dritte bei einem Unfall;
+
+
+
+
+d)
+
+
+sie sind für den Betrieb in der in Artikel 5 der Durchführungsverordnung (EU) 2019/947 festgelegten Kategorie „speziell“ bestimmt, und aus der von der zuständigen Behörde nach einer Risikobewertung nach Artikel 11 der Durchführungsverordnung (EU) 2019/947 erteilten Betriebsgenehmigung geht hervor, dass das Betriebsrisiko ohne eine Zulassung der UAS nicht angemessen abgemildert werden kann.
+
+
+
+
+
+
+(2)
+
+
+Ein zulassungspflichtiges UAS muss den geltenden Anforderungen genügen, die in den Verordnungen (EU) Nr. 748/2012, (EU) 2015/640 und (EU) Nr. 1321/2014 der Kommission festgelegt sind.
+
+
+
+
+(3)
+
+
+Sofern das UAS nicht nach Absatz 1 zulassungspflichtig ist, muss ein UAS, das in der Kategorie „speziell“ eingesetzt wird, über die technischen Fähigkeiten verfügen, die in der von der zuständigen Behörde erteilten Betriebsgenehmigung aufgeführt sind, oder dem Betreiberzeugnis für Leicht-UAS (Light UAS Operator Certificate, LUC) nach Teil C des Anhangs der Durchführungsverordnung (EU) 2019/947 genügen.
+
+
+
+
+(4)
+
+
+Sofern nicht privat hergestellt, müssen alle nach Artikel 14 der Durchführungsverordnung (EU) 2019/947 nicht registrierungspflichtigen UAS mit einer eindeutigen Seriennummer versehen sein, die der Norm ANSI/CTA-2063-A-2019 (Small Unmanned Aerial Systems Serial Numbers, 2019) genügt.
+
+
+
+
+(5)
+
+
+Jedes UA, das für den Betrieb in der „speziellen“ Kategorie und in einer Höhe von unter 120 Metern bestimmt ist, muss mit einem Fernidentifizierungssystem ausgerüstet sein, das Folgendes ermöglicht:
+
+
+a)
+
+
+Es ermöglicht das Hochladen der UAS-Betreibernummer nach Artikel 14 der Durchführungsverordnung (EU) 2019/947 sowie sonstiger zusätzlicher Nummern, die das Registrierungssystem vorsieht. Das System führt eine Konsistenzprüfung durch, um die Integrität der vollständigen Zeichenkette, die dem UAS-Betreiber zum Zeitpunkt der Registrierung zur Verfügung gestellt wird, zu überprüfen. Bei Unstimmigkeiten sendet das UAS eine Fehlermeldung an den UAS-Betreiber.
+
+
+
+
+b)
+
+
+Es ermöglicht, dass während der gesamten Flugdauer mindestens die folgenden Daten in Echtzeit regelmäßig so übermittelt werden, dass sie von vorhandenen Mobilfunkgeräten empfangen werden können:
+
+
+i)
+
+
+die UAS-Betreibernummer und der vom Mitgliedstaat während des Registrierungsverfahrens bereitgestellte Überprüfungscode, es sei denn, die Konsistenzprüfung nach Buchstabe a wird nicht bestanden;
+
+
+
+
+ii)
+
+
+die eindeutige Seriennummer des UA nach Absatz 4 oder, wenn das UA privat hergestellt wurde, die eindeutige Seriennummer des Zusatzgeräts nach Teil 6 des Anhangs;
+
+
+
+
+iii)
+
+
+der Zeitstempel, die geografische Position des UA und seine Höhe über der Oberfläche oder dem Startpunkt;
+
+
+
+
+iv)
+
+
+der Streckenverlauf, gemessen im Uhrzeigersinn vom geografischen Norden, sowie die Geschwindigkeit über Grund des UA;
+
+
+
+
+v)
+
+
+die geografische Position des Fernpiloten sowie
+
+
+
+
+vi)
+
+
+ein Hinweis auf den Notstatus des UAS.
+
+
+
+
+
+
+c)
+
+
+Es erschwert eine Manipulation der Funktion des Systems zur direkten Fernidentifizierung.
+
+
+
+
+
+▼B
+
+
+
+
+
+KAPITEL IV
+
+UAS-Betreiber aus Drittländern
+
+Artikel 41
+UAS-Betreiber aus Drittländern
+
+(1)
+UAS-Betreiber, die ihren Hauptgeschäftssitz in einem Drittland haben, dort niedergelassen oder ansässig sind, müssen für die Zwecke des UAS-Betriebs im einheitlichen europäischen Luftraum der Durchführungsverordnung (EU) 2019/947 genügen.
+
+
+(2)
+Zuständig für den UAS-Drittlandbetreiber ist die zuständige Behörde des Mitgliedstaats, in dem der UAS-Betreiber sein UAS zuerst zu betreiben beabsichtigt.
+
+
+(3)
+
+Abweichend von Absatz 1 kann die zuständige Behörde für die Zwecke des Betriebs innerhalb der Union, in bzw. aus der Union eine Bescheinigung über die Befähigung des Fernpiloten oder UAS-Betreibers nach der Durchführungsverordnung (EU) 2019/947 oder ein gleichwertiges Dokument anerkennen, sofern
+
+
+a)
+
+
+das Drittland eine solche Anerkennung fordert,
+
+
+
+
+b)
+
+
+die Bescheinigung über die Befähigung des Fernpiloten oder das UAS-Betreiberzeugnis im Ausstellungsstaat gültige Dokumente sind und
+
+
+
+
+c)
+
+
+die Kommission nach Rücksprache mit der EASA sichergestellt hat, dass die Anforderungen für die Ausstellung dieser Bescheinigungen das gleiche Sicherheitsniveau bieten wie diese Verordnung.
+
+
+
+
+
+
+
+
+KAPITEL V
+
+Schlussbestimmungen
+
+Artikel 42
+Inkrafttreten
+Diese Verordnung tritt am zwanzigsten Tag nach ihrer Veröffentlichung im Amtsblatt der Europäischen Union in Kraft.
+Diese Verordnung ist in allen ihren Teilen verbindlich und gilt unmittelbar in jedem Mitgliedstaat.
+
+▼M1
+
+
+
+
+
+
+
+
+ANHANG
+TEIL 1
+
+Anforderungen an ein unbemanntes Luftfahrzeugsystem der Klasse C0
+
+Ein UAS der Klasse C0 ist mit folgendem Klassen-Identifizierungskennzeichen auf dem UA gekennzeichnet:
+
+
+
+Ein UAS der Klasse C0 muss folgenden Kriterien genügen:
+
+
+1.
+
+
+Es hat eine MTOM, einschließlich Nutzlast, von weniger als 250 g.
+
+
+
+
+2.
+
+
+Es hat eine Höchstgeschwindigkeit im Horizontalflug von 19 m/s.
+
+
+
+
+3.
+
+
+Seine maximal erreichbare Höhe liegt bei 120 m über dem Startpunkt.
+
+
+
+
+4.
+
+
+Es ist durch einen Fernpiloten, der den Herstelleranweisungen folgt, in Hinblick auf Stabilität, Manövrierbarkeit sowie Steuerungs- und Kontrolllink-Leistung, soweit erforderlich unter allen anzunehmenden Betriebsbedingungen, auch bei einem Versagen eines oder gegebenenfalls mehrerer Systeme, sicher steuerbar.
+
+
+
+
+5.
+
+
+Es ist so konstruiert und gebaut, dass die Gefahr der Verletzung von Menschen während des Betriebs minimiert wird und scharfe Kanten vermieden werden, sofern dies nach guten Konstruktions- und Herstellungsgesichtspunkten technisch nicht unvermeidbar ist. Sofern das UA mit Propellern ausgerüstet ist, ist es so zu konstruieren, dass die Gefahr einer von den Propellerblättern ausgehenden Verletzung begrenzt wird.
+
+
+
+
+6.
+
+
+Es wird ausschließlich mit elektrischem Strom betrieben.
+
+
+
+
+7.
+
+
+Wenn es mit einem „Follow-me“-Modus ausgestattet und diese Funktion eingeschaltet ist, darf es sich in einer Entfernung vom Fernpiloten von höchstens 50 m befinden und dem Fernpiloten muss es möglich sein, die Kontrolle über das UA zurückzuerlangen.
+
+
+
+
+8.
+
+
+Es wird mit Herstelleranweisungen in Verkehr gebracht, die Folgendes umfassen:
+
+
+a)
+
+
+die Merkmale des UA, einschließlich, jedoch nicht begrenzt auf:
+
+
+—
+
+
+die UA-Klasse,
+
+
+
+
+—
+
+
+die UA-Masse (mit einer Beschreibung der Bezugskonfiguration) und die höchstzulässige Startmasse (MTOM),
+
+
+
+
+—
+
+
+die allgemeinen Merkmale der zulässigen Nutzlasten unter Angabe der Masse, der Abmessungen, Schnittstellen zum UA und sonstiger etwaiger Einschränkungen,
+
+
+
+
+—
+
+
+die Bedieneinheit und die Software zur Fernsteuerung des UA und
+
+
+
+
+—
+
+
+eine Beschreibung des Verhaltens des UA im Falle eines Verlustes des Steuerungs- und Kontrolllinks,
+
+
+
+
+
+
+b)
+
+
+klare Betriebsanweisungen,
+
+
+
+
+c)
+
+
+betriebliche Einschränkungen (einschließlich, jedoch nicht begrenzt auf Wetterbedingungen, Bedingungen für den Tag-/Nachtbetrieb) und
+
+
+
+
+d)
+
+
+eine geeignete Beschreibung aller Risiken im Zusammenhang mit dem UAS-Betrieb, angepasst an das Alter des Nutzers.
+
+
+
+
+
+
+9.
+
+
+Ihm liegt ein Informationsblatt der Agentur der Europäischen Union für Flugsicherheit (EASA) über die geltenden Beschränkungen und Auflagen gemäß der Durchführungsverordnung (EU) 2019/947 bei.
+
+
+
+
+10.
+
+
+Die Nummern 4, 5 und 6 gelten nicht für UAS, bei denen es sich um Spielzeug im Sinne der Richtlinie 2009/48/EG über die Sicherheit von Spielzeug handelt.
+
+
+TEIL 2
+
+Anforderungen an ein unbemanntes Luftfahrzeugsystem der Klasse C1
+
+Ein UAS der Klasse C1 ist mit folgendem Klassen-Identifizierungskennzeichen auf dem UA gekennzeichnet:
+
+
+
+Ein UAS der Klasse C1 muss folgenden Kriterien genügen:
+
+
+1.
+
+
+Es muss aus Materialien hergestellt sein und eine Leistung sowie physische Merkmale aufweisen, die gewährleisten, dass bei einem Aufprall mit seiner Endgeschwindigkeit auf einen menschlichen Kopf die auf diesen übertragene Energie unter 80 J liegt oder alternativ die MTOM einschließlich der Nutzlast unter 900 g liegt.
+
+
+
+
+2.
+
+
+Es hat eine Höchstgeschwindigkeit im Horizontalflug von 19 m/s.
+
+
+
+
+3.
+
+
+Es hat eine maximal erreichbare Höhe von 120 m über dem Startpunkt oder ist mit einem System ausgestattet, dass die Höhe über der Oberfläche oder über dem Startpunkt auf 120 m oder auf einen Wert begrenzt, der vom Fernpiloten eingestellt werden kann. Ist der Wert einstellbar, müssen dem Fernpiloten während des Flugs klare Angaben zur Höhe des UA über der Oberfläche oder dem Startpunkt geliefert werden.
+
+
+
+
+4.
+
+
+Es ist durch einen Fernpiloten mit einer ausreichenden Befähigung nach der Durchführungsverordnung (EU) 2019/947, der den Herstelleranweisungen folgt, in Hinblick auf Stabilität, Manövrierbarkeit und Steuerungs- und Kontrolllink-Leistung soweit erforderlich unter allen anzunehmenden Betriebsbedingungen, auch bei einem Versagen eines oder gegebenenfalls mehrerer Systeme, sicher steuerbar.
+
+
+
+
+5.
+
+
+Es verfügt über die für das UA erforderliche mechanische Festigkeit, einschließlich eines notwendigen Sicherheitsfaktors, sowie gegebenenfalls über die Stabilität, um Belastungen zu widerstehen, denen es während der Nutzung ausgesetzt sein kann, ohne dass es zu Brüchen oder Deformierungen kommt, die seinen sicheren Flug beeinträchtigen könnten.
+
+
+
+
+6.
+
+
+Es ist so konstruiert und gebaut, dass die Gefahr der Verletzung von Menschen während des Betriebs minimiert wird und scharfe Kanten vermieden werden, sofern dies nach guten Konstruktions- und Herstellungsgesichtspunkten technisch nicht unvermeidbar ist. Sofern das UA mit Propellern ausgerüstet ist, ist es so zu konstruieren, dass die Gefahr einer von den Propellerblättern ausgehenden Verletzung begrenzt wird.
+
+
+
+
+7.
+
+
+Bei Verlust des Steuerungs- und Kontrolllinks verfügt das UA über eine zuverlässige und berechenbare Funktion zur Wiederherstellung des Steuerungs- und Kontrolllinks oder, sollte sich der Link nicht wiederherstellen lassen, zur Beendigung des Flugs, bei der die Auswirkungen auf Dritte in der Luft oder am Boden verringert werden.
+
+
+
+
+8.
+
+
+Sofern es sich nicht um einen Starrflügler handelt, hat das UA einen garantierten, nach Teil 13 bestimmten A-bewerteten Schallleistungspegel LWA, der die in Teil 15 festgelegten Pegel nicht überschreitet.
+
+
+
+
+9.
+
+
+Angaben zum garantierten A-bewerteten Schallleistungspegel sind auf dem UA und/oder seiner Verpackung nach Teil 14 anzubringen, sofern es sich nicht um einen Starrflügler handelt.
+
+
+
+
+10.
+
+
+Es wird ausschließlich mit elektrischem Strom betrieben.
+
+
+
+
+11.
+
+
+Es verfügt über eine eindeutige Seriennummer nach ANSI/CTA-2063-2019 (Small Unmanned Aerial Systems Serial Numbers, 2019).
+
+
+
+
+12.
+
+
+Es verfügt über eine direkte Fernidentifizierung,
+
+
+a)
+
+
+die das Hochladen der UAS-Betreibernummer nach Artikel 14 der Durchführungsverordnung (EU) 2019/947 sowie sonstiger zusätzlicher Nummern, die das Registrierungssystem vorsieht, ermöglicht. Das System führt eine Konsistenzprüfung durch, um die Integrität der vollständigen Zeichenkette, die dem UAS-Betreiber zum Zeitpunkt der Registrierung zur Verfügung gestellt wird, zu überprüfen. Bei Unstimmigkeiten sendet das UAS eine Fehlermeldung an den UAS-Betreiber;
+
+
+
+
+b)
+
+
+die gewährleistet, dass während der gesamten Flugdauer mindestens die folgenden Daten des UA unter Verwendung eines offenen und dokumentierten Übertragungsprotokolls in Echtzeit direkt und regelmäßig so übermittelt werden, dass sie innerhalb des Sendebereichs von vorhandenen Mobilfunkgeräten direkt empfangen werden können:
+
+
+i)
+
+
+die UAS-Betreibernummer und der vom Eintragungsmitgliedstaat während des Registrierungsverfahrens bereitgestellte Überprüfungscode, es sei denn, die Konsistenzprüfung nach Buchstabe a wird nicht bestanden;
+
+
+
+
+ii)
+
+
+die eindeutige physische Seriennummer des UA nach Nummer 11,
+
+
+
+
+iii)
+
+
+der Zeitstempel, die geografische Position des UA und seine Höhe über der Oberfläche oder dem Startpunkt,
+
+
+
+
+iv)
+
+
+der Streckenverlauf, gemessen im Uhrzeigersinn vom geografischen Norden, sowie die Geschwindigkeit über Grund des UA,
+
+
+
+
+v)
+
+
+die geografische Position des Fernpiloten oder, falls nicht verfügbar, des Startpunkts und
+
+
+
+
+vi)
+
+
+ein Hinweis auf den Notstatus des UAS;
+
+
+
+
+
+
+c)
+
+
+die eine Manipulation der Funktion des Systems zur direkten Fernidentifizierung erschwert.
+
+
+
+
+
+
+13.
+
+
+Es muss mit einer Geo-Sensibilisierungsfunktion ausgestattet sein, die folgende Leistungen bietet:
+
+
+a)
+
+
+eine Schnittstelle nach Artikel 15 der Durchführungsverordnung (EU) 2019/947, mit der Daten, die Informationen zu Luftraumbeschränkungen enthalten, geladen und aktualisiert und — abhängig von den geografischen UAS-Zonen — mit der Position und Höhe über Grund des UA abgeglichen werden können, wobei gewährleistet sein muss, dass der Vorgang des Ladens und Aktualisierens dieser Daten die Integrität und Validität des UA nicht beeinträchtigt;
+
+
+
+
+b)
+
+
+einen Warnhinweis an den Fernpiloten, sobald eine mögliche Verletzung von Luftraumbeschränkungen erkannt wird, und
+
+
+
+
+c)
+
+
+Informationen an den Fernpiloten über den Status des UA sowie einen Warnhinweis, sobald die Positionierungs- oder Navigationssysteme des UA die ordnungsgemäße Funktionsweise der Geo-Sensibilisierungsfunktion nicht gewährleisten können.
+
+
+
+
+
+
+14.
+
+
+Verfügt das UA über eine Funktion, die seinen Zugang zu bestimmten Lufträumen beschränkt, muss diese Funktion reibungslos mit den Flugsteuerungssystemen des UA interagieren, ohne dessen Flugsicherheit zu beeinträchtigen. Darüber hinaus muss der Fernpilot klare Angaben erhalten, sobald diese Funktion das UA daran hindert, in diese Lufträume hineinzufliegen.
+
+
+
+
+15.
+
+
+Sobald die Batterie des UA oder seiner Steuereinheit einen niedrigen Ladezustand erreicht hat, muss der Fernpilot rechtzeitig einen klaren Warnhinweis erhalten, sodass er genügend Zeit hat, das UA sicher zu landen.
+
+
+
+
+16.
+
+
+Es muss ausgerüstet sein mit
+
+
+a)
+
+
+Lichtern für die Steuerbarkeit des UA und
+
+
+
+
+b)
+
+
+mindestens einem grünen Blinklicht für die Unterscheidbarkeit des UA bei Nacht, sodass eine Person am Boden das UA von einem bemannten Luftfahrzeug unterscheiden kann.
+
+
+
+
+
+
+17.
+
+
+Wenn es mit einem „Follow-me“-Modus ausgestattet und diese Funktion eingeschaltet ist, darf es sich in einer Entfernung vom Fernpiloten von höchstens 50 m befinden und dem Fernpiloten muss es möglich sein, die Kontrolle über das UA zurückzuerlangen.
+
+
+
+
+18.
+
+
+Es wird mit Herstelleranweisungen in Verkehr gebracht, die Folgendes umfassen:
+
+
+a)
+
+
+die Merkmale des UA, einschließlich, jedoch nicht begrenzt auf:
+
+
+—
+
+
+die UA-Klasse,
+
+
+
+
+—
+
+
+die UA-Masse (mit einer Beschreibung der Bezugskonfiguration) und die höchstzulässige Startmasse (MTOM),
+
+
+
+
+—
+
+
+die allgemeinen Merkmale der zulässigen Nutzlasten unter Angabe der Masse, der Abmessungen, Schnittstellen zum UA und sonstiger etwaiger Einschränkungen,
+
+
+
+
+—
+
+
+die Bedieneinheit und die Software zur Fernsteuerung des UA,
+
+
+
+
+—
+
+
+die Verfahren für das Hochladen der UAS-Betreibernummer in das Fernidentifizierungssystem,
+
+
+
+
+—
+
+
+die Referenz des Übertragungsprotokolls, das für die direkte Aussendung der Signale für das Fernidentifizierungssystem verwendet wird,
+
+
+
+
+—
+
+
+den Schallleistungspegel, und
+
+
+
+
+—
+
+
+eine Beschreibung des Verhaltens des UA im Falle eines Verlustes der Datenübertragung und des Verfahrens zur Wiederherstellung des Steuerungs- und Kontrolllinks des UA,
+
+
+—
+
+
+
+
+b)
+
+
+klare Betriebsanweisungen,
+
+
+
+
+c)
+
+
+Verfahren für das Hochladen von Luftraumbeschränkungen in die Geo-Sensibilisierungsfunktion,
+
+
+
+
+d)
+
+
+Instandhaltungsanweisungen,
+
+
+
+
+e)
+
+
+Verfahren für die Fehlersuche,
+
+
+
+
+f)
+
+
+betriebliche Einschränkungen (einschließlich, jedoch nicht begrenzt auf Wetterbedingungen, Bedingungen für den Tag-/Nachtbetrieb) und
+
+
+
+
+g)
+
+
+eine geeignete Beschreibung aller mit dem UAS-Betrieb zusammenhängenden Risiken.
+
+
+
+
+
+
+19.
+
+
+Ihm liegt ein Informationsblatt der EASA über die geltenden Beschränkungen und Auflagen gemäß der Durchführungsverordnung (EU) 2019/947 bei.
+
+
+
+
+20.
+
+
+Sofern es mit einer netzgestützten Fernidentifikation ausgestattet ist,
+
+
+a)
+
+
+muss es die Möglichkeit bieten, dass während der gesamten Flugdauer mindestens die folgenden Daten des UA unter Verwendung eines offenen und dokumentierten Übertragungsprotokolls in Echtzeit so übermittelt werden, dass sie über ein Netz empfangen werden können:
+
+
+i)
+
+
+die UAS-Betreibernummer und der vom Eintragungsmitgliedstaat während des Registrierungsverfahrens bereitgestellte Überprüfungscode, es sei denn, die Konsistenzprüfung nach Buchstabe a wird nicht bestanden;
+
+
+
+
+ii)
+
+
+die eindeutige Seriennummer des UA nach Nummer 11,
+
+
+
+
+iii)
+
+
+der Zeitstempel, die geografische Position des UA und seine Höhe über der Oberfläche oder dem Startpunkt,
+
+
+
+
+iv)
+
+
+der Streckenverlauf, gemessen im Uhrzeigersinn vom geografischen Norden, sowie die Geschwindigkeit über Grund des UA,
+
+
+
+
+v)
+
+
+die geografische Position des Fernpiloten oder, falls nicht verfügbar, des Startpunkts und
+
+
+
+
+vi)
+
+
+ein Hinweis auf den Notstatus des UAS;
+
+
+
+
+
+
+b)
+
+
+muss das System eine Manipulation der Funktion der direkten Fernidentifizierung erschweren.
+
+
+
+
+TEIL 3
+
+Anforderungen an ein unbemanntes Luftfahrzeugsystem der Klasse C2
+
+Ein UAS der Klasse C2 ist mit folgendem Klassen-Identifizierungskennzeichen auf dem UA gekennzeichnet:
+
+
+
+Ein UAS der Klasse C2 muss folgenden Kriterien genügen:
+
+
+1.
+
+
+Es hat eine MTOM, einschließlich Nutzlast, von weniger als 4 kg.
+
+
+
+
+2.
+
+
+Es hat eine maximal erreichbare Höhe von 120 m über dem Startpunkt oder ist mit einem System ausgestattet, dass die Höhe über der Oberfläche oder über dem Startpunkt auf 120 m oder auf einen Wert begrenzt, der vom Fernpiloten eingestellt werden kann. Ist der Wert einstellbar, müssen dem Fernpiloten während des Flugs klare Angaben zur Höhe des UA über der Oberfläche oder dem Startpunkt geliefert werden.
+
+
+
+
+3.
+
+
+Es ist durch einen Fernpiloten mit einer ausreichenden Befähigung nach der Durchführungsverordnung (EU) 2019/947, der den Herstelleranweisungen folgt, in Hinblick auf Stabilität, Manövrierbarkeit und Steuerungs- und Kontrolllink-Leistung, soweit erforderlich unter allen anzunehmenden Betriebsbedingungen, auch bei einem Versagen eines oder gegebenenfalls mehrerer Systeme, sicher steuerbar.
+
+
+
+
+4.
+
+
+Es verfügt über die für das UA erforderliche mechanische Festigkeit, einschließlich eines notwendigen Sicherheitsfaktors, sowie gegebenenfalls über die Stabilität, um Belastungen zu widerstehen, denen es während der Nutzung ausgesetzt sein kann, ohne dass es zu Brüchen oder Deformierungen kommt, die seinen sicheren Flug beeinträchtigen könnten.
+
+
+
+
+5.
+
+
+Im Fall eines gefesselten UA verfügt es über eine Leinenlänge von unter 50 m mit einer mechanischen Festigkeit von nicht weniger als
+
+
+a)
+
+
+dem Zehnfachen des Gewichts des Luftfahrzeugs bei höchstzulässiger Masse, wenn es sich um ein Luftfahrzeug schwerer als Luft handelt;
+
+
+
+
+b)
+
+
+dem Vierfachen der Kraft, die vom maximalen statischen Schub kombiniert mit der aerodynamischen Kraft der höchstzulässigen Windgeschwindigkeit im Flug ausgeübt wird, wenn es sich um ein Luftfahrzeug leichter als Luft handelt.
+
+
+
+
+
+
+6.
+
+
+Es ist so konstruiert und gebaut, dass die Gefahr der Verletzung von Menschen während des Betriebs minimiert wird und scharfe Kanten vermieden werden, sofern dies nach guten Konstruktions- und Herstellungsgesichtspunkten technisch nicht unvermeidbar ist. Sofern das UA mit Propellern ausgerüstet ist, ist es so zu konstruieren, dass die Gefahr einer von den Propellerblättern ausgehenden Verletzung begrenzt wird.
+
+
+
+
+7.
+
+
+Bei Verlust des Steuerungs- und Kontrolllinks verfügt das UA, sofern es sich nicht um ein gefesseltes UA handelt, über eine zuverlässige und berechenbare Funktion zur Wiederherstellung des Steuerungs- und Kontrolllinks oder, sollte sich der Link nicht wiederherstellen lassen, zur Beendigung des Flugs, bei der die Auswirkungen auf Dritte in der Luft oder am Boden verringert werden.
+
+
+
+
+8.
+
+
+Sofern nicht gefesselt, muss es mit einem gegen den unbefugten Zugang zu den Steuerungs- und Kontrollfunktionen gesicherten Steuerungs- und Kontrolllink ausgerüstet sein.
+
+
+
+
+9.
+
+
+Sofern es sich nicht um einen Starrflügler handelt, muss das UA mit einem Langsamflugmodus ausgerüstet sein, der vom Fernpiloten eingestellt werden kann und die Geschwindigkeit über Grund auf höchstens 3 m/s beschränkt.
+
+
+
+
+10.
+
+
+Sofern es sich nicht um einen Starrflügler handelt, hat das UA einen garantierten, nach Teil 13 bestimmten A-bewerteten Schallleistungspegel LWA, der die in Teil 15 festgelegten Pegel nicht überschreitet.
+
+
+
+
+11.
+
+
+Angaben zum garantierten A-bewerteten Schallleistungspegel sind auf dem UA und/oder seiner Verpackung nach Teil 14 anzubringen, sofern es sich nicht um einen Starrflügler handelt.
+
+
+
+
+12.
+
+
+Es wird ausschließlich mit elektrischem Strom betrieben.
+
+
+
+
+13.
+
+
+Es verfügt über eine eindeutige Seriennummer nach ANSI/CTA-2063-2019 (Small Unmanned Aerial Systems Serial Numbers, 2019).
+
+
+
+
+14.
+
+
+Es verfügt über eine direkte Fernidentifizierung,
+
+
+a)
+
+
+die das Hochladen der UAS-Betreibernummer nach Artikel 14 der Durchführungsverordnung (EU) 2019/947 sowie sonstiger zusätzlicher Nummern, die das Registrierungssystem vorsieht, ermöglicht. Das System führt eine Konsistenzprüfung durch, um die Integrität der vollständigen Zeichenkette, die dem UAS-Betreiber zum Zeitpunkt der Registrierung zur Verfügung gestellt wird, zu überprüfen. Bei Unstimmigkeiten sendet das UAS eine Fehlermeldung an den UAS-Betreiber;
+
+
+
+
+b)
+
+
+die gewährleistet, dass während der gesamten Flugdauer mindestens die folgenden Daten des UA unter Verwendung eines offenen und dokumentierten Übertragungsprotokolls in Echtzeit direkt und regelmäßig so übermittelt werden, dass sie innerhalb des Sendebereichs von vorhandenen Mobilfunkgeräten direkt empfangen werden können:
+
+
+i)
+
+
+die UAS-Betreibernummer und der vom Mitgliedstaat während des Registrierungsverfahrens bereitgestellte Überprüfungscode, es sei denn, die Konsistenzprüfung nach Buchstabe a wird nicht bestanden,
+
+
+
+
+ii)
+
+
+die eindeutige Seriennummer des UA nach Nummer 13,
+
+
+
+
+iii)
+
+
+der Zeitstempel, die geografische Position des UA und seine Höhe über der Oberfläche oder dem Startpunkt,
+
+
+
+
+iv)
+
+
+der Streckenverlauf, gemessen im Uhrzeigersinn vom geografischen Norden, sowie die Geschwindigkeit über Grund des UA,
+
+
+
+
+v)
+
+
+die geografische Position des Fernpiloten oder, falls nicht verfügbar, des Startpunkts und
+
+
+
+
+vi)
+
+
+ein Hinweis auf den Notstatus des UAS;
+
+
+
+
+
+
+c)
+
+
+die eine Manipulation der Funktion des Systems zur direkten Fernidentifizierung erschwert.
+
+
+
+
+
+
+15.
+
+
+Es muss mit einer Geo-Sensibilisierungsfunktion ausgestattet sein, die folgende Leistungen bietet:
+
+
+a)
+
+
+eine Schnittstelle nach Artikel 15 der Durchführungsverordnung (EU) 2019/947, mit der Daten, die Informationen zu Luftraumbeschränkungen enthalten, geladen und aktualisiert und — abhängig von den geografischen UAS-Zonen — mit der Position und Höhe über Grund des UA abgeglichen werden können, wobei gewährleistet sein muss, dass der Vorgang des Ladens und Aktualisierens dieser Daten die Integrität und Validität des UA nicht beeinträchtigt,
+
+
+
+
+b)
+
+
+einen Warnhinweis an den Fernpiloten, sobald eine mögliche Verletzung von Luftraumbeschränkungen erkannt wird, und
+
+
+
+
+c)
+
+
+Informationen an den Fernpiloten über den Status des UA sowie einen Warnhinweis, sobald die Positionierungs- oder Navigationssysteme des UA die ordnungsgemäße Funktionsweise der Geo-Sensibilisierungsfunktion nicht gewährleisten können.
+
+
+
+
+
+
+16.
+
+
+Verfügt das UA über eine Funktion, die seinen Zugang zu bestimmten Lufträumen beschränkt, muss diese Funktion reibungslos mit den Flugsteuerungssystemen des UA interagieren, ohne dessen Flugsicherheit zu beeinträchtigen. Darüber hinaus muss der Fernpilot klare Angaben erhalten, sobald diese Funktion das UA daran hindert, in diese Lufträume hineinzufliegen.
+
+
+
+
+17.
+
+
+Sobald die Batterie des UA oder seiner Steuereinheit einen niedrigen Ladezustand erreicht hat, muss der Fernpilot rechtzeitig einen klaren Warnhinweis erhalten, sodass er genügend Zeit hat, das UA sicher zu landen.
+
+
+
+
+18.
+
+
+Es muss ausgerüstet sein mit
+
+
+a)
+
+
+Lichtern für die Steuerbarkeit des UA und
+
+
+
+
+b)
+
+
+mindestens einem grünen Blinklicht für die Unterscheidbarkeit des UA bei Nacht, sodass eine Person am Boden das UA von einem bemannten Luftfahrzeug unterscheiden kann.
+
+
+
+
+
+
+19.
+
+
+Es wird mit Herstelleranweisungen in Verkehr gebracht, die Folgendes umfassen:
+
+
+a)
+
+
+die Merkmale des UA, einschließlich, jedoch nicht begrenzt auf:
+
+
+—
+
+
+die UA-Klasse,
+
+
+
+
+—
+
+
+die UA-Masse (mit einer Beschreibung der Bezugskonfiguration) und die höchstzulässige Startmasse (MTOM),
+
+
+
+
+—
+
+
+die allgemeinen Merkmale der zulässigen Nutzlasten unter Angabe der Masse, der Abmessungen, Schnittstellen zum UA und sonstiger etwaiger Einschränkungen,
+
+
+
+
+—
+
+
+die Bedieneinheit und die Software zur Fernsteuerung des UA,
+
+
+
+
+—
+
+
+die Verfahren für das Hochladen der UAS-Betreibernummer in das Fernidentifizierungssystem,
+
+
+
+
+—
+
+
+die Referenz des Übertragungsprotokolls, das für die direkte Aussendung der Signale für das Fernidentifizierungssystem verwendet wird,
+
+
+
+
+—
+
+
+den Schallleistungspegel, und
+
+
+
+
+—
+
+
+eine Beschreibung des Verhaltens des UA im Falle eines Verlustes des Steuerungs- und Kontrolllinks und des Verfahrens zur Wiederherstellung des Steuerungs- und Kontrolllinks des UA, und
+
+
+—
+
+
+
+
+b)
+
+
+klare Betriebsanweisungen,
+
+
+
+
+c)
+
+
+Verfahren für das Hochladen von Luftraumbeschränkungen in die Geo-Sensibilisierungsfunktion,
+
+
+
+
+d)
+
+
+Instandhaltungsanweisungen,
+
+
+
+
+e)
+
+
+Verfahren für die Fehlersuche,
+
+
+
+
+f)
+
+
+betriebliche Einschränkungen (einschließlich, jedoch nicht begrenzt auf Wetterbedingungen, Bedingungen für den Tag-/Nachtbetrieb) und
+
+
+
+
+g)
+
+
+eine geeignete Beschreibung aller mit dem UAS-Betrieb zusammenhängenden Risiken.
+
+
+
+
+
+
+20.
+
+
+Ihm liegt ein Informationsblatt der EASA über die geltenden Beschränkungen und Auflagen gemäß der Durchführungsverordnung (EU) 2019/947 bei.
+
+
+
+
+21.
+
+
+Sofern es mit einer netzgestützten Fernidentifikation ausgestattet ist,
+
+
+a)
+
+
+muss es gewährleisten, dass während der gesamten Flugdauer mindestens die folgenden Daten des UA unter Verwendung eines offenen und dokumentierten Übertragungsprotokolls in Echtzeit so übermittelt werden, dass sie über ein Netz empfangen werden können:
+
+
+i)
+
+
+die UAS-Betreibernummer und der vom Eintragungsmitgliedstaat während des Registrierungsverfahrens bereitgestellte Überprüfungscode, es sei denn, die Konsistenzprüfung nach Nummer 14 Buchstabe a wird nicht bestanden;
+
+
+
+
+ii)
+
+
+die eindeutige Seriennummer des UA nach Nummer 13,
+
+
+
+
+iii)
+
+
+der Zeitstempel, die geografische Position des UA und seine Höhe über der Oberfläche oder dem Startpunkt,
+
+
+
+
+iv)
+
+
+der Streckenverlauf, gemessen im Uhrzeigersinn vom geografischen Norden, sowie die Geschwindigkeit über Grund des UA,
+
+
+
+
+v)
+
+
+die geografische Position des Fernpiloten oder, falls nicht verfügbar, des Startpunkts und
+
+
+
+
+vi)
+
+
+ein Hinweis auf den Notstatus des UAS;
+
+
+
+
+
+
+b)
+
+
+muss das System eine Manipulation der Funktion der direkten Fernidentifizierung erschweren.
+
+
+
+
+TEIL 4
+
+Anforderungen an ein unbemanntes Luftfahrzeugsystem der Klasse C3
+
+Ein UAS der Klasse C3 ist mit folgendem Klassen-Identifizierungskennzeichen auf dem UA gekennzeichnet:
+
+
+
+Ein UAS der Klasse C3 muss folgenden Kriterien genügen:
+
+
+1.
+
+
+Es hat eine MTOM, einschließlich Nutzlast, von weniger als 25 kg und eine maximale charakteristische Abmessung von weniger als 3 m;
+
+
+
+
+2.
+
+
+Es hat eine maximal erreichbare Höhe von 120 m über dem Startpunkt oder ist mit einem System ausgestattet, dass die Höhe über der Oberfläche oder über dem Startpunkt auf 120 m oder auf einen Wert begrenzt, der vom Fernpiloten eingestellt werden kann. Ist der Wert einstellbar, müssen dem Fernpiloten während des Flugs klare Angaben zur Höhe des UA über der Oberfläche oder dem Startpunkt geliefert werden.
+
+
+
+
+3.
+
+
+Es ist durch einen Fernpiloten mit einer ausreichenden Befähigung nach der Durchführungsverordnung (EU) 2019/947, der den Herstelleranweisungen folgt, in Hinblick auf Stabilität, Manövrierbarkeit und Steuerungs- und Kontrolllink-Leistung, soweit erforderlich unter allen anzunehmenden Betriebsbedingungen, auch bei einem Versagen eines oder gegebenenfalls mehrerer Systeme, sicher steuerbar.
+
+
+
+
+4.
+
+
+Im Fall eines gefesselten UA verfügt es über eine Leinenlänge von unter 50 m mit einer mechanischen Festigkeit von nicht weniger als
+
+
+a)
+
+
+dem Zehnfachen des Gewichts des Luftfahrzeugs bei höchstzulässiger Masse, wenn es sich um ein Luftfahrzeug schwerer als Luft handelt;
+
+
+
+
+b)
+
+
+dem Vierfachen der Kraft, die vom maximalen statischen Schub kombiniert mit der aerodynamischen Kraft der höchstzulässigen Windgeschwindigkeit im Flug ausgeübt wird, wenn es sich um ein Luftfahrzeug leichter als Luft handelt.
+
+
+
+
+
+
+5.
+
+
+Bei Verlust des Steuerungs- und Kontrolllinks verfügt das UA, sofern es sich nicht um ein gefesseltes UA handelt, über eine zuverlässige und berechenbare Funktion zur Wiederherstellung des Steuerungs- und Kontrolllinks oder, sollte sich der Link nicht wiederherstellen lassen, zur Beendigung des Flugs, bei der die Auswirkungen auf Dritte in der Luft oder am Boden verringert werden.
+
+
+
+
+6.
+
+
+Angaben zum garantierten, nach Teil 13 bestimmten A-bewerteten Schallleistungspegel LWA sind auf dem UA und/oder seiner Verpackung nach Teil 14 anzubringen, sofern es sich nicht um einen Starrflügler handelt.
+
+
+
+
+7.
+
+
+Es wird ausschließlich mit elektrischem Strom betrieben.
+
+
+
+
+8.
+
+
+Es verfügt über eine eindeutige Seriennummer nach ANSI/CTA-2063-2019 (Small Unmanned Aerial Systems Serial Numbers, 2019).
+
+
+
+
+9.
+
+
+Sofern nicht gefesselt, verfügt es über eine direkte Fernidentifizierung,
+
+
+a)
+
+
+die das Hochladen der UAS-Betreibernummer nach Artikel 14 der Durchführungsverordnung (EU) 2019/947 sowie sonstiger zusätzlicher Nummern, die das Registrierungssystem vorsieht, ermöglicht. Das System führt eine Konsistenzprüfung durch, um die Integrität der vollständigen Zeichenkette, die dem UAS-Betreiber zum Zeitpunkt der Registrierung zur Verfügung gestellt wird, zu überprüfen. Bei Unstimmigkeiten sendet das UAS eine Fehlermeldung an den UAS-Betreiber;
+
+
+
+
+b)
+
+
+die gewährleistet, dass während der gesamten Flugdauer mindestens die folgenden Daten des UA unter Verwendung eines offenen und dokumentierten Übertragungsprotokolls in Echtzeit direkt und regelmäßig so übermittelt werden, dass sie innerhalb des Sendebereichs von vorhandenen Mobilfunkgeräten direkt empfangen werden können:
+
+
+i)
+
+
+die UAS-Betreibernummer und der vom Mitgliedstaat während des Registrierungsverfahrens bereitgestellte Überprüfungscode, es sei denn, die Konsistenzprüfung nach Buchstabe a wird nicht bestanden,
+
+
+
+
+ii)
+
+
+die eindeutige Seriennummer des UA nach Nummer 8,
+
+
+
+
+iii)
+
+
+der Zeitstempel, die geografische Position des UA und seine Höhe über der Oberfläche oder dem Startpunkt,
+
+
+
+
+iv)
+
+
+der Streckenverlauf, gemessen im Uhrzeigersinn vom geografischen Norden, sowie die Geschwindigkeit über Grund des UA,
+
+
+
+
+v)
+
+
+die geografische Position des Fernpiloten oder, falls nicht verfügbar, des Startpunkts und
+
+
+
+
+vi)
+
+
+ein Hinweis auf den Notstatus des UAS;
+
+
+
+
+
+
+c)
+
+
+die eine Manipulation der Funktion des Systems zur direkten Fernidentifizierung erschwert.
+
+
+
+
+
+
+10.
+
+
+Es muss mit einer Geo-Sensibilisierungsfunktion ausgestattet sein, die folgende Leistungen bietet:
+
+
+a)
+
+
+eine Schnittstelle nach Artikel 15 der Durchführungsverordnung (EU) 2019/947, mit der Daten, die Informationen zu Luftraumbeschränkungen enthalten, geladen und aktualisiert und — abhängig von den geografischen UAS-Zonen — mit der Position und Höhe über Grund des UA abgeglichen werden können, wobei gewährleistet sein muss, dass der Vorgang des Ladens und Aktualisierens dieser Daten die Integrität und Validität des UA nicht beeinträchtigt;
+
+
+
+
+b)
+
+
+einen Warnhinweis an den Fernpiloten, sobald eine mögliche Verletzung von Luftraumbeschränkungen erkannt wird, und
+
+
+
+
+c)
+
+
+Informationen an den Fernpiloten über den Status des UA sowie einen Warnhinweis, sobald die Positionierungs- oder Navigationssysteme des UA die ordnungsgemäße Funktionsweise der Geo-Sensibilisierungsfunktion nicht gewährleisten können.
+
+
+
+
+
+
+11.
+
+
+Verfügt das UA über eine Funktion, die seinen Zugang zu bestimmten Lufträumen beschränkt, muss diese Funktion reibungslos mit den Flugsteuerungssystemen des UA interagieren, ohne dessen Flugsicherheit zu beeinträchtigen. Darüber hinaus muss der Fernpilot klare Angaben erhalten, sobald diese Funktion das UA daran hindert, in diese Lufträume hineinzufliegen.
+
+
+
+
+12.
+
+
+Sofern nicht gefesselt, muss es mit einem gegen den unbefugten Zugang zu den Steuerungs- und Kontrollfunktionen gesicherten Steuerungs- und Kontrolllink ausgerüstet sein.
+
+
+
+
+13.
+
+
+Sobald die Batterie des UA oder seiner Steuereinheit einen niedrigen Ladezustand erreicht hat, muss der Fernpilot rechtzeitig einen klaren Warnhinweis erhalten, sodass er genügend Zeit hat, das UA sicher zu landen.
+
+
+
+
+14.
+
+
+Es muss ausgerüstet sein mit
+
+
+a)
+
+
+Lichtern für die Steuerbarkeit des UA und
+
+
+
+
+b)
+
+
+mindestens einem grünen Blinklicht für die Unterscheidbarkeit des UA bei Nacht, sodass eine Person am Boden das UA von einem bemannten Luftfahrzeug unterscheiden kann.
+
+
+
+
+
+
+15.
+
+
+Es wird mit Herstelleranweisungen in Verkehr gebracht, die Folgendes umfassen:
+
+
+a)
+
+
+die Merkmale des UA, einschließlich, jedoch nicht begrenzt auf:
+
+
+—
+
+
+die UA-Klasse,
+
+
+
+
+—
+
+
+die UA-Masse (mit einer Beschreibung der Bezugskonfiguration) und die höchstzulässige Startmasse (MTOM),
+
+
+
+
+—
+
+
+die allgemeinen Merkmale der zulässigen Nutzlasten unter Angabe der Masse, der Abmessungen, Schnittstellen zum UA und sonstiger etwaiger Einschränkungen,
+
+
+
+
+—
+
+
+die Bedieneinheit und die Software zur Fernsteuerung des UA,
+
+
+
+
+—
+
+
+die Verfahren für das Hochladen der UAS-Betreibernummer in das Fernidentifizierungssystem,
+
+
+
+
+—
+
+
+die Referenz des Übertragungsprotokolls, das für die direkte Aussendung der Signale für das Fernidentifizierungssystem verwendet wird,
+
+
+
+
+—
+
+
+den Schallleistungspegel,
+
+
+
+
+—
+
+
+eine Beschreibung des Verhaltens des UA im Falle eines Verlustes des Steuerungs- und Kontrolllinks und des Verfahrens zur Wiederherstellung des Steuerungs- und Kontrolllinks des UA,
+
+
+
+
+
+
+b)
+
+
+klare Betriebsanweisungen,
+
+
+
+
+c)
+
+
+Verfahren für das Hochladen von Luftraumbeschränkungen in die Geo-Sensibilisierungsfunktion,
+
+
+
+
+d)
+
+
+Instandhaltungsanweisungen,
+
+
+
+
+e)
+
+
+Verfahren für die Fehlersuche,
+
+
+
+
+f)
+
+
+betriebliche Einschränkungen (einschließlich, jedoch nicht begrenzt auf Wetterbedingungen, Bedingungen für den Tag-/Nachtbetrieb) und
+
+
+
+
+g)
+
+
+eine geeignete Beschreibung aller mit dem UAS-Betrieb zusammenhängenden Risiken.
+
+
+
+
+
+
+16.
+
+
+Ihm liegt ein Informationsblatt der EASA über die geltenden Beschränkungen und Auflagen gemäß der Durchführungsverordnung (EU) 2019/947 bei.
+
+
+
+
+17.
+
+
+Sofern es mit einer netzgestützten Fernidentifikation ausgestattet ist,
+
+
+a)
+
+
+muss es gewährleisten, dass während der gesamten Flugdauer mindestens die folgenden Daten des UA unter Verwendung eines offenen und dokumentierten Übertragungsprotokolls in Echtzeit so übermittelt werden, dass sie über ein Netz empfangen werden können:
+
+
+i.
+
+
+die UAS-Betreibernummer und der vom Eintragungsmitgliedstaat während des Registrierungsverfahrens bereitgestellte Überprüfungscode, es sei denn, die Konsistenzprüfung nach Nummer 9 Buchstabe a wird nicht bestanden;
+
+
+
+
+ii.
+
+
+die eindeutige Seriennummer des UA nach Nummer 8,
+
+
+
+
+iii.
+
+
+der Zeitstempel, die geografische Position des UA und seine Höhe über der Oberfläche oder dem Startpunkt,
+
+
+
+
+iv.
+
+
+der Streckenverlauf, gemessen im Uhrzeigersinn vom geografischen Norden, sowie die Geschwindigkeit über Grund des UA,
+
+
+
+
+v.
+
+
+die geografische Position des Fernpiloten oder, falls nicht verfügbar, des Startpunkts und
+
+
+
+
+vi.
+
+
+ein Hinweis auf den Notstatus des UAS;
+
+
+
+
+
+
+b)
+
+
+muss das System eine Manipulation der Funktion der direkten Fernidentifizierung erschweren.
+
+
+
+
+TEIL 5
+
+Anforderungen an ein unbemanntes Luftfahrzeugsystem der Klasse C4
+
+Ein UAS der Klasse C4 ist mit folgendem Kennzeichen sichtbar gekennzeichnet:
+
+
+
+Ein UAS der Klasse C4 muss folgenden Kriterien genügen:
+
+
+1.
+
+
+Es hat eine MTOM, einschließlich Nutzlast, von weniger als 25 kg.
+
+
+
+
+2.
+
+
+Es ist durch einen Fernpiloten, der den Herstelleranweisungen folgt, soweit erforderlich unter allen anzunehmenden Betriebsbedingungen, auch bei einem Versagen eines oder gegebenenfalls mehrerer Systeme, sicher steuer- und manövrierbar.
+
+
+
+
+3.
+
+
+Es verfügt über keine automatischen Steuerungsmodi, außer der Unterstützung der Flugstabilisierung, die keine direkte Auswirkung auf die Flugbahn hat, und der Unterstützung bei Verlust der Datenverbindung, sofern eine festgelegte feste Position der Flugsteuerung im Fall des Verlustes der Datenverbindung verfügbar ist.
+
+
+
+
+4.
+
+
+Es wird mit Herstelleranweisungen in Verkehr gebracht, die Folgendes umfassen:
+
+
+a)
+
+
+die Merkmale des UA, einschließlich, jedoch nicht begrenzt auf:
+
+
+—
+
+
+die UA-Klasse,
+
+
+
+
+—
+
+
+die UA-Masse (mit einer Beschreibung der Bezugskonfiguration) und die höchstzulässige Startmasse (MTOM),
+
+
+
+
+—
+
+
+die allgemeinen Merkmale der zulässigen Nutzlasten unter Angabe der Masse, der Abmessungen, Schnittstellen zum UA und sonstiger etwaiger Einschränkungen,
+
+
+
+
+—
+
+
+die Bedieneinheit und die Software zur Fernsteuerung des UA und
+
+
+
+
+—
+
+
+eine Beschreibung des Verhaltens des UA im Falle eines Verlustes des Steuerungs- und Kontrolllinks,
+
+
+
+
+
+
+b)
+
+
+klare Betriebsanweisungen,
+
+
+
+
+c)
+
+
+Instandhaltungsanweisungen,
+
+
+
+
+d)
+
+
+Verfahren für die Fehlersuche,
+
+
+
+
+e)
+
+
+betriebliche Einschränkungen (einschließlich, jedoch nicht begrenzt auf Wetterbedingungen, Bedingungen für den Tag-/Nachtbetrieb) und
+
+
+
+
+f)
+
+
+eine geeignete Beschreibung aller mit dem UAS-Betrieb zusammenhängenden Risiken.
+
+
+
+
+
+
+5.
+
+
+Ihm liegt ein Informationsblatt der EASA über die geltenden Beschränkungen und Auflagen gemäß der Durchführungsverordnung (EU) 2019/947 bei.
+
+
+TEIL 6
+
+Anforderungen an das Zusatzgerät für die direkte Fernidentifizierung
+
+Ein Zusatzgerät für die direkte Fernidentifizierung muss folgenden Anforderungen genügen:
+
+
+1.
+
+
+Es muss das Hochladen der UAS-Betreibernummer nach Artikel 14 der Durchführungsverordnung (EU) 2019/947 sowie sonstiger zusätzlicher Nummern, die das Registrierungssystem vorsieht, ermöglichen Das System führt eine Konsistenzprüfung durch, um die Integrität der vollständigen Zeichenkette, die dem UAS-Betreiber zum Zeitpunkt der Registrierung zur Verfügung gestellt wird, zu überprüfen. Bei Unstimmigkeiten sendet das UAS eine Fehlermeldung an den UAS-Betreiber.
+
+
+
+
+2.
+
+
+Es verfügt über eine eindeutige Seriennummer nach ANSI/CTA-2063-2019 (Small Unmanned Aerial Systems Serial Numbers, 2019), die auf dem Zusatzgerät und seiner Verpackung oder auf den Herstelleranweisungen lesbar angebracht ist.
+
+
+
+
+3.
+
+
+Es gewährleistet, dass während der gesamten Flugdauer mindestens die folgenden Daten des UA unter Verwendung eines offenen und dokumentierten Übertragungsprotokolls in Echtzeit direkt und regelmäßig so übermittelt werden, dass sie innerhalb des Sendebereichs von vorhandenen Mobilfunkgeräten direkt empfangen werden können:
+
+
+i)
+
+
+die UAS-Betreibernummer und der vom Eintragungsmitgliedstaat während des Registrierungsverfahrens bereitgestellte Überprüfungscode, es sei denn, die Konsistenzprüfung nach Buchstabe a wird nicht bestanden,
+
+
+
+
+ii)
+
+
+die eindeutige Seriennummer des Zusatzgeräts nach Nummer 2,
+
+
+
+
+iii)
+
+
+der Zeitstempel, die geografische Position des UA und seine Höhe über der Oberfläche oder dem Startpunkt,
+
+
+
+
+iv)
+
+
+der Streckenverlauf, gemessen im Uhrzeigersinn vom geografischen Norden, sowie die Geschwindigkeit über Grund des UA und
+
+
+
+
+v)
+
+
+die geografische Position des Fernpiloten oder, falls nicht verfügbar, des Startpunkts.
+
+
+
+
+
+
+4.
+
+
+Es erschwert die Manipulation der Funktion der direkten Fernidentifizierung.
+
+
+
+
+5.
+
+
+Es wird mit Herstelleranweisungen in Verkehr gebracht, die die Referenz des Übertragungsprotokolls, das für die Aussendung der Signale für die direkte Fernidentifizierung verwendet wird, enthalten, sowie mit Anweisungen,
+
+
+a)
+
+
+wie das Modul am UA anzubringen ist und
+
+
+
+
+b)
+
+
+wie die UAS-Betreibernummer hochgeladen wird.
+
+
+
+
+TEIL 7
+
+Konformitätsbewertung Modul A — Interne Fertigungskontrolle
+
+
+1. Bei der internen Fertigungskontrolle handelt es sich um das Konformitätsbewertungsverfahren, mit dem der Hersteller die in den Nummern 2, 3 und 4 dieses Teils genannten Verpflichtungen erfüllt sowie gewährleistet und auf eigene Verantwortung erklärt, dass das betreffende Erzeugnis die für dieses Erzeugnis jeweils geltenden Anforderungen erfüllt, die in den Teilen 1, 5, 6, 16 oder 17 festgelegt sind.
+
+
+2. Technische Unterlagen
+
+Der Hersteller erstellt die technischen Unterlagen nach Artikel 17.
+
+3.
+Herstellung
+
+
+Der Hersteller trifft alle erforderlichen Maßnahmen, damit der Fertigungsprozess und dessen Überwachung die Konformität der hergestellten Erzeugnisse mit den in Nummer 2 dieses Teils genannten technischen Unterlagen und mit den für die jeweiligen Erzeugnisse geltenden und in den Teilen 1, 5, 6, 16 bzw. 17 festgelegten Anforderungen gewährleisten.
+
+4.
+CE-Kennzeichnung und EU-Konformitätserklärung
+
+
+
+
+1.
+
+
+Nach den Artikeln 15 und 16 bringt der Hersteller die CE-Kennzeichnung und gegebenenfalls das Identifizierungskennzeichen der UA-Klasse auf jedem einzelnen Erzeugnis an, das den für das jeweilige Erzeugnis geltenden Anforderungen genügt, die in den Teilen 1, 5, 6, 16 bzw. 17 festgelegt sind.
+
+
+
+
+2.
+
+
+Der Hersteller stellt für ein Muster eines Erzeugnisses eine schriftliche Konformitätserklärung aus und hält sie zusammen mit den technischen Unterlagen zehn Jahre lang nach dem Inverkehrbringen des Erzeugnisses für die nationalen Behörden bereit. Aus der Konformitätserklärung muss hervorgehen, für welches Erzeugnis sie ausgestellt wurde.
+Ein Exemplar der EU-Konformitätserklärung wird den zuständigen Behörden auf Verlangen zur Verfügung gestellt.
+
+
+
+5. Bevollmächtigter
+
+Die in Nummer 4 genannten Verpflichtungen des Herstellers können von seinem Bevollmächtigten in seinem Auftrag und unter seiner Verantwortung erfüllt werden, falls sie in dem Auftrag festgelegt sind.
+TEIL 8
+
+Konformitätsbewertung nach Modul B (EU-Baumusterprüfung) und Modul C (Konformität mit dem Baumuster auf Grundlage der internen Fertigungskontrolle)
+
+Wenn auf diesen Teil verwiesen wird, folgt das Konformitätsbewertungsverfahren den Modulen B (EU-Baumusterprüfung) und C (Konformität mit dem Baumuster auf Grundlage der internen Fertigungskontrolle) dieses Teils.
+
+Modul B
+
+
+EU-Baumusterprüfung
+
+
+1. Bei der EU-Baumusterprüfung handelt es sich um den Teil eines Konformitätsbewertungsverfahrens, bei dem eine notifizierte Stelle die technische Konstruktion eines Erzeugnisses untersucht, prüft und bescheinigt, dass es die grundlegenden Anforderungen nach den Teilen 1 bis 6, 16 und 17 erfüllt.
+
+
+2. Die EU-Baumusterprüfung ist anhand einer Bewertung der Eignung der technischen Konstruktion des Erzeugnisses mittels Prüfung der in Nummer 3 genannten technischen Unterlagen und zusätzlichen Nachweise sowie mittels Prüfung von für die geplante Produktion repräsentativen Mustern eines oder mehrerer wichtiger Teile des Erzeugnisses (Kombination aus Bau- und Konstruktionsmuster) durchzuführen.
+
+
+3. Der Antrag auf EU-Baumusterprüfung ist vom Hersteller bei einer einzigen notifizierten Stelle seiner Wahl einzureichen.
+
+Der Antrag muss Folgendes enthalten:
+
+
+1.
+
+
+den Namen und die Anschrift des Herstellers sowie, wenn der Antrag vom Bevollmächtigten eingereicht wird, auch dessen Namen und Anschrift;
+
+
+
+
+2.
+
+
+eine schriftliche Erklärung, dass derselbe Antrag bei keiner anderen notifizierten Stelle eingereicht worden ist;
+
+
+
+
+3.
+
+
+die technischen Unterlagen. Anhand dieser technischen Unterlagen, die eine geeignete Risikoanalyse und -bewertung enthalten müssen, muss sich die Konformität des Erzeugnisses mit den geltenden Anforderungen dieser Verordnung bewerten lassen. Je nach Sachlage müssen die technischen Unterlagen die in Artikel 17 genannten Elemente enthalten;
+
+
+
+
+4.
+
+
+für die jeweilige Produktion repräsentative Muster. Die notifizierte Stelle kann weitere Muster anfordern, wenn es für die Durchführung des Prüfprogramms notwendig ist;
+
+
+
+
+5.
+
+
+Nachweise für die Eignung der für die technische Konstruktion gewählten Lösung. In diesen Nachweisen müssen alle Unterlagen vermerkt sein, nach denen vorgegangen wurde, insbesondere wenn die einschlägigen harmonisierten Normen und/oder technischen Spezifikationen nicht oder nicht in vollem Umfang angewandt worden sind. Die Nachweise umfassen erforderlichenfalls die Ergebnisse von Prüfungen, die gemäß anderen einschlägigen Spezifikationen von einem geeigneten Labor des Herstellers oder von einem anderen Prüflabor in seinem Auftrag und unter seiner Verantwortung durchgeführt wurden.
+
+
+
+4. Die notifizierte Stelle
+
+bezogen auf das Erzeugnis:
+
+
+1.
+
+
+prüft die technischen Unterlagen und zusätzlichen Nachweise auf die Eignung der technischen Konstruktion.
+
+
+bezogen auf das/die Muster:
+
+
+2.
+
+
+prüft, ob das/die Muster in Übereinstimmung mit den technischen Unterlagen hergestellt wurde/n, welche Teile nach den geltenden Vorschriften der einschlägigen harmonisierten Normen und/oder technischen Spezifikationen konstruiert wurden und welche Teile ohne Anwendung der einschlägigen Vorschriften dieser Normen konstruiert wurden;
+
+
+
+
+3.
+
+
+führt geeignete Untersuchungen und Prüfungen durch bzw. veranlasst diese, um festzustellen, ob die Lösungen aus den einschlägigen harmonisierten Normen und/oder technischen Spezifikationen korrekt angewandt worden sind, sofern sich der Hersteller für ihre Anwendung entschieden hat;
+
+
+
+
+4.
+
+
+führt geeignete Untersuchungen und Prüfungen durch bzw. veranlasst diese, um festzustellen, ob die vom Hersteller gewählten Lösungen die entsprechenden grundlegenden Anforderungen der Rechtsvorschrift erfüllen, falls er die Lösungen aus den einschlägigen harmonisierten Normen und/oder den technischen Spezifikationen nicht angewandt hat;
+
+
+
+
+5.
+
+
+trifft mit dem Hersteller Vereinbarungen über den Ort der Untersuchungen und Prüfungen.
+
+
+
+5. Die notifizierte Stelle erstellt einen Bericht über die Beurteilung der nach Nummer 4 ausgeführten Tätigkeiten und die dabei erzielten Ergebnisse. Unbeschadet ihrer Pflichten nach Nummer 8 veröffentlicht die notifizierte Stelle den Inhalt dieses Berichts oder Teile davon nur mit Zustimmung des Herstellers.
+
+
+6. Entspricht das Baumuster den Anforderungen dieser Verordnung, stellt die notifizierte Stelle dem Hersteller eine EU-Baumusterprüfbescheinigung aus. Diese Bescheinigung enthält den Namen und die Anschrift des Herstellers, die Ergebnisse der Prüfung, die Aspekte der grundlegenden Anforderungen, auf die sich die Prüfung bezieht, etwaige Bedingungen für ihre Gültigkeit und die für die Identifizierung des zugelassenen Baumusters erforderlichen Angaben. Der Bescheinigung können ein oder mehrere Anhänge beigefügt werden.
+
+Die EU-Bescheinigung und ihre Anhänge enthalten alle zweckdienlichen Angaben, anhand derer sich die Konformität der hergestellten Erzeugnisse mit dem geprüften Baumuster beurteilen und gegebenenfalls eine Kontrolle nach ihrer Inbetriebnahme durchführen lässt.
+Entspricht das Baumuster nicht den geltenden Anforderungen dieser Verordnung, verweigert die notifizierte Stelle die Ausstellung einer EU-Baumusterprüfbescheinigung und unterrichtet den Antragsteller darüber, wobei sie ihre Weigerung ausführlich begründet.
+
+7. Die notifizierte Stelle hält sich über alle Änderungen des allgemein anerkannten Stands der Technik auf dem Laufenden und entscheidet, sofern diese Änderungen darauf schließen lassen, dass das zugelassene Baumuster nicht mehr den geltenden Anforderungen dieser Verordnung entspricht, ob weitere Untersuchungen nötig sind. Ist dies der Fall, setzt die notifizierte Stelle den Hersteller davon in Kenntnis.
+
+Der Hersteller unterrichtet die notifizierte Stelle, der die technischen Unterlagen zur EU-Baumusterprüfbescheinigung vorliegen, über alle Änderungen an dem zugelassenen Baumuster, die die Übereinstimmung des Erzeugnisses mit den grundlegenden Anforderungen dieser Verordnung oder den Bedingungen für die Gültigkeit dieser Bescheinigung beeinträchtigen können. Derartige Änderungen erfordern eine Zusatzgenehmigung in Form einer Ergänzung der ursprünglichen EU-Baumusterprüfbescheinigung.
+
+8. Jede notifizierte Stelle unterrichtet ihre notifizierende Behörde über die EU-Baumusterprüfbescheinigungen und/oder etwaige Ergänzungen dazu, die sie ausgestellt oder zurückgenommen hat, und übermittelt ihrer notifizierenden Behörde in regelmäßigen Abständen oder auf Verlangen eine Aufstellung aller Bescheinigungen und/oder Ergänzungen dazu, die sie verweigert, ausgesetzt oder auf andere Art eingeschränkt hat.
+
+Jede notifizierte Stelle unterrichtet die übrigen notifizierten Stellen über die EU-Baumusterprüfbescheinigungen und/oder etwaige Ergänzungen dazu, die sie verweigert, zurückgenommen, ausgesetzt oder auf andere Weise eingeschränkt hat, und teilt ihnen, wenn sie dazu aufgefordert wird, alle von ihr ausgestellten Bescheinigungen und/oder Ergänzungen dazu mit.
+Auf Verlangen erhalten die Kommission, die Mitgliedstaaten und die anderen notifizierten Stellen ein Exemplar der EU-Baumusterprüfbescheinigungen und/oder ihrer Ergänzungen. Die Kommission und die Mitgliedstaaten erhalten auf begründetes Verlangen ein Exemplar der technischen Unterlagen und der Ergebnisse der durch die notifizierte Stelle vorgenommenen Prüfungen.
+Die notifizierte Stelle bewahrt ein Exemplar der EU-Baumusterprüfbescheinigung samt Anhängen und Ergänzungen sowie des technischen Dossiers einschließlich der vom Hersteller eingereichten Unterlagen zehn Jahre ab der Bewertung des Erzeugnisses oder bis zum Ende der Gültigkeitsdauer dieser Bescheinigung auf.
+
+9. Der Hersteller hält ein Exemplar der EU-Baumusterprüfbescheinigung samt Anhängen und Ergänzungen zusammen mit den technischen Unterlagen zehn Jahre lang nach dem Inverkehrbringen des Erzeugnisses für die nationalen Behörden bereit.
+
+
+10. Der Bevollmächtigte des Herstellers kann den in Nummer 3 genannten Antrag einreichen und die in den Nummern 7 und 9 genannten Pflichten erfüllen, falls sie in dem Auftrag festgelegt sind.
+
+
+Modul C
+
+
+Konformität mit dem Baumuster auf der Grundlage einer internen Fertigungskontrolle
+
+
+1. Bei der Konformität mit dem Baumuster auf der Grundlage einer internen Fertigungskontrolle handelt es sich um den Teil eines Konformitätsbewertungsverfahrens, bei dem der Hersteller die in den Nummern 2 und 3 genannten Pflichten erfüllt sowie gewährleistet und erklärt, dass die betreffenden Erzeugnisse dem in der EU-Baumusterprüfbescheinigung beschriebenen Baumuster entsprechen und den für sie geltenden Anforderungen dieser Verordnung genügen.
+
+
+2. Herstellung
+
+Der Hersteller trifft alle erforderlichen Maßnahmen, damit der Fertigungsprozess und seine Überwachung die Konformität der hergestellten Erzeugnisse mit der in der EU-Baumusterprüfbescheinigung beschriebenen zugelassenen Bauart und mit den für sie geltenden Anforderungen in den Teilen 1 bis 6, 16 und 17 gewährleisten.
+
+3. CE-Kennzeichnung und EU-Konformitätserklärung
+
+
+
+1.
+
+
+Nach den Artikeln 15 und 16 bringt der Hersteller die CE-Kennzeichnung und gegebenenfalls das Identifizierungskennzeichen der UA-Klasse auf jedem einzelnen Erzeugnis an, das mit dem in der EU-Baumusterprüfbescheinigung beschriebenen Muster übereinstimmt und den für das jeweilige Erzeugnis geltenden Anforderungen genügt, die in den Teilen 1 bis 6, 16 und 17 festgelegt sind.
+
+
+
+
+2.
+
+
+Der Hersteller stellt für jedes Baumuster eines Erzeugnisses eine schriftliche EU-Konformitätserklärung aus und hält sie zehn Jahre lang nach dem Inverkehrbringen des Erzeugnisses für die nationalen Behörden bereit. Aus der EU-Konformitätserklärung muss klar hervorgehen, für welches Muster eines Erzeugnisses sie ausgestellt wurde.
+Ein Exemplar der EU-Konformitätserklärung wird den zuständigen Behörden auf Verlangen zur Verfügung gestellt.
+
+
+
+4. Bevollmächtigter
+
+Die in Nummer 3 genannten Verpflichtungen des Herstellers können von seinem Bevollmächtigten in seinem Auftrag und unter seiner Verantwortung erfüllt werden, falls sie in dem Auftrag festgelegt sind.
+TEIL 9
+
+Konformitätsbewertung nach Modul H — Konformität auf der Grundlage einer umfassenden Qualitätssicherung
+
+
+1. Bei der Konformität auf der Grundlage einer umfassenden Qualitätssicherung handelt es sich um das Konformitätsbewertungsverfahren, mit dem der Hersteller die in den Nummern 2 und 5 genannten Verpflichtungen erfüllt sowie auf eigene Verantwortung gewährleistet und erklärt, dass das betreffende Erzeugnis den geltenden Anforderungen genügt, die in den Teilen 1 bis 6, 16 und 17 festgelegt sind.
+
+
+2. Herstellung
+
+Der Hersteller betreibt ein zugelassenes Qualitätssicherungssystem für Entwicklung, Herstellung, Endabnahme und Prüfung der betreffenden Erzeugnisse nach Nummer 3 und unterliegt der Überwachung nach Nummer 4.
+
+3. Qualitätssicherungssystem
+
+
+
+1.
+
+
+Der Hersteller beantragt bei einer notifizierten Stelle seiner Wahl die Bewertung seines Qualitätssicherungssystems für die betreffenden Erzeugnisse.
+Der Antrag muss Folgendes enthalten:
+
+
+a)
+
+
+den Namen und die Anschrift des Herstellers sowie, wenn der Antrag vom Bevollmächtigten eingereicht wird, auch dessen Namen und Anschrift;
+
+
+
+
+b)
+
+
+die technischen Unterlagen für jedes Baumuster des zu fertigenden Erzeugnisses; die technischen Unterlagen enthalten gegebenenfalls die in Teil 10 aufgeführten Elemente;
+
+
+
+
+c)
+
+
+die Dokumentation zum Qualitätssicherungssystem;
+
+
+
+
+d)
+
+
+eine schriftliche Erklärung, dass derselbe Antrag bei keiner anderen notifizierten Stelle eingereicht worden ist.
+
+
+
+
+
+
+2.
+
+
+Das Qualitätssicherungssystem muss die Übereinstimmung des Erzeugnisses mit den entsprechenden Anforderungen dieser Verordnung gewährleisten.
+Alle vom Hersteller berücksichtigten Elemente, Anforderungen und Vorschriften sind systematisch und ordnungsgemäß in Form schriftlicher Grundsätze, Verfahren und Anweisungen zusammenzustellen. Diese Unterlagen über das Qualitätssicherungssystem müssen eine einheitliche Auslegung der Qualitätssicherungsprogramme, -pläne, -handbücher und -berichte ermöglichen.
+Die Unterlagen über das Qualitätssicherungssystem müssen insbesondere eine angemessene Beschreibung folgender Punkte enthalten:
+
+
+a)
+
+
+Qualitätsziele sowie organisatorischer Aufbau, Zuständigkeiten und Befugnisse des Managements in Bezug auf Konstruktion und Qualität der Erzeugnisse;
+
+
+
+
+b)
+
+
+technische Konstruktionsspezifikationen, einschließlich der angewandten Normen, sowie — wenn die einschlägigen harmonisierten Normen nicht vollständig angewandt werden — die Mittel, mit denen gewährleistet werden soll, dass die Anforderungen dieser Verordnung erfüllt werden;
+
+
+
+
+c)
+
+
+Techniken zur Steuerung der Entwicklung und Prüfung des Konstruktionsergebnisses, Verfahren und systematische Maßnahmen, die bei der Konstruktion der zum betreffenden Baumuster gehörenden Erzeugnisse angewandt werden;
+
+
+
+
+d)
+
+
+entsprechende Fertigungs-, Qualitätskontroll- und Qualitätssicherungsverfahren, angewandte Verfahren und systematische Maßnahmen;
+
+
+
+
+e)
+
+
+Prüfungen und Erprobungen, die vor, während und nach der Fertigung durchgeführt werden, sowie deren Häufigkeit;
+
+
+
+
+f)
+
+
+die qualitätsbezogenen Aufzeichnungen, beispielsweise Prüfberichte, Prüf- und Eichdaten oder Berichte über die Qualifikation oder Zulassung der in diesem Bereich beschäftigten Mitarbeiter;
+
+
+
+
+g)
+
+
+Mittel, mit denen die Verwirklichung der angestrebten Konstruktions- und Produktqualität und die wirksame Arbeitsweise des Qualitätssicherungssystems überwacht werden können.
+
+
+
+
+
+
+3.
+
+
+Die notifizierte Stelle bewertet das Qualitätssicherungssystem, um festzustellen, ob es die unter Nummer 3 Absatz 2 genannten Anforderungen erfüllt.
+Bei den Elementen des Qualitätssicherungssystems, die die entsprechenden Spezifikationen der einschlägigen harmonisierten Norm erfüllen, geht sie von der Konformität mit diesen Anforderungen aus.
+Zusätzlich zur Erfahrung mit Qualitätsmanagementsystemen verfügt mindestens ein Mitglied des Auditteams über Erfahrungen mit der Bewertung in dem einschlägigen Bereich und der betreffenden Technologie des Erzeugnisses sowie über Kenntnisse der geltenden Anforderungen dieser Verordnung. Das Audit umfasst auch einen Kontrollbesuch des Herstellerwerks. Das Auditteam überprüft die unter Nummer 3 Absatz 1 Buchstabe b genannten technischen Unterlagen, um sich zu vergewissern, dass der Hersteller in der Lage ist, die einschlägigen Anforderungen dieser Verordnung zu erkennen und die erforderlichen Prüfungen durchzuführen, damit die Konformität der Erzeugnisse mit diesen Anforderungen gewährleistet ist.
+Die Entscheidung wird dem Hersteller oder seinem Bevollmächtigten mitgeteilt.
+Die Mitteilung enthält die Ergebnisse des Audits und die Begründung der Bewertungsentscheidung.
+
+
+
+
+4.
+
+
+Der Hersteller verpflichtet sich, die mit dem zugelassenen Qualitätssicherungssystem verbundenen Pflichten zu erfüllen und dafür zu sorgen, dass das System stets sachgemäß und effizient betrieben wird.
+Der Hersteller hält die notifizierte Stelle, die das Qualitätssicherungssystem zugelassen hat, über alle geplanten Änderungen des Qualitätssicherungssystems auf dem Laufenden.
+
+
+
+
+5.
+
+
+Die notifizierte Stelle beurteilt die geplanten Änderungen und entscheidet, ob das geänderte Qualitätssicherungssystem noch die in Nummer 3 Absatz 2 genannten Anforderungen erfüllt oder ob eine erneute Bewertung erforderlich ist.
+Sie gibt dem Hersteller ihre Entscheidung bekannt. Die Mitteilung enthält die Ergebnisse der Prüfung und die Begründung der Bewertungsentscheidung.
+
+
+
+4. Überwachung unter der Verantwortung der notifizierten Stelle
+
+
+
+1.
+
+
+Die Überwachung soll gewährleisten, dass der Hersteller seine Verpflichtungen aus dem zugelassenen Qualitätssicherungssystem ordnungsgemäß erfüllt.
+
+
+
+
+2.
+
+
+Der Hersteller gewährt der notifizierten Stelle für die Bewertung Zugang zu den Konstruktions-, Herstellungs-, Abnahme-, Prüf- und Lagereinrichtungen und stellt ihr alle erforderlichen Unterlagen zur Verfügung, insbesondere
+
+
+a)
+
+
+die Unterlagen über das Qualitätssicherungssystem,
+
+
+
+
+b)
+
+
+die vom Qualitätssicherungssystem für den Konstruktionsbereich vorgesehenen Qualitätsberichte wie Ergebnisse von Analysen, Berechnungen, Prüfungen usw.,
+
+
+
+
+c)
+
+
+die vom Qualitätssicherungssystem für den Fertigungsbereich vorgesehenen Qualitätsberichte wie Prüfberichte, Prüfdaten, Eichdaten, Berichte über die Qualifikation des Personals usw.
+
+
+
+
+
+
+3.
+
+
+Die notifizierte Stelle führt regelmäßig Audits durch, um sicherzustellen, dass der Hersteller das Qualitätssicherungssystem aufrechterhält und anwendet, und übermittelt ihm einen Bericht über das Audit.
+
+
+
+
+4.
+
+
+Darüber hinaus kann die notifizierte Stelle dem Hersteller unangemeldete Besuche abstatten. Während dieser Besuche kann die notifizierte Stelle erforderlichenfalls UA- oder UAS-Prüfungen durchführen oder durchführen lassen, um das ordnungsgemäße Funktionieren des Qualitätssicherungssystems zu prüfen. Sie übergibt dem Hersteller einen Bericht über den Besuch und im Falle von Prüfungen einen Prüfbericht.
+
+
+
+5. CE-Kennzeichnung und EU-Konformitätserklärung
+
+
+
+1.
+
+
+Nach Artikel 15 und 16 bringt der Hersteller die CE-Kennzeichnung und gegebenenfalls das Identifizierungskennzeichen der UAS-Klasse sowie, unter Verantwortung der nach Nummer 3 Absatz 1 dieses Teils notifizierten Stelle, deren Kennnummer auf jedem einzelnen Erzeugnis an, das den für das jeweilige Erzeugnis geltenden Anforderungen genügt.
+
+
+
+
+2.
+
+
+Der Hersteller stellt für jedes Baumuster eines Erzeugnisses eine schriftliche EU-Konformitätserklärung aus und hält sie zehn Jahre lang nach dem Inverkehrbringen des Erzeugnisses für die nationalen Behörden bereit. Aus der EU-Konformitätserklärung muss hervorgehen, für welches Baumuster sie ausgestellt wurde.
+
+
+Ein Exemplar der EU-Konformitätserklärung wird den zuständigen Behörden auf Verlangen zur Verfügung gestellt.
+
+6. Der Hersteller hält zehn Jahre lang nach dem Inverkehrbringen des Erzeugnisses für die nationalen Behörden folgende Unterlagen bereit:
+
+
+
+1.
+
+
+die technischen Unterlagen nach Nummer 3 Absatz 1,
+
+
+
+
+2.
+
+
+die Unterlagen zu dem Qualitätssicherungssystem nach Nummer 3 Absatz 1,
+
+
+
+
+3.
+
+
+die Änderung nach Nummer 3 Absatz 5 in ihrer genehmigten Form,
+
+
+
+
+4.
+
+
+die Entscheidungen und Berichte der notifizierten Stelle nach Nummer 3 Absatz 5 und Nummer 4 Absätze 3 und 4.
+
+
+
+7. Jede notifizierte Stelle unterrichtet ihre notifizierenden Behörden über die Zulassungen für Qualitätssicherungssysteme, die sie ausgestellt oder zurückgezogen hat, und übermittelt ihren notifizierenden Behörden in regelmäßigen Abständen oder auf Verlangen eine Aufstellung aller Zulassungen für Qualitätssicherungssysteme, die sie verweigert, ausgesetzt oder auf andere Art eingeschränkt hat.
+
+Jede notifizierte Stelle unterrichtet die anderen notifizierten Stellen über Zulassungen von Qualitätssicherungssystemen, die sie verweigert, ausgesetzt oder zurückgenommen hat, und auf Verlangen über Zulassungen von Qualitätssicherungssystemen, die sie erteilt hat.
+
+8. Bevollmächtigter
+
+Die unter Nummer 3 Absätze 1 und 5 sowie Nummern 5 und 6 genannten Pflichten des Herstellers können von seinem Bevollmächtigten in seinem Auftrag und unter seiner Verantwortung erfüllt werden, falls sie in dem Auftrag festgelegt sind.
+TEIL 10
+
+Inhalt der technischen Unterlagen
+
+Der Hersteller erstellt die technischen Unterlagen. Anhand dieser Unterlagen muss sich die Konformität des Erzeugnisses mit den geltenden Anforderungen dieser Verordnung bewerten lassen.
+Je nach Sachlage müssen die technischen Unterlagen mindestens die folgenden Elemente enthalten:
+
+
+1.
+
+
+eine vollständige Beschreibung des Erzeugnisses, einschließlich
+
+
+a)
+
+
+Fotografien oder Illustrationen, aus denen äußere Merkmale, Kennzeichnungen und innerer Aufbau hervorgehen,
+
+
+
+
+b)
+
+
+der verwendeten Versionen der Software und Firmware entsprechend den Anforderungen dieser Verordnung,
+
+
+
+
+c)
+
+
+Hersteller- und Installationsanweisungen;
+
+
+
+
+
+
+2.
+
+
+Entwürfe, Fertigungszeichnungen und -pläne von Bauteilen, Baugruppen, Schaltkreisen und ähnlichen maßgeblichen Elementen;
+
+
+
+
+3.
+
+
+Beschreibungen und Erläuterungen, die zum Verständnis dieser Zeichnungen und Pläne sowie der Funktionsweise des Erzeugnisses erforderlich sind;
+
+
+
+
+4.
+
+
+eine Aufstellung darüber, welche harmonisierten Normen, deren Verweise im Amtsblatt der Europäischen Union veröffentlicht wurden, vollständig oder in Teilen angewandt worden sind, und, wenn diese harmonisierten Normen nicht angewandt wurden, eine Beschreibung der Lösungen, mit denen den grundlegenden Anforderungen des Artikels 4 dieser Verordnung entsprochen wurde, einschließlich einer Aufstellung darüber, welche sonstigen einschlägigen technischen Spezifikationen angewandt worden sind. Im Fall von teilweise angewandten harmonisierten Normen sind die Teile, die angewandt wurden, in den technischen Unterlagen anzugeben;
+
+
+
+
+5.
+
+
+ein Exemplar der EU-Konformitätserklärung;
+
+
+
+
+6.
+
+
+ein Exemplar der von der beteiligten notifizierten Stelle ausgestellten EU-Baumusterprüfbescheinigung und ihrer Anhänge, falls das Konformitätsbewertungsmodul in Teil 8 angewandt wurde;
+
+
+
+
+7.
+
+
+die Ergebnisse der Konstruktionsberechnungen, Prüfungen und ähnliche maßgebliche Elemente;
+
+
+
+
+8.
+
+
+Prüfberichte;
+
+
+
+
+9.
+
+
+Kopien der Unterlagen, die der Hersteller einer gegebenenfalls beteiligten notifizierten Stelle übermittelt hat;
+
+
+
+
+10.
+
+
+Nachweise für die Eignung der für die technische Konstruktion gewählten Lösung. In diesen Nachweisen müssen alle Unterlagen vermerkt sein, nach denen vorgegangen wurde, insbesondere wenn die einschlägigen harmonisierten Normen und/oder technischen Spezifikationen nicht in vollem Umfang angewandt worden sind. Die Nachweise umfassen erforderlichenfalls die Ergebnisse von Prüfungen, die von einem geeigneten Labor des Herstellers oder von einem anderen Prüflabor in seinem Auftrag und unter seiner Verantwortung durchgeführt wurden;
+
+
+
+
+11.
+
+
+Anschriften der Fertigungs- und Lagerorte.
+
+
+TEIL 11
+
+EU-Konformitätserklärung
+
+
+1. Das Erzeugnis (Nummer des Baumusters, der Charge oder der Serie).
+
+
+2. Name und Anschrift des Herstellers oder seines Bevollmächtigten.
+
+
+3. Diese Konformitätserklärung wird unter der alleinigen Verantwortung des Herstellers ausgestellt. [Sofern es sich um Zusatzbausätze handelt, kann der Hersteller des Bausatzes angeben, dass diese Bescheinigungen auf der Bescheinigung des UAS beruhen, dessen Nachrüstung der Bausatz ermöglicht.]
+
+
+
+4. Gegenstand der Erklärung [Bezeichnung des Erzeugnisses zwecks Rückverfolgbarkeit; ggf. einschließlich einer Farbabbildung in ausreichender Auflösung, wenn dies zur Identifizierung des Erzeugnisses notwendig ist. Handelt es sich um einen Zusatzbausatz, ist das Baumuster des UAS anzugeben, dessen Nachrüstung der Bausatz ermöglicht].
+
+
+
+5. Gegenstand der vorstehend genannten Erklärung ist ein UAS der Klasse … [für das UAS die Nummer der Klasse nach den Teilen 1 bis 5, 16 und 17 dieses Anhangs angeben. Für einen Zusatzbausatz die Nachrüstklasse des UAS angeben].
+
+
+6. Der garantierte Schallleistungspegel für diese UAS-Ausrüstung beträgt …. dB(A) [nur für UAS der Klassen 1 bis 3, die keine Starrflügler sind].
+
+
+
+7. Der oben beschriebene Gegenstand der Erklärung erfüllt die einschlägigen Harmonisierungsrechtsvorschriften der Union:
+
+
+
+—
+
+
+[Verweis auf diese Verordnung und den für die Klasse des Erzeugnisses relevanten Anhang eintragen];
+
+
+
+
+—
+
+
+gegebenenfalls weitere Harmonisierungsrechtsvorschriften der Union.
+
+
+
+8. Angabe der einschlägigen harmonisierten Normen, die zugrunde gelegt wurden, oder Angabe sonstiger technischer Spezifikationen, in Bezug auf die die Konformität erklärt wird. Bei den Verweisen sind die Kennnummern, Versionen und gegebenenfalls das Ausgabedatum anzugeben.
+
+
+9. Falls zutreffend — Die notifizierte Stelle … [Name, Kennnummer] hat …[Beschreibung ihrer Mitwirkung] … und die EU-Baumusterprüfbescheinigung ausgestellt.
+
+
+10. Falls vorhanden — Beschreibung der Zusatzteile und Komponenten einschließlich Software, die den bestimmungsgemäßen Betrieb des unbemannten Luftfahrzeugsystems ermöglichen und von der EU-Konformitätserklärung erfasst werden.
+
+
+11. Zusatzinformationen:
+
+Unterzeichnet für und im Namen von: …
+[Ort und Datum der Ausstellung]:
+[Name, Funktion] [Unterschrift]:
+TEIL 12
+
+Vereinfachte EU-Konformitätserklärung
+
+Die vereinfachte EU-Konformitätserklärung nach Artikel 14 Absatz 3 hat folgenden Wortlaut:
+
+
+—
+
+
+
+[Name des Herstellers] erklärt hiermit, dass das UAS [Identifizierung des UAS: Baumuster- oder Seriennummer] ein UAS der Klasse ... ... ist [Nummer der Klasse des Erzeugnisses nach den Teilen 1 bis 5, 16 bzw. 17 dieses Anhangs angeben; bei Zusatzbausätzen die Klasse angeben, zu denen das UAS nachgerüstet wird] und einen garantierten Schallleistungspegel von …. dB(A) hat [nur für UAS der Klassen 1, 2, 3, 5 und 6, die keine Starrflügler sind]
+
+
+
+
+
+—
+
+
+und in Einklang steht mit den Verordnungen [alle Verordnungen, mit denen das Erzeugnis in Einklang steht, aufführen].
+
+
+
+
+—
+
+
+Die vollständige EU-Konformitätserklärung kann auf folgender Website abgerufen werden: [Internetadresse]
+
+
+
+TEIL 13
+
+Geräuschprüfvorschriften
+
+In diesem Teil werden die Verfahren zur Messung des Fluglärms festgelegt, die zur Bestimmung des A-bewerteten Schallleistungspegels der UA der Klassen 1, 2, 3, 5 und 6 zu verwenden sind.
+Festgelegt werden die Grundnorm für die Geräuschemissionen und die detaillierte Prüfvorschrift für die Messung des Schalldruckpegels auf einer Messfläche, die die Geräuschquelle umschließt, sowie für die Berechnung des von der Geräuschquelle erzeugten Schallleistungspegels.
+1.   GRUNDNORM FÜR GERÄUSCHEMISSIONEN
+
+Für die Bestimmung des A-bewerteten Schallleistungspegels LWA der UA findet die Norm EN ISO 3744:2010 als Grundnorm für Geräuschemissionen vorbehaltlich folgender Ergänzungen Anwendung:
+2.   AUFBAU- UND BEFESTIGUNGSBEDINGUNGEN
+
+
+Prüfbereich:
+
+Das UA wird über einer reflektierenden (akustisch harten) Ebene gehalten. Das UA muss sich in einem ausreichenden Abstand zu reflektierenden Wänden oder Decken oder sonstigen reflektierenden Gegenständen befinden, sodass die Anforderungen von Anhang A der EN ISO 3744:2010 auf der Messoberfläche erfüllt sind.
+
+Schallmessfläche und Anordnung der Mikrofone:
+
+Das UA ist vollständig von einer halbkugelförmigen Messfläche gemäß Nummer 7.2.3 der EN ISO 3744:2010 umhüllt.
+Die Anzahl und Position der Mikrofone ist in Anhang F der EN ISO 3744:2010 festgelegt.
+Der Ursprung der Messfläche liegt im Punkt O auf der Grundebene direkt unter dem UA.
+3.   BETRIEBSBEDINGUNGEN WÄHREND DER PRÜFUNG
+
+Die Geräuschmessungen müssen mit einem UA mit laufenden Rotoren bei einer Geschwindigkeit durchgeführt werden, die dem Schweben des UA bei MTOM entspricht.
+Wird das UA mit Zusatzteilen, die an ihm befestigt werden können, in Verkehr gebracht, ist es in allen möglichen UA-Konfigurationen mit und ohne diesen Zusatzteilen zu prüfen.
+4.   BERECHNUNG DES ZEITLICH GEMITTELTEN MESSFLÄCHEN-SCHALLDRUCKPEGELS
+
+Der A-bewertete zeitlich gemittelte Oberflächen-Schalldruckpegel ist für jede UA-Konfiguration mindestens dreimal zu bestimmen. Weichen mindestens zwei der bestimmten Werte um nicht mehr als 1 dB voneinander ab, sind keine weiteren Messungen notwendig. Andernfalls sind die Messungen so lange fortzusetzen, bis zwei Werte um nicht mehr als 1 dB voneinander abweichen. Zur Berechnung des Schallleistungspegels einer UA-Konfiguration ist das arithmetische Mittel der beiden höchsten, um nicht mehr als 1 dB voneinander abweichenden Werte des zeitlich gemittelten Oberflächen-Schalldruckpegels zu verwenden.
+5.   IN DEN BERICHT AUFZUNEHMENDE DATEN
+
+In den Bericht sind die zur Identifizierung der geprüften Geräuschquelle notwendigen technischen Daten sowie die Prüfvorschrift und die Akustik-Daten aufzunehmen.
+Der in dem Bericht festzuhaltende A-bewertete Schallleistungspegel ist der höchste Wert der unterschiedlichen geprüften UA-Konfigurationen, gerundet auf ganze Zahlen (bei unter 0,5 ist auf die niedrigere ganze Zahl abzurunden, ab 0,5 auf die nächsthöhere ganze Zahl aufzurunden).
+TEIL 14
+
+Kennzeichnung des garantierten Schallleistungspegels
+
+Die Kennzeichnung des garantierten Schalleistungspegels muss aus dem Zahlenwert des garantierten Schalleistungspegels in dB, dem Zeichen LWA und einem Piktogramm in folgender Form bestehen:
+
+
+
+Bei Verkleinerung der Kennzeichnung je nach Größe des Geräts müssen die sich aus der obigen Zeichnung ergebenden Proportionen eingehalten werden. Die Höhe der Kennzeichnung sollte jedoch, soweit möglich, mindestens 20 mm betragen.
+TEIL 15
+
+Maximaler Schallleistungspegel je UA-Klasse (einschließlich Übergangszeiträumen)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+UA-Klasse
+
+
+MTOM m in Gramm
+
+
+Maximaler Schallleistungspegel LWA in dB
+
+
+
+
+ab Inkrafttreten
+
+
+ab 2 Jahren nach Inkrafttreten
+
+
+ab 4 Jahren nach Inkrafttreten
+
+
+
+
+C1 und C2
+
+
+
+m < 900
+
+
+85
+
+
+83
+
+
+81
+
+
+
+
+C2
+
+
+900 ≤ m< 4 000
+
+
+85 + 18,5 lg
+
+
+
+83 + 18,5 lg
+
+
+
+81 + 18,5 lg
+
+
+
+
+
+
+Dabei ist „lg“ der Logarithmus zur Basis 10.
+TEIL 16
+
+Anforderungen an ein unbemanntes Luftfahrzeugsystem der Klasse C5 und an Zusatzteile der Klasse C5
+
+Ein UAS der Klasse C5 ist mit folgendem Klassen-Identifizierungskennzeichen auf dem UA gekennzeichnet:
+
+
+
+Ein UAS der Klasse C5 muss den in Teil 4 festgelegten Anforderungen genügen, ausgenommen sind die Anforderungen von Teil 4 Absätze 2 und 10.
+Darüber hinaus muss es folgenden Anforderungen genügen:
+
+
+1.
+
+
+Es handelt sich um ein Luftfahrzeug mit Ausnahme von Starrflüglern, sofern es nicht gefesselt ist.
+
+
+
+
+2.
+
+
+Sofern es ist mit einer Geo-Sensibilisierungsfunktion ausgerüstet ist, genügt es Teil 4 Absatz 10.
+
+
+
+
+3.
+
+
+Während des Flugs liefert es dem Fernpiloten klare und präzise Angaben zur Höhe des UA über der Oberfläche oder dem Startpunkt.
+
+
+
+
+4.
+
+
+Sofern es nicht gefesselt ist, muss das UA mit einem Langsamflugmodus ausgerüstet sein, der vom Fernpiloten eingestellt werden kann und die Reisegeschwindigkeit auf höchstens 5 m/s beschränkt.
+
+
+
+
+5.
+
+
+Sofern es nicht gefesselt ist, muss der Fernpilot über Vorrichtungen verfügen, den Flug des UA zu beenden, die
+
+
+a)
+
+
+zuverlässig, vorhersehbar und unabhängig vom automatischen Flugsteuerungs- und Flugführungssystem sind. Dies gilt auch für die Aktivierung dieser Vorrichtungen;
+
+
+
+
+b)
+
+
+das UA zum Sinkflug zwingen und verhindern, dass es sich angetrieben horizontal bewegt, und
+
+
+
+
+c)
+
+
+die Wirkung der Aufprallenergie des UA reduzieren.
+
+
+
+
+
+
+6.
+
+
+Sofern das UA nicht gefesselt ist, muss der Fernpilot die Möglichkeit haben, die Qualität des Steuerungs- und Kontrolllinks ununterbrochen zu überwachen, und Warnhinweise erhalten, wenn die Gefahr besteht, dass die Übertragung soweit unterbrochen wird oder sich verschlechtert, dass die sichere Durchführung des Betriebs gefährdet ist, sowie einen weiteren Warnhinweis erhalten, wenn die Verbindung unterbrochen ist.
+
+
+
+
+7.
+
+
+Zusätzlich zu den in Teil 4 Absatz 15 Buchstabe a angegebenen Informationen müssen die Herstelleranweisungen eine Beschreibung der Vorrichtungen enthalten, mit denen der Flug nach Nummer 5 beendet werden kann.
+
+
+
+
+8.
+
+
+Ein UAS der Klasse C5 kann aus einem UAS der Klasse C3 bestehen, das mit einem Zusatzbausatz ausgestattet ist, mit dem sich das UAS der Klasse C3 zu einem UAS der Klasse C5 nachrüsten lässt. In diesem Fall müssen alle Zusatzteile mit einem C5-Kennzeichen gekennzeichnet werden.
+
+
+Ein UAS nach Nummer 1 der Klasse C3 kann nur dann mit einem Zusatzbausatz nachgerüstet werden, wenn es über die notwendigen Schnittstellen zu den Zusatzteilen verfügt.
+Der Zusatzbausatz darf die Software des UAS der Klasse C3 nicht verändern.
+Der Zusatzbausatz muss so konstruiert sein und jedes Zusatzteil muss so gekennzeichnet sein, dass sichergestellt ist, dass ein UAS-Betreiber, der sich an die vom Hersteller des Zusatzbausatzes mitgelieferten Anweisungen hält, den Bausatz vollständig und korrekt in ein UAS der Klasse C3 einbauen kann.
+Der Zusatzbausatz kann unabhängig vom UAS der Klasse C3, dessen Nachrüstung er ermöglicht, in Verkehr gebracht werden. In diesem Fall bringt der Hersteller des Zusatzbausatzes einen einzigen Nachrüstbausatz in Verkehr, der folgende Bedingungen erfüllt:
+
+
+1.
+
+
+Er hat keinen Einfluss auf die Einhaltung der Anforderungen von Teil 4 durch das UAS der Klasse C3.
+
+
+
+
+2.
+
+
+Er gewährleistet, dass das UAS, das mit dem Zusatzbausatz ausgerüstet ist, allen zusätzlichen Anforderungen genügt, die in diesem Teil festgelegt sind, ausgenommen von Nummer 3.
+
+
+
+
+3.
+
+
+Ihm sind Herstelleranweisungen beigefügt, die Folgendes enthalten:
+
+
+i)
+
+
+eine Liste aller UAS der Klasse C3, die mit dem Bausatz ausgestattet werden können, und
+
+
+
+
+ii)
+
+
+Anweisungen, wie der Zusatzbausatz eingebaut und betrieben werden kann.
+
+
+
+
+TEIL 17
+
+Anforderungen an ein unbemanntes Luftfahrzeugsystem der Klasse C6
+
+Ein UAS der Klasse C6 ist mit folgendem Klassen-Identifizierungskennzeichen auf dem UA gekennzeichnet:
+
+
+
+Ein UAS der Klasse C6 muss den in Teil 4 festgelegten Anforderungen genügen, ausgenommen sind die Anforderungen der Absätze 2, 7 und 10.
+Darüber hinaus muss es folgenden Anforderungen genügen:
+
+
+1.
+
+
+Es hat eine Höchstgeschwindigkeit im Horizontalflug von 50 m/s.
+
+
+
+
+2.
+
+
+Sofern es ist mit einer Geo-Sensibilisierungsfunktion ausgerüstet ist, genügt es Teil 4 Absatz 10.
+
+
+
+
+3.
+
+
+Während des Flugs liefert es dem Fernpiloten klare und präzise Angaben zur geografischen Position des UA, zu seiner Geschwindigkeit und seiner Höhe über der Oberfläche oder dem Startpunkt.
+
+
+
+
+4.
+
+
+Es verfügt über Vorrichtungen, mit denen sich verhindern lässt, dass das UA die horizontalen und vertikalen Grenzen eines programmierbaren Betriebsraums verletzt.
+
+
+
+
+5.
+
+
+Der Fernpilot muss über Vorrichtungen verfügen, um den Flug des UA zu beenden, die
+
+
+a)
+
+
+zuverlässig, vorhersehbar und unabhängig vom automatischen Flugsteuerungs- und Flugführungssystem sind, sowie unabhängig von den Vorrichtungen, mit denen sich nach Nummer 4 verhindern lässt, dass das UA die horizontalen und vertikalen Grenzen überschreitet. Dies gilt auch für die Aktivierung dieser Vorrichtungen;
+
+
+
+
+b)
+
+
+das UA zum Sinkflug zwingen und verhindern, dass es sich angetrieben horizontal bewegt.
+
+
+
+
+
+
+6.
+
+
+Die Flugbahn des UA muss sich programmieren lassen.
+
+
+
+
+7.
+
+
+Der Fernpilot muss die Möglichkeit haben, die Qualität des Steuerungs- und Kontrolllinks ununterbrochen zu überwachen, und Warnhinweise erhalten, wenn die Gefahr besteht, dass die Übertragung soweit unterbrochen wird oder sich verschlechtert, dass die sichere Durchführung des Betriebs gefährdet ist, sowie einen weiteren Warnhinweis erhalten, wenn die Verbindung unterbrochen ist.
+
+
+
+
+8.
+
+
+Zusätzlich zu den in Teil 4 Absatz 15 Buchstabe a angegebenen Informationen müssen die Herstelleranweisungen
+
+
+a)
+
+
+eine Beschreibung der Vorrichtungen enthalten, mit denen sich der Flug nach Nummer 5 beenden lässt,
+
+
+
+
+b)
+
+
+eine Beschreibung der Vorrichtungen enthalten, mit denen sich verhindern lässt, dass das UA die horizontalen und vertikalen Grenzen des Betriebsraums verletzt, sowie eine Beschreibung der Größe des Contingency-Raums, der im Notfall für die Reaktionszeit und das Korrekturmanöver benötigt wird, um einen Fehler in der Positionsbestimmung zu korrigieren.
+
+
+
+
+c)
+
+
+Angaben zu der Strecke enthalten, die das UA voraussichtlich zurücklegt, nachdem die Vorrichtungen zur Beendigung des Flugs nach Nummer 5 aktiviert wurden, und die der UAS-Betreiber bei der Festlegung des Bodensicherheitsbereichs berücksichtigen muss.
+
+
+
+
+
+
+
+
+(
+1
+) Verordnung (EG) Nr. 551/2004 des Europäischen Parlaments und des Rates vom 10. März 2004 über die Ordnung und Nutzung des Luftraums im einheitlichen europäischen Luftraum (ABl. L 96 vom 31.3.2004, S. 20).
+(
+2
+) Durchführungsverordnung (EU) Nr. 923/2012 der Kommission vom 26. September 2012 zur Festlegung gemeinsamer Luftverkehrsregeln und Betriebsvorschriften für Dienste und Verfahren der Flugsicherung und zur Änderung der Durchführungsverordnung (EU) Nr. 1035/2011 sowie der Verordnungen (EG) Nr. 1265/2007, (EG) Nr. 1794/2006, (EG) Nr. 730/2006, (EG) Nr. 1033/2006 und (EU) Nr. 255/2010 (ABl. L 281 vom 13.10.2012, S. 1).
+(
+3
+) Verordnung (EU) Nr. 376/2014 des Europäischen Parlaments und des Rates vom 3. April 2014 über die Meldung, Analyse und Weiterverfolgung von Ereignissen in der Zivilluftfahrt, zur Änderung der Verordnung (EU) Nr. 996/2010 des Europäischen Parlaments und des Rates und zur Aufhebung der Richtlinie 2003/42/EG des Europäischen Parlaments und des Rates und der Verordnungen (EG) Nr. 1321/2007 und (EG) Nr. 1330/2007 der Kommission (ABl. L 122 vom 24.4.2014, S. 18).

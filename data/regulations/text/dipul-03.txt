@@ -1,0 +1,19 @@
+Seiten{{ sa2search.resultSets['self:live'].result.totalCount > sa2search.resultSets['self:live'].perPage ? '> ' + sa2search.resultSets['self:live'].perPage : sa2search.resultSets['self:live'].result.totalCount}}Die Suche konnte nicht ausgeführt werden. Bitte versuchen Sie es zu einem späteren Zeitpunkt erneut.
+{{ item.name }}
+
+
+
+
+
+
+
+Digitale PlattformUnbemannte Luftfahrt
+
+
+
+
+
+
+
+
+Informationen zu dipul in deutscher GebärdenspracheHier finden Sie Informationen in deutscher GebärdenspracheAllgemeine Informationen zur dipulNavigation auf der dipulErklärung zur Barrierefreiheit auf der dipul

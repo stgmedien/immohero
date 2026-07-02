@@ -1,0 +1,19 @@
+Seiten{{ sa2search.resultSets['self:live'].result.totalCount > sa2search.resultSets['self:live'].perPage ? '> ' + sa2search.resultSets['self:live'].perPage : sa2search.resultSets['self:live'].result.totalCount}}Die Suche konnte nicht ausgeführt werden. Bitte versuchen Sie es zu einem späteren Zeitpunkt erneut.
+{{ item.name }}
+
+
+
+
+
+
+
+Digitale Plattform Unbemannte Luftfahrt
+
+
+
+
+
+
+
+
+Allgemeine Informationen zum Betrieb von DrohnenNachfolgend werden Informationen zu verschiedenen Themen in Bezug auf den Einsatz von Drohnen in Deutschland zur Verfügung gestellt. Diese beziehen sich vorwiegend auf geltende, rechtliche Rahmenbedingungen für Drohnenflüge in Deutschland. Erste SchritteDefinition zur DrohneAnwendungsbeispieleMindestalter und VersicherungspflichtRegistrierung & QualifikationRechtsgrundlagenSicherheitsinformationenModellflugGlossarDownloads Zurück zu Informationen

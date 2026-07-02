@@ -1,0 +1,84 @@
+{
+  "comment": "Quellkorpus der Pilot Journey Engine. Nur amtliche/authoritative Quellen für den Rechts-Layer. type: html = direkte Seite(n), easa-pdf = PDF-Link von der EASA-Library-Seite entdecken, hub = Startseite crawlen und interne Unterseiten nach linkPattern mitnehmen.",
+  "sources": [
+    {
+      "id": "eu-2019-947",
+      "country": "EU",
+      "authority": "Europäische Kommission / EASA",
+      "language": "de",
+      "title": "Durchführungsverordnung (EU) 2019/947 über Vorschriften und Verfahren für den Betrieb unbemannter Luftfahrzeuge (konsolidierte Fassung)",
+      "type": "html",
+      "headers": { "Accept": "application/xhtml+xml", "Accept-Language": "deu" },
+      "urls": [
+        "http://publications.europa.eu/resource/celex/02019R0947-20220404",
+        "http://publications.europa.eu/resource/celex/32019R0947"
+      ]
+    },
+    {
+      "id": "eu-2019-945",
+      "country": "EU",
+      "authority": "Europäische Kommission / EASA",
+      "language": "de",
+      "title": "Delegierte Verordnung (EU) 2019/945 über unbemannte Luftfahrzeugsysteme (Produktklassen, konsolidierte Fassung)",
+      "type": "html",
+      "headers": { "Accept": "application/xhtml+xml", "Accept-Language": "deu" },
+      "urls": [
+        "http://publications.europa.eu/resource/celex/02019R0945-20200809",
+        "http://publications.europa.eu/resource/celex/32019R0945"
+      ]
+    },
+    {
+      "id": "easa-easy-access-uas",
+      "country": "EU",
+      "authority": "EASA",
+      "language": "en",
+      "title": "Easy Access Rules for Unmanned Aircraft Systems (Regulations (EU) 2019/947 & 2019/945)",
+      "type": "easa-pdf",
+      "libraryUrl": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-unmanned-aircraft-systems-regulations-eu"
+    },
+    {
+      "id": "de-luftvo",
+      "country": "DE",
+      "authority": "Bundesrecht (BMDV)",
+      "language": "de",
+      "title": "Luftverkehrs-Ordnung (LuftVO) — insb. §§ 21a–21k unbemannte Fluggeräte",
+      "type": "html",
+      "urls": [
+        "https://www.gesetze-im-internet.de/luftvo_2015/BJNR189410015.html"
+      ]
+    },
+    {
+      "id": "lba-drohnen",
+      "country": "DE",
+      "authority": "Luftfahrt-Bundesamt (LBA)",
+      "language": "de",
+      "title": "LBA — Unbemannte Fluggeräte (Hub + Unterseiten: Kompetenznachweise, Registrierung, Betrieb)",
+      "type": "hub",
+      "hubUrl": "https://www.lba.de/DE/Drohnen/Drohnen_node.html",
+      "linkPattern": "/DE/Drohnen/",
+      "maxPages": 10
+    },
+    {
+      "id": "dipul",
+      "country": "DE",
+      "authority": "BMDV / dipul (Digitale Plattform Unbemannte Luftfahrt)",
+      "language": "de",
+      "title": "dipul — Geografische Gebiete, Regeln und Anwendungsinfos",
+      "type": "hub",
+      "hubUrl": "https://www.dipul.de/homepage/de/",
+      "linkPattern": "/homepage/de/",
+      "maxPages": 10
+    },
+    {
+      "id": "easa-civil-drones",
+      "country": "EU",
+      "authority": "EASA",
+      "language": "en",
+      "title": "EASA Civil Drones — Open/Specific Category Erklärseiten (Praxis-Guides)",
+      "type": "hub",
+      "hubUrl": "https://www.easa.europa.eu/en/domains/civil-drones",
+      "linkPattern": "/civil-drones",
+      "maxPages": 6
+    }
+  ]
+}

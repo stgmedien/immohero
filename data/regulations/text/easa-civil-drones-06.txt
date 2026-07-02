@@ -1,0 +1,450 @@
+Skip to main content
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Popular
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DownloadsRelated Content
+
+
+
+
+
+
+
+
+
+In this site you can find:
+
+Risk assessment of the intended operation – SORA
+Safety, the risk approach. What is SORA?
+SORA Risk Evaluation
+Compliance with the design requirements of the drone
+Submission of SORA to the NAA
+How to SORA – some practical applications
+Predefined Risk Assessment - PDRA
+Stay informed
+
+Risk assessment of the intended operation - SORA
+When conducting an operation not covered by a STS or a PDRA, applicants are required to conduct a risk assessment, identify mitigations and comply with safety objectives.
+The risk assessment methodology, known as SORA (Specific Operations Risk Assessment), is developed for this purpose. EASA published the SORA as an Acceptable mean of compliance to Article 11 to Regulation (EU) 2019/947.
+Safety, the risk-based approach. What is SORA?
+The SORA is a methodology for the classification of the risk posed by a drone flight in the specific category of operations and for the identification of mitigations and of the safety objectives. It helps the operator to identify operational limitations, training objectives for the personnel essential for the operation (e.g remote pilots, observers, maintainers etc..), technical requirements for the drone and to develop the appropriate operational procedures that will be part of the operator manual.
+SORA Risk Evaluation
+It is a 10 steps process starting with the description of the operation and the evaluation of ground risk and air risk:
+
+The ground risk is related to the risk posed to persons, properties or critical infrastructures, being struck by a drone. It is affected by:
+
+the population density;
+the type of operation:
+
+Visual Line of Sight – VLOS; or
+Beyond Visual Line of Sight – BVLOS; and
+
+the drone’s size;
+the mitigations applied.
+
+The air risks determination considers the probability of encountering manned aircraft in the airspace. This is derived from:
+
+the density of manned air traffic in the airspace;
+the mitigations applied.
+
+By combining the residual air and ground risk value, then intrinsic risk values of the full operation, called SAIL (Specific assurance integrity level) is defined.
+A high value SAIL represents an operation with high potential risk. Once determined the SAIL, the applicant needs to go through the 24 operational safety objectives (OSOs) and to show compliance with a level of robustness that is increasing with the SAIL of the operation (e.g. operations with higher SAIL, meaning with higher intrinsic risk, will be required to show compliance with higher level of robustness, meaning more demanding standard and showing compliance to the National Aviation Authority (NAA)).
+The last point is to assess the level of risk of the area adjacent to the area of operation, and comply with the requirements to protect such area and contain the drone in the operational area in case of a fly away.
+
+Ground risk determination (Step #2)
+Assessment Tool for the calculation of the Critical Area of a drone
+
+The Critical Area of a drone is a key element to determine a ground risk within the SORA assessment, tailored to the drone used.
+The Critical Area Assessment can be quite complex due to the extent of the contributing concepts and factors.
+The Critical Area Assessment Tool has been developed to support applicants in their calculations.
+It may be used by applicants to provide a justification to the NAAs, when they consider that the drone they use poses a ground risk equivalent to the one posed by a smaller drone (e.g. a drone with characteristic dimensions of 3.5 m may have a critical area equal to or lower than the one considered in the SORA ground risk class table for a drone with characteristic dimensions of less than 3 m. In this case, a reduction in the ground risk class may be claimed in SORA Step #2).
+
+Fill in our pre-registration form and access the Critical Area Assessment Tool at the Innovative Air Mobility Hub.
+For related documents, see also the Downloads Section at the end of this page.
+Contact Person: Lilian Daelemans — Regulations Officer – Initial Airworthiness  E-mail: lilian.daelemans [at] easa.europa.eu (lilian[dot]daelemans[at]easa[dot]europa[dot]eu)
+Compliance with the design requirements of the drone
+Some of the OSOs identify the design requirements that the drone needs to comply with. Depending on the SAIL, compliance may be demonstrated as follows:
+
+SAIL I and II: with a declaration against the applicable design-related OSOs;
+SAIL III: by complying with the SAIL III MoC;
+SAIL IV: by applying to EASA for a design verification report (DVR);
+SAIL V and VI: by applying to EASA for a type certificate according to Regulation (EU) No 748/2012 (Part 21).
+
+Also, if the drone uses a technical mitigation (called M2) with high level of robustness, then a DVR issued by EASA is required. Compliance with technical mitigations (M2) with medium level of robustness or enhanced containment can be declared by the manufacturer if appropriate means of compliance published by EASA are used. In other cases, a DVR should be used, unless the NAA decides differently.
+Submission of SORA to the NAA
+When all steps of the SORA has been accomplished, the operator must submit to the NAA:
+
+The application form for the operational authorisation;
+A copy of the risk assessment and compliance evidences;
+A copy of the operator manual.
+
+If the NAA is satisfied with the information the applicant provided, then the NAA will issue an operational authorisation.
+
+How to SORA – useful links
+
+Ten tips to successfully and rapidly obtain a SORA authorisation | LinkedIn (courtesy of Nathanel Apter)
+Methodology for the Specific Ops Risk Assessment (SORA) by JARUS - UAS Workshop 2018
+
+Predefined Risk Assessment - PDRA
+As an alternative to the SORA risk assessment, it may be used a predefined risk assessment (PDRA).
+For additional information please contact the team.
+Stay informed on SORA:
+
+Create an EASA account
+Follow the category "Civil drones (Unmanned aircraft)"
+Decide how you want to be notified
+
+
+
+
+
+
+Downloads
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[pdf]
+Final Guidelines for the Assessment of the Critical Area of an Unmanned Aircraft
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[pdf]
+Comment Response Document (CRD) to the 'Proposed Guidelines for the calculation of the critical area of Unmanned Aircraft'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Related Content
+
+
+
+
+
+
+
+
+
+
+
+30 Jun 2026
+
+
+
+
+Easy Access Rules
+
+
+Popular
+
+
+
+
+
+
+
+Easy Access Rules for Unmanned Aircraft Systems
+
+
+
+
+Revision from June 2026 — Available in pdf, xml, and online format
+
+
+
+
+
+
+
+
+
+
+
+
+
+FAQs Drones (UAS)
+
+
+
+
+
+
+
+Video: UAS Operation in the 'specific' category - UAM Becoming a Reality - Technical workshop 1a – Amsterdam’s Drone week 2022 (YouTube)
+
+
+
+
+
+
+
+Video: SORA Workshop - Day 1 - February 2023 (YouTube)
+
+
+
+
+
+
+
+Video: SORA Workshop - Day 2 - February 2023 (YouTube)
+
+
+
+
+
+
+
+
+
+
+
+
+
+22 Jul 2025
+
+
+
+
+Product Certification Consultation
+
+
+
+
+
+
+
+
+
+
+Means of compliance (MoC) for the design of UAS operated in SAIL III
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Declaration form for Means of Compliance (MoC) 2511
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Design verification report
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+06 Jul 2023
+
+
+
+
+Product Certification Consultation
+
+
+
+
+
+
+
+
+
+
+Means of Compliance for mitigation means M2 Ref. AMC to article 11 of Regulation 2019/947
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+05 May 2022
+
+
+
+
+Product Certification Consultation
+
+
+
+
+
+
+
+
+
+
+Final Means of Compliance with Light-UAS.2511 MOC Light-UAS.2511-01 - Issue 01

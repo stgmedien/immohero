@@ -1,0 +1,215 @@
+Skip to main content
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Popular
+
+
+
+
+
+
+
+
+
+
+
+
+DownloadsRelated Content
+
+
+
+
+
+
+
+
+
+In this site you can find:
+
+What is an STS
+Are there any STS already published?
+How to operate in an STS
+Operating in another country
+Applicability of the EU’s STS
+Can I propose a new STS?
+Stay informed
+
+What is an STS
+The European Standard Scenario (STS) is a predefined operation, described in Appendix 1to Regulation (EU) 2019/947 that will become applicable from the  1st January 2024. It is one of the various possibilities for the operators to start their operations.
+An operator is not required to obtain an operational authorisation to conduct an operation covered by a STS. So it should be first checked if the operation can be accommodated under an STS. If it is so, then submitting a declaration to the NAA of the state of registration is sufficient.
+Are there any STS already published?
+Two EU STSs have been published so far;
+
+STS 01 – VLOS over a controlled ground area in a populated environment;
+STS 02 – BVLOS with Airspace Observers over a controlled.
+
+
+To fall under an STS the operation needs to comply with all the requirements defined in the actual STS. Please check Appendix 1 Chapter 1 (STS 01) or Chapter 2 (STS 02) to Regulation (EU) 2019/947 for the full list of requirements.  This includes the drone bearing the appropriate CE Class identification label: C5 for STS 01 and C6 for STS 02 .
+How to operate in an STS
+
+Before starting the operation the operator is required to submit a declaration (specifying if they intend to conduct STS 01 or 02) to the NAA in the state where it is registered as an operator;
+As soon as the NAA will provide the confirmation of receipt and completeness, the operator may start the operation, within the limits of the standard scenario.
+
+Operating in another country
+Even if the operator intends to conduct the operation in a state different from the one of registration the declaration must be submitted to the NAA of the state of registration. Then the operator shall just send to the NAA of the state of operation a copy of the declaration and of the confirmation of completeness and receipt received form the NAA of the state of registration and the operation can start.
+Applicability of the EU STS
+The EU STS will become applicable from January 01, 2024 since drones bearing a class mark C5 or C6 are not available on the market just yet.
+Some states already published national STS, similar to the European ones. In this case the declarations based on national STS can be used until December 31, 2023 and will be valid only in that state.
+However, if no STS is available in your state, please consider PDRA S-01 and S-02 that cater for exactly the same operation of the EU STS, but they do not require using a drone bearing a C5 or C6 class label.
+Even if those PDRA require to apply for an operational authorisation, they were written in a more prescriptive way (compared to the other PDRA G-0x) with the aim to speed up the authorisation process.
+You can refer to the website of the NAA of the state where you intend to operate to find the requirements to operate a national STS.
+Can I propose a new STS?
+Yes you can! We would like to hear your suggestions on new STSs. If you have any specific need for one, email us at drones [at] easa.europa.eu. However please bear in mind that STS are possible only for operations classified in SAIL II.
+We will consider them carefully, whether how we can accommodate this with a new STS, or perhaps how adjust an existing STS.
+EASA, in coordination with NAAs, will monitor the authorisation granted and will define in the future which scenarios (if any) may be considered for future STS. However please consider that STS are included in the hard law (i.e. Appendixes to Regulation 2019/947). Therefore the process to add new STS will take some time.
+
+Stay informed on STS:
+
+Create an EASA account
+Follow the category "Civil drones (Unmanned aircraft)"
+Decide how you want to be notified
+
+
+
+
+
+
+Downloads
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[pdf]
+Form for Operational declaration
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Related Content
+
+
+
+
+
+
+
+
+
+
+
+30 Jun 2026
+
+
+
+
+Easy Access Rules
+
+
+Popular
+
+
+
+
+
+
+
+Easy Access Rules for Unmanned Aircraft Systems
+
+
+
+
+Revision from June 2026 — Available in pdf, xml, and online format
+
+
+
+
+
+
+
+
+
+
+
+
+
+FAQs Drones (UAS)
