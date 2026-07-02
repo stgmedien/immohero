@@ -93,7 +93,11 @@ const ALL_TOOLS: Anthropic.Tool[] = [
     input_schema: {
       type: "object" as const,
       properties: {
-        query: { type: "string", description: "Suchanfrage auf Deutsch, präzise Fachbegriffe" },
+        query: {
+          type: "string",
+          description:
+            "2–4 präzise AMTLICHE Suchbegriffe, KEINE ganzen Sätze. Nutze Gesetzes-Vokabular: 'Wohngrundstücke Überflug' statt 'Wohngebiete', 'Fernpiloten-Zeugnis' statt 'A2-Schein', 'geografische UAS-Gebiete' statt 'Flugverbotszonen'.",
+        },
         doc_type: { type: "string", enum: ["regulation", "guide", "manual", "any"] },
       },
       required: ["query"],
@@ -258,7 +262,7 @@ export async function executeTool(
           return JSON.stringify({
             results: [],
             instruction:
-              "Keine Treffer. Sage ehrlich, dass du das nicht belegen kannst, und verweise auf die zuständige Behörde (Deutschland: Luftfahrt-Bundesamt, lba.de).",
+              "Keine Treffer. Versuche GENAU EINEN weiteren search_regulations-Aufruf mit anderen amtlichen Begriffen/Synonymen (z. B. 'Wohngrundstücke' statt 'Wohngebiete', '§ 21h LuftVO', 'Betrieb offene Kategorie'). Liefert auch der nichts: sage ehrlich, dass du es nicht belegen kannst, und verweise auf die zuständige Behörde (Deutschland: Luftfahrt-Bundesamt, lba.de).",
           });
         }
         return JSON.stringify({
