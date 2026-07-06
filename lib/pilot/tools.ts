@@ -4,27 +4,21 @@
  * das ist der "agentische Funnel" statt freiem Chatbot.
  */
 import type Anthropic from "@anthropic-ai/sdk";
-import * as Sentry from "@sentry/nextjs";
 import { eq } from "drizzle-orm";
 import { db } from "@/lib/db/client";
 import {
   pilotProfiles,
   pilotEvents,
   sampleBriefs,
-  consultations,
-  customers,
   type PilotProfile,
 } from "@/lib/db/schema";
 import { searchRegulations } from "./rag";
 import { estimateEarnings } from "./earnings";
 import { recommendEquipment, EQUIPMENT_CATALOG } from "./equipment";
 import { profileCompleteness, computeLevelScore, levelFromScore, computePassportLevel } from "./scoring";
-import { getAvailableConsultationSlots, consultationWindow } from "@/lib/consultation";
-import {
-  createConsultationEvent,
-  isGoogleCalendarConfigured,
-  CALENDAR_ID,
-} from "@/lib/google-calendar";
+import { getAvailableConsultationSlots } from "@/lib/consultation";
+import { bookAssessorCall } from "./booking";
+import { convertPilot } from "./convert";
 import { shotsForOrder } from "@/lib/shots";
 
 export type Stage = "assess" | "route" | "convert";
@@ -319,85 +313,32 @@ export async function executeTool(
 
       case "book_assessor_call": {
         const p = await ensureProfile(ctx);
-        if (!p.email) {
-          return JSON.stringify({ ok: false, error: "no_email", instruction: "Bitte zuerst nach der E-Mail-Adresse fragen (fürs Kalender-Invite) — sie wird über das E-Mail-Formular im Chat gespeichert." });
-        }
-        const startIso = String(input.slot_start_iso ?? "");
-        const start = new Date(startIso);
-        if (isNaN(start.getTime()) || start.getTime() < Date.now() + 2 * 3600_000) {
+        const result = await bookAssessorCall(
+          p,
+          String(input.slot_start_iso ?? ""),
+          typeof input.note === "string" ? input.note : null,
+        );
+        if (!result.ok) {
+          if (result.error === "no_email") {
+            return JSON.stringify({ ok: false, error: "no_email", instruction: "Bitte zuerst nach der E-Mail-Adresse fragen (fürs Kalender-Invite) — sie wird über das E-Mail-Formular im Chat gespeichert." });
+          }
           return JSON.stringify({ ok: false, error: "invalid_slot", instruction: "Slot ungültig oder zu kurzfristig — erneut get_call_slots aufrufen und wählen lassen." });
         }
-        const { start: s, end: e } = consultationWindow(start.toISOString());
+        await logEvent(ctx, "call_booked", { consultationId: result.consultationId, start: result.start, confirmed: result.confirmed });
 
-        // Direkt-Buchung über die verbundene Google-Calendar-API:
-        // Event + Google-Meet-Link sofort anlegen, Einladung geht per
-        // sendUpdates=all automatisch an den Piloten. Fällt der Kalender aus,
-        // bleibt es eine "requested"-Anfrage, die das Team manuell bestätigt.
-        let googleEventId: string | null = null;
-        let googleHtmlLink: string | null = null;
-        let meetUrl: string | null = null;
-        let confirmed = false;
-        if (isGoogleCalendarConfigured()) {
-          try {
-            const ev = await createConsultationEvent({
-              summary: `Aero One Pilot-Assessment — ${p.name ?? p.email}`,
-              description: [
-                "30-minütiges Assessor-Videogespräch (gebucht über den Pilot-Guide).",
-                `Level-Einstufung: ${p.level ?? "offen"} (Score ${p.levelScore}, Passport ${p.passportLevel})`,
-                p.equipment?.length ? `Equipment: ${p.equipment.map((eq) => eq.model).join(", ")}` : null,
-                p.flightHours != null ? `Flugstunden: ${p.flightHours}` : null,
-                typeof input.note === "string" && input.note ? `Notiz: ${input.note.slice(0, 300)}` : null,
-              ]
-                .filter(Boolean)
-                .join("\n"),
-              startIso: s.toISOString(),
-              endIso: e.toISOString(),
-              attendees: [{ email: p.email, displayName: p.name ?? undefined }],
-              addGoogleMeet: true,
-            });
-            googleEventId = ev.eventId;
-            googleHtmlLink = ev.htmlLink;
-            meetUrl = ev.meetUrl;
-            confirmed = true;
-          } catch (err) {
-            console.error("[pilot-engine] direct calendar booking failed", err);
-            Sentry.captureException(err, { tags: { feature: "pilot_assessor_booking" } });
-          }
-        }
-
-        const [row] = await db
-          .insert(consultations)
-          .values({
-            kind: "pilot_assessor",
-            customerEmail: p.email,
-            customerName: p.name,
-            requestedStart: s,
-            requestedEnd: e,
-            status: confirmed ? "confirmed" : "requested",
-            meetingProvider: confirmed ? "google_meet" : null,
-            meetingUrl: meetUrl,
-            googleEventId,
-            googleHtmlLink,
-            googleCalendarId: confirmed ? CALENDAR_ID : null,
-            confirmedAt: confirmed ? new Date() : null,
-            customerNote: typeof input.note === "string" && input.note ? input.note.slice(0, 500) : `Pilot-Assessment (Level: ${p.level ?? "offen"}, Score ${p.levelScore})`,
-          })
-          .returning({ id: consultations.id });
-        await logEvent(ctx, "call_booked", { consultationId: row.id, start: s.toISOString(), confirmed });
-
-        if (confirmed) {
+        if (result.confirmed) {
           return JSON.stringify({
             ok: true,
             confirmed: true,
-            booked: { start: s.toISOString(), duration_min: 30 },
-            meet_url: meetUrl,
+            booked: { start: result.start, duration_min: 30 },
+            meet_url: result.meetUrl,
             instruction: `Der Termin ist FEST GEBUCHT und steht im Kalender. Eine Google-Kalender-Einladung mit dem Meet-Link ist an ${p.email} unterwegs. Nenne dem Nutzer Datum, Uhrzeit und den Meet-Link direkt.`,
           });
         }
         return JSON.stringify({
           ok: true,
           confirmed: false,
-          booked: { start: s.toISOString(), duration_min: 30 },
+          booked: { start: result.start, duration_min: 30 },
           instruction: "Anfrage ist eingegangen (Kalender kurzzeitig nicht erreichbar) — das Team bestätigt den Termin per E-Mail mit Video-Link.",
         });
       }
@@ -424,24 +365,32 @@ export async function executeTool(
         if (!p.email) {
           return JSON.stringify({ ok: false, error: "no_email", instruction: "Zuerst E-Mail über das Formular erfassen." });
         }
-        let customerRecordId = p.customerRecordId;
-        if (!customerRecordId) {
-          const [c] = await db
-            .insert(customers)
-            .values({
-              displayName: p.name ?? p.email,
-              kind: "person",
-              primaryEmail: p.email,
-              source: "pilot-engine",
-              notes: `Pilot-Engine: Level ${p.level ?? "offen"}, Score ${p.levelScore}, Passport ${p.passportLevel}`,
-            })
-            .returning({ id: customers.id });
-          customerRecordId = c.id;
-          await db.update(pilotProfiles).set({ customerRecordId }).where(eq(pilotProfiles.id, p.id));
-          ctx.profileDirty = true;
-        }
-        await logEvent(ctx, "pilot_registered", { customerRecordId });
-        return JSON.stringify({ ok: true, instruction: "Bestätige die Aufnahme in den Piloten-Pool und erkläre die nächsten Schritte (Level erhöhen → sichtbar für echte Aufträge)." });
+        // Voller Conversion-Kern: User-Account + CRM + Academy-Enrollment + Magic-Link.
+        // Identischer Endzustand wie der traditionelle Onboarding-Wizard.
+        const result = await convertPilot(
+          { email: p.email },
+          { source: "chatbot", profileId: p.id, sessionId: ctx.sessionId },
+        );
+        ctx.profile = result.profile;
+        ctx.profileDirty = true;
+        return JSON.stringify({
+          ok: true,
+          level: result.level,
+          enrolled_course: result.recommendedCourse?.title ?? null,
+          magic_link_sent: result.magicLinkSent,
+          instruction: [
+            "Bestätige die Aufnahme in den Piloten-Pool.",
+            result.recommendedCourse
+              ? `Der Pilot ist jetzt im Academy-Kurs "${result.recommendedCourse.title}" eingeschrieben.`
+              : null,
+            result.magicLinkSent
+              ? "Ein persönlicher Login-Link ist per E-Mail unterwegs — damit geht es in den Lernbereich (immohero.org/academy/mein-bereich), ganz ohne Passwort."
+              : "Login geht jederzeit über immohero.org/login (E-Mail eingeben, Login-Link bekommen).",
+            "Erkläre kurz die nächsten Schritte: Kurs abschließen, Passport-Stufen steigen, ab Stufe 3 sichtbar für bezahlte Aufträge.",
+          ]
+            .filter(Boolean)
+            .join(" "),
+        });
       }
 
       default:
