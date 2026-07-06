@@ -67,6 +67,15 @@
   }
   btn.addEventListener("click", toggle);
 
+  // Programmatische API: CTAs auf der Seite können den Guide öffnen
+  // (z. B. "Lieber im Chat? Frag den Guide" auf /piloten).
+  window.ihPilotOpen = function () {
+    if (!open) toggle();
+  };
+  window.ihPilotClose = function () {
+    if (open) toggle();
+  };
+
   window.addEventListener("message", function (ev) {
     if (ev.origin !== origin) return;
     if (ev.data === "ih-pilot-close" && open) toggle();
