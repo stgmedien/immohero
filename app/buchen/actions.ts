@@ -10,6 +10,7 @@ import { generateShortCode } from "@/lib/short-code";
 import { requireStripe } from "@/lib/stripe";
 import { getBundle, getService } from "@/lib/services";
 import { shotsForOrder } from "@/lib/shots";
+import { DEMO_MODE, demoCityForPlz } from "@/lib/demo";
 
 export interface CheckPlzResult {
   ok: boolean;
@@ -21,6 +22,9 @@ export interface CheckPlzResult {
 export async function checkPlz(plz: string): Promise<CheckPlzResult> {
   if (!/^\d{5}$/.test(plz)) {
     return { ok: false, reason: "Bitte gib eine fünfstellige Postleitzahl ein." };
+  }
+  if (DEMO_MODE) {
+    return { ok: true, ...demoCityForPlz(plz) };
   }
   const row = await getServiceArea(plz);
   if (!row || !row.active) {
@@ -34,6 +38,13 @@ export async function checkPlz(plz: string): Promise<CheckPlzResult> {
 }
 
 export async function createCheckoutSession(payload: BookingDraft) {
+  // Demo-Modus: Funnel klickbar machen ohne Stripe/DB. Form validieren,
+  // dann direkt zur Erfolgsseite (ohne ?order, damit kein DB-Lookup passiert).
+  if (DEMO_MODE) {
+    bookingDraftSchema.parse(payload);
+    redirect("/buchen/erfolg?demo=1");
+  }
+
   const stripe = requireStripe();
   const draft = bookingDraftSchema.parse(payload);
 

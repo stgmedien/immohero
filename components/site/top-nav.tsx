@@ -5,9 +5,14 @@ import { auth } from "@/lib/auth";
 import { LangSwitcher } from "./lang-switcher";
 import { getLocale } from "@/lib/i18n.server";
 import { t } from "@/lib/i18n";
+import { DEMO_MODE } from "@/lib/demo";
 
 export async function TopNav() {
-  const [session, locale] = await Promise.all([auth(), getLocale()]);
+  // Im Demo-Modus kein Auth-Lookup (vermeidet DB-Zugriff offline).
+  const [session, locale] = await Promise.all([
+    DEMO_MODE ? Promise.resolve(null) : auth(),
+    getLocale(),
+  ]);
   const navLinks = [
     { href: "/pakete", label: t(locale, "nav_packages") },
     { href: "/services", label: t(locale, "nav_services") },
