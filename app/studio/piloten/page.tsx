@@ -36,11 +36,13 @@ export default async function StudioPilotenPage() {
   const f = Object.fromEntries(funnel.map((r) => [r.type, r.n]));
   const stats: { label: string; value: number }[] = [
     { label: "Gespräche", value: sessionCount[0]?.n ?? 0 },
+    { label: "Onboardings", value: f["onboarding_completed"] ?? 0 },
     { label: "Leads", value: f["lead_captured"] ?? 0 },
     { label: "Einstufungen", value: f["level_assigned"] ?? 0 },
     { label: "Calls gebucht", value: f["call_booked"] ?? 0 },
     { label: "Beispielaufträge", value: f["brief_generated"] ?? 0 },
-    { label: "Pool-Registrierungen", value: f["pilot_registered"] ?? 0 },
+    { label: "Accounts", value: f["account_created"] ?? 0 },
+    { label: "Kurs-Einschreibungen", value: f["course_enrolled"] ?? 0 },
   ];
 
   return (
@@ -58,7 +60,7 @@ export default async function StudioPilotenPage() {
           </p>
         </div>
 
-        <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+        <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-8">
           {stats.map((s) => (
             <Card key={s.label} className="p-4">
               <p className="font-serif text-3xl">{s.value}</p>
@@ -97,6 +99,9 @@ export default async function StudioPilotenPage() {
                       </p>
                     </div>
                     <div className="flex items-center gap-2">
+                      <Badge tone={p.source === "onboarding" ? "info" : "neutral"}>
+                        {p.source === "onboarding" ? "Formular" : p.source === "chatbot" ? "Chatbot" : p.source}
+                      </Badge>
                       <Badge tone="neutral">Passport {p.passportLevel}</Badge>
                       {lvl ? <Badge tone={lvl.tone}>{lvl.label} · {p.levelScore}</Badge> : <Badge tone="neutral">offen</Badge>}
                     </div>

@@ -30,6 +30,7 @@ export async function Footer() {
           title={t(locale, "footer_col_company")}
           links={[
             { href: "/pakete", label: t(locale, "footer_link_packages") },
+            { href: "/piloten", label: locale === "en" ? "For Pilots" : "Für Piloten" },
             { href: "/academy", label: "Academy" },
             { href: "/faq", label: t(locale, "footer_link_faq") },
             { href: "/ueber-uns", label: t(locale, "footer_link_about") },

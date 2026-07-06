@@ -9,6 +9,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/",
     "/pakete",
     "/services",
+    "/piloten",
+    "/academy",
     "/ueber-uns",
     "/faq",
     "/kontakt",

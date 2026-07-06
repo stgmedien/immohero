@@ -5,7 +5,14 @@ import { eq } from "drizzle-orm";
 import { auth } from "@/lib/auth";
 import { canAccessCustomers } from "@/lib/access";
 import { db } from "@/lib/db/client";
-import { academyCourses, academyLessons, auditLog } from "@/lib/db/schema";
+import {
+  academyCourses,
+  academyLessons,
+  auditLog,
+  users,
+  type AcademyQuizQuestion,
+} from "@/lib/db/schema";
+import { ensureEnrollment } from "@/lib/academy/access";
 
 async function requireAcademyAdmin() {
   const session = await auth();
@@ -55,9 +62,20 @@ export async function createCourse(input: { title: string; level: "basic" | "int
 
 export async function updateCourse(input: {
   courseId: string;
-  patch: { title?: string; description?: string | null; level?: "basic" | "intermediate" | "advanced"; position?: number; published?: boolean };
+  patch: {
+    title?: string;
+    description?: string | null;
+    summary?: string | null;
+    level?: "basic" | "intermediate" | "advanced";
+    priceCents?: number | null;
+    position?: number;
+    published?: boolean;
+  };
 }) {
   const session = await requireAcademyAdmin();
+  if (input.patch.priceCents != null) {
+    input.patch.priceCents = Math.max(0, Math.min(1_000_000, Math.round(input.patch.priceCents))) || null;
+  }
   await db.update(academyCourses).set(input.patch).where(eq(academyCourses.id, input.courseId));
   await audit(session, "academy_course_updated", input.courseId);
   revalidatePath("/studio/academy");
@@ -96,15 +114,65 @@ export async function createLesson(input: { courseId: string; title: string }) {
   return row;
 }
 
+/** Validiert die Quiz-Struktur aus dem Editor — kaputte Quizzes erreichen nie die DB. */
+function sanitizeQuiz(input: unknown): AcademyQuizQuestion[] | null {
+  if (!Array.isArray(input) || input.length === 0) return null;
+  const out: AcademyQuizQuestion[] = [];
+  for (const q of input.slice(0, 20)) {
+    if (!q || typeof q !== "object") continue;
+    const item = q as Record<string, unknown>;
+    const question = typeof item.question === "string" ? item.question.trim().slice(0, 500) : "";
+    const options = Array.isArray(item.options)
+      ? item.options.filter((o): o is string => typeof o === "string" && o.trim().length > 0).map((o) => o.trim().slice(0, 300)).slice(0, 6)
+      : [];
+    const correctIndex = Number(item.correctIndex);
+    if (!question || options.length < 2 || !Number.isInteger(correctIndex) || correctIndex < 0 || correctIndex >= options.length) {
+      continue;
+    }
+    const explanation = typeof item.explanation === "string" && item.explanation.trim() ? item.explanation.trim().slice(0, 500) : undefined;
+    out.push({ question, options, correctIndex, ...(explanation ? { explanation } : {}) });
+  }
+  return out.length > 0 ? out : null;
+}
+
 export async function updateLesson(input: {
   lessonId: string;
-  patch: { title?: string; body?: string; durationMin?: number | null; videoUrl?: string | null; position?: number; published?: boolean };
+  patch: {
+    title?: string;
+    body?: string;
+    durationMin?: number | null;
+    videoUrl?: string | null;
+    quiz?: AcademyQuizQuestion[] | null;
+    position?: number;
+    published?: boolean;
+  };
 }) {
   const session = await requireAcademyAdmin();
-  await db.update(academyLessons).set(input.patch).where(eq(academyLessons.id, input.lessonId));
+  const patch = { ...input.patch };
+  if ("quiz" in patch) patch.quiz = sanitizeQuiz(patch.quiz);
+  await db.update(academyLessons).set(patch).where(eq(academyLessons.id, input.lessonId));
   await audit(session, "academy_lesson_updated", input.lessonId);
   revalidatePath("/studio/academy");
   revalidatePath("/academy");
+}
+
+/**
+ * Manuelle Kurs-Freischaltung (z. B. Bezahlkurs auf Rechnung, bevor der
+ * Checkout existiert). Legt bei Bedarf den User-Account an (Magic-Link-Login).
+ */
+export async function grantEnrollment(input: { email: string; courseId: string }) {
+  const session = await requireAcademyAdmin();
+  const email = input.email.trim().toLowerCase();
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) throw new Error("Ungültige E-Mail");
+
+  let [user] = await db.select().from(users).where(eq(users.email, email)).limit(1);
+  if (!user) {
+    [user] = await db.insert(users).values({ email, role: "customer" }).returning();
+  }
+  const { created } = await ensureEnrollment(user.id, input.courseId, "studio");
+  await audit(session, "academy_enrollment_granted", `${input.courseId}:${user.id}`);
+  revalidatePath("/studio/academy");
+  return { ok: true, created, userEmail: email };
 }
 
 export async function deleteLesson(lessonId: string) {

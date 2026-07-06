@@ -4,6 +4,7 @@ import { ServiceCard } from "@/components/marketing/service-card";
 import { BundleCard } from "@/components/marketing/bundle-card";
 import { FAQ } from "@/components/marketing/faq";
 import { CtaStrip } from "@/components/marketing/cta-strip";
+import { PilotCta } from "@/components/marketing/pilot-cta";
 import { SERVICES, BUNDLES } from "@/lib/services";
 import { getLocale } from "@/lib/i18n.server";
 import { t } from "@/lib/i18n";
@@ -50,6 +51,7 @@ export default async function HomePage() {
         </div>
       </section>
 
+      <PilotCta />
       <FAQ />
       <CtaStrip />
     </>

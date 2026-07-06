@@ -16,7 +16,9 @@ import {
   createLesson,
   updateLesson,
   deleteLesson,
+  grantEnrollment,
 } from "@/app/studio/actions/academy";
+import { QuizEditor, type QuizQuestionDraft } from "@/components/studio/quiz-editor";
 
 type Level = "basic" | "intermediate" | "advanced";
 
@@ -27,6 +29,7 @@ interface Lesson {
   body: string;
   durationMin: number | null;
   videoUrl: string | null;
+  quiz: QuizQuestionDraft[] | null;
   position: number;
   published: boolean;
 }
@@ -36,10 +39,14 @@ interface Course {
   slug: string;
   title: string;
   description: string | null;
+  summary: string | null;
   level: Level;
+  priceCents: number | null;
   position: number;
   published: boolean;
   lessons: Lesson[];
+  enrollmentCount?: number;
+  completedCount?: number;
 }
 
 const LEVELS: { value: Level; label: string }[] = [
@@ -118,18 +125,38 @@ function CourseCard({
   const [open, setOpen] = useState(false);
   const [title, setTitle] = useState(course.title);
   const [description, setDescription] = useState(course.description ?? "");
+  const [summary, setSummary] = useState(course.summary ?? "");
   const [level, setLevel] = useState<Level>(course.level);
+  const [priceEur, setPriceEur] = useState(course.priceCents ? String(course.priceCents / 100) : "");
+  const [grantEmail, setGrantEmail] = useState("");
   const [newLessonTitle, setNewLessonTitle] = useState("");
   const [pending, startTransition] = useTransition();
 
   function saveCourse() {
     startTransition(async () => {
       try {
-        await updateCourse({ courseId: course.id, patch: { title, description: description || null, level } });
-        onChange({ title, description, level });
+        const priceCents = priceEur.trim() ? Math.round(parseFloat(priceEur.replace(",", ".")) * 100) : null;
+        await updateCourse({
+          courseId: course.id,
+          patch: { title, description: description || null, summary: summary || null, level, priceCents },
+        });
+        onChange({ title, description, summary, level, priceCents });
         toast.success("Gespeichert");
       } catch {
         toast.error("Speichern fehlgeschlagen");
+      }
+    });
+  }
+
+  function grantAccess() {
+    if (!grantEmail.trim()) return;
+    startTransition(async () => {
+      try {
+        const res = await grantEnrollment({ email: grantEmail, courseId: course.id });
+        toast.success(res.created ? `${res.userEmail} freigeschaltet` : `${res.userEmail} war schon eingeschrieben`);
+        setGrantEmail("");
+      } catch {
+        toast.error("Freischalten fehlgeschlagen");
       }
     });
   }
@@ -182,8 +209,11 @@ function CourseCard({
           <p className="font-semibold truncate">{course.title}</p>
           <p className="text-xs text-[var(--color-ink-3)]">
             /academy/{course.slug} · {course.lessons.length} Lektionen
+            {course.enrollmentCount != null ? ` · ${course.enrollmentCount} Lernende` : ""}
+            {course.completedCount ? ` · ${course.completedCount} Abschlüsse` : ""}
           </p>
         </div>
+        {course.priceCents ? <Badge tone="accent">{(course.priceCents / 100).toLocaleString("de-DE")} €</Badge> : <Badge tone="neutral">Kostenlos</Badge>}
         <Badge tone={course.published ? "ok" : "neutral"}>{course.published ? "Live" : "Entwurf"}</Badge>
         <Button variant="secondary" size="sm" onClick={togglePublish} disabled={pending}>
           {course.published ? "Offline nehmen" : "Veröffentlichen"}
@@ -217,7 +247,33 @@ function CourseCard({
             <Label mono>Beschreibung (Markdown-lite)</Label>
             <Textarea value={description} onChange={(e) => setDescription(e.target.value)} rows={2} />
           </div>
+          <div className="grid gap-3 sm:grid-cols-[1fr_160px]">
+            <div className="grid gap-1.5">
+              <Label mono>Katalog-Teaser (1 Satz)</Label>
+              <Input value={summary} onChange={(e) => setSummary(e.target.value)} placeholder="Kurz-Beschreibung für die Kurs-Karte" />
+            </div>
+            <div className="grid gap-1.5">
+              <Label mono>Preis in € (leer = kostenlos)</Label>
+              <Input value={priceEur} onChange={(e) => setPriceEur(e.target.value)} placeholder="z. B. 149" inputMode="decimal" />
+            </div>
+          </div>
           <Button size="sm" onClick={saveCourse} disabled={pending}>Kurs speichern</Button>
+
+          <div className="rounded-[var(--radius-md)] border border-dashed border-[var(--color-hair)] p-3">
+            <Label mono>Manuell freischalten (E-Mail — legt Account bei Bedarf an)</Label>
+            <div className="mt-1.5 flex gap-2">
+              <Input
+                value={grantEmail}
+                onChange={(e) => setGrantEmail(e.target.value)}
+                placeholder="pilot@example.com"
+                type="email"
+                className="max-w-sm"
+              />
+              <Button variant="secondary" size="sm" onClick={grantAccess} disabled={pending || !grantEmail.trim()}>
+                Freischalten
+              </Button>
+            </div>
+          </div>
 
           <div className="space-y-3 border-t border-[var(--color-hair)] pt-4">
             <h3 className="text-sm font-semibold">Lektionen</h3>
@@ -263,16 +319,21 @@ function LessonEditor({
   const [body, setBody] = useState(lesson.body);
   const [duration, setDuration] = useState(lesson.durationMin?.toString() ?? "");
   const [videoUrl, setVideoUrl] = useState(lesson.videoUrl ?? "");
+  const [quiz, setQuiz] = useState<QuizQuestionDraft[]>(lesson.quiz ?? []);
   const [pending, startTransition] = useTransition();
 
   function save() {
     startTransition(async () => {
       try {
+        const cleanQuiz = quiz
+          .map((q) => ({ ...q, options: q.options.filter((o) => o.trim()) }))
+          .filter((q) => q.question.trim() && q.options.length >= 2);
         const patch = {
           title,
           body,
           durationMin: duration ? parseInt(duration, 10) : null,
           videoUrl: videoUrl || null,
+          quiz: cleanQuiz.length > 0 ? cleanQuiz : null,
         };
         await updateLesson({ lessonId: lesson.id, patch });
         onChange(patch);
@@ -327,13 +388,16 @@ function LessonEditor({
             <Input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Titel" />
             <Input value={duration} onChange={(e) => setDuration(e.target.value)} placeholder="Min." inputMode="numeric" />
           </div>
-          <Input value={videoUrl} onChange={(e) => setVideoUrl(e.target.value)} placeholder="Video-URL (optional, z. B. Blob/Vimeo-Direct)" />
+          <Input value={videoUrl} onChange={(e) => setVideoUrl(e.target.value)} placeholder="Video-URL (YouTube, Vimeo oder direkte MP4/Blob-URL)" />
           <Textarea
             value={body}
             onChange={(e) => setBody(e.target.value)}
             rows={10}
             placeholder={"Inhalt in Markdown-lite:\n# Überschrift\n**fett**, *kursiv*, - Listen, [Link](https://…)"}
           />
+          <div className="border-t border-[var(--color-hair)] pt-3">
+            <QuizEditor value={quiz} onChange={setQuiz} />
+          </div>
           <Button size="sm" onClick={save} disabled={pending}>Lektion speichern</Button>
         </div>
       )}

@@ -16,6 +16,7 @@ export async function TopNav() {
   const navLinks = [
     { href: "/pakete", label: t(locale, "nav_packages") },
     { href: "/services", label: t(locale, "nav_services") },
+    { href: "/piloten", label: locale === "en" ? "For Pilots" : "Für Piloten" },
     { href: "/faq", label: t(locale, "nav_faq") },
   ];
   const accountHref =
