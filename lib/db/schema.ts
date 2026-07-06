@@ -957,11 +957,18 @@ export const pilotProfiles = pgTable(
     }>(),
     flightHours: integer("flight_hours"),
     portfolio: jsonb("portfolio").$type<{ links?: string[]; selfAssessment?: string; hasRealEstateFootage?: boolean }>(),
+    onboarding: jsonb("onboarding").$type<{
+      goal?: "nebenbei" | "hobby-zum-beruf" | "vollzeit";
+      availabilityHoursPerWeek?: number;
+      motivation?: string;
+    }>(),
     level: pilotLevelEnum("level"),
     levelScore: integer("level_score").notNull().default(0),
     passportLevel: integer("passport_level").notNull().default(0),
     memory: text("memory"),
     persona: varchar("persona", { length: 16 }).notNull().default("academy"),
+    source: varchar("source", { length: 24 }).notNull().default("chatbot"), // chatbot | onboarding | studio
+    userId: text("user_id").references(() => users.id, { onDelete: "set null" }),
     customerRecordId: text("customer_record_id").references(() => customers.id, {
       onDelete: "set null",
     }),
@@ -973,6 +980,7 @@ export const pilotProfiles = pgTable(
   (table) => ({
     emailIdx: index("pilot_profile_email_idx").on(table.email),
     levelIdx: index("pilot_profile_level_idx").on(table.level),
+    userIdx: uniqueIndex("pilot_profile_user_idx").on(table.userId),
   }),
 );
 
@@ -1107,7 +1115,9 @@ export const academyCourses = pgTable(
     slug: varchar("slug", { length: 80 }).notNull(),
     title: text("title").notNull(),
     description: text("description"),
+    summary: text("summary"), // Karten-Teaser im Katalog
     level: pilotLevelEnum("level").notNull().default("basic"),
+    priceCents: integer("price_cents"), // null = kostenlos
     position: integer("position").notNull().default(0),
     published: boolean("published").notNull().default(false),
     createdAt: timestamp("created_at").notNull().defaultNow(),
@@ -1130,6 +1140,7 @@ export const academyLessons = pgTable(
     body: text("body").notNull().default(""),
     durationMin: integer("duration_min"),
     videoUrl: text("video_url"),
+    quiz: jsonb("quiz").$type<AcademyQuizQuestion[]>(),
     position: integer("position").notNull().default(0),
     published: boolean("published").notNull().default(false),
     createdAt: timestamp("created_at").notNull().defaultNow(),
@@ -1138,6 +1149,74 @@ export const academyLessons = pgTable(
   (table) => ({
     courseIdx: index("academy_lesson_course_idx").on(table.courseId),
     slugIdx: uniqueIndex("academy_lesson_slug_idx").on(table.courseId, table.slug),
+  }),
+);
+
+export type AcademyQuizQuestion = {
+  question: string;
+  options: string[];
+  correctIndex: number;
+  explanation?: string;
+};
+
+export const academyEnrollments = pgTable(
+  "academy_enrollment",
+  {
+    id: text("id").primaryKey().$defaultFn(() => crypto.randomUUID()),
+    userId: text("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    courseId: text("course_id")
+      .notNull()
+      .references(() => academyCourses.id, { onDelete: "cascade" }),
+    source: varchar("source", { length: 24 }).notNull().default("self"), // onboarding | chatbot | self | studio
+    status: varchar("status", { length: 12 }).notNull().default("active"), // active | completed
+    enrolledAt: timestamp("enrolled_at").notNull().defaultNow(),
+    completedAt: timestamp("completed_at"),
+  },
+  (table) => ({
+    userCourseIdx: uniqueIndex("academy_enrollment_user_course_idx").on(table.userId, table.courseId),
+    courseIdx: index("academy_enrollment_course_idx").on(table.courseId),
+  }),
+);
+
+export const academyLessonProgress = pgTable(
+  "academy_lesson_progress",
+  {
+    id: text("id").primaryKey().$defaultFn(() => crypto.randomUUID()),
+    userId: text("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    lessonId: text("lesson_id")
+      .notNull()
+      .references(() => academyLessons.id, { onDelete: "cascade" }),
+    quizScore: integer("quiz_score"), // 0–100, nur bei Quiz-Lektionen
+    completedAt: timestamp("completed_at").notNull().defaultNow(),
+  },
+  (table) => ({
+    userLessonIdx: uniqueIndex("academy_progress_user_lesson_idx").on(table.userId, table.lessonId),
+    lessonIdx: index("academy_progress_lesson_idx").on(table.lessonId),
+  }),
+);
+
+export const academyCertificates = pgTable(
+  "academy_certificate",
+  {
+    id: text("id").primaryKey().$defaultFn(() => crypto.randomUUID()),
+    userId: text("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    courseId: text("course_id")
+      .notNull()
+      .references(() => academyCourses.id, { onDelete: "cascade" }),
+    serial: varchar("serial", { length: 20 }).notNull(), // z. B. AO-2026-7XK4M
+    recipientName: text("recipient_name").notNull(),
+    courseTitle: text("course_title").notNull(), // Snapshot zum Ausstellungszeitpunkt
+    issuedAt: timestamp("issued_at").notNull().defaultNow(),
+  },
+  (table) => ({
+    serialIdx: uniqueIndex("academy_certificate_serial_idx").on(table.serial),
+    userIdx: index("academy_certificate_user_idx").on(table.userId),
   }),
 );
 
@@ -1198,5 +1277,8 @@ export type PilotAssessment = typeof pilotAssessments.$inferSelect;
 export type RegulationChunk = typeof regulationChunks.$inferSelect;
 export type AcademyCourse = typeof academyCourses.$inferSelect;
 export type AcademyLesson = typeof academyLessons.$inferSelect;
+export type AcademyEnrollment = typeof academyEnrollments.$inferSelect;
+export type AcademyLessonProgressRow = typeof academyLessonProgress.$inferSelect;
+export type AcademyCertificate = typeof academyCertificates.$inferSelect;
 
 export const _sqlHelper = sql;

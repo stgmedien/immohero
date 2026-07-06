@@ -57,6 +57,13 @@
       "when": 1782980126621,
       "tag": "0007_stale_magneto",
       "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1783369243166,
+      "tag": "0008_aspiring_rocket_racer",
+      "breakpoints": true
     }
   ]
 }
