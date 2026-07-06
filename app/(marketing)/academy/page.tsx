@@ -3,8 +3,11 @@ import Link from "next/link";
 import { asc, eq } from "drizzle-orm";
 import { db } from "@/lib/db/client";
 import { academyCourses, academyLessons } from "@/lib/db/schema";
+import { auth } from "@/lib/auth";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { formatCoursePrice, isPaidCourse } from "@/lib/academy/access";
 
 export const metadata: Metadata = {
   title: "Academy",
@@ -21,6 +24,7 @@ const LEVEL_LABEL: Record<string, { label: string; tone: "primary" | "accent" | 
 };
 
 export default async function AcademyPage() {
+  const session = await auth();
   const courses = await db
     .select()
     .from(academyCourses)
@@ -47,6 +51,22 @@ export default async function AcademyPage() {
           Kompakte Kurse zu Drohnenrecht, Flugpraxis und Immobilien-Aufnahmen — gebaut vom Team hinter
           ImmoHero. Level 3+ Piloten werden für echte Aufträge sichtbar.
         </p>
+        <div className="mt-6 flex flex-wrap gap-3">
+          {session?.user ? (
+            <Button asChild>
+              <Link href="/academy/mein-bereich">Mein Lernbereich →</Link>
+            </Button>
+          ) : (
+            <>
+              <Button asChild>
+                <Link href="/piloten/start">Kostenlos einstufen lassen →</Link>
+              </Button>
+              <Button asChild variant="outline">
+                <Link href="/login?callbackUrl=/academy/mein-bereich">Anmelden</Link>
+              </Button>
+            </>
+          )}
+        </div>
       </div>
 
       {courses.length === 0 ? (
@@ -70,9 +90,14 @@ export default async function AcademyPage() {
                     </span>
                   </div>
                   <h2 className="mt-4 font-serif text-2xl leading-tight">{course.title}</h2>
-                  {course.description && (
-                    <p className="mt-2 text-sm text-[var(--color-ink-soft)]">{course.description}</p>
-                  )}
+                  <p className="mt-2 text-sm text-[var(--color-ink-soft)]">
+                    {course.summary ?? course.description ?? ""}
+                  </p>
+                  <div className="mt-auto pt-4">
+                    <Badge tone={isPaidCourse(course) ? "accent" : "primary"}>
+                      {formatCoursePrice(course)}
+                    </Badge>
+                  </div>
                 </Card>
               </Link>
             );
