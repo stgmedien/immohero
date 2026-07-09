@@ -11,6 +11,8 @@ import { t, type Locale } from "@/lib/i18n";
 
 function statusBadge(locale: Locale, status: string): { label: string; tone: "neutral" | "primary" | "ink" | "success" | "warn" } {
   switch (status) {
+    case "inquiry": return { label: t(locale, "order_status_inquiry"), tone: "primary" };
+    case "offer_sent": return { label: t(locale, "order_status_offer_sent"), tone: "warn" };
     case "paid": return { label: t(locale, "order_status_paid"), tone: "primary" };
     case "scheduled": return { label: t(locale, "order_status_scheduled"), tone: "primary" };
     case "shooting": return { label: t(locale, "order_status_shooting"), tone: "ink" };
@@ -53,8 +55,10 @@ export default async function KontoPage() {
         <ul className="mt-10 space-y-4">
           {orders.map((order) => {
             const s = statusBadge(locale, order.status);
+            const isInquiryPhase = order.status === "inquiry" || order.status === "offer_sent";
+            const priceCents = order.quotedPriceCents ?? order.totalCents;
             return (
-              <li key={order.id}>
+              <li key={order.id} className="space-y-2">
                 <Link href={`/konto/auftraege/${order.shortCode}`}>
                   <Card className="flex items-center gap-6 p-5 transition-colors hover:bg-[var(--color-bg-alt)]/40">
                     <div className="flex-1">
@@ -72,12 +76,21 @@ export default async function KontoPage() {
                       )}
                     </div>
                     <div className="hidden text-right md:block">
-                      <p className="font-serif text-xl">{eurosPrecise(order.totalCents)}</p>
-                      <p className="text-xs text-[var(--color-ink-mute)]">{t(locale, "konto_order_tax_note")}</p>
+                      <p className="font-serif text-xl">{eurosPrecise(priceCents)}</p>
+                      <p className="text-xs text-[var(--color-ink-mute)]">
+                        {isInquiryPhase && order.status === "inquiry"
+                          ? t(locale, "sum_estimate_note")
+                          : t(locale, "konto_order_tax_note")}
+                      </p>
                     </div>
                     <ArrowRightIcon size={20} className="text-[var(--color-ink-mute)]" />
                   </Card>
                 </Link>
+                {order.status === "offer_sent" && order.paymentUrl ? (
+                  <Button asChild size="sm">
+                    <a href={order.paymentUrl}>{t(locale, "konto_pay_now")} →</a>
+                  </Button>
+                ) : null}
               </li>
             );
           })}

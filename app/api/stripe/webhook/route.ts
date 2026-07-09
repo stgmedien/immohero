@@ -40,13 +40,11 @@ export async function POST(req: NextRequest) {
       }
       case "payment_intent.payment_failed":
       case "checkout.session.expired": {
+        // Im Anfrage-Modell darf ein abgelaufener/fehlgeschlagener Zahlungslink
+        // die Anfrage NICHT stornieren — das Team schickt bei Bedarf einfach
+        // erneut ein Angebot (sendOffer). Nur protokollieren.
         const session = event.data.object as { metadata?: { orderId?: string } };
-        if (session.metadata?.orderId) {
-          await db
-            .update(orders)
-            .set({ status: "cancelled" })
-            .where(eq(orders.id, session.metadata.orderId));
-        }
+        console.warn("[stripe-webhook] payment link expired/failed for order", session.metadata?.orderId);
         break;
       }
       default:
@@ -65,7 +63,9 @@ async function handleCheckoutCompleted(session: Stripe.Checkout.Session) {
   if (!orderId) return;
 
   const order = await getOrderById(orderId);
-  if (!order || order.status !== "pending") return;
+  // Zahlbar sind Aufträge mit gesendetem Angebot ("offer_sent") sowie
+  // Legacy-Direkt-Checkouts ("pending"). Alles andere ignorieren (Idempotenz).
+  if (!order || (order.status !== "offer_sent" && order.status !== "pending")) return;
 
   // Get-or-create customer in CRM table
   const email = order.customerEmail.toLowerCase();
@@ -160,7 +160,7 @@ async function handleCheckoutCompleted(session: Stripe.Checkout.Session) {
         isConsultation: true,
         propertyAddress: `${order.propertyAddress}, ${order.propertyPlz} ${order.propertyCity}`,
         items: items.map((i) => ({ name: i.serviceName, priceCents: i.unitPriceCents })),
-        totalCents: order.totalCents,
+        totalCents: order.quotedPriceCents ?? order.totalCents,
         portalUrl,
       }),
     });

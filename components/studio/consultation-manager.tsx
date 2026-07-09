@@ -121,6 +121,17 @@ function ConsultationCard({
                 {row.shortCode}
               </Link>
               {row.propertyCity ? ` · ${row.propertyAddress}, ${row.propertyCity}` : ""}
+              {row.orderStatus === "inquiry" || row.orderStatus === "offer_sent" ? (
+                <>
+                  {" · "}
+                  <Link
+                    href={`/studio/projekte/${row.shortCode}/kunde`}
+                    className="font-medium text-[var(--color-brand-1)] underline"
+                  >
+                    {row.orderStatus === "offer_sent" ? "Angebot ansehen →" : "Angebot senden →"}
+                  </Link>
+                </>
+              ) : null}
             </p>
           )}
           {row.customerNote && (

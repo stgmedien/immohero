@@ -20,7 +20,9 @@ const STUDIO_STATUS_MAP: Record<string, StatusConfig> = {
 };
 
 const ORDER_STATUS_MAP: Record<string, StatusConfig> = {
-  pending: { label: "Wartet", tone: "warn" },
+  inquiry: { label: "Anfrage", tone: "info", dot: true },
+  offer_sent: { label: "Angebot gesendet", tone: "warn", dot: true },
+  pending: { label: "Wartet auf Zahlung", tone: "warn" },
   paid: { label: "Bezahlt", tone: "ok" },
   scheduled: { label: "Terminiert", tone: "info" },
   shooting: { label: "Shooting", tone: "brand", dot: true },

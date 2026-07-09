@@ -5,8 +5,8 @@ import { getProjectFull } from "@/lib/db/project-queries";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { EmptyState } from "@/components/ui/empty-state";
 import { eurosPrecise } from "@/lib/utils";
+import { OfferPanel } from "@/components/studio/offer-panel";
 
 export default async function KundeTabPage({ params }: { params: Promise<{ code: string }> }) {
   const { code } = await params;
@@ -14,6 +14,7 @@ export default async function KundeTabPage({ params }: { params: Promise<{ code:
   if (!data) notFound();
 
   const { project, items, customer } = data;
+  const isInquiryPhase = ["inquiry", "offer_sent", "pending"].includes(project.status);
 
   return (
     <div className="space-y-6 max-w-3xl">
@@ -41,8 +42,17 @@ export default async function KundeTabPage({ params }: { params: Promise<{ code:
         )}
       </Card>
 
+      <OfferPanel
+        orderId={project.id}
+        status={project.status}
+        estimateCents={project.totalCents}
+        quotedPriceCents={project.quotedPriceCents}
+        offerSentAt={project.offerSentAt ? project.offerSentAt.toISOString() : null}
+        paymentUrl={project.paymentUrl}
+      />
+
       <Card className="p-5">
-        <p className="text-[10px] font-mono uppercase tracking-[0.12em] text-[var(--color-ink-4)]">Gebuchte Leistungen</p>
+        <p className="text-[10px] font-mono uppercase tracking-[0.12em] text-[var(--color-ink-4)]">Angefragte Leistungen</p>
         <h3 className="mt-1 text-base font-semibold">{items.length} Position{items.length === 1 ? "" : "en"}</h3>
         {items.length === 0 ? (
           <p className="mt-3 text-sm text-[var(--color-ink-3)]">—</p>
@@ -57,8 +67,12 @@ export default async function KundeTabPage({ params }: { params: Promise<{ code:
           </ul>
         )}
         <div className="mt-4 flex items-end justify-between border-t border-[var(--color-hair)] pt-4">
-          <span className="text-sm text-[var(--color-ink-3)]">Gesamt</span>
-          <span className="text-xl font-semibold tabular-nums">{eurosPrecise(project.totalCents)}</span>
+          <span className="text-sm text-[var(--color-ink-3)]">
+            {isInquiryPhase ? "Richtpreis (unverbindlich)" : "Gesamt"}
+          </span>
+          <span className="text-xl font-semibold tabular-nums">
+            {eurosPrecise(project.quotedPriceCents ?? project.totalCents)}
+          </span>
         </div>
       </Card>
 
