@@ -1,15 +1,15 @@
 "use server";
 
 import { redirect } from "next/navigation";
-import { headers } from "next/headers";
 import { bookingDraftSchema, summarizeBooking, type BookingDraft } from "@/lib/booking";
 import { isPlzInServiceArea, createOrderDraft, findOrCreateCustomer, getServiceArea } from "@/lib/db/queries";
 import { db } from "@/lib/db/client";
 import { orderItems, orderShots } from "@/lib/db/schema";
 import { generateShortCode } from "@/lib/short-code";
-import { requireStripe } from "@/lib/stripe";
 import { getBundle, getService } from "@/lib/services";
 import { shotsForOrder } from "@/lib/shots";
+import { sendEmail } from "@/lib/email";
+import { InquiryReceivedEmail } from "@/emails/inquiry-received";
 import { DEMO_MODE, demoCityForPlz } from "@/lib/demo";
 
 export interface CheckPlzResult {
@@ -37,15 +37,20 @@ export async function checkPlz(plz: string): Promise<CheckPlzResult> {
   return { ok: true, city: row.city, region: row.region };
 }
 
-export async function createCheckoutSession(payload: BookingDraft) {
-  // Demo-Modus: Funnel klickbar machen ohne Stripe/DB. Form validieren,
-  // dann direkt zur Erfolgsseite (ohne ?order, damit kein DB-Lookup passiert).
+/**
+ * Nimmt eine unverbindliche Buchungs-ANFRAGE entgegen (kein Zahlungsschritt).
+ * Der Auftrag entsteht mit Status "inquiry" + Beratungstermin. Nach dem
+ * Vertriebsgespräch schickt das Team im Studio Preis + Zahlungslink
+ * (siehe app/studio/actions/offers.ts → sendOffer).
+ */
+export async function submitBookingInquiry(payload: BookingDraft) {
+  // Demo-Modus: Funnel klickbar machen ohne DB. Form validieren,
+  // dann direkt zur Bestätigungsseite (ohne ?anfrage, damit kein DB-Lookup passiert).
   if (DEMO_MODE) {
     bookingDraftSchema.parse(payload);
     redirect("/buchen/erfolg?demo=1");
   }
 
-  const stripe = requireStripe();
   const draft = bookingDraftSchema.parse(payload);
 
   const plzOk = await isPlzInServiceArea(draft.property.plz);
@@ -78,7 +83,7 @@ export async function createCheckoutSession(payload: BookingDraft) {
     customerEmail: customer.email,
     customerName: customer.name ?? null,
     customerPhone: draft.customer.phone,
-    status: "pending",
+    status: "inquiry",
     bundleSlug: draft.bundleSlug ?? null,
     propertyType: draft.property.type,
     propertyAddress: draft.property.address,
@@ -88,6 +93,8 @@ export async function createCheckoutSession(payload: BookingDraft) {
     propertyNotes: draft.property.notes ?? null,
     // Shoot date is determined during the consultation call, not at booking.
     scheduledAt: null,
+    // Katalog-Werte als unverbindlicher Richtpreis — der finale Preis kommt
+    // nach dem Vertriebsgespräch (quotedPriceCents).
     subtotalCents: summary.subtotalCents,
     discountCents: summary.discountCents,
     totalCents: summary.totalCents,
@@ -95,6 +102,7 @@ export async function createCheckoutSession(payload: BookingDraft) {
 
   // Consultation request from the chosen slot (status 'requested' — a sales
   // rep accepts it in the Studio, which then syncs it to Google Calendar).
+  let consultationStart: Date | null = null;
   try {
     const { consultations } = await import("@/lib/db/schema");
     const { consultationWindow } = await import("@/lib/consultation");
@@ -102,6 +110,7 @@ export async function createCheckoutSession(payload: BookingDraft) {
       ? new Date(draft.schedule.slotStart).toISOString()
       : new Date(`${draft.schedule.date}T${draft.schedule.timeSlot}:00+02:00`).toISOString();
     const { start, end } = consultationWindow(startIso);
+    consultationStart = start;
     await db.insert(consultations).values({
       orderId: order.id,
       customerEmail: customer.email,
@@ -154,57 +163,35 @@ export async function createCheckoutSession(payload: BookingDraft) {
     );
   }
 
-  const host = (await headers()).get("host");
-  const protocol = host?.startsWith("localhost") ? "http" : "https";
-  const origin = process.env.NEXT_PUBLIC_SITE_URL ?? `${protocol}://${host}`;
-
-  const stripeLineItems = summary.items.map((item) => ({
-    quantity: 1,
-    price_data: {
-      currency: "eur",
-      unit_amount: item.priceCents,
-      product_data: {
-        name: item.name,
-        description: getService(item.slug)?.shortDescription ?? undefined,
-      },
-    },
-  }));
-
-  if (summary.discountCents > 0 && draft.bundleSlug) {
-    const bundle = getBundle(draft.bundleSlug);
-    if (bundle) {
-      // Stripe will compute discount via coupon. For MVP we adjust unit_amount instead.
-      const factor = summary.totalCents / summary.subtotalCents;
-      for (const li of stripeLineItems) {
-        li.price_data.unit_amount = Math.round(li.price_data.unit_amount * factor);
-      }
-    }
+  // Anfrage-Bestätigung an den Kunden (best-effort — blockt die Anfrage nicht).
+  try {
+    const whenLabel = consultationStart
+      ? consultationStart.toLocaleString("de-DE", {
+          weekday: "long",
+          day: "2-digit",
+          month: "long",
+          hour: "2-digit",
+          minute: "2-digit",
+        }) + " Uhr"
+      : null;
+    await sendEmail({
+      to: customer.email,
+      subject: `Deine Anfrage ${shortCode} ist bei uns`,
+      template: "inquiry-received",
+      from: "bookingConfirmation",
+      orderId: order.id,
+      react: InquiryReceivedEmail({
+        customerName: customer.name ?? null,
+        shortCode,
+        items: summary.items.map((i) => ({ name: i.name, priceCents: i.priceCents })),
+        estimateCents: summary.totalCents,
+        propertyAddress: `${draft.property.address}, ${draft.property.plz} ${draft.property.city}`,
+        whenLabel,
+      }),
+    });
+  } catch (err) {
+    console.error("[booking] inquiry email failed", err);
   }
 
-  const session = await stripe.checkout.sessions.create({
-    mode: "payment",
-    line_items: stripeLineItems,
-    customer_email: customer.email,
-    metadata: {
-      orderId: order.id,
-      shortCode: order.shortCode,
-    },
-    payment_intent_data: {
-      metadata: { orderId: order.id },
-    },
-    locale: "de",
-    payment_method_types: ["card", "sepa_debit", "klarna", "paypal"],
-    allow_promotion_codes: true,
-    billing_address_collection: "required",
-    success_url: `${origin}/buchen/erfolg?order=${order.shortCode}`,
-    cancel_url: `${origin}/buchen/kasse?order=${order.shortCode}`,
-    automatic_tax: { enabled: false },
-  });
-
-  const { orders: ordersTable } = await import("@/lib/db/schema");
-  const { eq } = await import("drizzle-orm");
-  await db.update(ordersTable).set({ stripeSessionId: session.id }).where(eq(ordersTable.id, order.id));
-
-  if (!session.url) throw new Error("Stripe gave no checkout URL.");
-  redirect(session.url);
+  redirect(`/buchen/erfolg?anfrage=${order.shortCode}`);
 }

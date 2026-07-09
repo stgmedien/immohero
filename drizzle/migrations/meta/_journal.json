@@ -64,6 +64,13 @@
       "when": 1783369243166,
       "tag": "0008_aspiring_rocket_racer",
       "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1783577682990,
+      "tag": "0009_public_newton_destine",
+      "breakpoints": true
     }
   ]
 }

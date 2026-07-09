@@ -34,7 +34,9 @@ export const userStatusEnum = pgEnum("user_status", [
 ]);
 
 export const orderStatusEnum = pgEnum("order_status", [
-  "pending",
+  "inquiry", // Anfrage eingegangen, wartet auf Angebot (Vertriebsanruf)
+  "offer_sent", // Angebot + Zahlungslink verschickt, wartet auf Zahlung
+  "pending", // (Legacy) direkter Checkout — wartet auf Zahlung
   "paid",
   "scheduled",
   "shooting",
@@ -495,9 +497,14 @@ export const orders = pgTable(
     scheduledAt: timestamp("scheduled_at"),
     estimatedDeliveryAt: timestamp("estimated_delivery_at"),
 
-    subtotalCents: integer("subtotal_cents").notNull(),
+    subtotalCents: integer("subtotal_cents").notNull(), // unverbindlicher Richtpreis (Katalog)
     discountCents: integer("discount_cents").notNull().default(0),
-    totalCents: integer("total_cents").notNull(),
+    totalCents: integer("total_cents").notNull(), // unverbindlicher Richtpreis (Katalog)
+
+    // Angebots-/Zahlungsphase (Vertrieb setzt finalen Preis nach dem Telefonat)
+    quotedPriceCents: integer("quoted_price_cents"), // finaler, berechneter Angebotspreis
+    offerSentAt: timestamp("offer_sent_at"),
+    paymentUrl: text("payment_url"), // Stripe-Checkout-Link fuer den Kunden
 
     stripeSessionId: text("stripe_session_id"),
     stripePaymentIntentId: text("stripe_payment_intent_id"),

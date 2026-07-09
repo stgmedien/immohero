@@ -49,6 +49,7 @@ export function SummaryCard() {
               </div>
               <p className="pb-1 text-xs text-[var(--color-ink-mute)]">{summary.taxInfo}</p>
             </div>
+            <p className="mt-1 text-xs text-[var(--color-ink-mute)]">{t(locale, "sum_estimate_note")}</p>
           </dl>
         </>
       )}

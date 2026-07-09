@@ -148,12 +148,12 @@ const DICT: Record<Locale, Record<string, string>> = {
     step_service: "Service",
     step_property: "Objekt",
     step_schedule: "Termin",
-    step_checkout: "Kontakt & Kasse",
+    step_checkout: "Kontakt & Anfrage",
     // Booking — page titles
     buchen_title: "Wähle deine Services",
     buchen_property_title: "Objekt & Adresse",
     buchen_schedule_title: "Beratungsgespräch",
-    buchen_checkout_title: "Kontakt & Kasse",
+    buchen_checkout_title: "Kontakt & Anfrage",
     // Booking — Service step
     svc_pkg_title: "Paket wählen — empfohlen",
     svc_pkg_sub: "Bis zu 20 % Rabatt gegenüber Einzelbuchung.",
@@ -198,8 +198,8 @@ const DICT: Record<Locale, Record<string, string>> = {
     sched_next: "Weiter zum Kontakt",
     sched_continue_no_slot: "Ohne festen Termin weiter",
     // Booking — Checkout step
-    check_who_title: "Wer bucht?",
-    check_who_sub: "Wir senden dir die Rechnung & Termin-Bestätigung an diese Adresse.",
+    check_who_title: "Wer fragt an?",
+    check_who_sub: "Wir senden dir die Anfrage-Bestätigung an diese Adresse und melden uns telefonisch.",
     check_first_name: "Vorname",
     check_last_name: "Nachname",
     check_email: "E-Mail",
@@ -212,24 +212,32 @@ const DICT: Record<Locale, Record<string, string>> = {
     check_agb_suffix: "gelesen.",
     check_error_required: "Bitte alle Pflichtfelder ausfüllen.",
     check_error_agb: "Bitte bestätige AGB und Datenschutzerklärung.",
-    check_error_unknown: "Unbekannter Fehler bei der Bezahlung.",
+    check_error_unknown: "Unbekannter Fehler beim Absenden der Anfrage.",
     check_back: "← Zurück",
-    check_submit: "Sicher bezahlen mit Stripe",
-    check_submitting: "Weiterleitung…",
+    check_submit: "Anfrage absenden",
+    check_submitting: "Wird gesendet…",
     check_payment_info:
-      "Bezahlung über Stripe — Kreditkarte, SEPA, Klarna oder PayPal. Wir speichern keine Zahlungsdaten.",
+      "Unverbindliche Anfrage — kein Zahlungsschritt. Wir rufen dich an und schicken dir dein persönliches Angebot mit Preis und Zahlungslink.",
     // Booking — Summary card
     sum_title: "Deine Auswahl",
     sum_empty: "Noch nichts ausgewählt.",
     sum_bundle_note: "Paket „{name}“ — {p} % Rabatt",
     sum_subtotal: "Zwischensumme",
     sum_discount: "Paketrabatt",
-    sum_total: "Gesamt",
-    // Booking — Erfolg page
+    sum_total: "Richtpreis",
+    sum_estimate_note: "unverbindlich · finaler Preis nach dem Gespräch",
+    // Booking — Erfolg / Anfrage page
     erfolg_title: "Buchung bestätigt.",
     erfolg_with_order: "Auftrag {code} ist bei uns. Du bekommst gleich eine Bestätigung an {email}.",
     erfolg_no_order:
       "Du bekommst gleich eine Bestätigungs-E-Mail mit allen Details und einem Login-Link zu deinem Kundenbereich.",
+    erfolg_inquiry_title: "Anfrage eingegangen.",
+    erfolg_inquiry_with_order:
+      "Deine Anfrage {code} ist bei uns. Eine Bestätigung ist an {email} unterwegs — wir melden uns telefonisch mit deinem Angebot.",
+    erfolg_inquiry_no_order:
+      "Deine Anfrage ist bei uns. Eine Bestätigung ist per E-Mail unterwegs — wir melden uns telefonisch mit deinem Angebot.",
+    erfolg_inquiry_hint:
+      "Kein Zahlungsschritt nötig: Nach dem kurzen Telefonat bekommst du dein persönliches Angebot mit Preis und einem sicheren Zahlungslink.",
     erfolg_btn_account: "Zum Kundenbereich",
     erfolg_btn_home: "Zurück zur Startseite",
     // Login
@@ -433,12 +441,12 @@ const DICT: Record<Locale, Record<string, string>> = {
     step_service: "Service",
     step_property: "Property",
     step_schedule: "Date",
-    step_checkout: "Contact & checkout",
+    step_checkout: "Contact & request",
     // Booking — page titles
     buchen_title: "Choose your services",
     buchen_property_title: "Property & address",
     buchen_schedule_title: "Consultation",
-    buchen_checkout_title: "Contact & checkout",
+    buchen_checkout_title: "Contact & request",
     // Booking — Service step
     svc_pkg_title: "Pick a package — recommended",
     svc_pkg_sub: "Up to 20% off versus single bookings.",
@@ -474,7 +482,7 @@ const DICT: Record<Locale, Record<string, string>> = {
       "Before the shoot you have a short (~30 min.) video call with one of our advisers — Google Meet / Teams / Zoom. We clarify all details and pick the shoot date together. Choose your preferred time window for the call.",
     sched_loading: "Loading available slots…",
     sched_no_slots:
-      "No free slots visible online right now. Book anyway — we'll reach out after payment to find a time.",
+      "No free slots visible online right now. Continue anyway — we'll reach out to find a time.",
     sched_day: "Day",
     sched_time: "Time",
     sched_free: "{n} free",
@@ -483,8 +491,8 @@ const DICT: Record<Locale, Record<string, string>> = {
     sched_next: "Next: contact",
     sched_continue_no_slot: "Continue without a fixed time",
     // Booking — Checkout step
-    check_who_title: "Who's booking?",
-    check_who_sub: "We send the invoice & booking confirmation to this address.",
+    check_who_title: "Who's asking?",
+    check_who_sub: "We send the request confirmation to this address and call you back.",
     check_first_name: "First name",
     check_last_name: "Last name",
     check_email: "Email",
@@ -497,24 +505,32 @@ const DICT: Record<Locale, Record<string, string>> = {
     check_agb_suffix: ".",
     check_error_required: "Please fill in all required fields.",
     check_error_agb: "Please accept the terms and privacy policy.",
-    check_error_unknown: "Unknown payment error.",
+    check_error_unknown: "Unknown error while sending your request.",
     check_back: "← Back",
-    check_submit: "Pay securely with Stripe",
-    check_submitting: "Redirecting…",
+    check_submit: "Send request",
+    check_submitting: "Sending…",
     check_payment_info:
-      "Payment via Stripe — card, SEPA, Klarna or PayPal. We never store payment details.",
+      "Non-binding request — no payment step. We'll call you and send your personal quote with a price and a payment link.",
     // Booking — Summary card
     sum_title: "Your selection",
     sum_empty: "Nothing selected yet.",
     sum_bundle_note: "Package \"{name}\" — {p}% off",
     sum_subtotal: "Subtotal",
     sum_discount: "Package discount",
-    sum_total: "Total",
-    // Booking — Erfolg page
+    sum_total: "Est. price",
+    sum_estimate_note: "non-binding · final price after the call",
+    // Booking — Erfolg / request page
     erfolg_title: "Booking confirmed.",
     erfolg_with_order: "Order {code} is with us. You'll get a confirmation at {email} shortly.",
     erfolg_no_order:
       "You'll get a confirmation email shortly with all the details and a login link to your account.",
+    erfolg_inquiry_title: "Request received.",
+    erfolg_inquiry_with_order:
+      "Your request {code} is with us. A confirmation is on its way to {email} — we'll call you with your quote.",
+    erfolg_inquiry_no_order:
+      "Your request is with us. A confirmation is on its way by email — we'll call you with your quote.",
+    erfolg_inquiry_hint:
+      "No payment step needed: after a short call you'll get your personal quote with a price and a secure payment link.",
     erfolg_btn_account: "To my account",
     erfolg_btn_home: "Back to home",
     // Login

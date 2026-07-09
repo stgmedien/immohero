@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useBooking } from "./booking-store";
-import { createCheckoutSession } from "@/app/buchen/actions";
+import { submitBookingInquiry } from "@/app/buchen/actions";
 import { bookingDraftSchema } from "@/lib/booking";
 import { useLocale } from "@/components/site/locale-provider";
 import { t } from "@/lib/i18n";
@@ -31,7 +31,7 @@ export function CheckoutStep() {
     }
     startTransition(async () => {
       try {
-        await createCheckoutSession(parsed.data);
+        await submitBookingInquiry(parsed.data);
       } catch (err) {
         const msg = err instanceof Error ? err.message : t(locale, "check_error_unknown");
         if (msg.includes("NEXT_REDIRECT")) return;
