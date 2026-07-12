@@ -59,7 +59,9 @@ export async function POST(req: NextRequest) {
 }
 
 async function handleCheckoutCompleted(session: Stripe.Checkout.Session) {
-  const orderId = session.metadata?.orderId;
+  // Direkter Checkout (Legacy): orderId in der Session-Metadata.
+  // Payment Link (Angebot): orderId als client_reference_id an der URL.
+  const orderId = session.metadata?.orderId ?? session.client_reference_id ?? undefined;
   if (!orderId) return;
 
   const order = await getOrderById(orderId);

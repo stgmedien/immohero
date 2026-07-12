@@ -15,6 +15,7 @@ import { db } from "@/lib/db/client";
 import { orders, auditLog } from "@/lib/db/schema";
 import { getOrderById } from "@/lib/db/queries";
 import { requireStripe } from "@/lib/stripe";
+import { buildOfferPriceParams, buildOfferPaymentLinkParams, offerPaymentUrl } from "@/lib/offer";
 import { sendEmail } from "@/lib/email";
 import { OfferPaymentEmail } from "@/emails/offer-payment";
 
@@ -31,8 +32,6 @@ export interface SendOfferResult {
   error?: string;
   paymentUrl?: string;
 }
-
-const OFFER_LINK_TTL_SECONDS = 30 * 24 * 3600; // 30 Tage (Stripe-Maximum)
 
 export async function sendOffer(input: {
   orderId: string;
@@ -60,40 +59,28 @@ export async function sendOffer(input: {
   const protocol = host?.startsWith("localhost") ? "http" : "https";
   const origin = process.env.NEXT_PUBLIC_SITE_URL ?? `${protocol}://${host}`;
 
-  let checkout;
-  try {
-    checkout = await stripe.checkout.sessions.create({
-      mode: "payment",
-      customer_email: order.customerEmail,
-      line_items: [
-        {
-          quantity: 1,
-          price_data: {
-            currency: "eur",
-            unit_amount: priceCents,
-            product_data: {
-              name: `ImmoHero Medienproduktion — Auftrag ${order.shortCode}`,
-              description: `${order.propertyAddress}, ${order.propertyPlz} ${order.propertyCity}`,
-            },
-          },
-        },
-      ],
-      metadata: { orderId: order.id, shortCode: order.shortCode },
-      payment_intent_data: { metadata: { orderId: order.id } },
-      locale: "de",
-      payment_method_types: ["card", "sepa_debit", "klarna", "paypal"],
-      billing_address_collection: "required",
-      expires_at: Math.floor(Date.now() / 1000) + OFFER_LINK_TTL_SECONDS,
-      success_url: `${origin}/buchen/erfolg?order=${order.shortCode}`,
-      cancel_url: `${origin}/konto`,
-      automatic_tax: { enabled: false },
-    });
-  } catch (err) {
-    console.error("[offer] stripe session create failed", err);
-    return { ok: false, error: "Zahlungslink konnte nicht erstellt werden (Stripe)." };
+  // Alten Zahlungslink deaktivieren, falls erneut ein Angebot gesendet wird
+  // (verhindert, dass der Kunde einen veralteten Preis bezahlt).
+  if (order.stripeSessionId?.startsWith("plink_")) {
+    try {
+      await stripe.paymentLinks.update(order.stripeSessionId, { active: false });
+    } catch (err) {
+      console.error("[offer] deactivating old payment link failed", err);
+    }
   }
 
-  if (!checkout.url) return { ok: false, error: "Stripe lieferte keinen Zahlungslink." };
+  let paymentUrl: string;
+  let paymentLinkId: string;
+  try {
+    const price = await stripe.prices.create(buildOfferPriceParams(order, priceCents));
+    const link = await stripe.paymentLinks.create(buildOfferPaymentLinkParams(order, price.id, origin));
+    if (!link.url) return { ok: false, error: "Stripe lieferte keinen Zahlungslink." };
+    paymentLinkId = link.id;
+    paymentUrl = offerPaymentUrl(link, order.id);
+  } catch (err) {
+    console.error("[offer] stripe payment link create failed", err);
+    return { ok: false, error: "Zahlungslink konnte nicht erstellt werden (Stripe)." };
+  }
 
   await db
     .update(orders)
@@ -101,8 +88,8 @@ export async function sendOffer(input: {
       status: "offer_sent",
       quotedPriceCents: priceCents,
       offerSentAt: new Date(),
-      paymentUrl: checkout.url,
-      stripeSessionId: checkout.id,
+      paymentUrl,
+      stripeSessionId: paymentLinkId,
     })
     .where(eq(orders.id, order.id));
 
@@ -117,7 +104,7 @@ export async function sendOffer(input: {
         customerName: order.customerName ?? null,
         shortCode: order.shortCode,
         priceCents,
-        paymentUrl: checkout.url,
+        paymentUrl,
         propertyAddress: `${order.propertyAddress}, ${order.propertyPlz} ${order.propertyCity}`,
         note: input.note?.trim() || null,
       }),
@@ -140,5 +127,5 @@ export async function sendOffer(input: {
   revalidatePath(`/studio/projekte/${order.shortCode}`);
   revalidatePath("/studio/projekte");
 
-  return { ok: true, paymentUrl: checkout.url };
+  return { ok: true, paymentUrl };
 }
